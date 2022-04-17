@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccegoR3W.s 			page 1
+ARM GAS  /tmp/ccNMUKOX.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -46,93 +46,94 @@ ARM GAS  /tmp/ccegoR3W.s 			page 1
   44 002e 4F23     		movs	r3, #79
   45 0030 C4E90023 		strd	r2, r3, [r4]
   46 0034 2046     		mov	r0, r4
-  47 0036 42F20F73 		movw	r3, #9999
-  48 003a E360     		str	r3, [r4, #12]
-  49 003c FFF7FEFF 		bl	HAL_TIM_Base_Init
-  50 0040 58BB     		cbnz	r0, .L25
+  47 0036 F923     		movs	r3, #249
+  48 0038 E360     		str	r3, [r4, #12]
+  49 003a FFF7FEFF 		bl	HAL_TIM_Base_Init
+  50 003e 58BB     		cbnz	r0, .L25
   51              	.L2:
-  52 0042 4FF48053 		mov	r3, #4096
-  53 0046 2E48     		ldr	r0, .L31+16
-  54 0048 0493     		str	r3, [sp, #16]
-  55 004a 04A9     		add	r1, sp, #16
-  56 004c FFF7FEFF 		bl	HAL_TIM_ConfigClockSource
-  57 0050 78BB     		cbnz	r0, .L26
+  52 0040 4FF48053 		mov	r3, #4096
+  53 0044 2E48     		ldr	r0, .L31+16
+  54 0046 0493     		str	r3, [sp, #16]
+  55 0048 04A9     		add	r1, sp, #16
+  56 004a FFF7FEFF 		bl	HAL_TIM_ConfigClockSource
+  57 004e 78BB     		cbnz	r0, .L26
   58              	.L3:
-ARM GAS  /tmp/ccegoR3W.s 			page 2
+ARM GAS  /tmp/ccNMUKOX.s 			page 2
 
 
-  59 0052 2B48     		ldr	r0, .L31+16
-  60 0054 FFF7FEFF 		bl	HAL_TIM_PWM_Init
-  61 0058 40BB     		cbnz	r0, .L27
+  59 0050 2B48     		ldr	r0, .L31+16
+  60 0052 FFF7FEFF 		bl	HAL_TIM_PWM_Init
+  61 0056 40BB     		cbnz	r0, .L27
   62              	.L4:
-  63 005a 0023     		movs	r3, #0
-  64 005c 2848     		ldr	r0, .L31+16
-  65 005e 0193     		str	r3, [sp, #4]
-  66 0060 01A9     		add	r1, sp, #4
-  67 0062 0393     		str	r3, [sp, #12]
-  68 0064 FFF7FEFF 		bl	HAL_TIMEx_MasterConfigSynchronization
-  69 0068 E8B9     		cbnz	r0, .L28
+  63 0058 0023     		movs	r3, #0
+  64 005a 2948     		ldr	r0, .L31+16
+  65 005c 0193     		str	r3, [sp, #4]
+  66 005e 01A9     		add	r1, sp, #4
+  67 0060 0393     		str	r3, [sp, #12]
+  68 0062 FFF7FEFF 		bl	HAL_TIMEx_MasterConfigSynchronization
+  69 0066 E8B9     		cbnz	r0, .L28
   70              	.L5:
-  71 006a 9FED217B 		vldr.64	d7, .L31	@ int
-  72 006e 0022     		movs	r2, #0
-  73 0070 2348     		ldr	r0, .L31+16
-  74 0072 1092     		str	r2, [sp, #64]
-  75 0074 0EA9     		add	r1, sp, #56
-  76 0076 8DED0E7B 		vstr.64	d7, [sp, #56]	@ int
-  77 007a 1292     		str	r2, [sp, #72]
-  78 007c FFF7FEFF 		bl	HAL_TIM_PWM_ConfigChannel
-  79 0080 70B9     		cbnz	r0, .L29
+  71 0068 9FED217B 		vldr.64	d7, .L31	@ int
+  72 006c 0022     		movs	r2, #0
+  73 006e 2448     		ldr	r0, .L31+16
+  74 0070 1092     		str	r2, [sp, #64]
+  75 0072 0EA9     		add	r1, sp, #56
+  76 0074 8DED0E7B 		vstr.64	d7, [sp, #56]	@ int
+  77 0078 1292     		str	r2, [sp, #72]
+  78 007a FFF7FEFF 		bl	HAL_TIM_PWM_ConfigChannel
+  79 007e 70B9     		cbnz	r0, .L29
   80              	.L6:
-  81 0082 2268     		ldr	r2, [r4]
-  82 0084 0023     		movs	r3, #0
-  83 0086 B2F1804F 		cmp	r2, #1073741824
-  84 008a CDE90833 		strd	r3, r3, [sp, #32]
-  85 008e CDE90A33 		strd	r3, r3, [sp, #40]
-  86 0092 0C93     		str	r3, [sp, #48]
-  87 0094 10D0     		beq	.L30
-  88 0096 16B0     		add	sp, sp, #88
+  81 0080 2268     		ldr	r2, [r4]
+  82 0082 0023     		movs	r3, #0
+  83 0084 B2F1804F 		cmp	r2, #1073741824
+  84 0088 CDE90833 		strd	r3, r3, [sp, #32]
+  85 008c CDE90A33 		strd	r3, r3, [sp, #40]
+  86 0090 0C93     		str	r3, [sp, #48]
+  87 0092 10D0     		beq	.L30
+  88 0094 16B0     		add	sp, sp, #88
   89              		@ sp needed
-  90 0098 10BD     		pop	{r4, pc}
+  90 0096 10BD     		pop	{r4, pc}
   91              	.L25:
-  92 009a FFF7FEFF 		bl	Error_Handler
-  93 009e D0E7     		b	.L2
+  92 0098 FFF7FEFF 		bl	Error_Handler
+  93 009c D0E7     		b	.L2
   94              	.L29:
-  95 00a0 FFF7FEFF 		bl	Error_Handler
-  96 00a4 EDE7     		b	.L6
+  95 009e FFF7FEFF 		bl	Error_Handler
+  96 00a2 EDE7     		b	.L6
   97              	.L28:
-  98 00a6 FFF7FEFF 		bl	Error_Handler
-  99 00aa DEE7     		b	.L5
+  98 00a4 FFF7FEFF 		bl	Error_Handler
+  99 00a8 DEE7     		b	.L5
  100              	.L27:
- 101 00ac FFF7FEFF 		bl	Error_Handler
- 102 00b0 D3E7     		b	.L4
+ 101 00aa FFF7FEFF 		bl	Error_Handler
+ 102 00ae D3E7     		b	.L4
  103              	.L26:
- 104 00b2 FFF7FEFF 		bl	Error_Handler
- 105 00b6 CCE7     		b	.L3
+ 104 00b0 FFF7FEFF 		bl	Error_Handler
+ 105 00b4 CCE7     		b	.L3
  106              	.L30:
- 107 00b8 03F18043 		add	r3, r3, #1073741824
- 108 00bc 03F50433 		add	r3, r3, #135168
- 109 00c0 9FED0D7B 		vldr.64	d7, .L31+8	@ int
- 110 00c4 DA6C     		ldr	r2, [r3, #76]
- 111 00c6 42F00102 		orr	r2, r2, #1
- 112 00ca DA64     		str	r2, [r3, #76]
- 113 00cc DB6C     		ldr	r3, [r3, #76]
- 114 00ce 03F00103 		and	r3, r3, #1
- 115 00d2 0093     		str	r3, [sp]
-ARM GAS  /tmp/ccegoR3W.s 			page 3
+ 107 00b6 03F18043 		add	r3, r3, #1073741824
+ 108 00ba 03F50433 		add	r3, r3, #135168
+ 109 00be 9FED0E7B 		vldr.64	d7, .L31+8	@ int
+ 110 00c2 DA6C     		ldr	r2, [r3, #76]
+ 111 00c4 42F00102 		orr	r2, r2, #1
+ 112 00c8 DA64     		str	r2, [r3, #76]
+ 113 00ca DB6C     		ldr	r3, [r3, #76]
+ 114 00cc 03F00103 		and	r3, r3, #1
+ 115 00d0 0093     		str	r3, [sp]
+ARM GAS  /tmp/ccNMUKOX.s 			page 3
 
 
- 116 00d4 08A9     		add	r1, sp, #32
- 117 00d6 0123     		movs	r3, #1
- 118 00d8 4FF09040 		mov	r0, #1207959552
- 119 00dc 8DED087B 		vstr.64	d7, [sp, #32]	@ int
- 120 00e0 009A     		ldr	r2, [sp]
- 121 00e2 0C93     		str	r3, [sp, #48]
- 122 00e4 FFF7FEFF 		bl	HAL_GPIO_Init
- 123 00e8 16B0     		add	sp, sp, #88
+ 116 00d2 08A9     		add	r1, sp, #32
+ 117 00d4 0123     		movs	r3, #1
+ 118 00d6 4FF09040 		mov	r0, #1207959552
+ 119 00da 8DED087B 		vstr.64	d7, [sp, #32]	@ int
+ 120 00de 009A     		ldr	r2, [sp]
+ 121 00e0 0C93     		str	r3, [sp, #48]
+ 122 00e2 FFF7FEFF 		bl	HAL_GPIO_Init
+ 123 00e6 16B0     		add	sp, sp, #88
  124              		@ sp needed
- 125 00ea 10BD     		pop	{r4, pc}
+ 125 00e8 10BD     		pop	{r4, pc}
  126              	.L32:
- 127 00ec AFF30080 		.align	3
+ 127 00ea 00BFAFF3 		.align	3
+ 127      0080
  128              	.L31:
  129 00f0 60000000 		.word	96
  130 00f4 00000000 		.word	0
@@ -177,10 +178,10 @@ ARM GAS  /tmp/ccegoR3W.s 			page 1
  172              		.section	.text.HAL_TIM_MspPostInit,"ax",%progbits
  173              		.align	1
  174              		.p2align 2,,3
+ARM GAS  /tmp/ccNMUKOX.s 			page 4
+
+
  175              		.global	HAL_TIM_MspPostInit
-ARM GAS  /tmp/ccegoR3W.s 			page 4
-
-
  176              		.syntax unified
  177              		.thumb
  178              		.thumb_func
@@ -237,10 +238,10 @@ ARM GAS  /tmp/ccegoR3W.s 			page 1
  232              		@ args = 0, pretend = 0, frame = 0
  233              		@ frame_needed = 0, uses_anonymous_args = 0
  234              		@ link register save eliminated.
+ARM GAS  /tmp/ccNMUKOX.s 			page 5
+
+
  235 0000 0368     		ldr	r3, [r0]
-ARM GAS  /tmp/ccegoR3W.s 			page 5
-
-
  236 0002 B3F1804F 		cmp	r3, #1073741824
  237 0006 00D0     		beq	.L47
  238 0008 7047     		bx	lr
@@ -268,18 +269,18 @@ ARM GAS  /tmp/ccegoR3W.s 			page 1
  262              		@ frame_needed = 0, uses_anonymous_args = 0
  263              		@ link register save eliminated.
  264 0000 30B4     		push	{r4, r5}
- 265 0002 1449     		ldr	r1, .L60
- 266 0004 144B     		ldr	r3, .L60+4
+ 265 0002 1349     		ldr	r1, .L60
+ 266 0004 134B     		ldr	r3, .L60+4
  267 0006 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
  268 0008 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 269 000a 1448     		ldr	r0, .L60+8
+ 269 000a 1348     		ldr	r0, .L60+8
  270 000c 9342     		cmp	r3, r2
  271 000e 0468     		ldr	r4, [r0]
- 272 0010 1CD0     		beq	.L58
- 273 0012 1348     		ldr	r0, .L60+12
+ 272 0010 19D0     		beq	.L58
+ 273 0012 1248     		ldr	r0, .L60+12
  274 0014 0378     		ldrb	r3, [r0]	@ zero_extendqisi2
- 275 0016 8BB1     		cbz	r3, .L59
- 276 0018 124D     		ldr	r5, .L60+16
+ 275 0016 73B1     		cbz	r3, .L59
+ 276 0018 114D     		ldr	r5, .L60+16
  277 001a 013B     		subs	r3, r3, #1
  278 001c 0121     		movs	r1, #1
  279 001e 2A78     		ldrb	r2, [r5]	@ zero_extendqisi2
@@ -287,85 +288,84 @@ ARM GAS  /tmp/ccegoR3W.s 			page 1
  281 0022 DBB2     		uxtb	r3, r3
  282              	.L54:
  283 0024 0A42     		tst	r2, r1
- 284 0026 41F64C51 		movw	r1, #7500
- 285 002a 2A70     		strb	r2, [r5]
- 286 002c 0370     		strb	r3, [r0]
- 287 002e 40F6C412 		movw	r2, #2500
- 288 0032 08BF     		it	eq
- 289 0034 0A46     		moveq	r2, r1
- 290 0036 6263     		str	r2, [r4, #52]
- 291 0038 30BC     		pop	{r4, r5}
- 292 003a 7047     		bx	lr
- 293              	.L59:
- 294 003c 531C     		adds	r3, r2, #1
-ARM GAS  /tmp/ccegoR3W.s 			page 6
+ 284 0026 2A70     		strb	r2, [r5]
+ 285 0028 0370     		strb	r3, [r0]
+ 286 002a 14BF     		ite	ne
+ 287 002c 3F22     		movne	r2, #63
+ 288 002e BC22     		moveq	r2, #188
+ 289 0030 6263     		str	r2, [r4, #52]
+ 290 0032 30BC     		pop	{r4, r5}
+ 291 0034 7047     		bx	lr
+ 292              	.L59:
+ 293 0036 531C     		adds	r3, r2, #1
+ARM GAS  /tmp/ccNMUKOX.s 			page 6
 
 
- 295 003e 0B70     		strb	r3, [r1]
- 296 0040 0949     		ldr	r1, .L60+20
- 297 0042 084D     		ldr	r5, .L60+16
- 298 0044 8A5C     		ldrb	r2, [r1, r2]	@ zero_extendqisi2
- 299 0046 0723     		movs	r3, #7
- 300 0048 8021     		movs	r1, #128
- 301 004a EBE7     		b	.L54
- 302              	.L58:
- 303 004c 0023     		movs	r3, #0
- 304 004e 6363     		str	r3, [r4, #52]
- 305 0050 30BC     		pop	{r4, r5}
- 306 0052 7047     		bx	lr
- 307              	.L61:
- 308              		.align	2
- 309              	.L60:
- 310 0054 00000000 		.word	qfront
- 311 0058 00000000 		.word	qback
- 312 005c 00000000 		.word	.LANCHOR0
- 313 0060 00000000 		.word	.LANCHOR1
- 314 0064 00000000 		.word	.LANCHOR2
- 315 0068 00000000 		.word	queue
- 317              		.global	htim2
- 318              		.section	.bss.bit_idx.1,"aw",%nobits
- 319              		.set	.LANCHOR1,. + 0
- 322              	bit_idx.1:
- 323 0000 00       		.space	1
- 324              		.section	.bss.htim2,"aw",%nobits
- 325              		.align	2
- 326              		.set	.LANCHOR0,. + 0
- 329              	htim2:
- 330 0000 00000000 		.space	76
- 330      00000000 
- 330      00000000 
- 330      00000000 
- 330      00000000 
- 331              		.section	.bss.tmp.0,"aw",%nobits
- 332              		.set	.LANCHOR2,. + 0
- 335              	tmp.0:
- 336 0000 00       		.space	1
- 337              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/ccegoR3W.s 			page 7
+ 294 0038 0B70     		strb	r3, [r1]
+ 295 003a 0A49     		ldr	r1, .L60+20
+ 296 003c 084D     		ldr	r5, .L60+16
+ 297 003e 8A5C     		ldrb	r2, [r1, r2]	@ zero_extendqisi2
+ 298 0040 0723     		movs	r3, #7
+ 299 0042 8021     		movs	r1, #128
+ 300 0044 EEE7     		b	.L54
+ 301              	.L58:
+ 302 0046 0023     		movs	r3, #0
+ 303 0048 6363     		str	r3, [r4, #52]
+ 304 004a 30BC     		pop	{r4, r5}
+ 305 004c 7047     		bx	lr
+ 306              	.L61:
+ 307 004e 00BF     		.align	2
+ 308              	.L60:
+ 309 0050 00000000 		.word	qfront
+ 310 0054 00000000 		.word	qback
+ 311 0058 00000000 		.word	.LANCHOR0
+ 312 005c 00000000 		.word	.LANCHOR1
+ 313 0060 00000000 		.word	.LANCHOR2
+ 314 0064 00000000 		.word	queue
+ 316              		.global	htim2
+ 317              		.section	.bss.bit_idx.1,"aw",%nobits
+ 318              		.set	.LANCHOR1,. + 0
+ 321              	bit_idx.1:
+ 322 0000 00       		.space	1
+ 323              		.section	.bss.htim2,"aw",%nobits
+ 324              		.align	2
+ 325              		.set	.LANCHOR0,. + 0
+ 328              	htim2:
+ 329 0000 00000000 		.space	76
+ 329      00000000 
+ 329      00000000 
+ 329      00000000 
+ 329      00000000 
+ 330              		.section	.bss.tmp.0,"aw",%nobits
+ 331              		.set	.LANCHOR2,. + 0
+ 334              	tmp.0:
+ 335 0000 00       		.space	1
+ 336              		.ident	"GCC: (Arch Repository) 11.2.0"
+ARM GAS  /tmp/ccNMUKOX.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 tim.c
-     /tmp/ccegoR3W.s:16     .text.MX_TIM2_Init:0000000000000000 $t
-     /tmp/ccegoR3W.s:25     .text.MX_TIM2_Init:0000000000000000 MX_TIM2_Init
-     /tmp/ccegoR3W.s:129    .text.MX_TIM2_Init:00000000000000f0 $d
-     /tmp/ccegoR3W.s:136    .text.HAL_TIM_Base_MspInit:0000000000000000 $t
-     /tmp/ccegoR3W.s:144    .text.HAL_TIM_Base_MspInit:0000000000000000 HAL_TIM_Base_MspInit
-     /tmp/ccegoR3W.s:173    .text.HAL_TIM_MspPostInit:0000000000000000 $t
-     /tmp/ccegoR3W.s:181    .text.HAL_TIM_MspPostInit:0000000000000000 HAL_TIM_MspPostInit
-     /tmp/ccegoR3W.s:219    .text.HAL_TIM_MspPostInit:0000000000000058 $d
-     /tmp/ccegoR3W.s:223    .text.HAL_TIM_Base_MspDeInit:0000000000000000 $t
-     /tmp/ccegoR3W.s:231    .text.HAL_TIM_Base_MspDeInit:0000000000000000 HAL_TIM_Base_MspDeInit
-     /tmp/ccegoR3W.s:249    .text.HAL_TIM_Base_MspDeInit:000000000000001c $d
-     /tmp/ccegoR3W.s:252    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
-     /tmp/ccegoR3W.s:260    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
-     /tmp/ccegoR3W.s:310    .text.HAL_TIM_PeriodElapsedCallback:0000000000000054 $d
-     /tmp/ccegoR3W.s:329    .bss.htim2:0000000000000000 htim2
-     /tmp/ccegoR3W.s:322    .bss.bit_idx.1:0000000000000000 bit_idx.1
-     /tmp/ccegoR3W.s:323    .bss.bit_idx.1:0000000000000000 $d
-     /tmp/ccegoR3W.s:325    .bss.htim2:0000000000000000 $d
-     /tmp/ccegoR3W.s:335    .bss.tmp.0:0000000000000000 tmp.0
-     /tmp/ccegoR3W.s:336    .bss.tmp.0:0000000000000000 $d
+     /tmp/ccNMUKOX.s:16     .text.MX_TIM2_Init:0000000000000000 $t
+     /tmp/ccNMUKOX.s:25     .text.MX_TIM2_Init:0000000000000000 MX_TIM2_Init
+     /tmp/ccNMUKOX.s:129    .text.MX_TIM2_Init:00000000000000f0 $d
+     /tmp/ccNMUKOX.s:136    .text.HAL_TIM_Base_MspInit:0000000000000000 $t
+     /tmp/ccNMUKOX.s:144    .text.HAL_TIM_Base_MspInit:0000000000000000 HAL_TIM_Base_MspInit
+     /tmp/ccNMUKOX.s:173    .text.HAL_TIM_MspPostInit:0000000000000000 $t
+     /tmp/ccNMUKOX.s:181    .text.HAL_TIM_MspPostInit:0000000000000000 HAL_TIM_MspPostInit
+     /tmp/ccNMUKOX.s:219    .text.HAL_TIM_MspPostInit:0000000000000058 $d
+     /tmp/ccNMUKOX.s:223    .text.HAL_TIM_Base_MspDeInit:0000000000000000 $t
+     /tmp/ccNMUKOX.s:231    .text.HAL_TIM_Base_MspDeInit:0000000000000000 HAL_TIM_Base_MspDeInit
+     /tmp/ccNMUKOX.s:249    .text.HAL_TIM_Base_MspDeInit:000000000000001c $d
+     /tmp/ccNMUKOX.s:252    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
+     /tmp/ccNMUKOX.s:260    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
+     /tmp/ccNMUKOX.s:309    .text.HAL_TIM_PeriodElapsedCallback:0000000000000050 $d
+     /tmp/ccNMUKOX.s:328    .bss.htim2:0000000000000000 htim2
+     /tmp/ccNMUKOX.s:321    .bss.bit_idx.1:0000000000000000 bit_idx.1
+     /tmp/ccNMUKOX.s:322    .bss.bit_idx.1:0000000000000000 $d
+     /tmp/ccNMUKOX.s:324    .bss.htim2:0000000000000000 $d
+     /tmp/ccNMUKOX.s:334    .bss.tmp.0:0000000000000000 tmp.0
+     /tmp/ccNMUKOX.s:335    .bss.tmp.0:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 HAL_TIM_Base_Init

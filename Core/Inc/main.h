@@ -45,17 +45,19 @@ extern "C" {
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
-#define LIGHTTH 2500
+#define LIGHT_DEBUG
+
+#define LIGHTTH 300
 #define TESTDATA 114
 #define HIGHBIT 0x10000
 
-#define ARR 9999
-#define LOWPULSE 2500
-#define HIGHPULSE 7500
-#define PULSEDIV 5000
+#define ARR 249
+#define LOWPULSE 63
+#define HIGHPULSE 188
+#define PULSEDIV 125
 
-#define QUESIZ 64
-#define RECVSIZ 64
+#define QUESIZ 256
+#define RECVSIZ 256
 
 #define FRMBEGIN1 0x3f
 #define FRMBEGIN2 0x7d

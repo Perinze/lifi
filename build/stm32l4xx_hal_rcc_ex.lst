@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccEz1wmE.s 			page 1
+ARM GAS  /tmp/ccyGcoIQ.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
   56 0046 40D1     		bne	.L20
   57              	.L13:
   58 0048 224B     		ldr	r3, .L59
-ARM GAS  /tmp/ccEz1wmE.s 			page 2
+ARM GAS  /tmp/ccyGcoIQ.s 			page 2
 
 
   59 004a 1868     		ldr	r0, [r3]
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  113 00cc 5DF8044B 		ldr	r4, [sp], #4
  114 00d0 7047     		bx	lr
  115              	.L60:
-ARM GAS  /tmp/ccEz1wmE.s 			page 3
+ARM GAS  /tmp/ccyGcoIQ.s 			page 3
 
 
  116 00d2 00BF     		.align	2
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  172 0050 FFF7FEFF 		bl	HAL_GetTick
  173 0054 0646     		mov	r6, r0
  174 0056 04E0     		b	.L68
-ARM GAS  /tmp/ccEz1wmE.s 			page 4
+ARM GAS  /tmp/ccyGcoIQ.s 			page 4
 
 
  175              	.L69:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  229              	.L66:
  230 00c8 1168     		ldr	r1, [r2]
  231 00ca 8D03     		lsls	r5, r1, #14
-ARM GAS  /tmp/ccEz1wmE.s 			page 5
+ARM GAS  /tmp/ccyGcoIQ.s 			page 5
 
 
  232 00cc B0D4     		bmi	.L67
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  288 0008 A907     		lsls	r1, r5, #30
  289 000a 0446     		mov	r4, r0
  290 000c 0068     		ldr	r0, [r0]
-ARM GAS  /tmp/ccEz1wmE.s 			page 6
+ARM GAS  /tmp/ccyGcoIQ.s 			page 6
 
 
  291 000e 06D0     		beq	.L98
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  345 007e 1343     		orrs	r3, r3, r2
  346 0080 43EA4143 		orr	r3, r3, r1, lsl #17
  347 0084 6B61     		str	r3, [r5, #20]
-ARM GAS  /tmp/ccEz1wmE.s 			page 7
+ARM GAS  /tmp/ccyGcoIQ.s 			page 7
 
 
  348              	.L107:
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  402 00ec 23F4FE43 		bic	r3, r3, #32512
  403 00f0 0139     		subs	r1, r1, #1
  404 00f2 1343     		orrs	r3, r3, r2
-ARM GAS  /tmp/ccEz1wmE.s 			page 8
+ARM GAS  /tmp/ccyGcoIQ.s 			page 8
 
 
  405 00f4 43EA4163 		orr	r3, r3, r1, lsl #25
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  461 006a 2368     		ldr	r3, [r4]
  462 006c 8046     		mov	r8, r0
  463              	.L144:
-ARM GAS  /tmp/ccEz1wmE.s 			page 9
+ARM GAS  /tmp/ccyGcoIQ.s 			page 9
 
 
  464 006e B8F1000F 		cmp	r8, #0
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  518 00f6 0243     		orrs	r2, r2, r0
  519 00f8 C1F88820 		str	r2, [r1, #136]
  520              	.L159:
-ARM GAS  /tmp/ccEz1wmE.s 			page 10
+ARM GAS  /tmp/ccyGcoIQ.s 			page 10
 
 
  521 00fc 9A06     		lsls	r2, r3, #26
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  575 0180 9F04     		lsls	r7, r3, #18
  576 0182 10D5     		bpl	.L166
  577 0184 6F49     		ldr	r1, .L269
-ARM GAS  /tmp/ccEz1wmE.s 			page 11
+ARM GAS  /tmp/ccyGcoIQ.s 			page 11
 
 
  578 0186 E06E     		ldr	r0, [r4, #108]
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  632 0224 22F08042 		bic	r2, r2, #1073741824
  633 0228 0243     		orrs	r2, r2, r0
  634 022a C1F88820 		str	r2, [r1, #136]
-ARM GAS  /tmp/ccEz1wmE.s 			page 12
+ARM GAS  /tmp/ccyGcoIQ.s 			page 12
 
 
  635              	.L179:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  689 02a6 B8F1000F 		cmp	r8, #0
  690 02aa 40F0C280 		bne	.L186
  691 02ae 254E     		ldr	r6, .L269
-ARM GAS  /tmp/ccEz1wmE.s 			page 13
+ARM GAS  /tmp/ccyGcoIQ.s 			page 13
 
 
  692 02b0 D4F88420 		ldr	r2, [r4, #132]
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  746 0340 4546     		mov	r5, r8
  747 0342 96E7     		b	.L139
  748              	.L270:
-ARM GAS  /tmp/ccEz1wmE.s 			page 14
+ARM GAS  /tmp/ccyGcoIQ.s 			page 14
 
 
  749              		.align	2
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  803 03ae 0221     		movs	r1, #2
  804 03b0 201D     		adds	r0, r4, #4
  805 03b2 FFF7FEFF 		bl	RCCEx_PLLSAI1_Config
-ARM GAS  /tmp/ccEz1wmE.s 			page 15
+ARM GAS  /tmp/ccyGcoIQ.s 			page 15
 
 
  806 03b6 2368     		ldr	r3, [r4]
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  860 042a 3FF4CFAE 		beq	.L169
  861 042e 0546     		mov	r5, r0
  862 0430 CCE6     		b	.L169
-ARM GAS  /tmp/ccEz1wmE.s 			page 16
+ARM GAS  /tmp/ccyGcoIQ.s 			page 16
 
 
  863              	.L186:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  919 0054 520B     		lsrs	r2, r2, #13
  920 0056 02F01002 		and	r2, r2, #16
  921 005a 0732     		adds	r2, r2, #7
-ARM GAS  /tmp/ccEz1wmE.s 			page 17
+ARM GAS  /tmp/ccyGcoIQ.s 			page 17
 
 
  922 005c C262     		str	r2, [r0, #44]
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  976 010e 0267     		str	r2, [r0, #112]
  977 0110 D3F88820 		ldr	r2, [r3, #136]
  978 0114 02F04062 		and	r2, r2, #201326592
-ARM GAS  /tmp/ccEz1wmE.s 			page 18
+ARM GAS  /tmp/ccyGcoIQ.s 			page 18
 
 
  979 0118 4267     		str	r2, [r0, #116]
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1035 0042 9C01     		.2byte	(.L295-.L291)/2
  1036 0044 3000     		.2byte	(.L351-.L291)/2
  1037 0046 4F01     		.2byte	(.L294-.L291)/2
-ARM GAS  /tmp/ccEz1wmE.s 			page 19
+ARM GAS  /tmp/ccyGcoIQ.s 			page 19
 
 
  1038 0048 3000     		.2byte	(.L351-.L291)/2
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1092 00c8 002B     		cmp	r3, #0
  1093 00ca E9D1     		bne	.L351
  1094              	.L320:
-ARM GAS  /tmp/ccEz1wmE.s 			page 20
+ARM GAS  /tmp/ccyGcoIQ.s 			page 20
 
 
  1095 00cc FFF7FEBF 		b	HAL_RCC_GetPCLK1Freq
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1149 015a 1369     		ldr	r3, [r2, #16]
  1150 015c C0F30622 		ubfx	r2, r0, #8, #7
  1151              	.L492:
-ARM GAS  /tmp/ccEz1wmE.s 			page 21
+ARM GAS  /tmp/ccyGcoIQ.s 			page 21
 
 
  1152 0160 C3F34163 		ubfx	r3, r3, #25, #2
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1206 01fc 10F00200 		ands	r0, r0, #2
  1207 0200 18BF     		it	ne
  1208 0202 4FF4FA40 		movne	r0, #32000
-ARM GAS  /tmp/ccEz1wmE.s 			page 22
+ARM GAS  /tmp/ccyGcoIQ.s 			page 22
 
 
  1209 0206 7047     		bx	lr
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1263 028a 1846     		movne	r0, r3
  1264 028c 7047     		bx	lr
  1265              	.L488:
-ARM GAS  /tmp/ccEz1wmE.s 			page 23
+ARM GAS  /tmp/ccyGcoIQ.s 			page 23
 
 
  1266 028e 7047     		bx	lr
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1320 0318 402B     		cmp	r3, #64
  1321 031a EFD0     		beq	.L489
  1322 031c C0E6     		b	.L351
-ARM GAS  /tmp/ccEz1wmE.s 			page 24
+ARM GAS  /tmp/ccyGcoIQ.s 			page 24
 
 
  1323              	.L292:
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1377 03b0 19040000 		.word	.L319+1
  1378 03b4 A1000000 		.word	.L351+1
  1379 03b8 A1000000 		.word	.L351+1
-ARM GAS  /tmp/ccEz1wmE.s 			page 25
+ARM GAS  /tmp/ccyGcoIQ.s 			page 25
 
 
  1380 03bc A1000000 		.word	.L351+1
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1434 043e 3FF409AF 		beq	.L345
  1435 0442 2DE6     		b	.L351
  1436              	.L325:
-ARM GAS  /tmp/ccEz1wmE.s 			page 26
+ARM GAS  /tmp/ccyGcoIQ.s 			page 26
 
 
  1437 0444 C02B     		cmp	r3, #192
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1493              		@ frame_needed = 0, uses_anonymous_args = 0
  1494 0000 70B5     		push	{r4, r5, r6, lr}
  1495 0002 204C     		ldr	r4, .L522
-ARM GAS  /tmp/ccEz1wmE.s 			page 27
+ARM GAS  /tmp/ccyGcoIQ.s 			page 27
 
 
  1496 0004 2368     		ldr	r3, [r4]
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1550              	.L515:
  1551 007e 0320     		movs	r0, #3
  1552 0080 70BD     		pop	{r4, r5, r6, pc}
-ARM GAS  /tmp/ccEz1wmE.s 			page 28
+ARM GAS  /tmp/ccyGcoIQ.s 			page 28
 
 
  1553              	.L523:
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1609 004c 00100240 		.word	1073876992
  1611              		.section	.text.HAL_RCCEx_EnablePLLSAI2,"ax",%progbits
  1612              		.align	1
-ARM GAS  /tmp/ccEz1wmE.s 			page 29
+ARM GAS  /tmp/ccyGcoIQ.s 			page 29
 
 
  1613              		.p2align 2,,3
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1668 0066 0228     		cmp	r0, #2
  1669 0068 04D8     		bhi	.L538
  1670              	.L540:
-ARM GAS  /tmp/ccEz1wmE.s 			page 30
+ARM GAS  /tmp/ccyGcoIQ.s 			page 30
 
 
  1671 006a 2B68     		ldr	r3, [r5]
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1727              	.L551:
  1728 0046 38BD     		pop	{r3, r4, r5, pc}
  1729              	.L552:
-ARM GAS  /tmp/ccEz1wmE.s 			page 31
+ARM GAS  /tmp/ccyGcoIQ.s 			page 31
 
 
  1730 0048 0320     		movs	r0, #3
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1789              		.syntax unified
  1790              		.thumb
  1791              		.thumb_func
-ARM GAS  /tmp/ccEz1wmE.s 			page 32
+ARM GAS  /tmp/ccyGcoIQ.s 			page 32
 
 
  1792              		.fpu fpv4-sp-d16
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1851 000c C2F89010 		str	r1, [r2, #144]
  1852 0010 9169     		ldr	r1, [r2, #24]
  1853 0012 41F40071 		orr	r1, r1, #512
-ARM GAS  /tmp/ccEz1wmE.s 			page 33
+ARM GAS  /tmp/ccyGcoIQ.s 			page 33
 
 
  1854 0016 9161     		str	r1, [r2, #24]
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1913              		.p2align 2,,3
  1914              		.global	HAL_RCCEx_EnableLSCO
  1915              		.syntax unified
-ARM GAS  /tmp/ccEz1wmE.s 			page 34
+ARM GAS  /tmp/ccyGcoIQ.s 			page 34
 
 
  1916              		.thumb
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  1971 007a 08B0     		add	sp, sp, #32
  1972              		@ sp needed
  1973 007c 70BD     		pop	{r4, r5, r6, pc}
-ARM GAS  /tmp/ccEz1wmE.s 			page 35
+ARM GAS  /tmp/ccyGcoIQ.s 			page 35
 
 
  1974              	.L586:
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  2030 002c D2F89030 		ldr	r3, [r2, #144]
  2031 0030 23F08073 		bic	r3, r3, #16777216
  2032 0034 C2F89030 		str	r3, [r2, #144]
-ARM GAS  /tmp/ccEz1wmE.s 			page 36
+ARM GAS  /tmp/ccyGcoIQ.s 			page 36
 
 
  2033              	.L594:
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  2090              		.syntax unified
  2091              		.thumb
  2092              		.thumb_func
-ARM GAS  /tmp/ccEz1wmE.s 			page 37
+ARM GAS  /tmp/ccyGcoIQ.s 			page 37
 
 
  2093              		.fpu fpv4-sp-d16
@@ -2176,84 +2176,84 @@ ARM GAS  /tmp/ccEz1wmE.s 			page 1
  2106              	.L605:
  2107 000c 00100240 		.word	1073876992
  2109              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/ccEz1wmE.s 			page 38
+ARM GAS  /tmp/ccyGcoIQ.s 			page 38
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l4xx_hal_rcc_ex.c
-     /tmp/ccEz1wmE.s:16     .text.RCCEx_GetSAIxPeriphCLKFreq:0000000000000000 $t
-     /tmp/ccEz1wmE.s:24     .text.RCCEx_GetSAIxPeriphCLKFreq:0000000000000000 RCCEx_GetSAIxPeriphCLKFreq
-     /tmp/ccEz1wmE.s:118    .text.RCCEx_GetSAIxPeriphCLKFreq:00000000000000d4 $d
-     /tmp/ccEz1wmE.s:122    .text.RCCEx_PLLSAI1_Config:0000000000000000 $t
-     /tmp/ccEz1wmE.s:129    .text.RCCEx_PLLSAI1_Config:0000000000000000 RCCEx_PLLSAI1_Config
-     /tmp/ccEz1wmE.s:271    .text.RCCEx_PLLSAI1_Config:0000000000000118 $d
-     /tmp/ccEz1wmE.s:274    .text.RCCEx_PLLSAI2_Config:0000000000000000 $t
-     /tmp/ccEz1wmE.s:281    .text.RCCEx_PLLSAI2_Config:0000000000000000 RCCEx_PLLSAI2_Config
-     /tmp/ccEz1wmE.s:411    .text.RCCEx_PLLSAI2_Config:00000000000000fc $d
-     /tmp/ccEz1wmE.s:414    .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 $t
-     /tmp/ccEz1wmE.s:422    .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 HAL_RCCEx_PeriphCLKConfig
-     /tmp/ccEz1wmE.s:751    .text.HAL_RCCEx_PeriphCLKConfig:0000000000000344 $d
-     /tmp/ccEz1wmE.s:754    .text.HAL_RCCEx_PeriphCLKConfig:000000000000034c $t
-     /tmp/ccEz1wmE.s:869    .text.HAL_RCCEx_PeriphCLKConfig:0000000000000438 $d
-     /tmp/ccEz1wmE.s:872    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 $t
-     /tmp/ccEz1wmE.s:880    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 HAL_RCCEx_GetPeriphCLKConfig
-     /tmp/ccEz1wmE.s:993    .text.HAL_RCCEx_GetPeriphCLKConfig:000000000000013c $d
-     /tmp/ccEz1wmE.s:997    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 $t
-     /tmp/ccEz1wmE.s:1005   .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 HAL_RCCEx_GetPeriphCLKFreq
-     /tmp/ccEz1wmE.s:1034   .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000040 $d
-     /tmp/ccEz1wmE.s:1066   .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000080 $t
-     /tmp/ccEz1wmE.s:1270   .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000290 $d
-     /tmp/ccEz1wmE.s:1275   .text.HAL_RCCEx_GetPeriphCLKFreq:00000000000002a0 $t
-     /tmp/ccEz1wmE.s:1369   .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000390 $d
-     /tmp/ccEz1wmE.s:1382   .text.HAL_RCCEx_GetPeriphCLKFreq:00000000000003c4 $t
-     /tmp/ccEz1wmE.s:1477   .text.HAL_RCCEx_GetPeriphCLKFreq:00000000000004a8 $d
-     /tmp/ccEz1wmE.s:1483   .text.HAL_RCCEx_EnablePLLSAI1:0000000000000000 $t
-     /tmp/ccEz1wmE.s:1491   .text.HAL_RCCEx_EnablePLLSAI1:0000000000000000 HAL_RCCEx_EnablePLLSAI1
-     /tmp/ccEz1wmE.s:1556   .text.HAL_RCCEx_EnablePLLSAI1:0000000000000084 $d
-     /tmp/ccEz1wmE.s:1560   .text.HAL_RCCEx_DisablePLLSAI1:0000000000000000 $t
-     /tmp/ccEz1wmE.s:1568   .text.HAL_RCCEx_DisablePLLSAI1:0000000000000000 HAL_RCCEx_DisablePLLSAI1
-     /tmp/ccEz1wmE.s:1609   .text.HAL_RCCEx_DisablePLLSAI1:000000000000004c $d
-     /tmp/ccEz1wmE.s:1612   .text.HAL_RCCEx_EnablePLLSAI2:0000000000000000 $t
-     /tmp/ccEz1wmE.s:1620   .text.HAL_RCCEx_EnablePLLSAI2:0000000000000000 HAL_RCCEx_EnablePLLSAI2
-     /tmp/ccEz1wmE.s:1682   .text.HAL_RCCEx_EnablePLLSAI2:0000000000000078 $d
-     /tmp/ccEz1wmE.s:1686   .text.HAL_RCCEx_DisablePLLSAI2:0000000000000000 $t
-     /tmp/ccEz1wmE.s:1694   .text.HAL_RCCEx_DisablePLLSAI2:0000000000000000 HAL_RCCEx_DisablePLLSAI2
-     /tmp/ccEz1wmE.s:1735   .text.HAL_RCCEx_DisablePLLSAI2:000000000000004c $d
-     /tmp/ccEz1wmE.s:1738   .text.HAL_RCCEx_WakeUpStopCLKConfig:0000000000000000 $t
-     /tmp/ccEz1wmE.s:1746   .text.HAL_RCCEx_WakeUpStopCLKConfig:0000000000000000 HAL_RCCEx_WakeUpStopCLKConfig
-     /tmp/ccEz1wmE.s:1759   .text.HAL_RCCEx_WakeUpStopCLKConfig:0000000000000010 $d
-     /tmp/ccEz1wmE.s:1762   .text.HAL_RCCEx_StandbyMSIRangeConfig:0000000000000000 $t
-     /tmp/ccEz1wmE.s:1770   .text.HAL_RCCEx_StandbyMSIRangeConfig:0000000000000000 HAL_RCCEx_StandbyMSIRangeConfig
-     /tmp/ccEz1wmE.s:1783   .text.HAL_RCCEx_StandbyMSIRangeConfig:0000000000000014 $d
-     /tmp/ccEz1wmE.s:1786   .text.HAL_RCCEx_EnableLSECSS:0000000000000000 $t
-     /tmp/ccEz1wmE.s:1794   .text.HAL_RCCEx_EnableLSECSS:0000000000000000 HAL_RCCEx_EnableLSECSS
-     /tmp/ccEz1wmE.s:1806   .text.HAL_RCCEx_EnableLSECSS:0000000000000010 $d
-     /tmp/ccEz1wmE.s:1809   .text.HAL_RCCEx_DisableLSECSS:0000000000000000 $t
-     /tmp/ccEz1wmE.s:1817   .text.HAL_RCCEx_DisableLSECSS:0000000000000000 HAL_RCCEx_DisableLSECSS
-     /tmp/ccEz1wmE.s:1832   .text.HAL_RCCEx_DisableLSECSS:0000000000000018 $d
-     /tmp/ccEz1wmE.s:1835   .text.HAL_RCCEx_EnableLSECSS_IT:0000000000000000 $t
-     /tmp/ccEz1wmE.s:1843   .text.HAL_RCCEx_EnableLSECSS_IT:0000000000000000 HAL_RCCEx_EnableLSECSS_IT
-     /tmp/ccEz1wmE.s:1865   .text.HAL_RCCEx_EnableLSECSS_IT:000000000000002c $d
-     /tmp/ccEz1wmE.s:1869   .text.HAL_RCCEx_LSECSS_Callback:0000000000000000 $t
-     /tmp/ccEz1wmE.s:1877   .text.HAL_RCCEx_LSECSS_Callback:0000000000000000 HAL_RCCEx_LSECSS_Callback
-ARM GAS  /tmp/ccEz1wmE.s 			page 39
+     /tmp/ccyGcoIQ.s:16     .text.RCCEx_GetSAIxPeriphCLKFreq:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:24     .text.RCCEx_GetSAIxPeriphCLKFreq:0000000000000000 RCCEx_GetSAIxPeriphCLKFreq
+     /tmp/ccyGcoIQ.s:118    .text.RCCEx_GetSAIxPeriphCLKFreq:00000000000000d4 $d
+     /tmp/ccyGcoIQ.s:122    .text.RCCEx_PLLSAI1_Config:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:129    .text.RCCEx_PLLSAI1_Config:0000000000000000 RCCEx_PLLSAI1_Config
+     /tmp/ccyGcoIQ.s:271    .text.RCCEx_PLLSAI1_Config:0000000000000118 $d
+     /tmp/ccyGcoIQ.s:274    .text.RCCEx_PLLSAI2_Config:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:281    .text.RCCEx_PLLSAI2_Config:0000000000000000 RCCEx_PLLSAI2_Config
+     /tmp/ccyGcoIQ.s:411    .text.RCCEx_PLLSAI2_Config:00000000000000fc $d
+     /tmp/ccyGcoIQ.s:414    .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:422    .text.HAL_RCCEx_PeriphCLKConfig:0000000000000000 HAL_RCCEx_PeriphCLKConfig
+     /tmp/ccyGcoIQ.s:751    .text.HAL_RCCEx_PeriphCLKConfig:0000000000000344 $d
+     /tmp/ccyGcoIQ.s:754    .text.HAL_RCCEx_PeriphCLKConfig:000000000000034c $t
+     /tmp/ccyGcoIQ.s:869    .text.HAL_RCCEx_PeriphCLKConfig:0000000000000438 $d
+     /tmp/ccyGcoIQ.s:872    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:880    .text.HAL_RCCEx_GetPeriphCLKConfig:0000000000000000 HAL_RCCEx_GetPeriphCLKConfig
+     /tmp/ccyGcoIQ.s:993    .text.HAL_RCCEx_GetPeriphCLKConfig:000000000000013c $d
+     /tmp/ccyGcoIQ.s:997    .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:1005   .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000000 HAL_RCCEx_GetPeriphCLKFreq
+     /tmp/ccyGcoIQ.s:1034   .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000040 $d
+     /tmp/ccyGcoIQ.s:1066   .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000080 $t
+     /tmp/ccyGcoIQ.s:1270   .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000290 $d
+     /tmp/ccyGcoIQ.s:1275   .text.HAL_RCCEx_GetPeriphCLKFreq:00000000000002a0 $t
+     /tmp/ccyGcoIQ.s:1369   .text.HAL_RCCEx_GetPeriphCLKFreq:0000000000000390 $d
+     /tmp/ccyGcoIQ.s:1382   .text.HAL_RCCEx_GetPeriphCLKFreq:00000000000003c4 $t
+     /tmp/ccyGcoIQ.s:1477   .text.HAL_RCCEx_GetPeriphCLKFreq:00000000000004a8 $d
+     /tmp/ccyGcoIQ.s:1483   .text.HAL_RCCEx_EnablePLLSAI1:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:1491   .text.HAL_RCCEx_EnablePLLSAI1:0000000000000000 HAL_RCCEx_EnablePLLSAI1
+     /tmp/ccyGcoIQ.s:1556   .text.HAL_RCCEx_EnablePLLSAI1:0000000000000084 $d
+     /tmp/ccyGcoIQ.s:1560   .text.HAL_RCCEx_DisablePLLSAI1:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:1568   .text.HAL_RCCEx_DisablePLLSAI1:0000000000000000 HAL_RCCEx_DisablePLLSAI1
+     /tmp/ccyGcoIQ.s:1609   .text.HAL_RCCEx_DisablePLLSAI1:000000000000004c $d
+     /tmp/ccyGcoIQ.s:1612   .text.HAL_RCCEx_EnablePLLSAI2:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:1620   .text.HAL_RCCEx_EnablePLLSAI2:0000000000000000 HAL_RCCEx_EnablePLLSAI2
+     /tmp/ccyGcoIQ.s:1682   .text.HAL_RCCEx_EnablePLLSAI2:0000000000000078 $d
+     /tmp/ccyGcoIQ.s:1686   .text.HAL_RCCEx_DisablePLLSAI2:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:1694   .text.HAL_RCCEx_DisablePLLSAI2:0000000000000000 HAL_RCCEx_DisablePLLSAI2
+     /tmp/ccyGcoIQ.s:1735   .text.HAL_RCCEx_DisablePLLSAI2:000000000000004c $d
+     /tmp/ccyGcoIQ.s:1738   .text.HAL_RCCEx_WakeUpStopCLKConfig:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:1746   .text.HAL_RCCEx_WakeUpStopCLKConfig:0000000000000000 HAL_RCCEx_WakeUpStopCLKConfig
+     /tmp/ccyGcoIQ.s:1759   .text.HAL_RCCEx_WakeUpStopCLKConfig:0000000000000010 $d
+     /tmp/ccyGcoIQ.s:1762   .text.HAL_RCCEx_StandbyMSIRangeConfig:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:1770   .text.HAL_RCCEx_StandbyMSIRangeConfig:0000000000000000 HAL_RCCEx_StandbyMSIRangeConfig
+     /tmp/ccyGcoIQ.s:1783   .text.HAL_RCCEx_StandbyMSIRangeConfig:0000000000000014 $d
+     /tmp/ccyGcoIQ.s:1786   .text.HAL_RCCEx_EnableLSECSS:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:1794   .text.HAL_RCCEx_EnableLSECSS:0000000000000000 HAL_RCCEx_EnableLSECSS
+     /tmp/ccyGcoIQ.s:1806   .text.HAL_RCCEx_EnableLSECSS:0000000000000010 $d
+     /tmp/ccyGcoIQ.s:1809   .text.HAL_RCCEx_DisableLSECSS:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:1817   .text.HAL_RCCEx_DisableLSECSS:0000000000000000 HAL_RCCEx_DisableLSECSS
+     /tmp/ccyGcoIQ.s:1832   .text.HAL_RCCEx_DisableLSECSS:0000000000000018 $d
+     /tmp/ccyGcoIQ.s:1835   .text.HAL_RCCEx_EnableLSECSS_IT:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:1843   .text.HAL_RCCEx_EnableLSECSS_IT:0000000000000000 HAL_RCCEx_EnableLSECSS_IT
+     /tmp/ccyGcoIQ.s:1865   .text.HAL_RCCEx_EnableLSECSS_IT:000000000000002c $d
+     /tmp/ccyGcoIQ.s:1869   .text.HAL_RCCEx_LSECSS_Callback:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:1877   .text.HAL_RCCEx_LSECSS_Callback:0000000000000000 HAL_RCCEx_LSECSS_Callback
+ARM GAS  /tmp/ccyGcoIQ.s 			page 39
 
 
-     /tmp/ccEz1wmE.s:1884   .text.HAL_RCCEx_LSECSS_IRQHandler:0000000000000000 $t
-     /tmp/ccEz1wmE.s:1892   .text.HAL_RCCEx_LSECSS_IRQHandler:0000000000000000 HAL_RCCEx_LSECSS_IRQHandler
-     /tmp/ccEz1wmE.s:1909   .text.HAL_RCCEx_LSECSS_IRQHandler:0000000000000018 $d
-     /tmp/ccEz1wmE.s:1912   .text.HAL_RCCEx_EnableLSCO:0000000000000000 $t
-     /tmp/ccEz1wmE.s:1920   .text.HAL_RCCEx_EnableLSCO:0000000000000000 HAL_RCCEx_EnableLSCO
-     /tmp/ccEz1wmE.s:1993   .text.HAL_RCCEx_EnableLSCO:00000000000000a8 $d
-     /tmp/ccEz1wmE.s:1999   .text.HAL_RCCEx_DisableLSCO:0000000000000000 $t
-     /tmp/ccEz1wmE.s:2007   .text.HAL_RCCEx_DisableLSCO:0000000000000000 HAL_RCCEx_DisableLSCO
-     /tmp/ccEz1wmE.s:2060   .text.HAL_RCCEx_DisableLSCO:000000000000006c $d
-     /tmp/ccEz1wmE.s:2064   .text.HAL_RCCEx_EnableMSIPLLMode:0000000000000000 $t
-     /tmp/ccEz1wmE.s:2072   .text.HAL_RCCEx_EnableMSIPLLMode:0000000000000000 HAL_RCCEx_EnableMSIPLLMode
-     /tmp/ccEz1wmE.s:2084   .text.HAL_RCCEx_EnableMSIPLLMode:000000000000000c $d
-     /tmp/ccEz1wmE.s:2087   .text.HAL_RCCEx_DisableMSIPLLMode:0000000000000000 $t
-     /tmp/ccEz1wmE.s:2095   .text.HAL_RCCEx_DisableMSIPLLMode:0000000000000000 HAL_RCCEx_DisableMSIPLLMode
-     /tmp/ccEz1wmE.s:2107   .text.HAL_RCCEx_DisableMSIPLLMode:000000000000000c $d
+     /tmp/ccyGcoIQ.s:1884   .text.HAL_RCCEx_LSECSS_IRQHandler:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:1892   .text.HAL_RCCEx_LSECSS_IRQHandler:0000000000000000 HAL_RCCEx_LSECSS_IRQHandler
+     /tmp/ccyGcoIQ.s:1909   .text.HAL_RCCEx_LSECSS_IRQHandler:0000000000000018 $d
+     /tmp/ccyGcoIQ.s:1912   .text.HAL_RCCEx_EnableLSCO:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:1920   .text.HAL_RCCEx_EnableLSCO:0000000000000000 HAL_RCCEx_EnableLSCO
+     /tmp/ccyGcoIQ.s:1993   .text.HAL_RCCEx_EnableLSCO:00000000000000a8 $d
+     /tmp/ccyGcoIQ.s:1999   .text.HAL_RCCEx_DisableLSCO:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:2007   .text.HAL_RCCEx_DisableLSCO:0000000000000000 HAL_RCCEx_DisableLSCO
+     /tmp/ccyGcoIQ.s:2060   .text.HAL_RCCEx_DisableLSCO:000000000000006c $d
+     /tmp/ccyGcoIQ.s:2064   .text.HAL_RCCEx_EnableMSIPLLMode:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:2072   .text.HAL_RCCEx_EnableMSIPLLMode:0000000000000000 HAL_RCCEx_EnableMSIPLLMode
+     /tmp/ccyGcoIQ.s:2084   .text.HAL_RCCEx_EnableMSIPLLMode:000000000000000c $d
+     /tmp/ccyGcoIQ.s:2087   .text.HAL_RCCEx_DisableMSIPLLMode:0000000000000000 $t
+     /tmp/ccyGcoIQ.s:2095   .text.HAL_RCCEx_DisableMSIPLLMode:0000000000000000 HAL_RCCEx_DisableMSIPLLMode
+     /tmp/ccyGcoIQ.s:2107   .text.HAL_RCCEx_DisableMSIPLLMode:000000000000000c $d
 
 UNDEFINED SYMBOLS
 HAL_GetTick

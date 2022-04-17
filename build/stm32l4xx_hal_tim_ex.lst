@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccimfCuy.s 			page 1
+ARM GAS  /tmp/cchVU3VL.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
   56 003c 84F84430 		strb	r3, [r4, #68]
   57 0040 2046     		mov	r0, r4
   58 0042 FFF7FEFF 		bl	HAL_TIM_ErrorCallback
-ARM GAS  /tmp/ccimfCuy.s 			page 2
+ARM GAS  /tmp/cchVU3VL.s 			page 2
 
 
   59 0046 0023     		movs	r3, #0
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  115 0040 2377     		strb	r3, [r4, #28]
  116 0042 10BD     		pop	{r4, pc}
  117              	.L18:
-ARM GAS  /tmp/ccimfCuy.s 			page 3
+ARM GAS  /tmp/cchVU3VL.s 			page 3
 
 
  118 0044 0122     		movs	r2, #1
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  176 0002 61D0     		beq	.L26
  177 0004 30B5     		push	{r4, r5, lr}
  178 0006 90F83D30 		ldrb	r3, [r0, #61]	@ zero_extendqisi2
-ARM GAS  /tmp/ccimfCuy.s 			page 4
+ARM GAS  /tmp/cchVU3VL.s 			page 4
 
 
  179 000a 89B0     		sub	sp, sp, #36
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  233 0094 5160     		str	r1, [r2, #4]
  234 0096 5168     		ldr	r1, [r2, #4]
  235 0098 0123     		movs	r3, #1
-ARM GAS  /tmp/ccimfCuy.s 			page 5
+ARM GAS  /tmp/cchVU3VL.s 			page 5
 
 
  236 009a 2846     		mov	r0, r5
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  294 001c 1142     		tst	r1, r2
  295 001e 03D1     		bne	.L34
  296 0020 1A68     		ldr	r2, [r3]
-ARM GAS  /tmp/ccimfCuy.s 			page 6
+ARM GAS  /tmp/cchVU3VL.s 			page 6
 
 
  297 0022 22F00102 		bic	r2, r2, #1
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  353 0044 84F84430 		strb	r3, [r4, #68]
  354 0048 84F84530 		strb	r3, [r4, #69]
  355 004c FFF7FEFF 		bl	TIM_CCxChannelCmd
-ARM GAS  /tmp/ccimfCuy.s 			page 7
+ARM GAS  /tmp/cchVU3VL.s 			page 7
 
 
  356 0050 2368     		ldr	r3, [r4]
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  412 0000 0022     		movs	r2, #0
  413 0002 10B5     		push	{r4, lr}
  414 0004 0446     		mov	r4, r0
-ARM GAS  /tmp/ccimfCuy.s 			page 8
+ARM GAS  /tmp/cchVU3VL.s 			page 8
 
 
  415 0006 1146     		mov	r1, r2
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  471 002e F9D1     		bne	.L59
  472 0030 D2B2     		uxtb	r2, r2
  473 0032 012A     		cmp	r2, #1
-ARM GAS  /tmp/ccimfCuy.s 			page 9
+ARM GAS  /tmp/cchVU3VL.s 			page 9
 
 
  474 0034 F6D1     		bne	.L59
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  528 00b4 07000100 		.word	65543
  530              		.section	.text.HAL_TIMEx_HallSensor_Stop_IT,"ax",%progbits
  531              		.align	1
-ARM GAS  /tmp/ccimfCuy.s 			page 10
+ARM GAS  /tmp/cchVU3VL.s 			page 10
 
 
  532              		.p2align 2,,3
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  589 0010 5FFA8EF0 		uxtb	r0, lr
  590 0014 47D0     		beq	.L81
  591 0016 5FFA8CFC 		uxtb	ip, ip
-ARM GAS  /tmp/ccimfCuy.s 			page 11
+ARM GAS  /tmp/cchVU3VL.s 			page 11
 
 
  592 001a BCF1020F 		cmp	ip, #2
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  646 009c 08D0     		beq	.L85
  647              	.L86:
  648 009e 1A68     		ldr	r2, [r3]
-ARM GAS  /tmp/ccimfCuy.s 			page 12
+ARM GAS  /tmp/cchVU3VL.s 			page 12
 
 
  649 00a0 42F00102 		orr	r2, r2, #1
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  705 001e 2368     		ldr	r3, [r4]
  706 0020 196A     		ldr	r1, [r3, #32]
  707 0022 41F21112 		movw	r2, #4369
-ARM GAS  /tmp/ccimfCuy.s 			page 13
+ARM GAS  /tmp/cchVU3VL.s 			page 13
 
 
  708 0026 1142     		tst	r1, r2
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  764 0040 9342     		cmp	r3, r2
  765 0042 0FD0     		beq	.L118
  766 0044 02F58062 		add	r2, r2, #1024
-ARM GAS  /tmp/ccimfCuy.s 			page 14
+ARM GAS  /tmp/cchVU3VL.s 			page 14
 
 
  767 0048 9342     		cmp	r3, r2
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  821 00b8 0223     		movs	r3, #2
  822 00ba 80F84630 		strb	r3, [r0, #70]
  823 00be A8E7     		b	.L116
-ARM GAS  /tmp/ccimfCuy.s 			page 15
+ARM GAS  /tmp/cchVU3VL.s 			page 15
 
 
  824              	.L136:
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  880 0056 13D0     		beq	.L147
  881 0058 0829     		cmp	r1, #8
  882 005a 0CBF     		ite	eq
-ARM GAS  /tmp/ccimfCuy.s 			page 16
+ARM GAS  /tmp/cchVU3VL.s 			page 16
 
 
  883 005c 80F84630 		strbeq	r3, [r0, #70]
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  939 0034 0243     		orrs	r2, r2, r0
  940 0036 1A62     		str	r2, [r3, #32]
  941 0038 5A6C     		ldr	r2, [r3, #68]
-ARM GAS  /tmp/ccimfCuy.s 			page 17
+ARM GAS  /tmp/cchVU3VL.s 			page 17
 
 
  942 003a 8B42     		cmp	r3, r1
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  996 00ac 08D0     		beq	.L171
  997 00ae 0222     		movs	r2, #2
  998 00b0 80F84720 		strb	r2, [r0, #71]
-ARM GAS  /tmp/ccimfCuy.s 			page 18
+ARM GAS  /tmp/cchVU3VL.s 			page 18
 
 
  999 00b4 1846     		mov	r0, r3
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1055 0012 DA68     		ldr	r2, [r3, #12]
  1056 0014 22F00402 		bic	r2, r2, #4
  1057 0018 DA60     		str	r2, [r3, #12]
-ARM GAS  /tmp/ccimfCuy.s 			page 19
+ARM GAS  /tmp/cchVU3VL.s 			page 19
 
 
  1058              	.L181:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1112 0098 BFE7     		b	.L181
  1113              	.L179:
  1114 009a 0368     		ldr	r3, [r0]
-ARM GAS  /tmp/ccimfCuy.s 			page 20
+ARM GAS  /tmp/cchVU3VL.s 			page 20
 
 
  1115 009c DA68     		ldr	r2, [r3, #12]
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1171 004a 7ED1     		bne	.L224
  1172              	.L211:
  1173 004c A86A     		ldr	r0, [r5, #40]
-ARM GAS  /tmp/ccimfCuy.s 			page 21
+ARM GAS  /tmp/cchVU3VL.s 			page 21
 
 
  1174 004e 594E     		ldr	r6, .L249
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1228 00c8 B2F5803F 		cmp	r2, #65536
  1229 00cc 69D0     		beq	.L223
  1230              	.L216:
-ARM GAS  /tmp/ccimfCuy.s 			page 22
+ARM GAS  /tmp/cchVU3VL.s 			page 22
 
 
  1231 00ce 1A68     		ldr	r2, [r3]
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1285              	.L217:
  1286 0146 002B     		cmp	r3, #0
  1287 0148 E0D0     		beq	.L207
-ARM GAS  /tmp/ccimfCuy.s 			page 23
+ARM GAS  /tmp/cchVU3VL.s 			page 23
 
 
  1288              	.L224:
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1342 01c0 002C0140 		.word	1073818624
  1343 01c4 00040040 		.word	1073742848
  1344 01c8 07000100 		.word	65543
-ARM GAS  /tmp/ccimfCuy.s 			page 24
+ARM GAS  /tmp/cchVU3VL.s 			page 24
 
 
  1346              		.section	.text.HAL_TIMEx_OCN_Stop_DMA,"ax",%progbits
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1401 005e 1FD0     		beq	.L264
  1402              	.L257:
  1403 0060 0123     		movs	r3, #1
-ARM GAS  /tmp/ccimfCuy.s 			page 25
+ARM GAS  /tmp/cchVU3VL.s 			page 25
 
 
  1404 0062 1CB9     		cbnz	r4, .L258
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1460 000c 0223     		movs	r3, #2
  1461 000e 80F84430 		strb	r3, [r0, #68]
  1462              	.L274:
-ARM GAS  /tmp/ccimfCuy.s 			page 26
+ARM GAS  /tmp/cchVU3VL.s 			page 26
 
 
  1463 0012 0368     		ldr	r3, [r0]
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1517 008e 03D0     		beq	.L290
  1518              	.L281:
  1519 0090 0120     		movs	r0, #1
-ARM GAS  /tmp/ccimfCuy.s 			page 27
+ARM GAS  /tmp/cchVU3VL.s 			page 27
 
 
  1520 0092 7047     		bx	lr
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1576 0026 1C6A     		ldr	r4, [r3, #32]
  1577 0028 40F24442 		movw	r2, #1092
  1578 002c 1442     		tst	r4, r2
-ARM GAS  /tmp/ccimfCuy.s 			page 28
+ARM GAS  /tmp/cchVU3VL.s 			page 28
 
 
  1579 002e 22D0     		beq	.L303
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1635 0000 0029     		cmp	r1, #0
  1636 0002 3BD1     		bne	.L307
  1637 0004 90F84430 		ldrb	r3, [r0, #68]	@ zero_extendqisi2
-ARM GAS  /tmp/ccimfCuy.s 			page 29
+ARM GAS  /tmp/cchVU3VL.s 			page 29
 
 
  1638 0008 012B     		cmp	r3, #1
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1692 0084 90F84720 		ldrb	r2, [r0, #71]	@ zero_extendqisi2
  1693 0088 012A     		cmp	r2, #1
  1694 008a D3B2     		uxtb	r3, r2
-ARM GAS  /tmp/ccimfCuy.s 			page 30
+ARM GAS  /tmp/cchVU3VL.s 			page 30
 
 
  1695 008c 0BD0     		beq	.L330
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1750              		.section	.text.HAL_TIMEx_PWMN_Stop_IT,"ax",%progbits
  1751              		.align	1
  1752              		.p2align 2,,3
-ARM GAS  /tmp/ccimfCuy.s 			page 31
+ARM GAS  /tmp/cchVU3VL.s 			page 31
 
 
  1753              		.global	HAL_TIMEx_PWMN_Stop_IT
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1808 0066 1442     		tst	r4, r2
  1809 0068 1DD0     		beq	.L351
  1810              	.L342:
-ARM GAS  /tmp/ccimfCuy.s 			page 32
+ARM GAS  /tmp/cchVU3VL.s 			page 32
 
 
  1811 006a 0123     		movs	r3, #1
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1867 0012 B0FA80F0 		clz	r0, r0
  1868 0016 4009     		lsrs	r0, r0, #5
  1869              	.L354:
-ARM GAS  /tmp/ccimfCuy.s 			page 33
+ARM GAS  /tmp/cchVU3VL.s 			page 33
 
 
  1870 0018 0028     		cmp	r0, #0
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1924 0096 12D0     		beq	.L373
  1925 0098 4A4A     		ldr	r2, .L407+16
  1926 009a 9342     		cmp	r3, r2
-ARM GAS  /tmp/ccimfCuy.s 			page 34
+ARM GAS  /tmp/cchVU3VL.s 			page 34
 
 
  1927 009c 0FD0     		beq	.L373
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  1981 0114 0221     		movs	r1, #2
  1982 0116 85F84410 		strb	r1, [r5, #68]
  1983 011a 1146     		mov	r1, r2
-ARM GAS  /tmp/ccimfCuy.s 			page 35
+ARM GAS  /tmp/cchVU3VL.s 			page 35
 
 
  1984 011c 2A68     		ldr	r2, [r5]
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2038 0190 6FE7     		b	.L372
  2039              	.L404:
  2040 0192 95F84510 		ldrb	r1, [r5, #69]	@ zero_extendqisi2
-ARM GAS  /tmp/ccimfCuy.s 			page 36
+ARM GAS  /tmp/cchVU3VL.s 			page 36
 
 
  2041 0196 A1F10101 		sub	r1, #1
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2097 002a 1A6A     		ldr	r2, [r3, #32]
  2098 002c A140     		lsls	r1, r1, r4
  2099 002e 22EA0102 		bic	r2, r2, r1
-ARM GAS  /tmp/ccimfCuy.s 			page 37
+ARM GAS  /tmp/cchVU3VL.s 			page 37
 
 
  2100 0032 1A62     		str	r2, [r3, #32]
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2154              	.L421:
  2155 00aa 5A6C     		ldr	r2, [r3, #68]
  2156 00ac 22F40042 		bic	r2, r2, #32768
-ARM GAS  /tmp/ccimfCuy.s 			page 38
+ARM GAS  /tmp/cchVU3VL.s 			page 38
 
 
  2157 00b0 5A64     		str	r2, [r3, #68]
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2213 006c 0343     		orrs	r3, r3, r0
  2214 006e 2B62     		str	r3, [r5, #32]
  2215 0070 2846     		mov	r0, r5
-ARM GAS  /tmp/ccimfCuy.s 			page 39
+ARM GAS  /tmp/cchVU3VL.s 			page 39
 
 
  2216 0072 FFF7FEFF 		bl	TIM_CCxChannelCmd
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2272 005a 1A60     		str	r2, [r3]
  2273              	.L432:
  2274 005c 0123     		movs	r3, #1
-ARM GAS  /tmp/ccimfCuy.s 			page 40
+ARM GAS  /tmp/cchVU3VL.s 			page 40
 
 
  2275 005e 84F83E30 		strb	r3, [r4, #62]
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2331 0054 DD60     		str	r5, [r3, #12]
  2332 0056 0246     		mov	r2, r0
  2333 0058 D868     		ldr	r0, [r3, #12]
-ARM GAS  /tmp/ccimfCuy.s 			page 41
+ARM GAS  /tmp/cchVU3VL.s 			page 41
 
 
  2334 005a 40F00400 		orr	r0, r0, #4
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2390 0036 FFF7FEFF 		bl	TIM_CCxChannelCmd
  2391 003a 2368     		ldr	r3, [r4]
  2392 003c 196A     		ldr	r1, [r3, #32]
-ARM GAS  /tmp/ccimfCuy.s 			page 42
+ARM GAS  /tmp/cchVU3VL.s 			page 42
 
 
  2393 003e 41F21112 		movw	r2, #4369
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2449 001c 20F07000 		bic	r0, r0, #112
  2450 0020 9860     		str	r0, [r3, #8]
  2451 0022 9868     		ldr	r0, [r3, #8]
-ARM GAS  /tmp/ccimfCuy.s 			page 43
+ARM GAS  /tmp/cchVU3VL.s 			page 43
 
 
  2452 0024 0143     		orrs	r1, r1, r0
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2508 002a 41F00101 		orr	r1, r1, #1
  2509 002e 5960     		str	r1, [r3, #4]
  2510 0030 5968     		ldr	r1, [r3, #4]
-ARM GAS  /tmp/ccimfCuy.s 			page 44
+ARM GAS  /tmp/cchVU3VL.s 			page 44
 
 
  2511 0032 21F00401 		bic	r1, r1, #4
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2567 003c 0243     		orrs	r2, r2, r0
  2568 003e 5A60     		str	r2, [r3, #4]
  2569 0040 DA68     		ldr	r2, [r3, #12]
-ARM GAS  /tmp/ccimfCuy.s 			page 45
+ARM GAS  /tmp/cchVU3VL.s 			page 45
 
 
  2570 0042 0A48     		ldr	r0, .L467
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2626 002c B3F1804F 		cmp	r3, #1073741824
  2627 0030 5A60     		str	r2, [r3, #4]
  2628 0032 10D0     		beq	.L474
-ARM GAS  /tmp/ccimfCuy.s 			page 46
+ARM GAS  /tmp/cchVU3VL.s 			page 46
 
 
  2629 0034 1A4A     		ldr	r2, .L489+4
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2684              		.global	HAL_TIMEx_ConfigBreakDeadTime
  2685              		.syntax unified
  2686              		.thumb
-ARM GAS  /tmp/ccimfCuy.s 			page 47
+ARM GAS  /tmp/cchVU3VL.s 			page 47
 
 
  2687              		.thumb_func
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2742 007c 23F00073 		bic	r3, r3, #33554432
  2743 0080 0B43     		orrs	r3, r3, r1
  2744 0082 E9E7     		b	.L494
-ARM GAS  /tmp/ccimfCuy.s 			page 48
+ARM GAS  /tmp/cchVU3VL.s 			page 48
 
 
  2745              	.L495:
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2801 0056 5140     		eors	r1, r1, r2
  2802              	.L509:
  2803 0058 7966     		str	r1, [r7, #100]
-ARM GAS  /tmp/ccimfCuy.s 			page 49
+ARM GAS  /tmp/cchVU3VL.s 			page 49
 
 
  2804 005a 0020     		movs	r0, #0
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2860              	HAL_TIMEx_RemapConfig:
  2861              		@ args = 0, pretend = 0, frame = 0
  2862              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccimfCuy.s 			page 50
+ARM GAS  /tmp/cchVU3VL.s 			page 50
 
 
  2863              		@ link register save eliminated.
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2919 000a 0268     		ldr	r2, [r0]
  2920 000c 0220     		movs	r0, #2
  2921 000e 00B5     		push	{lr}
-ARM GAS  /tmp/ccimfCuy.s 			page 51
+ARM GAS  /tmp/cchVU3VL.s 			page 51
 
 
  2922 0010 83F83D00 		strb	r0, [r3, #61]
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  2982              	HAL_TIMEx_CommutHalfCpltCallback:
  2983              		@ args = 0, pretend = 0, frame = 0
  2984              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccimfCuy.s 			page 52
+ARM GAS  /tmp/cchVU3VL.s 			page 52
 
 
  2985              		@ link register save eliminated.
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  3047              		@ args = 0, pretend = 0, frame = 0
  3048              		@ frame_needed = 0, uses_anonymous_args = 0
  3049              		@ link register save eliminated.
-ARM GAS  /tmp/ccimfCuy.s 			page 53
+ARM GAS  /tmp/cchVU3VL.s 			page 53
 
 
  3050 0000 90F83D00 		ldrb	r0, [r0, #61]	@ zero_extendqisi2
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  3111 001c 00000000 		.word	0
  3112              		.section	.rodata.CSWTCH.111,"a"
  3113              		.align	2
-ARM GAS  /tmp/ccimfCuy.s 			page 54
+ARM GAS  /tmp/cchVU3VL.s 			page 54
 
 
  3114              		.set	.LANCHOR2,. + 0
@@ -3204,127 +3204,127 @@ ARM GAS  /tmp/ccimfCuy.s 			page 1
  3138 0018 00000000 		.word	0
  3139 001c 00000000 		.word	0
  3140              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/ccimfCuy.s 			page 55
+ARM GAS  /tmp/cchVU3VL.s 			page 55
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l4xx_hal_tim_ex.c
-     /tmp/ccimfCuy.s:16     .text.TIM_DMAErrorCCxN:0000000000000000 $t
-     /tmp/ccimfCuy.s:24     .text.TIM_DMAErrorCCxN:0000000000000000 TIM_DMAErrorCCxN
-     /tmp/ccimfCuy.s:74     .text.TIM_DMADelayPulseNCplt:0000000000000000 $t
-     /tmp/ccimfCuy.s:81     .text.TIM_DMADelayPulseNCplt:0000000000000000 TIM_DMADelayPulseNCplt
-     /tmp/ccimfCuy.s:149    .text.HAL_TIMEx_HallSensor_MspInit:0000000000000000 $t
-     /tmp/ccimfCuy.s:157    .text.HAL_TIMEx_HallSensor_MspInit:0000000000000000 HAL_TIMEx_HallSensor_MspInit
-     /tmp/ccimfCuy.s:164    .text.HAL_TIMEx_HallSensor_Init:0000000000000000 $t
-     /tmp/ccimfCuy.s:172    .text.HAL_TIMEx_HallSensor_Init:0000000000000000 HAL_TIMEx_HallSensor_Init
-     /tmp/ccimfCuy.s:257    .text.HAL_TIMEx_HallSensor_MspDeInit:0000000000000000 $t
-     /tmp/ccimfCuy.s:265    .text.HAL_TIMEx_HallSensor_MspDeInit:0000000000000000 HAL_TIMEx_HallSensor_MspDeInit
-     /tmp/ccimfCuy.s:272    .text.HAL_TIMEx_HallSensor_DeInit:0000000000000000 $t
-     /tmp/ccimfCuy.s:280    .text.HAL_TIMEx_HallSensor_DeInit:0000000000000000 HAL_TIMEx_HallSensor_DeInit
-     /tmp/ccimfCuy.s:313    .text.HAL_TIMEx_HallSensor_Start:0000000000000000 $t
-     /tmp/ccimfCuy.s:321    .text.HAL_TIMEx_HallSensor_Start:0000000000000000 HAL_TIMEx_HallSensor_Start
-     /tmp/ccimfCuy.s:397    .text.HAL_TIMEx_HallSensor_Start:00000000000000a8 $d
-     /tmp/ccimfCuy.s:401    .text.HAL_TIMEx_HallSensor_Stop:0000000000000000 $t
-     /tmp/ccimfCuy.s:409    .text.HAL_TIMEx_HallSensor_Stop:0000000000000000 HAL_TIMEx_HallSensor_Stop
-     /tmp/ccimfCuy.s:440    .text.HAL_TIMEx_HallSensor_Start_IT:0000000000000000 $t
-     /tmp/ccimfCuy.s:448    .text.HAL_TIMEx_HallSensor_Start_IT:0000000000000000 HAL_TIMEx_HallSensor_Start_IT
-     /tmp/ccimfCuy.s:527    .text.HAL_TIMEx_HallSensor_Start_IT:00000000000000b0 $d
-     /tmp/ccimfCuy.s:531    .text.HAL_TIMEx_HallSensor_Stop_IT:0000000000000000 $t
-     /tmp/ccimfCuy.s:539    .text.HAL_TIMEx_HallSensor_Stop_IT:0000000000000000 HAL_TIMEx_HallSensor_Stop_IT
-     /tmp/ccimfCuy.s:573    .text.HAL_TIMEx_HallSensor_Start_DMA:0000000000000000 $t
-     /tmp/ccimfCuy.s:581    .text.HAL_TIMEx_HallSensor_Start_DMA:0000000000000000 HAL_TIMEx_HallSensor_Start_DMA
-     /tmp/ccimfCuy.s:674    .text.HAL_TIMEx_HallSensor_Start_DMA:00000000000000c8 $d
-     /tmp/ccimfCuy.s:682    .text.HAL_TIMEx_HallSensor_Stop_DMA:0000000000000000 $t
-     /tmp/ccimfCuy.s:690    .text.HAL_TIMEx_HallSensor_Stop_DMA:0000000000000000 HAL_TIMEx_HallSensor_Stop_DMA
-     /tmp/ccimfCuy.s:725    .text.HAL_TIMEx_OCN_Start:0000000000000000 $t
-     /tmp/ccimfCuy.s:733    .text.HAL_TIMEx_OCN_Start:0000000000000000 HAL_TIMEx_OCN_Start
-     /tmp/ccimfCuy.s:827    .text.HAL_TIMEx_OCN_Start:00000000000000c0 $d
-     /tmp/ccimfCuy.s:832    .text.HAL_TIMEx_OCN_Stop:0000000000000000 $t
-     /tmp/ccimfCuy.s:840    .text.HAL_TIMEx_OCN_Stop:0000000000000000 HAL_TIMEx_OCN_Stop
-     /tmp/ccimfCuy.s:905    .text.HAL_TIMEx_OCN_Start_IT:0000000000000000 $t
-     /tmp/ccimfCuy.s:913    .text.HAL_TIMEx_OCN_Start_IT:0000000000000000 HAL_TIMEx_OCN_Start_IT
-     /tmp/ccimfCuy.s:1028   .text.HAL_TIMEx_OCN_Start_IT:00000000000000ec $d
-     /tmp/ccimfCuy.s:1033   .text.HAL_TIMEx_OCN_Stop_IT:0000000000000000 $t
-     /tmp/ccimfCuy.s:1041   .text.HAL_TIMEx_OCN_Stop_IT:0000000000000000 HAL_TIMEx_OCN_Stop_IT
-     /tmp/ccimfCuy.s:1131   .text.HAL_TIMEx_OCN_Start_DMA:0000000000000000 $t
-     /tmp/ccimfCuy.s:1139   .text.HAL_TIMEx_OCN_Start_DMA:0000000000000000 HAL_TIMEx_OCN_Start_DMA
-     /tmp/ccimfCuy.s:1339   .text.HAL_TIMEx_OCN_Start_DMA:00000000000001b4 $d
-     /tmp/ccimfCuy.s:1347   .text.HAL_TIMEx_OCN_Stop_DMA:0000000000000000 $t
-     /tmp/ccimfCuy.s:1355   .text.HAL_TIMEx_OCN_Stop_DMA:0000000000000000 HAL_TIMEx_OCN_Stop_DMA
-     /tmp/ccimfCuy.s:1443   .text.HAL_TIMEx_PWMN_Start:0000000000000000 $t
-     /tmp/ccimfCuy.s:1451   .text.HAL_TIMEx_PWMN_Start:0000000000000000 HAL_TIMEx_PWMN_Start
-     /tmp/ccimfCuy.s:1545   .text.HAL_TIMEx_PWMN_Start:00000000000000c0 $d
-     /tmp/ccimfCuy.s:1550   .text.HAL_TIMEx_PWMN_Stop:0000000000000000 $t
-     /tmp/ccimfCuy.s:1558   .text.HAL_TIMEx_PWMN_Stop:0000000000000000 HAL_TIMEx_PWMN_Stop
-     /tmp/ccimfCuy.s:1623   .text.HAL_TIMEx_PWMN_Start_IT:0000000000000000 $t
-     /tmp/ccimfCuy.s:1631   .text.HAL_TIMEx_PWMN_Start_IT:0000000000000000 HAL_TIMEx_PWMN_Start_IT
-     /tmp/ccimfCuy.s:1746   .text.HAL_TIMEx_PWMN_Start_IT:00000000000000ec $d
-     /tmp/ccimfCuy.s:1751   .text.HAL_TIMEx_PWMN_Stop_IT:0000000000000000 $t
-     /tmp/ccimfCuy.s:1759   .text.HAL_TIMEx_PWMN_Stop_IT:0000000000000000 HAL_TIMEx_PWMN_Stop_IT
-     /tmp/ccimfCuy.s:1849   .text.HAL_TIMEx_PWMN_Start_DMA:0000000000000000 $t
-     /tmp/ccimfCuy.s:1857   .text.HAL_TIMEx_PWMN_Start_DMA:0000000000000000 HAL_TIMEx_PWMN_Start_DMA
-     /tmp/ccimfCuy.s:2057   .text.HAL_TIMEx_PWMN_Start_DMA:00000000000001b4 $d
-ARM GAS  /tmp/ccimfCuy.s 			page 56
+     /tmp/cchVU3VL.s:16     .text.TIM_DMAErrorCCxN:0000000000000000 $t
+     /tmp/cchVU3VL.s:24     .text.TIM_DMAErrorCCxN:0000000000000000 TIM_DMAErrorCCxN
+     /tmp/cchVU3VL.s:74     .text.TIM_DMADelayPulseNCplt:0000000000000000 $t
+     /tmp/cchVU3VL.s:81     .text.TIM_DMADelayPulseNCplt:0000000000000000 TIM_DMADelayPulseNCplt
+     /tmp/cchVU3VL.s:149    .text.HAL_TIMEx_HallSensor_MspInit:0000000000000000 $t
+     /tmp/cchVU3VL.s:157    .text.HAL_TIMEx_HallSensor_MspInit:0000000000000000 HAL_TIMEx_HallSensor_MspInit
+     /tmp/cchVU3VL.s:164    .text.HAL_TIMEx_HallSensor_Init:0000000000000000 $t
+     /tmp/cchVU3VL.s:172    .text.HAL_TIMEx_HallSensor_Init:0000000000000000 HAL_TIMEx_HallSensor_Init
+     /tmp/cchVU3VL.s:257    .text.HAL_TIMEx_HallSensor_MspDeInit:0000000000000000 $t
+     /tmp/cchVU3VL.s:265    .text.HAL_TIMEx_HallSensor_MspDeInit:0000000000000000 HAL_TIMEx_HallSensor_MspDeInit
+     /tmp/cchVU3VL.s:272    .text.HAL_TIMEx_HallSensor_DeInit:0000000000000000 $t
+     /tmp/cchVU3VL.s:280    .text.HAL_TIMEx_HallSensor_DeInit:0000000000000000 HAL_TIMEx_HallSensor_DeInit
+     /tmp/cchVU3VL.s:313    .text.HAL_TIMEx_HallSensor_Start:0000000000000000 $t
+     /tmp/cchVU3VL.s:321    .text.HAL_TIMEx_HallSensor_Start:0000000000000000 HAL_TIMEx_HallSensor_Start
+     /tmp/cchVU3VL.s:397    .text.HAL_TIMEx_HallSensor_Start:00000000000000a8 $d
+     /tmp/cchVU3VL.s:401    .text.HAL_TIMEx_HallSensor_Stop:0000000000000000 $t
+     /tmp/cchVU3VL.s:409    .text.HAL_TIMEx_HallSensor_Stop:0000000000000000 HAL_TIMEx_HallSensor_Stop
+     /tmp/cchVU3VL.s:440    .text.HAL_TIMEx_HallSensor_Start_IT:0000000000000000 $t
+     /tmp/cchVU3VL.s:448    .text.HAL_TIMEx_HallSensor_Start_IT:0000000000000000 HAL_TIMEx_HallSensor_Start_IT
+     /tmp/cchVU3VL.s:527    .text.HAL_TIMEx_HallSensor_Start_IT:00000000000000b0 $d
+     /tmp/cchVU3VL.s:531    .text.HAL_TIMEx_HallSensor_Stop_IT:0000000000000000 $t
+     /tmp/cchVU3VL.s:539    .text.HAL_TIMEx_HallSensor_Stop_IT:0000000000000000 HAL_TIMEx_HallSensor_Stop_IT
+     /tmp/cchVU3VL.s:573    .text.HAL_TIMEx_HallSensor_Start_DMA:0000000000000000 $t
+     /tmp/cchVU3VL.s:581    .text.HAL_TIMEx_HallSensor_Start_DMA:0000000000000000 HAL_TIMEx_HallSensor_Start_DMA
+     /tmp/cchVU3VL.s:674    .text.HAL_TIMEx_HallSensor_Start_DMA:00000000000000c8 $d
+     /tmp/cchVU3VL.s:682    .text.HAL_TIMEx_HallSensor_Stop_DMA:0000000000000000 $t
+     /tmp/cchVU3VL.s:690    .text.HAL_TIMEx_HallSensor_Stop_DMA:0000000000000000 HAL_TIMEx_HallSensor_Stop_DMA
+     /tmp/cchVU3VL.s:725    .text.HAL_TIMEx_OCN_Start:0000000000000000 $t
+     /tmp/cchVU3VL.s:733    .text.HAL_TIMEx_OCN_Start:0000000000000000 HAL_TIMEx_OCN_Start
+     /tmp/cchVU3VL.s:827    .text.HAL_TIMEx_OCN_Start:00000000000000c0 $d
+     /tmp/cchVU3VL.s:832    .text.HAL_TIMEx_OCN_Stop:0000000000000000 $t
+     /tmp/cchVU3VL.s:840    .text.HAL_TIMEx_OCN_Stop:0000000000000000 HAL_TIMEx_OCN_Stop
+     /tmp/cchVU3VL.s:905    .text.HAL_TIMEx_OCN_Start_IT:0000000000000000 $t
+     /tmp/cchVU3VL.s:913    .text.HAL_TIMEx_OCN_Start_IT:0000000000000000 HAL_TIMEx_OCN_Start_IT
+     /tmp/cchVU3VL.s:1028   .text.HAL_TIMEx_OCN_Start_IT:00000000000000ec $d
+     /tmp/cchVU3VL.s:1033   .text.HAL_TIMEx_OCN_Stop_IT:0000000000000000 $t
+     /tmp/cchVU3VL.s:1041   .text.HAL_TIMEx_OCN_Stop_IT:0000000000000000 HAL_TIMEx_OCN_Stop_IT
+     /tmp/cchVU3VL.s:1131   .text.HAL_TIMEx_OCN_Start_DMA:0000000000000000 $t
+     /tmp/cchVU3VL.s:1139   .text.HAL_TIMEx_OCN_Start_DMA:0000000000000000 HAL_TIMEx_OCN_Start_DMA
+     /tmp/cchVU3VL.s:1339   .text.HAL_TIMEx_OCN_Start_DMA:00000000000001b4 $d
+     /tmp/cchVU3VL.s:1347   .text.HAL_TIMEx_OCN_Stop_DMA:0000000000000000 $t
+     /tmp/cchVU3VL.s:1355   .text.HAL_TIMEx_OCN_Stop_DMA:0000000000000000 HAL_TIMEx_OCN_Stop_DMA
+     /tmp/cchVU3VL.s:1443   .text.HAL_TIMEx_PWMN_Start:0000000000000000 $t
+     /tmp/cchVU3VL.s:1451   .text.HAL_TIMEx_PWMN_Start:0000000000000000 HAL_TIMEx_PWMN_Start
+     /tmp/cchVU3VL.s:1545   .text.HAL_TIMEx_PWMN_Start:00000000000000c0 $d
+     /tmp/cchVU3VL.s:1550   .text.HAL_TIMEx_PWMN_Stop:0000000000000000 $t
+     /tmp/cchVU3VL.s:1558   .text.HAL_TIMEx_PWMN_Stop:0000000000000000 HAL_TIMEx_PWMN_Stop
+     /tmp/cchVU3VL.s:1623   .text.HAL_TIMEx_PWMN_Start_IT:0000000000000000 $t
+     /tmp/cchVU3VL.s:1631   .text.HAL_TIMEx_PWMN_Start_IT:0000000000000000 HAL_TIMEx_PWMN_Start_IT
+     /tmp/cchVU3VL.s:1746   .text.HAL_TIMEx_PWMN_Start_IT:00000000000000ec $d
+     /tmp/cchVU3VL.s:1751   .text.HAL_TIMEx_PWMN_Stop_IT:0000000000000000 $t
+     /tmp/cchVU3VL.s:1759   .text.HAL_TIMEx_PWMN_Stop_IT:0000000000000000 HAL_TIMEx_PWMN_Stop_IT
+     /tmp/cchVU3VL.s:1849   .text.HAL_TIMEx_PWMN_Start_DMA:0000000000000000 $t
+     /tmp/cchVU3VL.s:1857   .text.HAL_TIMEx_PWMN_Start_DMA:0000000000000000 HAL_TIMEx_PWMN_Start_DMA
+     /tmp/cchVU3VL.s:2057   .text.HAL_TIMEx_PWMN_Start_DMA:00000000000001b4 $d
+ARM GAS  /tmp/cchVU3VL.s 			page 56
 
 
-     /tmp/ccimfCuy.s:2065   .text.HAL_TIMEx_PWMN_Stop_DMA:0000000000000000 $t
-     /tmp/ccimfCuy.s:2073   .text.HAL_TIMEx_PWMN_Stop_DMA:0000000000000000 HAL_TIMEx_PWMN_Stop_DMA
-     /tmp/ccimfCuy.s:2161   .text.HAL_TIMEx_OnePulseN_Start:0000000000000000 $t
-     /tmp/ccimfCuy.s:2169   .text.HAL_TIMEx_OnePulseN_Start:0000000000000000 HAL_TIMEx_OnePulseN_Start
-     /tmp/ccimfCuy.s:2225   .text.HAL_TIMEx_OnePulseN_Stop:0000000000000000 $t
-     /tmp/ccimfCuy.s:2233   .text.HAL_TIMEx_OnePulseN_Stop:0000000000000000 HAL_TIMEx_OnePulseN_Stop
-     /tmp/ccimfCuy.s:2288   .text.HAL_TIMEx_OnePulseN_Start_IT:0000000000000000 $t
-     /tmp/ccimfCuy.s:2296   .text.HAL_TIMEx_OnePulseN_Start_IT:0000000000000000 HAL_TIMEx_OnePulseN_Start_IT
-     /tmp/ccimfCuy.s:2358   .text.HAL_TIMEx_OnePulseN_Stop_IT:0000000000000000 $t
-     /tmp/ccimfCuy.s:2366   .text.HAL_TIMEx_OnePulseN_Stop_IT:0000000000000000 HAL_TIMEx_OnePulseN_Stop_IT
-     /tmp/ccimfCuy.s:2427   .text.HAL_TIMEx_ConfigCommutEvent:0000000000000000 $t
-     /tmp/ccimfCuy.s:2435   .text.HAL_TIMEx_ConfigCommutEvent:0000000000000000 HAL_TIMEx_ConfigCommutEvent
-     /tmp/ccimfCuy.s:2479   .text.HAL_TIMEx_ConfigCommutEvent_IT:0000000000000000 $t
-     /tmp/ccimfCuy.s:2487   .text.HAL_TIMEx_ConfigCommutEvent_IT:0000000000000000 HAL_TIMEx_ConfigCommutEvent_IT
-     /tmp/ccimfCuy.s:2531   .text.HAL_TIMEx_ConfigCommutEvent_DMA:0000000000000000 $t
-     /tmp/ccimfCuy.s:2539   .text.HAL_TIMEx_ConfigCommutEvent_DMA:0000000000000000 HAL_TIMEx_ConfigCommutEvent_DMA
-     /tmp/ccimfCuy.s:2591   .text.HAL_TIMEx_ConfigCommutEvent_DMA:000000000000006c $d
-     /tmp/ccimfCuy.s:2963   .text.TIMEx_DMACommutationCplt:0000000000000000 TIMEx_DMACommutationCplt
-     /tmp/ccimfCuy.s:2997   .text.TIMEx_DMACommutationHalfCplt:0000000000000000 TIMEx_DMACommutationHalfCplt
-     /tmp/ccimfCuy.s:2596   .text.HAL_TIMEx_MasterConfigSynchronization:0000000000000000 $t
-     /tmp/ccimfCuy.s:2604   .text.HAL_TIMEx_MasterConfigSynchronization:0000000000000000 HAL_TIMEx_MasterConfigSynchronization
-     /tmp/ccimfCuy.s:2678   .text.HAL_TIMEx_MasterConfigSynchronization:000000000000009c $d
-     /tmp/ccimfCuy.s:2682   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000000 $t
-     /tmp/ccimfCuy.s:2690   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000000 HAL_TIMEx_ConfigBreakDeadTime
-     /tmp/ccimfCuy.s:2751   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000088 $d
-     /tmp/ccimfCuy.s:2754   .text.HAL_TIMEx_ConfigBreakInput:0000000000000000 $t
-     /tmp/ccimfCuy.s:2762   .text.HAL_TIMEx_ConfigBreakInput:0000000000000000 HAL_TIMEx_ConfigBreakInput
-     /tmp/ccimfCuy.s:2846   .text.HAL_TIMEx_ConfigBreakInput:00000000000000a8 $d
-     /tmp/ccimfCuy.s:2852   .text.HAL_TIMEx_RemapConfig:0000000000000000 $t
-     /tmp/ccimfCuy.s:2860   .text.HAL_TIMEx_RemapConfig:0000000000000000 HAL_TIMEx_RemapConfig
-     /tmp/ccimfCuy.s:2901   .text.HAL_TIMEx_RemapConfig:0000000000000054 $d
-     /tmp/ccimfCuy.s:2904   .text.HAL_TIMEx_GroupChannel5:0000000000000000 $t
-     /tmp/ccimfCuy.s:2912   .text.HAL_TIMEx_GroupChannel5:0000000000000000 HAL_TIMEx_GroupChannel5
-     /tmp/ccimfCuy.s:2940   .text.HAL_TIMEx_CommutCallback:0000000000000000 $t
-     /tmp/ccimfCuy.s:2948   .text.HAL_TIMEx_CommutCallback:0000000000000000 HAL_TIMEx_CommutCallback
-     /tmp/ccimfCuy.s:2955   .text.TIMEx_DMACommutationCplt:0000000000000000 $t
-     /tmp/ccimfCuy.s:2974   .text.HAL_TIMEx_CommutHalfCpltCallback:0000000000000000 $t
-     /tmp/ccimfCuy.s:2982   .text.HAL_TIMEx_CommutHalfCpltCallback:0000000000000000 HAL_TIMEx_CommutHalfCpltCallback
-     /tmp/ccimfCuy.s:2989   .text.TIMEx_DMACommutationHalfCplt:0000000000000000 $t
-     /tmp/ccimfCuy.s:3008   .text.HAL_TIMEx_BreakCallback:0000000000000000 $t
-     /tmp/ccimfCuy.s:3016   .text.HAL_TIMEx_BreakCallback:0000000000000000 HAL_TIMEx_BreakCallback
-     /tmp/ccimfCuy.s:3023   .text.HAL_TIMEx_Break2Callback:0000000000000000 $t
-     /tmp/ccimfCuy.s:3031   .text.HAL_TIMEx_Break2Callback:0000000000000000 HAL_TIMEx_Break2Callback
-     /tmp/ccimfCuy.s:3038   .text.HAL_TIMEx_HallSensor_GetState:0000000000000000 $t
-     /tmp/ccimfCuy.s:3046   .text.HAL_TIMEx_HallSensor_GetState:0000000000000000 HAL_TIMEx_HallSensor_GetState
-     /tmp/ccimfCuy.s:3054   .text.HAL_TIMEx_GetChannelNState:0000000000000000 $t
-     /tmp/ccimfCuy.s:3062   .text.HAL_TIMEx_GetChannelNState:0000000000000000 HAL_TIMEx_GetChannelNState
-     /tmp/ccimfCuy.s:3085   .rodata.CSWTCH.109:0000000000000000 $d
-     /tmp/ccimfCuy.s:3089   .rodata.CSWTCH.109:0000000000000000 CSWTCH.109
-     /tmp/ccimfCuy.s:3099   .rodata.CSWTCH.110:0000000000000000 $d
-     /tmp/ccimfCuy.s:3103   .rodata.CSWTCH.110:0000000000000000 CSWTCH.110
-     /tmp/ccimfCuy.s:3113   .rodata.CSWTCH.111:0000000000000000 $d
-     /tmp/ccimfCuy.s:3117   .rodata.CSWTCH.111:0000000000000000 CSWTCH.111
-     /tmp/ccimfCuy.s:3127   .rodata.CSWTCH.112:0000000000000000 $d
-     /tmp/ccimfCuy.s:3131   .rodata.CSWTCH.112:0000000000000000 CSWTCH.112
+     /tmp/cchVU3VL.s:2065   .text.HAL_TIMEx_PWMN_Stop_DMA:0000000000000000 $t
+     /tmp/cchVU3VL.s:2073   .text.HAL_TIMEx_PWMN_Stop_DMA:0000000000000000 HAL_TIMEx_PWMN_Stop_DMA
+     /tmp/cchVU3VL.s:2161   .text.HAL_TIMEx_OnePulseN_Start:0000000000000000 $t
+     /tmp/cchVU3VL.s:2169   .text.HAL_TIMEx_OnePulseN_Start:0000000000000000 HAL_TIMEx_OnePulseN_Start
+     /tmp/cchVU3VL.s:2225   .text.HAL_TIMEx_OnePulseN_Stop:0000000000000000 $t
+     /tmp/cchVU3VL.s:2233   .text.HAL_TIMEx_OnePulseN_Stop:0000000000000000 HAL_TIMEx_OnePulseN_Stop
+     /tmp/cchVU3VL.s:2288   .text.HAL_TIMEx_OnePulseN_Start_IT:0000000000000000 $t
+     /tmp/cchVU3VL.s:2296   .text.HAL_TIMEx_OnePulseN_Start_IT:0000000000000000 HAL_TIMEx_OnePulseN_Start_IT
+     /tmp/cchVU3VL.s:2358   .text.HAL_TIMEx_OnePulseN_Stop_IT:0000000000000000 $t
+     /tmp/cchVU3VL.s:2366   .text.HAL_TIMEx_OnePulseN_Stop_IT:0000000000000000 HAL_TIMEx_OnePulseN_Stop_IT
+     /tmp/cchVU3VL.s:2427   .text.HAL_TIMEx_ConfigCommutEvent:0000000000000000 $t
+     /tmp/cchVU3VL.s:2435   .text.HAL_TIMEx_ConfigCommutEvent:0000000000000000 HAL_TIMEx_ConfigCommutEvent
+     /tmp/cchVU3VL.s:2479   .text.HAL_TIMEx_ConfigCommutEvent_IT:0000000000000000 $t
+     /tmp/cchVU3VL.s:2487   .text.HAL_TIMEx_ConfigCommutEvent_IT:0000000000000000 HAL_TIMEx_ConfigCommutEvent_IT
+     /tmp/cchVU3VL.s:2531   .text.HAL_TIMEx_ConfigCommutEvent_DMA:0000000000000000 $t
+     /tmp/cchVU3VL.s:2539   .text.HAL_TIMEx_ConfigCommutEvent_DMA:0000000000000000 HAL_TIMEx_ConfigCommutEvent_DMA
+     /tmp/cchVU3VL.s:2591   .text.HAL_TIMEx_ConfigCommutEvent_DMA:000000000000006c $d
+     /tmp/cchVU3VL.s:2963   .text.TIMEx_DMACommutationCplt:0000000000000000 TIMEx_DMACommutationCplt
+     /tmp/cchVU3VL.s:2997   .text.TIMEx_DMACommutationHalfCplt:0000000000000000 TIMEx_DMACommutationHalfCplt
+     /tmp/cchVU3VL.s:2596   .text.HAL_TIMEx_MasterConfigSynchronization:0000000000000000 $t
+     /tmp/cchVU3VL.s:2604   .text.HAL_TIMEx_MasterConfigSynchronization:0000000000000000 HAL_TIMEx_MasterConfigSynchronization
+     /tmp/cchVU3VL.s:2678   .text.HAL_TIMEx_MasterConfigSynchronization:000000000000009c $d
+     /tmp/cchVU3VL.s:2682   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000000 $t
+     /tmp/cchVU3VL.s:2690   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000000 HAL_TIMEx_ConfigBreakDeadTime
+     /tmp/cchVU3VL.s:2751   .text.HAL_TIMEx_ConfigBreakDeadTime:0000000000000088 $d
+     /tmp/cchVU3VL.s:2754   .text.HAL_TIMEx_ConfigBreakInput:0000000000000000 $t
+     /tmp/cchVU3VL.s:2762   .text.HAL_TIMEx_ConfigBreakInput:0000000000000000 HAL_TIMEx_ConfigBreakInput
+     /tmp/cchVU3VL.s:2846   .text.HAL_TIMEx_ConfigBreakInput:00000000000000a8 $d
+     /tmp/cchVU3VL.s:2852   .text.HAL_TIMEx_RemapConfig:0000000000000000 $t
+     /tmp/cchVU3VL.s:2860   .text.HAL_TIMEx_RemapConfig:0000000000000000 HAL_TIMEx_RemapConfig
+     /tmp/cchVU3VL.s:2901   .text.HAL_TIMEx_RemapConfig:0000000000000054 $d
+     /tmp/cchVU3VL.s:2904   .text.HAL_TIMEx_GroupChannel5:0000000000000000 $t
+     /tmp/cchVU3VL.s:2912   .text.HAL_TIMEx_GroupChannel5:0000000000000000 HAL_TIMEx_GroupChannel5
+     /tmp/cchVU3VL.s:2940   .text.HAL_TIMEx_CommutCallback:0000000000000000 $t
+     /tmp/cchVU3VL.s:2948   .text.HAL_TIMEx_CommutCallback:0000000000000000 HAL_TIMEx_CommutCallback
+     /tmp/cchVU3VL.s:2955   .text.TIMEx_DMACommutationCplt:0000000000000000 $t
+     /tmp/cchVU3VL.s:2974   .text.HAL_TIMEx_CommutHalfCpltCallback:0000000000000000 $t
+     /tmp/cchVU3VL.s:2982   .text.HAL_TIMEx_CommutHalfCpltCallback:0000000000000000 HAL_TIMEx_CommutHalfCpltCallback
+     /tmp/cchVU3VL.s:2989   .text.TIMEx_DMACommutationHalfCplt:0000000000000000 $t
+     /tmp/cchVU3VL.s:3008   .text.HAL_TIMEx_BreakCallback:0000000000000000 $t
+     /tmp/cchVU3VL.s:3016   .text.HAL_TIMEx_BreakCallback:0000000000000000 HAL_TIMEx_BreakCallback
+     /tmp/cchVU3VL.s:3023   .text.HAL_TIMEx_Break2Callback:0000000000000000 $t
+     /tmp/cchVU3VL.s:3031   .text.HAL_TIMEx_Break2Callback:0000000000000000 HAL_TIMEx_Break2Callback
+     /tmp/cchVU3VL.s:3038   .text.HAL_TIMEx_HallSensor_GetState:0000000000000000 $t
+     /tmp/cchVU3VL.s:3046   .text.HAL_TIMEx_HallSensor_GetState:0000000000000000 HAL_TIMEx_HallSensor_GetState
+     /tmp/cchVU3VL.s:3054   .text.HAL_TIMEx_GetChannelNState:0000000000000000 $t
+     /tmp/cchVU3VL.s:3062   .text.HAL_TIMEx_GetChannelNState:0000000000000000 HAL_TIMEx_GetChannelNState
+     /tmp/cchVU3VL.s:3085   .rodata.CSWTCH.109:0000000000000000 $d
+     /tmp/cchVU3VL.s:3089   .rodata.CSWTCH.109:0000000000000000 CSWTCH.109
+     /tmp/cchVU3VL.s:3099   .rodata.CSWTCH.110:0000000000000000 $d
+     /tmp/cchVU3VL.s:3103   .rodata.CSWTCH.110:0000000000000000 CSWTCH.110
+     /tmp/cchVU3VL.s:3113   .rodata.CSWTCH.111:0000000000000000 $d
+     /tmp/cchVU3VL.s:3117   .rodata.CSWTCH.111:0000000000000000 CSWTCH.111
+     /tmp/cchVU3VL.s:3127   .rodata.CSWTCH.112:0000000000000000 $d
+     /tmp/cchVU3VL.s:3131   .rodata.CSWTCH.112:0000000000000000 CSWTCH.112
 
 UNDEFINED SYMBOLS
-ARM GAS  /tmp/ccimfCuy.s 			page 57
+ARM GAS  /tmp/cchVU3VL.s 			page 57
 
 
 HAL_TIM_ErrorCallback

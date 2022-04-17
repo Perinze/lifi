@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccY9MVwg.s 			page 1
+ARM GAS  /tmp/cclshCCy.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccY9MVwg.s 			page 1
   60              		@ Volatile: function does not return.
   61              		@ args = 0, pretend = 0, frame = 0
   62              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccY9MVwg.s 			page 2
+ARM GAS  /tmp/cclshCCy.s 			page 2
 
 
   63              		@ link register save eliminated.
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccY9MVwg.s 			page 1
  125              	DebugMon_Handler:
  126              		@ args = 0, pretend = 0, frame = 0
  127              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccY9MVwg.s 			page 3
+ARM GAS  /tmp/cclshCCy.s 			page 3
 
 
  128              		@ link register save eliminated.
@@ -149,99 +149,122 @@ ARM GAS  /tmp/ccY9MVwg.s 			page 1
  157              		@ frame_needed = 0, uses_anonymous_args = 0
  158              		@ link register save eliminated.
  159 0000 FFF7FEBF 		b	HAL_IncTick
- 161              		.section	.text.TIM2_IRQHandler,"ax",%progbits
+ 161              		.section	.text.DMA1_Channel7_IRQHandler,"ax",%progbits
  162              		.align	1
  163              		.p2align 2,,3
- 164              		.global	TIM2_IRQHandler
+ 164              		.global	DMA1_Channel7_IRQHandler
  165              		.syntax unified
  166              		.thumb
  167              		.thumb_func
  168              		.fpu fpv4-sp-d16
- 170              	TIM2_IRQHandler:
+ 170              	DMA1_Channel7_IRQHandler:
  171              		@ args = 0, pretend = 0, frame = 0
  172              		@ frame_needed = 0, uses_anonymous_args = 0
  173              		@ link register save eliminated.
  174 0000 0148     		ldr	r0, .L17
- 175 0002 FFF7FEBF 		b	HAL_TIM_IRQHandler
+ 175 0002 FFF7FEBF 		b	HAL_DMA_IRQHandler
  176              	.L18:
  177 0006 00BF     		.align	2
  178              	.L17:
- 179 0008 00000000 		.word	htim2
- 181              		.section	.text.USART2_IRQHandler,"ax",%progbits
+ 179 0008 00000000 		.word	hdma_usart2_tx
+ 181              		.section	.text.TIM2_IRQHandler,"ax",%progbits
  182              		.align	1
  183              		.p2align 2,,3
- 184              		.global	USART2_IRQHandler
+ 184              		.global	TIM2_IRQHandler
  185              		.syntax unified
  186              		.thumb
  187              		.thumb_func
  188              		.fpu fpv4-sp-d16
- 190              	USART2_IRQHandler:
+ 190              	TIM2_IRQHandler:
  191              		@ args = 0, pretend = 0, frame = 0
  192              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccY9MVwg.s 			page 4
+ARM GAS  /tmp/cclshCCy.s 			page 4
 
 
  193              		@ link register save eliminated.
  194 0000 0148     		ldr	r0, .L20
- 195 0002 FFF7FEBF 		b	HAL_UART_IRQHandler
+ 195 0002 FFF7FEBF 		b	HAL_TIM_IRQHandler
  196              	.L21:
  197 0006 00BF     		.align	2
  198              	.L20:
- 199 0008 00000000 		.word	huart2
- 201              		.section	.text.ADC3_IRQHandler,"ax",%progbits
+ 199 0008 00000000 		.word	htim2
+ 201              		.section	.text.USART2_IRQHandler,"ax",%progbits
  202              		.align	1
  203              		.p2align 2,,3
- 204              		.global	ADC3_IRQHandler
+ 204              		.global	USART2_IRQHandler
  205              		.syntax unified
  206              		.thumb
  207              		.thumb_func
  208              		.fpu fpv4-sp-d16
- 210              	ADC3_IRQHandler:
+ 210              	USART2_IRQHandler:
  211              		@ args = 0, pretend = 0, frame = 0
  212              		@ frame_needed = 0, uses_anonymous_args = 0
  213              		@ link register save eliminated.
  214 0000 0148     		ldr	r0, .L23
- 215 0002 FFF7FEBF 		b	HAL_ADC_IRQHandler
+ 215 0002 FFF7FEBF 		b	HAL_UART_IRQHandler
  216              	.L24:
  217 0006 00BF     		.align	2
  218              	.L23:
- 219 0008 00000000 		.word	hadc3
- 221              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/ccY9MVwg.s 			page 5
+ 219 0008 00000000 		.word	huart2
+ 221              		.section	.text.ADC3_IRQHandler,"ax",%progbits
+ 222              		.align	1
+ 223              		.p2align 2,,3
+ 224              		.global	ADC3_IRQHandler
+ 225              		.syntax unified
+ 226              		.thumb
+ 227              		.thumb_func
+ 228              		.fpu fpv4-sp-d16
+ 230              	ADC3_IRQHandler:
+ 231              		@ args = 0, pretend = 0, frame = 0
+ 232              		@ frame_needed = 0, uses_anonymous_args = 0
+ 233              		@ link register save eliminated.
+ 234 0000 0148     		ldr	r0, .L26
+ 235 0002 FFF7FEBF 		b	HAL_ADC_IRQHandler
+ 236              	.L27:
+ 237 0006 00BF     		.align	2
+ 238              	.L26:
+ 239 0008 00000000 		.word	hadc3
+ 241              		.ident	"GCC: (Arch Repository) 11.2.0"
+ARM GAS  /tmp/cclshCCy.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l4xx_it.c
-     /tmp/ccY9MVwg.s:16     .text.NMI_Handler:0000000000000000 $t
-     /tmp/ccY9MVwg.s:25     .text.NMI_Handler:0000000000000000 NMI_Handler
-     /tmp/ccY9MVwg.s:34     .text.HardFault_Handler:0000000000000000 $t
-     /tmp/ccY9MVwg.s:42     .text.HardFault_Handler:0000000000000000 HardFault_Handler
-     /tmp/ccY9MVwg.s:51     .text.MemManage_Handler:0000000000000000 $t
-     /tmp/ccY9MVwg.s:59     .text.MemManage_Handler:0000000000000000 MemManage_Handler
-     /tmp/ccY9MVwg.s:68     .text.BusFault_Handler:0000000000000000 $t
-     /tmp/ccY9MVwg.s:76     .text.BusFault_Handler:0000000000000000 BusFault_Handler
-     /tmp/ccY9MVwg.s:85     .text.UsageFault_Handler:0000000000000000 $t
-     /tmp/ccY9MVwg.s:93     .text.UsageFault_Handler:0000000000000000 UsageFault_Handler
-     /tmp/ccY9MVwg.s:102    .text.SVC_Handler:0000000000000000 $t
-     /tmp/ccY9MVwg.s:110    .text.SVC_Handler:0000000000000000 SVC_Handler
-     /tmp/ccY9MVwg.s:117    .text.DebugMon_Handler:0000000000000000 $t
-     /tmp/ccY9MVwg.s:125    .text.DebugMon_Handler:0000000000000000 DebugMon_Handler
-     /tmp/ccY9MVwg.s:132    .text.PendSV_Handler:0000000000000000 $t
-     /tmp/ccY9MVwg.s:140    .text.PendSV_Handler:0000000000000000 PendSV_Handler
-     /tmp/ccY9MVwg.s:147    .text.SysTick_Handler:0000000000000000 $t
-     /tmp/ccY9MVwg.s:155    .text.SysTick_Handler:0000000000000000 SysTick_Handler
-     /tmp/ccY9MVwg.s:162    .text.TIM2_IRQHandler:0000000000000000 $t
-     /tmp/ccY9MVwg.s:170    .text.TIM2_IRQHandler:0000000000000000 TIM2_IRQHandler
-     /tmp/ccY9MVwg.s:179    .text.TIM2_IRQHandler:0000000000000008 $d
-     /tmp/ccY9MVwg.s:182    .text.USART2_IRQHandler:0000000000000000 $t
-     /tmp/ccY9MVwg.s:190    .text.USART2_IRQHandler:0000000000000000 USART2_IRQHandler
-     /tmp/ccY9MVwg.s:199    .text.USART2_IRQHandler:0000000000000008 $d
-     /tmp/ccY9MVwg.s:202    .text.ADC3_IRQHandler:0000000000000000 $t
-     /tmp/ccY9MVwg.s:210    .text.ADC3_IRQHandler:0000000000000000 ADC3_IRQHandler
-     /tmp/ccY9MVwg.s:219    .text.ADC3_IRQHandler:0000000000000008 $d
+     /tmp/cclshCCy.s:16     .text.NMI_Handler:0000000000000000 $t
+     /tmp/cclshCCy.s:25     .text.NMI_Handler:0000000000000000 NMI_Handler
+     /tmp/cclshCCy.s:34     .text.HardFault_Handler:0000000000000000 $t
+     /tmp/cclshCCy.s:42     .text.HardFault_Handler:0000000000000000 HardFault_Handler
+     /tmp/cclshCCy.s:51     .text.MemManage_Handler:0000000000000000 $t
+     /tmp/cclshCCy.s:59     .text.MemManage_Handler:0000000000000000 MemManage_Handler
+     /tmp/cclshCCy.s:68     .text.BusFault_Handler:0000000000000000 $t
+     /tmp/cclshCCy.s:76     .text.BusFault_Handler:0000000000000000 BusFault_Handler
+     /tmp/cclshCCy.s:85     .text.UsageFault_Handler:0000000000000000 $t
+     /tmp/cclshCCy.s:93     .text.UsageFault_Handler:0000000000000000 UsageFault_Handler
+     /tmp/cclshCCy.s:102    .text.SVC_Handler:0000000000000000 $t
+     /tmp/cclshCCy.s:110    .text.SVC_Handler:0000000000000000 SVC_Handler
+     /tmp/cclshCCy.s:117    .text.DebugMon_Handler:0000000000000000 $t
+     /tmp/cclshCCy.s:125    .text.DebugMon_Handler:0000000000000000 DebugMon_Handler
+     /tmp/cclshCCy.s:132    .text.PendSV_Handler:0000000000000000 $t
+     /tmp/cclshCCy.s:140    .text.PendSV_Handler:0000000000000000 PendSV_Handler
+     /tmp/cclshCCy.s:147    .text.SysTick_Handler:0000000000000000 $t
+     /tmp/cclshCCy.s:155    .text.SysTick_Handler:0000000000000000 SysTick_Handler
+     /tmp/cclshCCy.s:162    .text.DMA1_Channel7_IRQHandler:0000000000000000 $t
+     /tmp/cclshCCy.s:170    .text.DMA1_Channel7_IRQHandler:0000000000000000 DMA1_Channel7_IRQHandler
+     /tmp/cclshCCy.s:179    .text.DMA1_Channel7_IRQHandler:0000000000000008 $d
+     /tmp/cclshCCy.s:182    .text.TIM2_IRQHandler:0000000000000000 $t
+     /tmp/cclshCCy.s:190    .text.TIM2_IRQHandler:0000000000000000 TIM2_IRQHandler
+     /tmp/cclshCCy.s:199    .text.TIM2_IRQHandler:0000000000000008 $d
+     /tmp/cclshCCy.s:202    .text.USART2_IRQHandler:0000000000000000 $t
+     /tmp/cclshCCy.s:210    .text.USART2_IRQHandler:0000000000000000 USART2_IRQHandler
+     /tmp/cclshCCy.s:219    .text.USART2_IRQHandler:0000000000000008 $d
+     /tmp/cclshCCy.s:222    .text.ADC3_IRQHandler:0000000000000000 $t
+     /tmp/cclshCCy.s:230    .text.ADC3_IRQHandler:0000000000000000 ADC3_IRQHandler
+     /tmp/cclshCCy.s:239    .text.ADC3_IRQHandler:0000000000000008 $d
 
 UNDEFINED SYMBOLS
 HAL_IncTick
+HAL_DMA_IRQHandler
+hdma_usart2_tx
 HAL_TIM_IRQHandler
 htim2
 HAL_UART_IRQHandler

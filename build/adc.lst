@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccUG1mDy.s 			page 1
+ARM GAS  /tmp/ccTOBGKk.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccUG1mDy.s 			page 1
   56 004c 0392     		str	r2, [sp, #12]
   57 004e 0948     		ldr	r0, .L14
   58 0050 0422     		movs	r2, #4
-ARM GAS  /tmp/ccUG1mDy.s 			page 2
+ARM GAS  /tmp/ccTOBGKk.s 			page 2
 
 
   59 0052 6946     		mov	r1, sp
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccUG1mDy.s 			page 1
  115 0030 0891     		str	r1, [sp, #32]
  116 0032 2692     		str	r2, [sp, #152]
  117 0034 0121     		movs	r1, #1
-ARM GAS  /tmp/ccUG1mDy.s 			page 3
+ARM GAS  /tmp/ccTOBGKk.s 			page 3
 
 
  118 0036 0822     		movs	r2, #8
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccUG1mDy.s 			page 1
  173              		.p2align 2,,3
  174              		.global	HAL_ADC_MspDeInit
  175              		.syntax unified
-ARM GAS  /tmp/ccUG1mDy.s 			page 4
+ARM GAS  /tmp/ccTOBGKk.s 			page 4
 
 
  176              		.thumb
@@ -222,232 +222,223 @@ ARM GAS  /tmp/ccUG1mDy.s 			page 1
  217              		@ args = 0, pretend = 0, frame = 0
  218              		@ frame_needed = 0, uses_anonymous_args = 0
  219 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
- 220 0002 4248     		ldr	r0, .L63
- 221 0004 424C     		ldr	r4, .L63+4
+ 220 0002 3E48     		ldr	r0, .L63
+ 221 0004 3E4C     		ldr	r4, .L63+4
  222 0006 FFF7FEFF 		bl	HAL_ADC_GetValue
- 223 000a 424A     		ldr	r2, .L63+8
- 224 000c 1368     		ldr	r3, [r2]
- 225 000e 6BBB     		cbnz	r3, .L34
- 226 0010 40F6C413 		movw	r3, #2500
- 227 0014 9842     		cmp	r0, r3
- 228 0016 2178     		ldrb	r1, [r4]	@ zero_extendqisi2
- 229 0018 1FD8     		bhi	.L55
- 230              	.L59:
- 231 001a 3F4D     		ldr	r5, .L63+12
- 232              	.L35:
- 233 001c 2B68     		ldr	r3, [r5]
- 234 001e 012B     		cmp	r3, #1
- 235 0020 49D0     		beq	.L60
-ARM GAS  /tmp/ccUG1mDy.s 			page 5
+ 223 000a 3E4A     		ldr	r2, .L63+8
+ 224 000c 2178     		ldrb	r1, [r4]	@ zero_extendqisi2
+ 225 000e 1368     		ldr	r3, [r2]
+ 226 0010 03B3     		cbz	r3, .L60
+ 227 0012 012B     		cmp	r3, #1
+ 228 0014 1ED0     		beq	.L60
+ 229 0016 022B     		cmp	r3, #2
+ 230 0018 3B4D     		ldr	r5, .L63+12
+ 231 001a 1FD1     		bne	.L35
+ 232 001c B0F5967F 		cmp	r0, #300
+ 233 0020 2B68     		ldr	r3, [r5]
+ 234 0022 1BD2     		bcs	.L35
+ 235 0024 3948     		ldr	r0, .L63+16
+ARM GAS  /tmp/ccTOBGKk.s 			page 5
 
 
- 236 0022 11B1     		cbz	r1, .L46
- 237              	.L33:
- 238 0024 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 239              	.L38:
- 240 0026 012B     		cmp	r3, #1
- 241 0028 47D0     		beq	.L45
- 242              	.L46:
- 243 002a 022B     		cmp	r3, #2
- 244 002c 4ED0     		beq	.L61
- 245 002e 032B     		cmp	r3, #3
- 246 0030 F8D1     		bne	.L33
- 247 0032 0823     		movs	r3, #8
- 248 0034 3949     		ldr	r1, .L63+16
- 249 0036 2370     		strb	r3, [r4]
- 250 0038 394B     		ldr	r3, .L63+20
- 251 003a 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
- 252 003c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 253 003e 3948     		ldr	r0, .L63+24
- 254 0040 E92B     		cmp	r3, #233
- 255 0042 8354     		strb	r3, [r0, r2]
- 256 0044 02F10100 		add	r0, r2, #1
- 257 0048 0870     		strb	r0, [r1]
- 258 004a 3748     		ldr	r0, .L63+28
- 259 004c 4CD0     		beq	.L57
- 260              	.L44:
- 261 004e 0370     		strb	r3, [r0]
- 262 0050 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 263              	.L62:
- 264 0052 40F6C413 		movw	r3, #2500
- 265 0056 9842     		cmp	r0, r3
- 266 0058 DFD9     		bls	.L59
- 267              	.L55:
- 268 005a 3449     		ldr	r1, .L63+32
- 269 005c 344B     		ldr	r3, .L63+36
- 270 005e 0968     		ldr	r1, [r1]
- 271 0060 0220     		movs	r0, #2
- 272 0062 496A     		ldr	r1, [r1, #36]
- 273 0064 1960     		str	r1, [r3]
- 274 0066 1060     		str	r0, [r2]
- 275 0068 2178     		ldrb	r1, [r4]	@ zero_extendqisi2
- 276 006a D6E7     		b	.L59
- 277              	.L34:
- 278 006c 012B     		cmp	r3, #1
- 279 006e 2178     		ldrb	r1, [r4]	@ zero_extendqisi2
- 280 0070 EFD0     		beq	.L62
- 281 0072 022B     		cmp	r3, #2
- 282 0074 284D     		ldr	r5, .L63+12
- 283 0076 D1D1     		bne	.L35
- 284 0078 40F6C316 		movw	r6, #2499
- 285 007c B042     		cmp	r0, r6
- 286 007e 2B68     		ldr	r3, [r5]
- 287 0080 CCD8     		bhi	.L35
- 288 0082 2A48     		ldr	r0, .L63+32
- 289 0084 2A4F     		ldr	r7, .L63+36
- 290 0086 0068     		ldr	r0, [r0]
- 291 0088 254E     		ldr	r6, .L63+20
- 292 008a 406A     		ldr	r0, [r0, #36]
-ARM GAS  /tmp/ccUG1mDy.s 			page 6
+ 236 0026 3A4F     		ldr	r7, .L63+20
+ 237 0028 0068     		ldr	r0, [r0]
+ 238 002a 3A4E     		ldr	r6, .L63+24
+ 239 002c 406A     		ldr	r0, [r0, #36]
+ 240 002e 3F68     		ldr	r7, [r7]
+ 241 0030 A0EB070C 		sub	ip, r0, r7
+ 242 0034 3078     		ldrb	r0, [r6]	@ zero_extendqisi2
+ 243 0036 4000     		lsls	r0, r0, #1
+ 244 0038 BCF17D0F 		cmp	ip, #125
+ 245 003c D8BF     		it	le
+ 246 003e 40F00100 		orrle	r0, r0, #1
+ 247 0042 C0B2     		uxtb	r0, r0
+ 248 0044 3070     		strb	r0, [r6]
+ 249 0046 0126     		movs	r6, #1
+ 250 0048 1660     		str	r6, [r2]
+ 251 004a A9B1     		cbz	r1, .L38
+ 252 004c 0139     		subs	r1, r1, #1
+ 253 004e C9B2     		uxtb	r1, r1
+ 254 0050 2170     		strb	r1, [r4]
+ 255 0052 03E0     		b	.L35
+ 256              	.L60:
+ 257 0054 B0F5967F 		cmp	r0, #300
+ 258 0058 05D8     		bhi	.L55
+ 259              	.L59:
+ 260 005a 2B4D     		ldr	r5, .L63+12
+ 261              	.L35:
+ 262 005c 2B68     		ldr	r3, [r5]
+ 263 005e 012B     		cmp	r3, #1
+ 264 0060 20D0     		beq	.L61
+ 265 0062 59B1     		cbz	r1, .L46
+ 266              	.L33:
+ 267 0064 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 268              	.L55:
+ 269 0066 2949     		ldr	r1, .L63+16
+ 270 0068 294B     		ldr	r3, .L63+20
+ 271 006a 0968     		ldr	r1, [r1]
+ 272 006c 0220     		movs	r0, #2
+ 273 006e 496A     		ldr	r1, [r1, #36]
+ 274 0070 1960     		str	r1, [r3]
+ 275 0072 1060     		str	r0, [r2]
+ 276 0074 2178     		ldrb	r1, [r4]	@ zero_extendqisi2
+ 277 0076 F0E7     		b	.L59
+ 278              	.L38:
+ 279 0078 012B     		cmp	r3, #1
+ 280 007a 15D0     		beq	.L45
+ 281              	.L46:
+ 282 007c 022B     		cmp	r3, #2
+ 283 007e 1CD0     		beq	.L62
+ 284 0080 032B     		cmp	r3, #3
+ 285 0082 EFD1     		bne	.L33
+ 286 0084 0823     		movs	r3, #8
+ 287 0086 2449     		ldr	r1, .L63+28
+ 288 0088 2370     		strb	r3, [r4]
+ 289 008a 224B     		ldr	r3, .L63+24
+ 290 008c 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
+ 291 008e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 292 0090 2248     		ldr	r0, .L63+32
+ARM GAS  /tmp/ccTOBGKk.s 			page 6
 
 
- 293 008c 3F68     		ldr	r7, [r7]
- 294 008e A0EB070C 		sub	ip, r0, r7
- 295 0092 3078     		ldrb	r0, [r6]	@ zero_extendqisi2
- 296 0094 41F2883E 		movw	lr, #5000
- 297 0098 4000     		lsls	r0, r0, #1
- 298 009a F445     		cmp	ip, lr
- 299 009c D8BF     		it	le
- 300 009e 40F00100 		orrle	r0, r0, #1
- 301 00a2 C0B2     		uxtb	r0, r0
- 302 00a4 3070     		strb	r0, [r6]
- 303 00a6 0126     		movs	r6, #1
- 304 00a8 1660     		str	r6, [r2]
- 305 00aa 0029     		cmp	r1, #0
- 306 00ac BBD0     		beq	.L38
- 307 00ae 0139     		subs	r1, r1, #1
- 308 00b0 C9B2     		uxtb	r1, r1
- 309 00b2 2170     		strb	r1, [r4]
- 310 00b4 B2E7     		b	.L35
- 311              	.L60:
- 312 00b6 1A4B     		ldr	r3, .L63+20
- 313 00b8 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
- 314              	.L45:
- 315 00ba 3F28     		cmp	r0, #63
- 316 00bc B2D1     		bne	.L33
- 317 00be 1A4B     		ldr	r3, .L63+28
- 318 00c0 0822     		movs	r2, #8
- 319 00c2 2270     		strb	r2, [r4]
- 320 00c4 1870     		strb	r0, [r3]
- 321 00c6 0222     		movs	r2, #2
- 322 00c8 2A60     		str	r2, [r5]
- 323 00ca F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 324              	.L61:
- 325 00cc 144B     		ldr	r3, .L63+20
- 326 00ce 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 327 00d0 7D2B     		cmp	r3, #125
- 328 00d2 A7D1     		bne	.L33
- 329 00d4 0820     		movs	r0, #8
- 330 00d6 1149     		ldr	r1, .L63+16
- 331 00d8 134A     		ldr	r2, .L63+28
- 332 00da 2070     		strb	r0, [r4]
- 333 00dc 0320     		movs	r0, #3
- 334 00de 2860     		str	r0, [r5]
- 335 00e0 0020     		movs	r0, #0
- 336 00e2 0870     		strb	r0, [r1]
- 337 00e4 1370     		strb	r3, [r2]
- 338 00e6 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 339              	.L57:
- 340 00e8 0678     		ldrb	r6, [r0]	@ zero_extendqisi2
- 341 00ea F72E     		cmp	r6, #247
- 342 00ec AFD1     		bne	.L44
- 343 00ee 4FF09040 		mov	r0, #1207959552
- 344 00f2 013A     		subs	r2, r2, #1
- 345 00f4 4369     		ldr	r3, [r0, #20]
- 346 00f6 43F02003 		orr	r3, r3, #32
- 347 00fa 4361     		str	r3, [r0, #20]
- 348 00fc 0A70     		strb	r2, [r1]
- 349 00fe FFF7FEFF 		bl	recv2uart
-ARM GAS  /tmp/ccUG1mDy.s 			page 7
+ 293 0092 E92B     		cmp	r3, #233
+ 294 0094 8354     		strb	r3, [r0, r2]
+ 295 0096 02F10100 		add	r0, r2, #1
+ 296 009a 0870     		strb	r0, [r1]
+ 297 009c 2048     		ldr	r0, .L63+36
+ 298 009e 1AD0     		beq	.L57
+ 299              	.L44:
+ 300 00a0 0370     		strb	r3, [r0]
+ 301 00a2 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 302              	.L61:
+ 303 00a4 1B4B     		ldr	r3, .L63+24
+ 304 00a6 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 305              	.L45:
+ 306 00a8 3F28     		cmp	r0, #63
+ 307 00aa DBD1     		bne	.L33
+ 308 00ac 1C4B     		ldr	r3, .L63+36
+ 309 00ae 0822     		movs	r2, #8
+ 310 00b0 2270     		strb	r2, [r4]
+ 311 00b2 1870     		strb	r0, [r3]
+ 312 00b4 0222     		movs	r2, #2
+ 313 00b6 2A60     		str	r2, [r5]
+ 314 00b8 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 315              	.L62:
+ 316 00ba 164B     		ldr	r3, .L63+24
+ 317 00bc 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 318 00be 7D2B     		cmp	r3, #125
+ 319 00c0 D0D1     		bne	.L33
+ 320 00c2 0820     		movs	r0, #8
+ 321 00c4 1449     		ldr	r1, .L63+28
+ 322 00c6 164A     		ldr	r2, .L63+36
+ 323 00c8 2070     		strb	r0, [r4]
+ 324 00ca 0320     		movs	r0, #3
+ 325 00cc 2860     		str	r0, [r5]
+ 326 00ce 0020     		movs	r0, #0
+ 327 00d0 0870     		strb	r0, [r1]
+ 328 00d2 1370     		strb	r3, [r2]
+ 329 00d4 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 330              	.L57:
+ 331 00d6 0678     		ldrb	r6, [r0]	@ zero_extendqisi2
+ 332 00d8 F72E     		cmp	r6, #247
+ 333 00da E1D1     		bne	.L44
+ 334 00dc 4FF09040 		mov	r0, #1207959552
+ 335 00e0 013A     		subs	r2, r2, #1
+ 336 00e2 4369     		ldr	r3, [r0, #20]
+ 337 00e4 43F02003 		orr	r3, r3, #32
+ 338 00e8 4361     		str	r3, [r0, #20]
+ 339 00ea 0A70     		strb	r2, [r1]
+ 340 00ec FFF7FEFF 		bl	recv2uart
+ 341 00f0 0022     		movs	r2, #0
+ 342 00f2 0123     		movs	r3, #1
+ 343 00f4 2270     		strb	r2, [r4]
+ 344 00f6 2B60     		str	r3, [r5]
+ 345 00f8 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 346              	.L64:
+ 347 00fa 00BF     		.align	2
+ 348              	.L63:
+ 349 00fc 00000000 		.word	.LANCHOR0
+ARM GAS  /tmp/ccTOBGKk.s 			page 7
 
 
- 350 0102 0022     		movs	r2, #0
- 351 0104 0123     		movs	r3, #1
- 352 0106 2270     		strb	r2, [r4]
- 353 0108 2B60     		str	r3, [r5]
- 354 010a F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 355              	.L64:
- 356              		.align	2
- 357              	.L63:
- 358 010c 00000000 		.word	.LANCHOR0
- 359 0110 00000000 		.word	.LANCHOR2
- 360 0114 00000000 		.word	.LANCHOR1
- 361 0118 00000000 		.word	.LANCHOR4
- 362 011c 00000000 		.word	recvidx
- 363 0120 00000000 		.word	.LANCHOR5
- 364 0124 00000000 		.word	recvbuf
- 365 0128 00000000 		.word	.LANCHOR6
- 366 012c 00000000 		.word	htim2
- 367 0130 00000000 		.word	.LANCHOR3
- 369              		.global	hadc3
- 370              		.section	.bss.bitcnt.2,"aw",%nobits
- 371              		.set	.LANCHOR2,. + 0
- 374              	bitcnt.2:
- 375 0000 00       		.space	1
- 376              		.section	.bss.data.3,"aw",%nobits
- 377              		.set	.LANCHOR5,. + 0
- 380              	data.3:
- 381 0000 00       		.space	1
- 382              		.section	.bss.hadc3,"aw",%nobits
- 383              		.align	2
- 384              		.set	.LANCHOR0,. + 0
- 387              	hadc3:
- 388 0000 00000000 		.space	100
- 388      00000000 
- 388      00000000 
- 388      00000000 
- 388      00000000 
- 389              		.section	.bss.last_data.0,"aw",%nobits
- 390              		.set	.LANCHOR6,. + 0
- 393              	last_data.0:
- 394 0000 00       		.space	1
- 395              		.section	.bss.start.5,"aw",%nobits
- 396              		.align	2
- 397              		.set	.LANCHOR3,. + 0
- 400              	start.5:
- 401 0000 00000000 		.space	4
- 402              		.section	.bss.state.6,"aw",%nobits
- 403              		.align	2
- 404              		.set	.LANCHOR1,. + 0
- 407              	state.6:
- 408 0000 00000000 		.space	4
- 409              		.section	.data.byte_state.1,"aw"
- 410              		.align	2
- 411              		.set	.LANCHOR4,. + 0
- 414              	byte_state.1:
- 415 0000 01000000 		.word	1
- 416              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/ccUG1mDy.s 			page 8
+ 350 0100 00000000 		.word	.LANCHOR2
+ 351 0104 00000000 		.word	.LANCHOR1
+ 352 0108 00000000 		.word	.LANCHOR4
+ 353 010c 00000000 		.word	htim2
+ 354 0110 00000000 		.word	.LANCHOR3
+ 355 0114 00000000 		.word	.LANCHOR5
+ 356 0118 00000000 		.word	recvidx
+ 357 011c 00000000 		.word	recvbuf
+ 358 0120 00000000 		.word	.LANCHOR6
+ 360              		.global	hadc3
+ 361              		.section	.bss.bitcnt.2,"aw",%nobits
+ 362              		.set	.LANCHOR2,. + 0
+ 365              	bitcnt.2:
+ 366 0000 00       		.space	1
+ 367              		.section	.bss.data.3,"aw",%nobits
+ 368              		.set	.LANCHOR5,. + 0
+ 371              	data.3:
+ 372 0000 00       		.space	1
+ 373              		.section	.bss.hadc3,"aw",%nobits
+ 374              		.align	2
+ 375              		.set	.LANCHOR0,. + 0
+ 378              	hadc3:
+ 379 0000 00000000 		.space	100
+ 379      00000000 
+ 379      00000000 
+ 379      00000000 
+ 379      00000000 
+ 380              		.section	.bss.last_data.0,"aw",%nobits
+ 381              		.set	.LANCHOR6,. + 0
+ 384              	last_data.0:
+ 385 0000 00       		.space	1
+ 386              		.section	.bss.start.5,"aw",%nobits
+ 387              		.align	2
+ 388              		.set	.LANCHOR3,. + 0
+ 391              	start.5:
+ 392 0000 00000000 		.space	4
+ 393              		.section	.bss.state.6,"aw",%nobits
+ 394              		.align	2
+ 395              		.set	.LANCHOR1,. + 0
+ 398              	state.6:
+ 399 0000 00000000 		.space	4
+ 400              		.section	.data.byte_state.1,"aw"
+ 401              		.align	2
+ 402              		.set	.LANCHOR4,. + 0
+ 405              	byte_state.1:
+ 406 0000 01000000 		.word	1
+ 407              		.ident	"GCC: (Arch Repository) 11.2.0"
+ARM GAS  /tmp/ccTOBGKk.s 			page 8
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 adc.c
-     /tmp/ccUG1mDy.s:16     .text.MX_ADC3_Init:0000000000000000 $t
-     /tmp/ccUG1mDy.s:25     .text.MX_ADC3_Init:0000000000000000 MX_ADC3_Init
-     /tmp/ccUG1mDy.s:78     .text.MX_ADC3_Init:0000000000000074 $d
-     /tmp/ccUG1mDy.s:83     .text.HAL_ADC_MspInit:0000000000000000 $t
-     /tmp/ccUG1mDy.s:91     .text.HAL_ADC_MspInit:0000000000000000 HAL_ADC_MspInit
-     /tmp/ccUG1mDy.s:167    .text.HAL_ADC_MspInit:00000000000000a8 $d
-     /tmp/ccUG1mDy.s:172    .text.HAL_ADC_MspDeInit:0000000000000000 $t
-     /tmp/ccUG1mDy.s:180    .text.HAL_ADC_MspDeInit:0000000000000000 HAL_ADC_MspDeInit
-     /tmp/ccUG1mDy.s:203    .text.HAL_ADC_MspDeInit:0000000000000028 $d
-     /tmp/ccUG1mDy.s:208    .text.HAL_ADC_ConvCpltCallback:0000000000000000 $t
-     /tmp/ccUG1mDy.s:216    .text.HAL_ADC_ConvCpltCallback:0000000000000000 HAL_ADC_ConvCpltCallback
-     /tmp/ccUG1mDy.s:358    .text.HAL_ADC_ConvCpltCallback:000000000000010c $d
-     /tmp/ccUG1mDy.s:387    .bss.hadc3:0000000000000000 hadc3
-     /tmp/ccUG1mDy.s:374    .bss.bitcnt.2:0000000000000000 bitcnt.2
-     /tmp/ccUG1mDy.s:375    .bss.bitcnt.2:0000000000000000 $d
-     /tmp/ccUG1mDy.s:380    .bss.data.3:0000000000000000 data.3
-     /tmp/ccUG1mDy.s:381    .bss.data.3:0000000000000000 $d
-     /tmp/ccUG1mDy.s:383    .bss.hadc3:0000000000000000 $d
-     /tmp/ccUG1mDy.s:393    .bss.last_data.0:0000000000000000 last_data.0
-     /tmp/ccUG1mDy.s:394    .bss.last_data.0:0000000000000000 $d
-     /tmp/ccUG1mDy.s:396    .bss.start.5:0000000000000000 $d
-     /tmp/ccUG1mDy.s:400    .bss.start.5:0000000000000000 start.5
-     /tmp/ccUG1mDy.s:403    .bss.state.6:0000000000000000 $d
-     /tmp/ccUG1mDy.s:407    .bss.state.6:0000000000000000 state.6
-     /tmp/ccUG1mDy.s:410    .data.byte_state.1:0000000000000000 $d
-     /tmp/ccUG1mDy.s:414    .data.byte_state.1:0000000000000000 byte_state.1
+     /tmp/ccTOBGKk.s:16     .text.MX_ADC3_Init:0000000000000000 $t
+     /tmp/ccTOBGKk.s:25     .text.MX_ADC3_Init:0000000000000000 MX_ADC3_Init
+     /tmp/ccTOBGKk.s:78     .text.MX_ADC3_Init:0000000000000074 $d
+     /tmp/ccTOBGKk.s:83     .text.HAL_ADC_MspInit:0000000000000000 $t
+     /tmp/ccTOBGKk.s:91     .text.HAL_ADC_MspInit:0000000000000000 HAL_ADC_MspInit
+     /tmp/ccTOBGKk.s:167    .text.HAL_ADC_MspInit:00000000000000a8 $d
+     /tmp/ccTOBGKk.s:172    .text.HAL_ADC_MspDeInit:0000000000000000 $t
+     /tmp/ccTOBGKk.s:180    .text.HAL_ADC_MspDeInit:0000000000000000 HAL_ADC_MspDeInit
+     /tmp/ccTOBGKk.s:203    .text.HAL_ADC_MspDeInit:0000000000000028 $d
+     /tmp/ccTOBGKk.s:208    .text.HAL_ADC_ConvCpltCallback:0000000000000000 $t
+     /tmp/ccTOBGKk.s:216    .text.HAL_ADC_ConvCpltCallback:0000000000000000 HAL_ADC_ConvCpltCallback
+     /tmp/ccTOBGKk.s:349    .text.HAL_ADC_ConvCpltCallback:00000000000000fc $d
+     /tmp/ccTOBGKk.s:378    .bss.hadc3:0000000000000000 hadc3
+     /tmp/ccTOBGKk.s:365    .bss.bitcnt.2:0000000000000000 bitcnt.2
+     /tmp/ccTOBGKk.s:366    .bss.bitcnt.2:0000000000000000 $d
+     /tmp/ccTOBGKk.s:371    .bss.data.3:0000000000000000 data.3
+     /tmp/ccTOBGKk.s:372    .bss.data.3:0000000000000000 $d
+     /tmp/ccTOBGKk.s:374    .bss.hadc3:0000000000000000 $d
+     /tmp/ccTOBGKk.s:384    .bss.last_data.0:0000000000000000 last_data.0
+     /tmp/ccTOBGKk.s:385    .bss.last_data.0:0000000000000000 $d
+     /tmp/ccTOBGKk.s:387    .bss.start.5:0000000000000000 $d
+     /tmp/ccTOBGKk.s:391    .bss.start.5:0000000000000000 start.5
+     /tmp/ccTOBGKk.s:394    .bss.state.6:0000000000000000 $d
+     /tmp/ccTOBGKk.s:398    .bss.state.6:0000000000000000 state.6
+     /tmp/ccTOBGKk.s:401    .data.byte_state.1:0000000000000000 $d
+     /tmp/ccTOBGKk.s:405    .data.byte_state.1:0000000000000000 byte_state.1
 
 UNDEFINED SYMBOLS
 HAL_ADC_Init
@@ -462,6 +453,6 @@ HAL_GPIO_DeInit
 HAL_NVIC_DisableIRQ
 HAL_ADC_GetValue
 recv2uart
+htim2
 recvidx
 recvbuf
-htim2

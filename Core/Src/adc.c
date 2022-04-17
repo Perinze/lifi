@@ -159,6 +159,13 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 {
     uint32_t ad_res = HAL_ADC_GetValue(&hadc3);
+    /*
+    #ifdef LIGHT_DEBUG
+      char buf[8] = {0};
+      sprintf(buf, "%u\r\n", ad_res);
+      HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
+    #elif
+    */
     static int start;
     static int end;
     /*

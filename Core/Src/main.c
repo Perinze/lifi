@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "adc.h"
+#include "dma.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -115,31 +116,31 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
-  MX_ADC3_Init();
+  MX_DMA_Init();
   MX_TIM2_Init();
+  MX_ADC3_Init();
   /* USER CODE BEGIN 2 */
   LD0_GPIO_Port->ODR |= (LD0_Pin);
   // LD2_GPIO_Port->ODR |= (LD2_Pin);
+  HAL_UART_Transmit_IT(&huart2, "hello\r\n", sizeof("hello\r\n"));
 
-  /*
   recvidx = 0;
   recvbuf[recvidx++] = 0x12;
   recvbuf[recvidx++] = 0x34;
   recvbuf[recvidx++] = 0x56;
   recvbuf[recvidx++] = 0x78;
   recv2uart();
-  */
 
   HAL_Delay(2000);
 
-  for (int i = 0; i < 4; i++) {
+  for (int i = 0; i < 8; i++) {
     // push data to queue
     // frame start
     queue[qback++] = FRMBEGIN1;
     queue[qback++] = FRMBEGIN2;
 
     // data
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 2; i++) {
       queue[qback++] = 0x01;
       queue[qback++] = 0x23;
       queue[qback++] = 0x45;
@@ -154,6 +155,8 @@ int main(void)
     queue[qback++] = FRMEND1;
     queue[qback++] = FRMEND2;
 
+    queue[qback++] = 0x00;
+    queue[qback++] = 0x00;
     queue[qback++] = 0x00;
     queue[qback++] = 0x00;
   }
