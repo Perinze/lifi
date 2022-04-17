@@ -22,6 +22,7 @@
 
 /* USER CODE BEGIN 0 */
 #include "main.h"
+#include "usart.h"
 /* USER CODE END 0 */
 
 TIM_HandleTypeDef htim2;
@@ -154,10 +155,28 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
   static uint8_t bit = 1;
   bit ^= 1;
   */
+  static uint8_t bit_idx;
   static uint8_t tmp;
-  tmp = tmp ? tmp : TESTDATA;
-  uint8_t bit = tmp & 1;
-  tmp >>= 1;
-  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, (bit ? LOWPULSE: HIGHPULSE));
+  // static uint32_t byte_idx;
+
+  // reset
+  if (qfront == qback) {
+    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 0);
+    return;
+  }
+  // tmp = bit_idx ? queue[qfront++] : TESTDATA;
+  tmp = bit_idx ? tmp : queue[qfront++];
+  bit_idx = bit_idx ? bit_idx : 8;
+
+  int bit = tmp & (1 << (bit_idx-1));
+  bit_idx--;
+  // tmp >>= 1;
+  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, (bit ? LOWPULSE : HIGHPULSE));
+
+  /*
+  char buf[8] = {0};
+  sprintf(buf, "%d\r\n", bit);
+  HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
+  */
 }
 /* USER CODE END 1 */

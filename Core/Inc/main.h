@@ -36,7 +36,6 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -47,13 +46,18 @@ extern "C" {
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
 #define LIGHTTH 2500
-#define TESTDATA 114514
+#define TESTDATA 114
 #define HIGHBIT 0x10000
 
 #define ARR 9999
 #define LOWPULSE 2500
 #define HIGHPULSE 7500
 #define PULSEDIV 5000
+
+#define QUESIZ 64
+
+extern uint8_t queue[QUESIZ];
+extern uint8_t qfront, qback;
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/

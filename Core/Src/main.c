@@ -51,7 +51,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+uint8_t queue[QUESIZ];
+uint8_t qfront, qback;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -85,7 +86,6 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  int32_t ch1_dc = 0;
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -103,12 +103,24 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_Delay(2000);
   LD0_GPIO_Port->ODR |= (LD0_Pin);
+
+  // push data to queue
+  // frame start
+  queue[qback++] = 0x3f;
+  queue[qback++] = 0x7f;
+
+  // data
+  queue[qback++] = 0x52;
+  queue[qback++] = 0xBF;
+  queue[qback++] = 0x01;
+
+  // frame end
+  queue[qback++] = 0xf7;
+  queue[qback++] = 0x3f;
+
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
   HAL_TIM_Base_Start_IT(&htim2);
-  //HAL_Delay(3000);
-  //__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 500);
 
-  // TIM2->CCR1 = 0xffffffff;
   /* USER CODE END 2 */
 
   /* Infinite loop */

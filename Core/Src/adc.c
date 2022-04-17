@@ -167,7 +167,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
       2 wait for negedge
     */
     static int state = 0;
-    static int data = 0;
+    static uint32_t data = 0;
 
     if (!state && ad_res > LIGHTTH) {
       state = 2;
@@ -181,22 +181,24 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
       state = 1;
       end = __HAL_TIM_GetCounter(&htim2);
       int pulse = end - start;
-      int bit = pulse > PULSEDIV ? 1 : 0;
+      int bit = pulse > PULSEDIV ? 0 : 1;
 
-      
       char buf[8] = {0};
-      sprintf(buf, "%d\r\n", bit);
+      sprintf(buf, "%d", bit);
       HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
       
-      data = ((data << 1) | bit);
+      // data = ((data << 1) | bit);
     }
     
+    /*
     if (data & HIGHBIT) {
       char buf[8] = {0};
       sprintf(buf, "%d\r\n", data);
+      data &= 0x11111;
       HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
-      data = 0;
+      // data = 0;
     }
+    */
     
     // HAL_ADC_Start_IT(&hadc3);
 }
