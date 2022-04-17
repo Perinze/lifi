@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccPE10zS.s 			page 1
+ARM GAS  /tmp/ccQpLVLZ.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccPE10zS.s 			page 1
   56 004c 0392     		str	r2, [sp, #12]
   57 004e 0948     		ldr	r0, .L14
   58 0050 0422     		movs	r2, #4
-ARM GAS  /tmp/ccPE10zS.s 			page 2
+ARM GAS  /tmp/ccQpLVLZ.s 			page 2
 
 
   59 0052 6946     		mov	r1, sp
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccPE10zS.s 			page 1
  115 0030 0891     		str	r1, [sp, #32]
  116 0032 2692     		str	r2, [sp, #152]
  117 0034 0121     		movs	r1, #1
-ARM GAS  /tmp/ccPE10zS.s 			page 3
+ARM GAS  /tmp/ccQpLVLZ.s 			page 3
 
 
  118 0036 0822     		movs	r2, #8
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccPE10zS.s 			page 1
  173              		.p2align 2,,3
  174              		.global	HAL_ADC_MspDeInit
  175              		.syntax unified
-ARM GAS  /tmp/ccPE10zS.s 			page 4
+ARM GAS  /tmp/ccQpLVLZ.s 			page 4
 
 
  176              		.thumb
@@ -213,8 +213,7 @@ ARM GAS  /tmp/ccPE10zS.s 			page 1
  207              		.section	.rodata.HAL_ADC_ConvCpltCallback.str1.4,"aMS",%progbits,1
  208              		.align	2
  209              	.LC0:
- 210 0000 25640D0A 		.ascii	"%d\015\012\000"
- 210      00
+ 210 0000 256400   		.ascii	"%d\000"
  211              		.section	.text.HAL_ADC_ConvCpltCallback,"ax",%progbits
  212              		.align	1
  213              		.p2align 2,,3
@@ -238,10 +237,10 @@ ARM GAS  /tmp/ccPE10zS.s 			page 1
  232 0014 022B     		cmp	r3, #2
  233 0016 0ED0     		beq	.L44
  234              	.L33:
-ARM GAS  /tmp/ccPE10zS.s 			page 5
-
-
  235 0018 02B0     		add	sp, sp, #8
+ARM GAS  /tmp/ccQpLVLZ.s 			page 5
+
+
  236              		@ sp needed
  237 001a 10BD     		pop	{r4, pc}
  238              	.L43:
@@ -298,10 +297,10 @@ ARM GAS  /tmp/ccPE10zS.s 			page 1
  289 008c 00000000 		.word	huart2
  291              		.global	hadc3
  292              		.section	.bss.hadc3,"aw",%nobits
-ARM GAS  /tmp/ccPE10zS.s 			page 6
-
-
  293              		.align	2
+ARM GAS  /tmp/ccQpLVLZ.s 			page 6
+
+
  294              		.set	.LANCHOR0,. + 0
  297              	hadc3:
  298 0000 00000000 		.space	100
@@ -320,30 +319,30 @@ ARM GAS  /tmp/ccPE10zS.s 			page 1
  311              	state.2:
  312 0000 00000000 		.space	4
  313              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/ccPE10zS.s 			page 7
+ARM GAS  /tmp/ccQpLVLZ.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 adc.c
-     /tmp/ccPE10zS.s:16     .text.MX_ADC3_Init:0000000000000000 $t
-     /tmp/ccPE10zS.s:25     .text.MX_ADC3_Init:0000000000000000 MX_ADC3_Init
-     /tmp/ccPE10zS.s:78     .text.MX_ADC3_Init:0000000000000074 $d
-     /tmp/ccPE10zS.s:83     .text.HAL_ADC_MspInit:0000000000000000 $t
-     /tmp/ccPE10zS.s:91     .text.HAL_ADC_MspInit:0000000000000000 HAL_ADC_MspInit
-     /tmp/ccPE10zS.s:167    .text.HAL_ADC_MspInit:00000000000000a8 $d
-     /tmp/ccPE10zS.s:172    .text.HAL_ADC_MspDeInit:0000000000000000 $t
-     /tmp/ccPE10zS.s:180    .text.HAL_ADC_MspDeInit:0000000000000000 HAL_ADC_MspDeInit
-     /tmp/ccPE10zS.s:203    .text.HAL_ADC_MspDeInit:0000000000000028 $d
-     /tmp/ccPE10zS.s:208    .rodata.HAL_ADC_ConvCpltCallback.str1.4:0000000000000000 $d
-     /tmp/ccPE10zS.s:212    .text.HAL_ADC_ConvCpltCallback:0000000000000000 $t
-     /tmp/ccPE10zS.s:220    .text.HAL_ADC_ConvCpltCallback:0000000000000000 HAL_ADC_ConvCpltCallback
-     /tmp/ccPE10zS.s:284    .text.HAL_ADC_ConvCpltCallback:0000000000000078 $d
-     /tmp/ccPE10zS.s:297    .bss.hadc3:0000000000000000 hadc3
-     /tmp/ccPE10zS.s:293    .bss.hadc3:0000000000000000 $d
-     /tmp/ccPE10zS.s:300    .bss.start.1:0000000000000000 $d
-     /tmp/ccPE10zS.s:304    .bss.start.1:0000000000000000 start.1
-     /tmp/ccPE10zS.s:307    .bss.state.2:0000000000000000 $d
-     /tmp/ccPE10zS.s:311    .bss.state.2:0000000000000000 state.2
+     /tmp/ccQpLVLZ.s:16     .text.MX_ADC3_Init:0000000000000000 $t
+     /tmp/ccQpLVLZ.s:25     .text.MX_ADC3_Init:0000000000000000 MX_ADC3_Init
+     /tmp/ccQpLVLZ.s:78     .text.MX_ADC3_Init:0000000000000074 $d
+     /tmp/ccQpLVLZ.s:83     .text.HAL_ADC_MspInit:0000000000000000 $t
+     /tmp/ccQpLVLZ.s:91     .text.HAL_ADC_MspInit:0000000000000000 HAL_ADC_MspInit
+     /tmp/ccQpLVLZ.s:167    .text.HAL_ADC_MspInit:00000000000000a8 $d
+     /tmp/ccQpLVLZ.s:172    .text.HAL_ADC_MspDeInit:0000000000000000 $t
+     /tmp/ccQpLVLZ.s:180    .text.HAL_ADC_MspDeInit:0000000000000000 HAL_ADC_MspDeInit
+     /tmp/ccQpLVLZ.s:203    .text.HAL_ADC_MspDeInit:0000000000000028 $d
+     /tmp/ccQpLVLZ.s:208    .rodata.HAL_ADC_ConvCpltCallback.str1.4:0000000000000000 $d
+     /tmp/ccQpLVLZ.s:212    .text.HAL_ADC_ConvCpltCallback:0000000000000000 $t
+     /tmp/ccQpLVLZ.s:220    .text.HAL_ADC_ConvCpltCallback:0000000000000000 HAL_ADC_ConvCpltCallback
+     /tmp/ccQpLVLZ.s:284    .text.HAL_ADC_ConvCpltCallback:0000000000000078 $d
+     /tmp/ccQpLVLZ.s:297    .bss.hadc3:0000000000000000 hadc3
+     /tmp/ccQpLVLZ.s:293    .bss.hadc3:0000000000000000 $d
+     /tmp/ccQpLVLZ.s:300    .bss.start.1:0000000000000000 $d
+     /tmp/ccQpLVLZ.s:304    .bss.start.1:0000000000000000 start.1
+     /tmp/ccQpLVLZ.s:307    .bss.state.2:0000000000000000 $d
+     /tmp/ccQpLVLZ.s:311    .bss.state.2:0000000000000000 state.2
 
 UNDEFINED SYMBOLS
 HAL_ADC_Init

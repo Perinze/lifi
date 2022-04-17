@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc2jSOh4.s 			page 1
+ARM GAS  /tmp/ccgBGgSo.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc2jSOh4.s 			page 1
   58 0006 0021     		movs	r1, #0
   59 0008 06A8     		add	r0, sp, #24
   60 000a FFF7FEFF 		bl	memset
-ARM GAS  /tmp/cc2jSOh4.s 			page 2
+ARM GAS  /tmp/ccgBGgSo.s 			page 2
 
 
   61 000e 0023     		movs	r3, #0
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc2jSOh4.s 			page 1
  115              	@ 0 "" 2
  116              		.thumb
  117              		.syntax unified
-ARM GAS  /tmp/cc2jSOh4.s 			page 3
+ARM GAS  /tmp/ccgBGgSo.s 			page 3
 
 
  118              	.L13:
@@ -144,7 +144,7 @@ ARM GAS  /tmp/cc2jSOh4.s 			page 1
  140              		@ Volatile: function does not return.
  141              		@ args = 0, pretend = 0, frame = 0
  142              		@ frame_needed = 0, uses_anonymous_args = 0
- 143 0000 08B5     		push	{r3, lr}
+ 143 0000 80B5     		push	{r7, lr}
  144 0002 FFF7FEFF 		bl	HAL_Init
  145 0006 FFF7FEFF 		bl	SystemClock_Config
  146 000a FFF7FEFF 		bl	MX_GPIO_Init
@@ -153,108 +153,126 @@ ARM GAS  /tmp/cc2jSOh4.s 			page 1
  149 0016 FFF7FEFF 		bl	MX_TIM2_Init
  150 001a 4FF4FA60 		mov	r0, #2000
  151 001e FFF7FEFF 		bl	HAL_Delay
- 152 0022 4FF09042 		mov	r2, #1207959552
- 153 0026 1149     		ldr	r1, .L20
- 154 0028 5369     		ldr	r3, [r2, #20]
- 155 002a 114C     		ldr	r4, .L20+4
- 156 002c 1148     		ldr	r0, .L20+8
- 157 002e 43F48063 		orr	r3, r3, #1024
- 158 0032 5361     		str	r3, [r2, #20]
- 159 0034 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
- 160 0036 5222     		movs	r2, #82
- 161 0038 E254     		strb	r2, [r4, r3]
- 162 003a 03F1010C 		add	ip, r3, #1
- 163 003e 9A1C     		adds	r2, r3, #2
- 164 0040 5FFA8CFC 		uxtb	ip, ip
- 165 0044 D2B2     		uxtb	r2, r2
- 166 0046 0333     		adds	r3, r3, #3
- 167 0048 0B70     		strb	r3, [r1]
- 168 004a 4FF0BF0E 		mov	lr, #191
- 169 004e 0123     		movs	r3, #1
- 170 0050 04F80CE0 		strb	lr, [r4, ip]
- 171 0054 0021     		movs	r1, #0
- 172 0056 A354     		strb	r3, [r4, r2]
- 173 0058 FFF7FEFF 		bl	HAL_TIM_PWM_Start
- 174 005c 0548     		ldr	r0, .L20+8
- 175 005e 064C     		ldr	r4, .L20+12
- 176 0060 FFF7FEFF 		bl	HAL_TIM_Base_Start_IT
-ARM GAS  /tmp/cc2jSOh4.s 			page 4
+ 152 0022 4FF09040 		mov	r0, #1207959552
+ 153 0026 1B49     		ldr	r1, .L20
+ 154 0028 4369     		ldr	r3, [r0, #20]
+ 155 002a 1B4A     		ldr	r2, .L20+4
+ 156 002c 43F48063 		orr	r3, r3, #1024
+ 157 0030 4361     		str	r3, [r0, #20]
+ 158 0032 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
+ 159 0034 1948     		ldr	r0, .L20+8
+ 160 0036 4FF03F08 		mov	r8, #63
+ 161 003a 5F1C     		adds	r7, r3, #1
+ 162 003c 02F80380 		strb	r8, [r2, r3]
+ 163 0040 9E1C     		adds	r6, r3, #2
+ 164 0042 DD1C     		adds	r5, r3, #3
+ 165 0044 03F1040E 		add	lr, r3, #4
+ 166 0048 03F1050C 		add	ip, r3, #5
+ 167 004c 9C1D     		adds	r4, r3, #6
+ 168 004e FFB2     		uxtb	r7, r7
+ 169 0050 0733     		adds	r3, r3, #7
+ 170 0052 0B70     		strb	r3, [r1]
+ 171 0054 F6B2     		uxtb	r6, r6
+ 172 0056 7F23     		movs	r3, #127
+ 173 0058 D355     		strb	r3, [r2, r7]
+ 174 005a EDB2     		uxtb	r5, r5
+ 175 005c 5223     		movs	r3, #82
+ 176 005e 9355     		strb	r3, [r2, r6]
+ARM GAS  /tmp/ccgBGgSo.s 			page 4
 
 
- 177              	.L18:
- 178 0064 2046     		mov	r0, r4
- 179 0066 FFF7FEFF 		bl	HAL_ADC_Start_IT
- 180 006a FBE7     		b	.L18
- 181              	.L21:
- 182              		.align	2
- 183              	.L20:
- 184 006c 00000000 		.word	.LANCHOR0
- 185 0070 00000000 		.word	.LANCHOR1
- 186 0074 00000000 		.word	htim2
- 187 0078 00000000 		.word	hadc3
- 189              		.section	.text.Error_Handler,"ax",%progbits
- 190              		.align	1
- 191              		.p2align 2,,3
- 192              		.global	Error_Handler
- 193              		.syntax unified
- 194              		.thumb
- 195              		.thumb_func
- 196              		.fpu fpv4-sp-d16
- 198              	Error_Handler:
- 199              		@ Volatile: function does not return.
- 200              		@ args = 0, pretend = 0, frame = 0
- 201              		@ frame_needed = 0, uses_anonymous_args = 0
- 202              		@ link register save eliminated.
- 203              		.syntax unified
- 204              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 205 0000 72B6     		cpsid i
- 206              	@ 0 "" 2
- 207              		.thumb
+ 177 0060 5FFA8EFE 		uxtb	lr, lr
+ 178 0064 BF23     		movs	r3, #191
+ 179 0066 5355     		strb	r3, [r2, r5]
+ 180 0068 5FFA8CFC 		uxtb	ip, ip
+ 181 006c E4B2     		uxtb	r4, r4
+ 182 006e 0123     		movs	r3, #1
+ 183 0070 02F80E30 		strb	r3, [r2, lr]
+ 184 0074 F723     		movs	r3, #247
+ 185 0076 02F80C30 		strb	r3, [r2, ip]
+ 186 007a 0021     		movs	r1, #0
+ 187 007c 02F80480 		strb	r8, [r2, r4]
+ 188 0080 FFF7FEFF 		bl	HAL_TIM_PWM_Start
+ 189 0084 0548     		ldr	r0, .L20+8
+ 190 0086 064C     		ldr	r4, .L20+12
+ 191 0088 FFF7FEFF 		bl	HAL_TIM_Base_Start_IT
+ 192              	.L18:
+ 193 008c 2046     		mov	r0, r4
+ 194 008e FFF7FEFF 		bl	HAL_ADC_Start_IT
+ 195 0092 FBE7     		b	.L18
+ 196              	.L21:
+ 197              		.align	2
+ 198              	.L20:
+ 199 0094 00000000 		.word	.LANCHOR0
+ 200 0098 00000000 		.word	.LANCHOR1
+ 201 009c 00000000 		.word	htim2
+ 202 00a0 00000000 		.word	hadc3
+ 204              		.section	.text.Error_Handler,"ax",%progbits
+ 205              		.align	1
+ 206              		.p2align 2,,3
+ 207              		.global	Error_Handler
  208              		.syntax unified
- 209              	.L23:
- 210 0002 FEE7     		b	.L23
- 212              		.global	qback
- 213              		.global	qfront
- 214              		.global	queue
- 215              		.section	.bss.qback,"aw",%nobits
- 216              		.set	.LANCHOR0,. + 0
- 219              	qback:
- 220 0000 00       		.space	1
- 221              		.section	.bss.qfront,"aw",%nobits
- 224              	qfront:
- 225 0000 00       		.space	1
- 226              		.section	.bss.queue,"aw",%nobits
- 227              		.align	2
- 228              		.set	.LANCHOR1,. + 0
- 231              	queue:
- 232 0000 00000000 		.space	64
- 232      00000000 
- 232      00000000 
- 232      00000000 
- 232      00000000 
- 233              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/cc2jSOh4.s 			page 5
+ 209              		.thumb
+ 210              		.thumb_func
+ 211              		.fpu fpv4-sp-d16
+ 213              	Error_Handler:
+ 214              		@ Volatile: function does not return.
+ 215              		@ args = 0, pretend = 0, frame = 0
+ 216              		@ frame_needed = 0, uses_anonymous_args = 0
+ 217              		@ link register save eliminated.
+ 218              		.syntax unified
+ 219              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 220 0000 72B6     		cpsid i
+ 221              	@ 0 "" 2
+ 222              		.thumb
+ 223              		.syntax unified
+ 224              	.L23:
+ 225 0002 FEE7     		b	.L23
+ 227              		.global	qback
+ 228              		.global	qfront
+ 229              		.global	queue
+ 230              		.section	.bss.qback,"aw",%nobits
+ 231              		.set	.LANCHOR0,. + 0
+ 234              	qback:
+ 235 0000 00       		.space	1
+ 236              		.section	.bss.qfront,"aw",%nobits
+ 239              	qfront:
+ 240 0000 00       		.space	1
+ARM GAS  /tmp/ccgBGgSo.s 			page 5
+
+
+ 241              		.section	.bss.queue,"aw",%nobits
+ 242              		.align	2
+ 243              		.set	.LANCHOR1,. + 0
+ 246              	queue:
+ 247 0000 00000000 		.space	64
+ 247      00000000 
+ 247      00000000 
+ 247      00000000 
+ 247      00000000 
+ 248              		.ident	"GCC: (Arch Repository) 11.2.0"
+ARM GAS  /tmp/ccgBGgSo.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 main.c
-     /tmp/cc2jSOh4.s:16     .text.delay_us:0000000000000000 $t
-     /tmp/cc2jSOh4.s:25     .text.delay_us:0000000000000000 delay_us
-     /tmp/cc2jSOh4.s:41     .text.delay_us:0000000000000010 $d
-     /tmp/cc2jSOh4.s:44     .text.SystemClock_Config:0000000000000000 $t
-     /tmp/cc2jSOh4.s:52     .text.SystemClock_Config:0000000000000000 SystemClock_Config
-     /tmp/cc2jSOh4.s:127    .text.SystemClock_Config:0000000000000080 $d
-     /tmp/cc2jSOh4.s:131    .text.startup.main:0000000000000000 $t
-     /tmp/cc2jSOh4.s:139    .text.startup.main:0000000000000000 main
-     /tmp/cc2jSOh4.s:184    .text.startup.main:000000000000006c $d
-     /tmp/cc2jSOh4.s:190    .text.Error_Handler:0000000000000000 $t
-     /tmp/cc2jSOh4.s:198    .text.Error_Handler:0000000000000000 Error_Handler
-     /tmp/cc2jSOh4.s:219    .bss.qback:0000000000000000 qback
-     /tmp/cc2jSOh4.s:224    .bss.qfront:0000000000000000 qfront
-     /tmp/cc2jSOh4.s:231    .bss.queue:0000000000000000 queue
-     /tmp/cc2jSOh4.s:220    .bss.qback:0000000000000000 $d
-     /tmp/cc2jSOh4.s:225    .bss.qfront:0000000000000000 $d
-     /tmp/cc2jSOh4.s:227    .bss.queue:0000000000000000 $d
+     /tmp/ccgBGgSo.s:16     .text.delay_us:0000000000000000 $t
+     /tmp/ccgBGgSo.s:25     .text.delay_us:0000000000000000 delay_us
+     /tmp/ccgBGgSo.s:41     .text.delay_us:0000000000000010 $d
+     /tmp/ccgBGgSo.s:44     .text.SystemClock_Config:0000000000000000 $t
+     /tmp/ccgBGgSo.s:52     .text.SystemClock_Config:0000000000000000 SystemClock_Config
+     /tmp/ccgBGgSo.s:127    .text.SystemClock_Config:0000000000000080 $d
+     /tmp/ccgBGgSo.s:131    .text.startup.main:0000000000000000 $t
+     /tmp/ccgBGgSo.s:139    .text.startup.main:0000000000000000 main
+     /tmp/ccgBGgSo.s:199    .text.startup.main:0000000000000094 $d
+     /tmp/ccgBGgSo.s:205    .text.Error_Handler:0000000000000000 $t
+     /tmp/ccgBGgSo.s:213    .text.Error_Handler:0000000000000000 Error_Handler
+     /tmp/ccgBGgSo.s:234    .bss.qback:0000000000000000 qback
+     /tmp/ccgBGgSo.s:239    .bss.qfront:0000000000000000 qfront
+     /tmp/ccgBGgSo.s:246    .bss.queue:0000000000000000 queue
+     /tmp/ccgBGgSo.s:235    .bss.qback:0000000000000000 $d
+     /tmp/ccgBGgSo.s:240    .bss.qfront:0000000000000000 $d
+     /tmp/ccgBGgSo.s:242    .bss.queue:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 htim2
