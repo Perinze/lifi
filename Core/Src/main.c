@@ -79,7 +79,7 @@ void recv2uart() {
   char buf[128] = {0};
   char *p = buf;
   for (uint8_t i = 0; i < recvidx; i++) {
-    p += sprintf(p, " %02X", recvbuf[i]);
+    p += sprintf(p, " %02x", recvbuf[i]);
   }
   p += sprintf(p, "\r\n");
   HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
@@ -137,7 +137,7 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   LD0_GPIO_Port->ODR |= (LD0_Pin);
-  LD2_GPIO_Port->ODR |= (LD2_Pin);
+  // LD2_GPIO_Port->ODR |= (LD2_Pin);
 
   /*
   recvidx = 0;
@@ -156,9 +156,13 @@ int main(void)
   queue[qback++] = FRMBEGIN2;
 
   // data
-  queue[qback++] = 0x52;
-  queue[qback++] = 0xBF;
-  queue[qback++] = 0x01;
+  queue[qback++] = 0x11;
+  queue[qback++] = 0x45;
+  queue[qback++] = 0x14;
+  queue[qback++] = 0x19;
+  queue[qback++] = 0x19;
+  queue[qback++] = 0x81;
+  queue[qback++] = 0x00;
 
   // frame end
   queue[qback++] = FRMEND1;

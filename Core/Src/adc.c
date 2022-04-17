@@ -168,6 +168,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
     */
     static int state = 0;
     static uint8_t data = 0;
+    static uint8_t last_data = 0;
     static uint8_t bitcnt = 0;
 
     if (!state && ad_res > LIGHTTH) {
@@ -184,9 +185,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
       int pulse = end - start;
       int bit = pulse > PULSEDIV ? 0 : 1;
 
+      /*
       char buf[8] = {0};
-      //sprintf(buf, "bit::%d ", bit);
+      sprintf(buf, "%d ", bit);
       HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
+      */
       
       data = ((data << 1) | bit);
       if (bitcnt) bitcnt--;
@@ -195,40 +198,60 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
     static int byte_state = 1;
     /*
       0 idle
-      1 wait for frame begin 1 0x3f
-      2 wait for frame begin 2 0x7d
-      3 wait for frame end 1 0xf7, receive data
-      4 wait for frame end 2 0xe9, if not 0xe9 then back to state 3
+      1 wait for frame begin 1
+      2 wait for frame begin 2
+      3 wait for frame end 1, receive data
+      4 wait for frame end 2, receive data, assume just received frame end 1 as data
+      5 frame end all matched, end packet receive, back to state 1
     */
+    if (!bitcnt && byte_state > 1) {
+      // char buf[64] = {0};
+      // sprintf(buf, "data::0x%02x\tlast_data::0x%02x\tbyte_state::%d\r\n", (int)data, (int)last_data, byte_state);
+      // HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
+    }
+
     if (byte_state == 1 && data == FRMBEGIN1) {
+      // HAL_UART_Transmit(&huart2, "state 1\r\n", sizeof("\r\nstate 1\r\n"), 0xff);
       bitcnt = 8;
       byte_state = 2;
+      last_data = data;
     } else if (!bitcnt && byte_state == 2 && data == FRMBEGIN2) {
+      // HAL_UART_Transmit(&huart2, "state 2\r\n", sizeof("\r\nstate 2\r\n"), 0xff);
       bitcnt = 8;
       byte_state = 3;
       recvidx = 0;
+      last_data = data;
     } else if (!bitcnt && byte_state == 3) {
-      if (data == FRMEND1) {
-        byte_state = 4;
-      }
+      // HAL_UART_Transmit(&huart2, "state 3\r\n", sizeof("\r\nstate 3\r\n"), 0xff);
       bitcnt = 8;
       recvbuf[recvidx++] = data;
-    } else if (!bitcnt && byte_state == 4) {
+      if (data == FRMEND2 && last_data == FRMEND1) {
+        // HAL_UART_Transmit(&huart2, "state 4\r\n", sizeof("\r\nstate 4\r\n"), 0xff);
+        LD2_GPIO_Port->ODR |= (LD2_Pin);
+        recvidx -= 2;
+        recv2uart();
+        bitcnt = 0;
+        byte_state = 1;
+        return;
+      }
+      last_data = data;
+    }/* else if (byte_state == 4) {
+      HAL_UART_Transmit_IT(&huart2, "state 4\r\n", sizeof("state 4\r\n"));
+      recvidx -= 2;
+      recv2uart();
+      bitcnt = 0;
+      byte_state = 1;
+      */
+      /*
+      bitcnt = 8;
+      recvbuf[recvidx++] = data;
       if (data == FRMEND2) {
         recvidx--;
         byte_state = 1;
         recv2uart();
-      } else {
-        bitcnt = 8;
-        byte_state = 3;
-        recvbuf[recvidx++] = data;
       }
     }
-    if (!bitcnt && byte_state != 1) {
-      char buf[8] = {0};
-      sprintf(buf, "data::%d byte_state::%d\r\n", byte_state);
-      HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
-    }
+      */
    
     /*
     if (data) {
