@@ -84,24 +84,6 @@ void recv2uart() {
   p += sprintf(p, "\r\n");
   HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
   recvidx = 0;
-  /*
-  char str[128] = {0};
-  unsigned char *pin = recvbuf;
-  const char *hex = "0123456789ABCDEF";
-  char *pout = str;
-  int i = 0;
-  for(; i < sizeof(recvbuf)-1; ++i){
-    *pout++ = hex[(*pin>>4)&0xF];
-    *pout++ = hex[(*pin++)&0xF];
-    *pout++ = ' ';
-  }
-  *pout++ = hex[(*pin>>4)&0xF];
-  *pout++ = hex[(*pin)&0xF];
-  *pout++ = '\n';
-  *pout = 0;
-
-  HAL_UART_Transmit(&huart2, str, sizeof(str), 1);
-  */
 }
 /* USER CODE END 0 */
 
@@ -150,23 +132,31 @@ int main(void)
 
   HAL_Delay(2000);
 
-  // push data to queue
-  // frame start
-  queue[qback++] = FRMBEGIN1;
-  queue[qback++] = FRMBEGIN2;
+  for (int i = 0; i < 4; i++) {
+    // push data to queue
+    // frame start
+    queue[qback++] = FRMBEGIN1;
+    queue[qback++] = FRMBEGIN2;
 
-  // data
-  queue[qback++] = 0x11;
-  queue[qback++] = 0x45;
-  queue[qback++] = 0x14;
-  queue[qback++] = 0x19;
-  queue[qback++] = 0x19;
-  queue[qback++] = 0x81;
-  queue[qback++] = 0x00;
+    // data
+    for (int i = 0; i < 3; i++) {
+      queue[qback++] = 0x01;
+      queue[qback++] = 0x23;
+      queue[qback++] = 0x45;
+      queue[qback++] = 0x67;
+      queue[qback++] = 0x89;
+      queue[qback++] = 0xAB;
+      queue[qback++] = 0xCD;
+      queue[qback++] = 0xEF;
+    }
 
-  // frame end
-  queue[qback++] = FRMEND1;
-  queue[qback++] = FRMEND2;
+    // frame end
+    queue[qback++] = FRMEND1;
+    queue[qback++] = FRMEND2;
+
+    queue[qback++] = 0x00;
+    queue[qback++] = 0x00;
+  }
 
   // redundancy
   queue[qback++] = 0x00;
