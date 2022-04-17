@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccc8WyyC.s 			page 1
+ARM GAS  /tmp/ccaH6LLQ.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccc8WyyC.s 			page 1
   56 003a 3B43     		orrs	r3, r3, r7
   57 003c C769     		ldr	r7, [r0, #28]
   58 003e 3B43     		orrs	r3, r3, r7
-ARM GAS  /tmp/ccc8WyyC.s 			page 2
+ARM GAS  /tmp/ccaH6LLQ.s 			page 2
 
 
   59 0040 076A     		ldr	r7, [r0, #32]
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccc8WyyC.s 			page 1
  113              	.L18:
  114 00c0 07040240 		.word	1073873927
  115 00c4 F8FBFDBF 		.word	-1073873928
-ARM GAS  /tmp/ccc8WyyC.s 			page 3
+ARM GAS  /tmp/ccaH6LLQ.s 			page 3
 
 
  116 00c8 CDCCCCCC 		.word	-858993459
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccc8WyyC.s 			page 1
  172 0060 5DF8044B 		ldr	r4, [sp], #4
  173 0064 1846     		mov	r0, r3
  174 0066 7047     		bx	lr
-ARM GAS  /tmp/ccc8WyyC.s 			page 4
+ARM GAS  /tmp/ccaH6LLQ.s 			page 4
 
 
  175              	.L29:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccc8WyyC.s 			page 1
  231 0016 5FFA84FC 		uxtb	ip, r4
  232 001a 05D0     		beq	.L39
  233 001c 0023     		movs	r3, #0
-ARM GAS  /tmp/ccc8WyyC.s 			page 5
+ARM GAS  /tmp/ccaH6LLQ.s 			page 5
 
 
  234 001e 80F82430 		strb	r3, [r0, #36]
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccc8WyyC.s 			page 1
  290 0010 90F82540 		ldrb	r4, [r0, #37]	@ zero_extendqisi2
  291 0014 012C     		cmp	r4, #1
  292 0016 5FFA84FC 		uxtb	ip, r4
-ARM GAS  /tmp/ccc8WyyC.s 			page 6
+ARM GAS  /tmp/ccaH6LLQ.s 			page 6
 
 
  293 001a 05D0     		beq	.L49
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccc8WyyC.s 			page 1
  348              		.p2align 2,,3
  349              		.global	HAL_DMA_Abort
  350              		.syntax unified
-ARM GAS  /tmp/ccc8WyyC.s 			page 7
+ARM GAS  /tmp/ccaH6LLQ.s 			page 7
 
 
  351              		.thumb
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccc8WyyC.s 			page 1
  408              	.L54:
  409 0010 0168     		ldr	r1, [r0]
  410 0012 426C     		ldr	r2, [r0, #68]
-ARM GAS  /tmp/ccc8WyyC.s 			page 8
+ARM GAS  /tmp/ccaH6LLQ.s 			page 8
 
 
  411 0014 10B5     		push	{r4, lr}
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccc8WyyC.s 			page 1
  467 002c 0E46     		mov	r6, r1
  468 002e 05F01C05 		and	r5, r5, #28
  469 0032 41B3     		cbz	r1, .L78
-ARM GAS  /tmp/ccc8WyyC.s 			page 9
+ARM GAS  /tmp/ccaH6LLQ.s 			page 9
 
 
  470 0034 0423     		movs	r3, #4
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccc8WyyC.s 			page 1
  524 00aa CBD1     		bne	.L66
  525              	.L68:
  526 00ac 0120     		movs	r0, #1
-ARM GAS  /tmp/ccc8WyyC.s 			page 10
+ARM GAS  /tmp/ccaH6LLQ.s 			page 10
 
 
  527 00ae 2022     		movs	r2, #32
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccc8WyyC.s 			page 1
  583 002c 036B     		ldr	r3, [r0, #48]
  584 002e 7260     		str	r2, [r6, #4]
  585 0030 CBB1     		cbz	r3, .L80
-ARM GAS  /tmp/ccc8WyyC.s 			page 11
+ARM GAS  /tmp/ccaH6LLQ.s 			page 11
 
 
  586              	.L113:
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccc8WyyC.s 			page 1
  641              		.syntax unified
  642              		.thumb
  643              		.thumb_func
-ARM GAS  /tmp/ccc8WyyC.s 			page 12
+ARM GAS  /tmp/ccaH6LLQ.s 			page 12
 
 
  644              		.fpu fpv4-sp-d16
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccc8WyyC.s 			page 1
  700              		.thumb_func
  701              		.fpu fpv4-sp-d16
  703              	HAL_DMA_UnRegisterCallback:
-ARM GAS  /tmp/ccc8WyyC.s 			page 13
+ARM GAS  /tmp/ccaH6LLQ.s 			page 13
 
 
  704              		@ args = 0, pretend = 0, frame = 0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccc8WyyC.s 			page 1
  759 005e 00BF     		.section	.text.HAL_DMA_GetState,"ax",%progbits
  760              		.align	1
  761              		.p2align 2,,3
-ARM GAS  /tmp/ccc8WyyC.s 			page 14
+ARM GAS  /tmp/ccaH6LLQ.s 			page 14
 
 
  762              		.global	HAL_DMA_GetState
@@ -807,42 +807,42 @@ ARM GAS  /tmp/ccc8WyyC.s 			page 1
  788 0000 C06B     		ldr	r0, [r0, #60]
  789 0002 7047     		bx	lr
  791              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/ccc8WyyC.s 			page 15
+ARM GAS  /tmp/ccaH6LLQ.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l4xx_hal_dma.c
-     /tmp/ccc8WyyC.s:16     .text.HAL_DMA_Init:0000000000000000 $t
-     /tmp/ccc8WyyC.s:25     .text.HAL_DMA_Init:0000000000000000 HAL_DMA_Init
-     /tmp/ccc8WyyC.s:114    .text.HAL_DMA_Init:00000000000000c0 $d
-     /tmp/ccc8WyyC.s:122    .text.HAL_DMA_DeInit:0000000000000000 $t
-     /tmp/ccc8WyyC.s:130    .text.HAL_DMA_DeInit:0000000000000000 HAL_DMA_DeInit
-     /tmp/ccc8WyyC.s:203    .text.HAL_DMA_DeInit:00000000000000a4 $d
-     /tmp/ccc8WyyC.s:211    .text.HAL_DMA_Start:0000000000000000 $t
-     /tmp/ccc8WyyC.s:219    .text.HAL_DMA_Start:0000000000000000 HAL_DMA_Start
-     /tmp/ccc8WyyC.s:272    .text.HAL_DMA_Start_IT:0000000000000000 $t
-     /tmp/ccc8WyyC.s:280    .text.HAL_DMA_Start_IT:0000000000000000 HAL_DMA_Start_IT
-     /tmp/ccc8WyyC.s:347    .text.HAL_DMA_Abort:0000000000000000 $t
-     /tmp/ccc8WyyC.s:355    .text.HAL_DMA_Abort:0000000000000000 HAL_DMA_Abort
-     /tmp/ccc8WyyC.s:390    .text.HAL_DMA_Abort_IT:0000000000000000 $t
-     /tmp/ccc8WyyC.s:398    .text.HAL_DMA_Abort_IT:0000000000000000 HAL_DMA_Abort_IT
-     /tmp/ccc8WyyC.s:436    .text.HAL_DMA_PollForTransfer:0000000000000000 $t
-     /tmp/ccc8WyyC.s:444    .text.HAL_DMA_PollForTransfer:0000000000000000 HAL_DMA_PollForTransfer
-     /tmp/ccc8WyyC.s:551    .text.HAL_DMA_IRQHandler:0000000000000000 $t
-     /tmp/ccc8WyyC.s:559    .text.HAL_DMA_IRQHandler:0000000000000000 HAL_DMA_IRQHandler
-     /tmp/ccc8WyyC.s:638    .text.HAL_DMA_RegisterCallback:0000000000000000 $t
-     /tmp/ccc8WyyC.s:646    .text.HAL_DMA_RegisterCallback:0000000000000000 HAL_DMA_RegisterCallback
-     /tmp/ccc8WyyC.s:668    .text.HAL_DMA_RegisterCallback:000000000000002a $d
-     /tmp/ccc8WyyC.s:672    .text.HAL_DMA_RegisterCallback:000000000000002e $t
-     /tmp/ccc8WyyC.s:695    .text.HAL_DMA_UnRegisterCallback:0000000000000000 $t
-     /tmp/ccc8WyyC.s:703    .text.HAL_DMA_UnRegisterCallback:0000000000000000 HAL_DMA_UnRegisterCallback
-     /tmp/ccc8WyyC.s:727    .text.HAL_DMA_UnRegisterCallback:000000000000002e $d
-     /tmp/ccc8WyyC.s:760    .text.HAL_DMA_GetState:0000000000000000 $t
-     /tmp/ccc8WyyC.s:768    .text.HAL_DMA_GetState:0000000000000000 HAL_DMA_GetState
-     /tmp/ccc8WyyC.s:776    .text.HAL_DMA_GetError:0000000000000000 $t
-     /tmp/ccc8WyyC.s:784    .text.HAL_DMA_GetError:0000000000000000 HAL_DMA_GetError
-     /tmp/ccc8WyyC.s:732    .text.HAL_DMA_UnRegisterCallback:0000000000000033 $d
-     /tmp/ccc8WyyC.s:732    .text.HAL_DMA_UnRegisterCallback:0000000000000034 $t
+     /tmp/ccaH6LLQ.s:16     .text.HAL_DMA_Init:0000000000000000 $t
+     /tmp/ccaH6LLQ.s:25     .text.HAL_DMA_Init:0000000000000000 HAL_DMA_Init
+     /tmp/ccaH6LLQ.s:114    .text.HAL_DMA_Init:00000000000000c0 $d
+     /tmp/ccaH6LLQ.s:122    .text.HAL_DMA_DeInit:0000000000000000 $t
+     /tmp/ccaH6LLQ.s:130    .text.HAL_DMA_DeInit:0000000000000000 HAL_DMA_DeInit
+     /tmp/ccaH6LLQ.s:203    .text.HAL_DMA_DeInit:00000000000000a4 $d
+     /tmp/ccaH6LLQ.s:211    .text.HAL_DMA_Start:0000000000000000 $t
+     /tmp/ccaH6LLQ.s:219    .text.HAL_DMA_Start:0000000000000000 HAL_DMA_Start
+     /tmp/ccaH6LLQ.s:272    .text.HAL_DMA_Start_IT:0000000000000000 $t
+     /tmp/ccaH6LLQ.s:280    .text.HAL_DMA_Start_IT:0000000000000000 HAL_DMA_Start_IT
+     /tmp/ccaH6LLQ.s:347    .text.HAL_DMA_Abort:0000000000000000 $t
+     /tmp/ccaH6LLQ.s:355    .text.HAL_DMA_Abort:0000000000000000 HAL_DMA_Abort
+     /tmp/ccaH6LLQ.s:390    .text.HAL_DMA_Abort_IT:0000000000000000 $t
+     /tmp/ccaH6LLQ.s:398    .text.HAL_DMA_Abort_IT:0000000000000000 HAL_DMA_Abort_IT
+     /tmp/ccaH6LLQ.s:436    .text.HAL_DMA_PollForTransfer:0000000000000000 $t
+     /tmp/ccaH6LLQ.s:444    .text.HAL_DMA_PollForTransfer:0000000000000000 HAL_DMA_PollForTransfer
+     /tmp/ccaH6LLQ.s:551    .text.HAL_DMA_IRQHandler:0000000000000000 $t
+     /tmp/ccaH6LLQ.s:559    .text.HAL_DMA_IRQHandler:0000000000000000 HAL_DMA_IRQHandler
+     /tmp/ccaH6LLQ.s:638    .text.HAL_DMA_RegisterCallback:0000000000000000 $t
+     /tmp/ccaH6LLQ.s:646    .text.HAL_DMA_RegisterCallback:0000000000000000 HAL_DMA_RegisterCallback
+     /tmp/ccaH6LLQ.s:668    .text.HAL_DMA_RegisterCallback:000000000000002a $d
+     /tmp/ccaH6LLQ.s:672    .text.HAL_DMA_RegisterCallback:000000000000002e $t
+     /tmp/ccaH6LLQ.s:695    .text.HAL_DMA_UnRegisterCallback:0000000000000000 $t
+     /tmp/ccaH6LLQ.s:703    .text.HAL_DMA_UnRegisterCallback:0000000000000000 HAL_DMA_UnRegisterCallback
+     /tmp/ccaH6LLQ.s:727    .text.HAL_DMA_UnRegisterCallback:000000000000002e $d
+     /tmp/ccaH6LLQ.s:760    .text.HAL_DMA_GetState:0000000000000000 $t
+     /tmp/ccaH6LLQ.s:768    .text.HAL_DMA_GetState:0000000000000000 HAL_DMA_GetState
+     /tmp/ccaH6LLQ.s:776    .text.HAL_DMA_GetError:0000000000000000 $t
+     /tmp/ccaH6LLQ.s:784    .text.HAL_DMA_GetError:0000000000000000 HAL_DMA_GetError
+     /tmp/ccaH6LLQ.s:732    .text.HAL_DMA_UnRegisterCallback:0000000000000033 $d
+     /tmp/ccaH6LLQ.s:732    .text.HAL_DMA_UnRegisterCallback:0000000000000034 $t
 
 UNDEFINED SYMBOLS
 HAL_GetTick

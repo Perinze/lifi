@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cclXegFU.s 			page 1
+ARM GAS  /tmp/ccZdgkN6.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cclXegFU.s 			page 1
   60 0004 0024     		movs	r4, #0
   61 0006 4FF0FF32 		mov	r2, #-1
   62 000a 9A63     		str	r2, [r3, #56]
-ARM GAS  /tmp/cclXegFU.s 			page 2
+ARM GAS  /tmp/ccZdgkN6.s 			page 2
 
 
   63 000c DA63     		str	r2, [r3, #60]
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cclXegFU.s 			page 1
  119 003a 2046     		mov	r0, r4
  120 003c 1D60     		str	r5, [r3]
  121 003e 38BD     		pop	{r3, r4, r5, pc}
-ARM GAS  /tmp/cclXegFU.s 			page 3
+ARM GAS  /tmp/ccZdgkN6.s 			page 3
 
 
  122              	.L14:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cclXegFU.s 			page 1
  180 0006 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  181 0008 0B44     		add	r3, r3, r1
  182 000a 1360     		str	r3, [r2]
-ARM GAS  /tmp/cclXegFU.s 			page 4
+ARM GAS  /tmp/ccZdgkN6.s 			page 4
 
 
  183 000c 7047     		bx	lr
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cclXegFU.s 			page 1
  243              		@ frame_needed = 0, uses_anonymous_args = 0
  244 0000 38B5     		push	{r3, r4, r5, lr}
  245 0002 074C     		ldr	r4, .L39
-ARM GAS  /tmp/cclXegFU.s 			page 5
+ARM GAS  /tmp/ccZdgkN6.s 			page 5
 
 
  246 0004 2578     		ldrb	r5, [r4]	@ zero_extendqisi2
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cclXegFU.s 			page 1
  304 000a 0546     		mov	r5, r0
  305 000c 02D0     		beq	.L46
  306 000e 044B     		ldr	r3, .L52
-ARM GAS  /tmp/cclXegFU.s 			page 6
+ARM GAS  /tmp/ccZdgkN6.s 			page 6
 
 
  307 0010 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cclXegFU.s 			page 1
  367              	HAL_GetHalVersion:
  368              		@ args = 0, pretend = 0, frame = 0
  369              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/cclXegFU.s 			page 7
+ARM GAS  /tmp/ccZdgkN6.s 			page 7
 
 
  370              		@ link register save eliminated.
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cclXegFU.s 			page 1
  429              		.fpu fpv4-sp-d16
  431              	HAL_GetUIDw0:
  432              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/cclXegFU.s 			page 8
+ARM GAS  /tmp/ccZdgkN6.s 			page 8
 
 
  433              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cclXegFU.s 			page 1
  492              		.fpu fpv4-sp-d16
  494              	HAL_DBGMCU_EnableDBGSleepMode:
  495              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/cclXegFU.s 			page 9
+ARM GAS  /tmp/ccZdgkN6.s 			page 9
 
 
  496              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cclXegFU.s 			page 1
  555              		.align	1
  556              		.p2align 2,,3
  557              		.global	HAL_DBGMCU_DisableDBGStopMode
-ARM GAS  /tmp/cclXegFU.s 			page 10
+ARM GAS  /tmp/ccZdgkN6.s 			page 10
 
 
  558              		.syntax unified
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cclXegFU.s 			page 1
  617 000a 7047     		bx	lr
  618              	.L91:
  619              		.align	2
-ARM GAS  /tmp/cclXegFU.s 			page 11
+ARM GAS  /tmp/ccZdgkN6.s 			page 11
 
 
  620              	.L90:
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cclXegFU.s 			page 1
  679              		.syntax unified
  680              		.thumb
  681              		.thumb_func
-ARM GAS  /tmp/cclXegFU.s 			page 12
+ARM GAS  /tmp/ccZdgkN6.s 			page 12
 
 
  682              		.fpu fpv4-sp-d16
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cclXegFU.s 			page 1
  741 000e 00BF     		.align	2
  742              	.L106:
  743 0010 00000140 		.word	1073807360
-ARM GAS  /tmp/cclXegFU.s 			page 13
+ARM GAS  /tmp/ccZdgkN6.s 			page 13
 
 
  745              		.section	.text.HAL_SYSCFG_VREFBUF_TrimmingConfig,"ax",%progbits
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cclXegFU.s 			page 1
  802 002a 38BD     		pop	{r3, r4, r5, pc}
  803              	.L118:
  804              		.align	2
-ARM GAS  /tmp/cclXegFU.s 			page 14
+ARM GAS  /tmp/ccZdgkN6.s 			page 14
 
 
  805              	.L117:
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cclXegFU.s 			page 1
  865              		@ frame_needed = 0, uses_anonymous_args = 0
  866              		@ link register save eliminated.
  867 0000 024A     		ldr	r2, .L126
-ARM GAS  /tmp/cclXegFU.s 			page 15
+ARM GAS  /tmp/ccZdgkN6.s 			page 15
 
 
  868 0002 5368     		ldr	r3, [r2, #4]
@@ -867,126 +867,126 @@ ARM GAS  /tmp/cclXegFU.s 			page 1
  898              	uwTickPrio:
  899 0000 10000000 		.word	16
  900              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/cclXegFU.s 			page 16
+ARM GAS  /tmp/ccZdgkN6.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l4xx_hal.c
-     /tmp/cclXegFU.s:16     .text.HAL_MspInit:0000000000000000 $t
-     /tmp/cclXegFU.s:25     .text.HAL_MspInit:0000000000000000 HAL_MspInit
-     /tmp/cclXegFU.s:32     .text.HAL_MspDeInit:0000000000000000 $t
-     /tmp/cclXegFU.s:40     .text.HAL_MspDeInit:0000000000000000 HAL_MspDeInit
-     /tmp/cclXegFU.s:47     .text.HAL_DeInit:0000000000000000 $t
-     /tmp/cclXegFU.s:55     .text.HAL_DeInit:0000000000000000 HAL_DeInit
-     /tmp/cclXegFU.s:80     .text.HAL_DeInit:000000000000002c $d
-     /tmp/cclXegFU.s:83     .text.HAL_InitTick:0000000000000000 $t
-     /tmp/cclXegFU.s:91     .text.HAL_InitTick:0000000000000000 HAL_InitTick
-     /tmp/cclXegFU.s:125    .text.HAL_InitTick:0000000000000040 $d
-     /tmp/cclXegFU.s:130    .text.HAL_Init:0000000000000000 $t
-     /tmp/cclXegFU.s:138    .text.HAL_Init:0000000000000000 HAL_Init
-     /tmp/cclXegFU.s:162    .text.HAL_Init:000000000000002c $d
-     /tmp/cclXegFU.s:165    .text.HAL_IncTick:0000000000000000 $t
-     /tmp/cclXegFU.s:173    .text.HAL_IncTick:0000000000000000 HAL_IncTick
-     /tmp/cclXegFU.s:187    .text.HAL_IncTick:0000000000000010 $d
-     /tmp/cclXegFU.s:191    .text.HAL_GetTick:0000000000000000 $t
-     /tmp/cclXegFU.s:199    .text.HAL_GetTick:0000000000000000 HAL_GetTick
-     /tmp/cclXegFU.s:209    .text.HAL_GetTick:0000000000000008 $d
-     /tmp/cclXegFU.s:212    .text.HAL_GetTickPrio:0000000000000000 $t
-     /tmp/cclXegFU.s:220    .text.HAL_GetTickPrio:0000000000000000 HAL_GetTickPrio
-     /tmp/cclXegFU.s:230    .text.HAL_GetTickPrio:0000000000000008 $d
-     /tmp/cclXegFU.s:233    .text.HAL_SetTickFreq:0000000000000000 $t
-     /tmp/cclXegFU.s:241    .text.HAL_SetTickFreq:0000000000000000 HAL_SetTickFreq
-     /tmp/cclXegFU.s:264    .text.HAL_SetTickFreq:0000000000000020 $d
-     /tmp/cclXegFU.s:268    .text.HAL_GetTickFreq:0000000000000000 $t
-     /tmp/cclXegFU.s:276    .text.HAL_GetTickFreq:0000000000000000 HAL_GetTickFreq
-     /tmp/cclXegFU.s:286    .text.HAL_GetTickFreq:0000000000000008 $d
-     /tmp/cclXegFU.s:289    .text.HAL_Delay:0000000000000000 $t
-     /tmp/cclXegFU.s:297    .text.HAL_Delay:0000000000000000 HAL_Delay
-     /tmp/cclXegFU.s:318    .text.HAL_Delay:0000000000000020 $d
-     /tmp/cclXegFU.s:321    .text.HAL_SuspendTick:0000000000000000 $t
-     /tmp/cclXegFU.s:329    .text.HAL_SuspendTick:0000000000000000 HAL_SuspendTick
-     /tmp/cclXegFU.s:340    .text.HAL_ResumeTick:0000000000000000 $t
-     /tmp/cclXegFU.s:348    .text.HAL_ResumeTick:0000000000000000 HAL_ResumeTick
-     /tmp/cclXegFU.s:359    .text.HAL_GetHalVersion:0000000000000000 $t
-     /tmp/cclXegFU.s:367    .text.HAL_GetHalVersion:0000000000000000 HAL_GetHalVersion
-     /tmp/cclXegFU.s:376    .text.HAL_GetHalVersion:0000000000000004 $d
-     /tmp/cclXegFU.s:379    .text.HAL_GetREVID:0000000000000000 $t
-     /tmp/cclXegFU.s:387    .text.HAL_GetREVID:0000000000000000 HAL_GetREVID
-     /tmp/cclXegFU.s:398    .text.HAL_GetREVID:0000000000000008 $d
-     /tmp/cclXegFU.s:401    .text.HAL_GetDEVID:0000000000000000 $t
-     /tmp/cclXegFU.s:409    .text.HAL_GetDEVID:0000000000000000 HAL_GetDEVID
-     /tmp/cclXegFU.s:420    .text.HAL_GetDEVID:000000000000000c $d
-     /tmp/cclXegFU.s:423    .text.HAL_GetUIDw0:0000000000000000 $t
-     /tmp/cclXegFU.s:431    .text.HAL_GetUIDw0:0000000000000000 HAL_GetUIDw0
-     /tmp/cclXegFU.s:441    .text.HAL_GetUIDw0:0000000000000008 $d
-     /tmp/cclXegFU.s:444    .text.HAL_GetUIDw1:0000000000000000 $t
-     /tmp/cclXegFU.s:452    .text.HAL_GetUIDw1:0000000000000000 HAL_GetUIDw1
-     /tmp/cclXegFU.s:462    .text.HAL_GetUIDw1:0000000000000008 $d
-     /tmp/cclXegFU.s:465    .text.HAL_GetUIDw2:0000000000000000 $t
-     /tmp/cclXegFU.s:473    .text.HAL_GetUIDw2:0000000000000000 HAL_GetUIDw2
-     /tmp/cclXegFU.s:483    .text.HAL_GetUIDw2:0000000000000008 $d
-     /tmp/cclXegFU.s:486    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 $t
-     /tmp/cclXegFU.s:494    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 HAL_DBGMCU_EnableDBGSleepMode
-ARM GAS  /tmp/cclXegFU.s 			page 17
+     /tmp/ccZdgkN6.s:16     .text.HAL_MspInit:0000000000000000 $t
+     /tmp/ccZdgkN6.s:25     .text.HAL_MspInit:0000000000000000 HAL_MspInit
+     /tmp/ccZdgkN6.s:32     .text.HAL_MspDeInit:0000000000000000 $t
+     /tmp/ccZdgkN6.s:40     .text.HAL_MspDeInit:0000000000000000 HAL_MspDeInit
+     /tmp/ccZdgkN6.s:47     .text.HAL_DeInit:0000000000000000 $t
+     /tmp/ccZdgkN6.s:55     .text.HAL_DeInit:0000000000000000 HAL_DeInit
+     /tmp/ccZdgkN6.s:80     .text.HAL_DeInit:000000000000002c $d
+     /tmp/ccZdgkN6.s:83     .text.HAL_InitTick:0000000000000000 $t
+     /tmp/ccZdgkN6.s:91     .text.HAL_InitTick:0000000000000000 HAL_InitTick
+     /tmp/ccZdgkN6.s:125    .text.HAL_InitTick:0000000000000040 $d
+     /tmp/ccZdgkN6.s:130    .text.HAL_Init:0000000000000000 $t
+     /tmp/ccZdgkN6.s:138    .text.HAL_Init:0000000000000000 HAL_Init
+     /tmp/ccZdgkN6.s:162    .text.HAL_Init:000000000000002c $d
+     /tmp/ccZdgkN6.s:165    .text.HAL_IncTick:0000000000000000 $t
+     /tmp/ccZdgkN6.s:173    .text.HAL_IncTick:0000000000000000 HAL_IncTick
+     /tmp/ccZdgkN6.s:187    .text.HAL_IncTick:0000000000000010 $d
+     /tmp/ccZdgkN6.s:191    .text.HAL_GetTick:0000000000000000 $t
+     /tmp/ccZdgkN6.s:199    .text.HAL_GetTick:0000000000000000 HAL_GetTick
+     /tmp/ccZdgkN6.s:209    .text.HAL_GetTick:0000000000000008 $d
+     /tmp/ccZdgkN6.s:212    .text.HAL_GetTickPrio:0000000000000000 $t
+     /tmp/ccZdgkN6.s:220    .text.HAL_GetTickPrio:0000000000000000 HAL_GetTickPrio
+     /tmp/ccZdgkN6.s:230    .text.HAL_GetTickPrio:0000000000000008 $d
+     /tmp/ccZdgkN6.s:233    .text.HAL_SetTickFreq:0000000000000000 $t
+     /tmp/ccZdgkN6.s:241    .text.HAL_SetTickFreq:0000000000000000 HAL_SetTickFreq
+     /tmp/ccZdgkN6.s:264    .text.HAL_SetTickFreq:0000000000000020 $d
+     /tmp/ccZdgkN6.s:268    .text.HAL_GetTickFreq:0000000000000000 $t
+     /tmp/ccZdgkN6.s:276    .text.HAL_GetTickFreq:0000000000000000 HAL_GetTickFreq
+     /tmp/ccZdgkN6.s:286    .text.HAL_GetTickFreq:0000000000000008 $d
+     /tmp/ccZdgkN6.s:289    .text.HAL_Delay:0000000000000000 $t
+     /tmp/ccZdgkN6.s:297    .text.HAL_Delay:0000000000000000 HAL_Delay
+     /tmp/ccZdgkN6.s:318    .text.HAL_Delay:0000000000000020 $d
+     /tmp/ccZdgkN6.s:321    .text.HAL_SuspendTick:0000000000000000 $t
+     /tmp/ccZdgkN6.s:329    .text.HAL_SuspendTick:0000000000000000 HAL_SuspendTick
+     /tmp/ccZdgkN6.s:340    .text.HAL_ResumeTick:0000000000000000 $t
+     /tmp/ccZdgkN6.s:348    .text.HAL_ResumeTick:0000000000000000 HAL_ResumeTick
+     /tmp/ccZdgkN6.s:359    .text.HAL_GetHalVersion:0000000000000000 $t
+     /tmp/ccZdgkN6.s:367    .text.HAL_GetHalVersion:0000000000000000 HAL_GetHalVersion
+     /tmp/ccZdgkN6.s:376    .text.HAL_GetHalVersion:0000000000000004 $d
+     /tmp/ccZdgkN6.s:379    .text.HAL_GetREVID:0000000000000000 $t
+     /tmp/ccZdgkN6.s:387    .text.HAL_GetREVID:0000000000000000 HAL_GetREVID
+     /tmp/ccZdgkN6.s:398    .text.HAL_GetREVID:0000000000000008 $d
+     /tmp/ccZdgkN6.s:401    .text.HAL_GetDEVID:0000000000000000 $t
+     /tmp/ccZdgkN6.s:409    .text.HAL_GetDEVID:0000000000000000 HAL_GetDEVID
+     /tmp/ccZdgkN6.s:420    .text.HAL_GetDEVID:000000000000000c $d
+     /tmp/ccZdgkN6.s:423    .text.HAL_GetUIDw0:0000000000000000 $t
+     /tmp/ccZdgkN6.s:431    .text.HAL_GetUIDw0:0000000000000000 HAL_GetUIDw0
+     /tmp/ccZdgkN6.s:441    .text.HAL_GetUIDw0:0000000000000008 $d
+     /tmp/ccZdgkN6.s:444    .text.HAL_GetUIDw1:0000000000000000 $t
+     /tmp/ccZdgkN6.s:452    .text.HAL_GetUIDw1:0000000000000000 HAL_GetUIDw1
+     /tmp/ccZdgkN6.s:462    .text.HAL_GetUIDw1:0000000000000008 $d
+     /tmp/ccZdgkN6.s:465    .text.HAL_GetUIDw2:0000000000000000 $t
+     /tmp/ccZdgkN6.s:473    .text.HAL_GetUIDw2:0000000000000000 HAL_GetUIDw2
+     /tmp/ccZdgkN6.s:483    .text.HAL_GetUIDw2:0000000000000008 $d
+     /tmp/ccZdgkN6.s:486    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 $t
+     /tmp/ccZdgkN6.s:494    .text.HAL_DBGMCU_EnableDBGSleepMode:0000000000000000 HAL_DBGMCU_EnableDBGSleepMode
+ARM GAS  /tmp/ccZdgkN6.s 			page 17
 
 
-     /tmp/cclXegFU.s:506    .text.HAL_DBGMCU_EnableDBGSleepMode:000000000000000c $d
-     /tmp/cclXegFU.s:509    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 $t
-     /tmp/cclXegFU.s:517    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 HAL_DBGMCU_DisableDBGSleepMode
-     /tmp/cclXegFU.s:529    .text.HAL_DBGMCU_DisableDBGSleepMode:000000000000000c $d
-     /tmp/cclXegFU.s:532    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 $t
-     /tmp/cclXegFU.s:540    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 HAL_DBGMCU_EnableDBGStopMode
-     /tmp/cclXegFU.s:552    .text.HAL_DBGMCU_EnableDBGStopMode:000000000000000c $d
-     /tmp/cclXegFU.s:555    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 $t
-     /tmp/cclXegFU.s:563    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 HAL_DBGMCU_DisableDBGStopMode
-     /tmp/cclXegFU.s:575    .text.HAL_DBGMCU_DisableDBGStopMode:000000000000000c $d
-     /tmp/cclXegFU.s:578    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 $t
-     /tmp/cclXegFU.s:586    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 HAL_DBGMCU_EnableDBGStandbyMode
-     /tmp/cclXegFU.s:598    .text.HAL_DBGMCU_EnableDBGStandbyMode:000000000000000c $d
-     /tmp/cclXegFU.s:601    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 $t
-     /tmp/cclXegFU.s:609    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 HAL_DBGMCU_DisableDBGStandbyMode
-     /tmp/cclXegFU.s:621    .text.HAL_DBGMCU_DisableDBGStandbyMode:000000000000000c $d
-     /tmp/cclXegFU.s:624    .text.HAL_SYSCFG_SRAM2Erase:0000000000000000 $t
-     /tmp/cclXegFU.s:632    .text.HAL_SYSCFG_SRAM2Erase:0000000000000000 HAL_SYSCFG_SRAM2Erase
-     /tmp/cclXegFU.s:650    .text.HAL_SYSCFG_SRAM2Erase:000000000000001c $d
-     /tmp/cclXegFU.s:654    .text.HAL_SYSCFG_EnableMemorySwappingBank:0000000000000000 $t
-     /tmp/cclXegFU.s:662    .text.HAL_SYSCFG_EnableMemorySwappingBank:0000000000000000 HAL_SYSCFG_EnableMemorySwappingBank
-     /tmp/cclXegFU.s:673    .text.HAL_SYSCFG_EnableMemorySwappingBank:0000000000000008 $d
-     /tmp/cclXegFU.s:676    .text.HAL_SYSCFG_DisableMemorySwappingBank:0000000000000000 $t
-     /tmp/cclXegFU.s:684    .text.HAL_SYSCFG_DisableMemorySwappingBank:0000000000000000 HAL_SYSCFG_DisableMemorySwappingBank
-     /tmp/cclXegFU.s:695    .text.HAL_SYSCFG_DisableMemorySwappingBank:0000000000000008 $d
-     /tmp/cclXegFU.s:698    .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:0000000000000000 $t
-     /tmp/cclXegFU.s:706    .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:0000000000000000 HAL_SYSCFG_VREFBUF_VoltageScalingConfig
-     /tmp/cclXegFU.s:719    .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:0000000000000010 $d
-     /tmp/cclXegFU.s:722    .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:0000000000000000 $t
-     /tmp/cclXegFU.s:730    .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:0000000000000000 HAL_SYSCFG_VREFBUF_HighImpedanceConfig
-     /tmp/cclXegFU.s:743    .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:0000000000000010 $d
-     /tmp/cclXegFU.s:746    .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:0000000000000000 $t
-     /tmp/cclXegFU.s:754    .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:0000000000000000 HAL_SYSCFG_VREFBUF_TrimmingConfig
-     /tmp/cclXegFU.s:767    .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:0000000000000010 $d
-     /tmp/cclXegFU.s:770    .text.HAL_SYSCFG_EnableVREFBUF:0000000000000000 $t
-     /tmp/cclXegFU.s:778    .text.HAL_SYSCFG_EnableVREFBUF:0000000000000000 HAL_SYSCFG_EnableVREFBUF
-     /tmp/cclXegFU.s:806    .text.HAL_SYSCFG_EnableVREFBUF:000000000000002c $d
-     /tmp/cclXegFU.s:809    .text.HAL_SYSCFG_DisableVREFBUF:0000000000000000 $t
-     /tmp/cclXegFU.s:817    .text.HAL_SYSCFG_DisableVREFBUF:0000000000000000 HAL_SYSCFG_DisableVREFBUF
-     /tmp/cclXegFU.s:829    .text.HAL_SYSCFG_DisableVREFBUF:000000000000000c $d
-     /tmp/cclXegFU.s:832    .text.HAL_SYSCFG_EnableIOAnalogSwitchBooster:0000000000000000 $t
-     /tmp/cclXegFU.s:840    .text.HAL_SYSCFG_EnableIOAnalogSwitchBooster:0000000000000000 HAL_SYSCFG_EnableIOAnalogSwitchBooster
-     /tmp/cclXegFU.s:852    .text.HAL_SYSCFG_EnableIOAnalogSwitchBooster:000000000000000c $d
-     /tmp/cclXegFU.s:855    .text.HAL_SYSCFG_DisableIOAnalogSwitchBooster:0000000000000000 $t
-     /tmp/cclXegFU.s:863    .text.HAL_SYSCFG_DisableIOAnalogSwitchBooster:0000000000000000 HAL_SYSCFG_DisableIOAnalogSwitchBooster
-     /tmp/cclXegFU.s:875    .text.HAL_SYSCFG_DisableIOAnalogSwitchBooster:000000000000000c $d
-     /tmp/cclXegFU.s:891    .data.uwTickFreq:0000000000000000 uwTickFreq
-     /tmp/cclXegFU.s:898    .data.uwTickPrio:0000000000000000 uwTickPrio
-     /tmp/cclXegFU.s:885    .bss.uwTick:0000000000000000 uwTick
-     /tmp/cclXegFU.s:881    .bss.uwTick:0000000000000000 $d
-     /tmp/cclXegFU.s:894    .data.uwTickPrio:0000000000000000 $d
+     /tmp/ccZdgkN6.s:506    .text.HAL_DBGMCU_EnableDBGSleepMode:000000000000000c $d
+     /tmp/ccZdgkN6.s:509    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 $t
+     /tmp/ccZdgkN6.s:517    .text.HAL_DBGMCU_DisableDBGSleepMode:0000000000000000 HAL_DBGMCU_DisableDBGSleepMode
+     /tmp/ccZdgkN6.s:529    .text.HAL_DBGMCU_DisableDBGSleepMode:000000000000000c $d
+     /tmp/ccZdgkN6.s:532    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 $t
+     /tmp/ccZdgkN6.s:540    .text.HAL_DBGMCU_EnableDBGStopMode:0000000000000000 HAL_DBGMCU_EnableDBGStopMode
+     /tmp/ccZdgkN6.s:552    .text.HAL_DBGMCU_EnableDBGStopMode:000000000000000c $d
+     /tmp/ccZdgkN6.s:555    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 $t
+     /tmp/ccZdgkN6.s:563    .text.HAL_DBGMCU_DisableDBGStopMode:0000000000000000 HAL_DBGMCU_DisableDBGStopMode
+     /tmp/ccZdgkN6.s:575    .text.HAL_DBGMCU_DisableDBGStopMode:000000000000000c $d
+     /tmp/ccZdgkN6.s:578    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 $t
+     /tmp/ccZdgkN6.s:586    .text.HAL_DBGMCU_EnableDBGStandbyMode:0000000000000000 HAL_DBGMCU_EnableDBGStandbyMode
+     /tmp/ccZdgkN6.s:598    .text.HAL_DBGMCU_EnableDBGStandbyMode:000000000000000c $d
+     /tmp/ccZdgkN6.s:601    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 $t
+     /tmp/ccZdgkN6.s:609    .text.HAL_DBGMCU_DisableDBGStandbyMode:0000000000000000 HAL_DBGMCU_DisableDBGStandbyMode
+     /tmp/ccZdgkN6.s:621    .text.HAL_DBGMCU_DisableDBGStandbyMode:000000000000000c $d
+     /tmp/ccZdgkN6.s:624    .text.HAL_SYSCFG_SRAM2Erase:0000000000000000 $t
+     /tmp/ccZdgkN6.s:632    .text.HAL_SYSCFG_SRAM2Erase:0000000000000000 HAL_SYSCFG_SRAM2Erase
+     /tmp/ccZdgkN6.s:650    .text.HAL_SYSCFG_SRAM2Erase:000000000000001c $d
+     /tmp/ccZdgkN6.s:654    .text.HAL_SYSCFG_EnableMemorySwappingBank:0000000000000000 $t
+     /tmp/ccZdgkN6.s:662    .text.HAL_SYSCFG_EnableMemorySwappingBank:0000000000000000 HAL_SYSCFG_EnableMemorySwappingBank
+     /tmp/ccZdgkN6.s:673    .text.HAL_SYSCFG_EnableMemorySwappingBank:0000000000000008 $d
+     /tmp/ccZdgkN6.s:676    .text.HAL_SYSCFG_DisableMemorySwappingBank:0000000000000000 $t
+     /tmp/ccZdgkN6.s:684    .text.HAL_SYSCFG_DisableMemorySwappingBank:0000000000000000 HAL_SYSCFG_DisableMemorySwappingBank
+     /tmp/ccZdgkN6.s:695    .text.HAL_SYSCFG_DisableMemorySwappingBank:0000000000000008 $d
+     /tmp/ccZdgkN6.s:698    .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:0000000000000000 $t
+     /tmp/ccZdgkN6.s:706    .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:0000000000000000 HAL_SYSCFG_VREFBUF_VoltageScalingConfig
+     /tmp/ccZdgkN6.s:719    .text.HAL_SYSCFG_VREFBUF_VoltageScalingConfig:0000000000000010 $d
+     /tmp/ccZdgkN6.s:722    .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:0000000000000000 $t
+     /tmp/ccZdgkN6.s:730    .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:0000000000000000 HAL_SYSCFG_VREFBUF_HighImpedanceConfig
+     /tmp/ccZdgkN6.s:743    .text.HAL_SYSCFG_VREFBUF_HighImpedanceConfig:0000000000000010 $d
+     /tmp/ccZdgkN6.s:746    .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:0000000000000000 $t
+     /tmp/ccZdgkN6.s:754    .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:0000000000000000 HAL_SYSCFG_VREFBUF_TrimmingConfig
+     /tmp/ccZdgkN6.s:767    .text.HAL_SYSCFG_VREFBUF_TrimmingConfig:0000000000000010 $d
+     /tmp/ccZdgkN6.s:770    .text.HAL_SYSCFG_EnableVREFBUF:0000000000000000 $t
+     /tmp/ccZdgkN6.s:778    .text.HAL_SYSCFG_EnableVREFBUF:0000000000000000 HAL_SYSCFG_EnableVREFBUF
+     /tmp/ccZdgkN6.s:806    .text.HAL_SYSCFG_EnableVREFBUF:000000000000002c $d
+     /tmp/ccZdgkN6.s:809    .text.HAL_SYSCFG_DisableVREFBUF:0000000000000000 $t
+     /tmp/ccZdgkN6.s:817    .text.HAL_SYSCFG_DisableVREFBUF:0000000000000000 HAL_SYSCFG_DisableVREFBUF
+     /tmp/ccZdgkN6.s:829    .text.HAL_SYSCFG_DisableVREFBUF:000000000000000c $d
+     /tmp/ccZdgkN6.s:832    .text.HAL_SYSCFG_EnableIOAnalogSwitchBooster:0000000000000000 $t
+     /tmp/ccZdgkN6.s:840    .text.HAL_SYSCFG_EnableIOAnalogSwitchBooster:0000000000000000 HAL_SYSCFG_EnableIOAnalogSwitchBooster
+     /tmp/ccZdgkN6.s:852    .text.HAL_SYSCFG_EnableIOAnalogSwitchBooster:000000000000000c $d
+     /tmp/ccZdgkN6.s:855    .text.HAL_SYSCFG_DisableIOAnalogSwitchBooster:0000000000000000 $t
+     /tmp/ccZdgkN6.s:863    .text.HAL_SYSCFG_DisableIOAnalogSwitchBooster:0000000000000000 HAL_SYSCFG_DisableIOAnalogSwitchBooster
+     /tmp/ccZdgkN6.s:875    .text.HAL_SYSCFG_DisableIOAnalogSwitchBooster:000000000000000c $d
+     /tmp/ccZdgkN6.s:891    .data.uwTickFreq:0000000000000000 uwTickFreq
+     /tmp/ccZdgkN6.s:898    .data.uwTickPrio:0000000000000000 uwTickPrio
+     /tmp/ccZdgkN6.s:885    .bss.uwTick:0000000000000000 uwTick
+     /tmp/ccZdgkN6.s:881    .bss.uwTick:0000000000000000 $d
+     /tmp/ccZdgkN6.s:894    .data.uwTickPrio:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 HAL_SYSTICK_Config
 HAL_NVIC_SetPriority
 SystemCoreClock
 HAL_NVIC_SetPriorityGrouping
-ARM GAS  /tmp/cclXegFU.s 			page 18
+ARM GAS  /tmp/ccZdgkN6.s 			page 18
 
 

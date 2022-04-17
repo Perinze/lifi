@@ -55,9 +55,15 @@ extern "C" {
 #define LOWPULSE 63
 #define HIGHPULSE 188
 #define PULSEDIV 125
+/*
+#define ARR 499
+#define LOWPULSE 125
+#define HIGHPULSE 375
+#define PULSEDIV 250
+*/
 
-#define QUESIZ 256
-#define RECVSIZ 256
+#define QUESIZ 16384
+#define RECVSIZ 16384
 
 #define FRMBEGIN1 0x3f
 #define FRMBEGIN2 0x7d
@@ -65,11 +71,10 @@ extern "C" {
 #define FRMEND2 0xe9
 
 extern uint8_t queue[QUESIZ];
-extern uint8_t qfront, qback;
+extern uint32_t qfront, qback;
 
 extern uint8_t recvbuf[RECVSIZ];
-extern uint8_t recvtmp[RECVSIZ+4];
-extern uint8_t recvidx;
+extern uint32_t recvidx;
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/

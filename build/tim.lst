@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccNMUKOX.s 			page 1
+ARM GAS  /tmp/ccJiyEmw.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccNMUKOX.s 			page 1
   56 004a FFF7FEFF 		bl	HAL_TIM_ConfigClockSource
   57 004e 78BB     		cbnz	r0, .L26
   58              	.L3:
-ARM GAS  /tmp/ccNMUKOX.s 			page 2
+ARM GAS  /tmp/ccJiyEmw.s 			page 2
 
 
   59 0050 2B48     		ldr	r0, .L31+16
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccNMUKOX.s 			page 1
  113 00ca DB6C     		ldr	r3, [r3, #76]
  114 00cc 03F00103 		and	r3, r3, #1
  115 00d0 0093     		str	r3, [sp]
-ARM GAS  /tmp/ccNMUKOX.s 			page 3
+ARM GAS  /tmp/ccJiyEmw.s 			page 3
 
 
  116 00d2 08A9     		add	r1, sp, #32
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccNMUKOX.s 			page 1
  172              		.section	.text.HAL_TIM_MspPostInit,"ax",%progbits
  173              		.align	1
  174              		.p2align 2,,3
-ARM GAS  /tmp/ccNMUKOX.s 			page 4
+ARM GAS  /tmp/ccJiyEmw.s 			page 4
 
 
  175              		.global	HAL_TIM_MspPostInit
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccNMUKOX.s 			page 1
  232              		@ args = 0, pretend = 0, frame = 0
  233              		@ frame_needed = 0, uses_anonymous_args = 0
  234              		@ link register save eliminated.
-ARM GAS  /tmp/ccNMUKOX.s 			page 5
+ARM GAS  /tmp/ccJiyEmw.s 			page 5
 
 
  235 0000 0368     		ldr	r3, [r0]
@@ -268,13 +268,13 @@ ARM GAS  /tmp/ccNMUKOX.s 			page 1
  261              		@ args = 0, pretend = 0, frame = 0
  262              		@ frame_needed = 0, uses_anonymous_args = 0
  263              		@ link register save eliminated.
- 264 0000 30B4     		push	{r4, r5}
- 265 0002 1349     		ldr	r1, .L60
- 266 0004 134B     		ldr	r3, .L60+4
- 267 0006 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
- 268 0008 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 269 000a 1348     		ldr	r0, .L60+8
- 270 000c 9342     		cmp	r3, r2
+ 264 0000 1349     		ldr	r1, .L60
+ 265 0002 144B     		ldr	r3, .L60+4
+ 266 0004 0A68     		ldr	r2, [r1]
+ 267 0006 1B68     		ldr	r3, [r3]
+ 268 0008 1348     		ldr	r0, .L60+8
+ 269 000a 9A42     		cmp	r2, r3
+ 270 000c 30B4     		push	{r4, r5}
  271 000e 0468     		ldr	r4, [r0]
  272 0010 19D0     		beq	.L58
  273 0012 1248     		ldr	r0, .L60+12
@@ -298,10 +298,10 @@ ARM GAS  /tmp/ccNMUKOX.s 			page 1
  291 0034 7047     		bx	lr
  292              	.L59:
  293 0036 531C     		adds	r3, r2, #1
-ARM GAS  /tmp/ccNMUKOX.s 			page 6
+ARM GAS  /tmp/ccJiyEmw.s 			page 6
 
 
- 294 0038 0B70     		strb	r3, [r1]
+ 294 0038 0B60     		str	r3, [r1]
  295 003a 0A49     		ldr	r1, .L60+20
  296 003c 084D     		ldr	r5, .L60+16
  297 003e 8A5C     		ldrb	r2, [r1, r2]	@ zero_extendqisi2
@@ -341,31 +341,31 @@ ARM GAS  /tmp/ccNMUKOX.s 			page 1
  334              	tmp.0:
  335 0000 00       		.space	1
  336              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/ccNMUKOX.s 			page 7
+ARM GAS  /tmp/ccJiyEmw.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 tim.c
-     /tmp/ccNMUKOX.s:16     .text.MX_TIM2_Init:0000000000000000 $t
-     /tmp/ccNMUKOX.s:25     .text.MX_TIM2_Init:0000000000000000 MX_TIM2_Init
-     /tmp/ccNMUKOX.s:129    .text.MX_TIM2_Init:00000000000000f0 $d
-     /tmp/ccNMUKOX.s:136    .text.HAL_TIM_Base_MspInit:0000000000000000 $t
-     /tmp/ccNMUKOX.s:144    .text.HAL_TIM_Base_MspInit:0000000000000000 HAL_TIM_Base_MspInit
-     /tmp/ccNMUKOX.s:173    .text.HAL_TIM_MspPostInit:0000000000000000 $t
-     /tmp/ccNMUKOX.s:181    .text.HAL_TIM_MspPostInit:0000000000000000 HAL_TIM_MspPostInit
-     /tmp/ccNMUKOX.s:219    .text.HAL_TIM_MspPostInit:0000000000000058 $d
-     /tmp/ccNMUKOX.s:223    .text.HAL_TIM_Base_MspDeInit:0000000000000000 $t
-     /tmp/ccNMUKOX.s:231    .text.HAL_TIM_Base_MspDeInit:0000000000000000 HAL_TIM_Base_MspDeInit
-     /tmp/ccNMUKOX.s:249    .text.HAL_TIM_Base_MspDeInit:000000000000001c $d
-     /tmp/ccNMUKOX.s:252    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
-     /tmp/ccNMUKOX.s:260    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
-     /tmp/ccNMUKOX.s:309    .text.HAL_TIM_PeriodElapsedCallback:0000000000000050 $d
-     /tmp/ccNMUKOX.s:328    .bss.htim2:0000000000000000 htim2
-     /tmp/ccNMUKOX.s:321    .bss.bit_idx.1:0000000000000000 bit_idx.1
-     /tmp/ccNMUKOX.s:322    .bss.bit_idx.1:0000000000000000 $d
-     /tmp/ccNMUKOX.s:324    .bss.htim2:0000000000000000 $d
-     /tmp/ccNMUKOX.s:334    .bss.tmp.0:0000000000000000 tmp.0
-     /tmp/ccNMUKOX.s:335    .bss.tmp.0:0000000000000000 $d
+     /tmp/ccJiyEmw.s:16     .text.MX_TIM2_Init:0000000000000000 $t
+     /tmp/ccJiyEmw.s:25     .text.MX_TIM2_Init:0000000000000000 MX_TIM2_Init
+     /tmp/ccJiyEmw.s:129    .text.MX_TIM2_Init:00000000000000f0 $d
+     /tmp/ccJiyEmw.s:136    .text.HAL_TIM_Base_MspInit:0000000000000000 $t
+     /tmp/ccJiyEmw.s:144    .text.HAL_TIM_Base_MspInit:0000000000000000 HAL_TIM_Base_MspInit
+     /tmp/ccJiyEmw.s:173    .text.HAL_TIM_MspPostInit:0000000000000000 $t
+     /tmp/ccJiyEmw.s:181    .text.HAL_TIM_MspPostInit:0000000000000000 HAL_TIM_MspPostInit
+     /tmp/ccJiyEmw.s:219    .text.HAL_TIM_MspPostInit:0000000000000058 $d
+     /tmp/ccJiyEmw.s:223    .text.HAL_TIM_Base_MspDeInit:0000000000000000 $t
+     /tmp/ccJiyEmw.s:231    .text.HAL_TIM_Base_MspDeInit:0000000000000000 HAL_TIM_Base_MspDeInit
+     /tmp/ccJiyEmw.s:249    .text.HAL_TIM_Base_MspDeInit:000000000000001c $d
+     /tmp/ccJiyEmw.s:252    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
+     /tmp/ccJiyEmw.s:260    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
+     /tmp/ccJiyEmw.s:309    .text.HAL_TIM_PeriodElapsedCallback:0000000000000050 $d
+     /tmp/ccJiyEmw.s:328    .bss.htim2:0000000000000000 htim2
+     /tmp/ccJiyEmw.s:321    .bss.bit_idx.1:0000000000000000 bit_idx.1
+     /tmp/ccJiyEmw.s:322    .bss.bit_idx.1:0000000000000000 $d
+     /tmp/ccJiyEmw.s:324    .bss.htim2:0000000000000000 $d
+     /tmp/ccJiyEmw.s:334    .bss.tmp.0:0000000000000000 tmp.0
+     /tmp/ccJiyEmw.s:335    .bss.tmp.0:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 HAL_TIM_Base_Init

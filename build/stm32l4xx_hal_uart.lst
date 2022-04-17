@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccv23xBe.s 			page 1
+ARM GAS  /tmp/ccQrb7vt.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
   56 0022 52E8003F 		ldrex r3, [r2]
   57              	@ 0 "" 2
   58              		.thumb
-ARM GAS  /tmp/ccv23xBe.s 			page 2
+ARM GAS  /tmp/ccQrb7vt.s 			page 2
 
 
   59              		.syntax unified
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  115              		.thumb
  116              		.syntax unified
  117 001e 0029     		cmp	r1, #0
-ARM GAS  /tmp/ccv23xBe.s 			page 3
+ARM GAS  /tmp/ccQrb7vt.s 			page 3
 
 
  118 0020 F7D1     		bne	.L16
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  177 0002 00BF     		.section	.text.HAL_UART_DeInit,"ax",%progbits
  178              		.align	1
  179              		.p2align 2,,3
-ARM GAS  /tmp/ccv23xBe.s 			page 4
+ARM GAS  /tmp/ccQrb7vt.s 			page 4
 
 
  180              		.global	HAL_UART_DeInit
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  237 0018 1E46     		mov	r6, r3
  238 001a 95F87430 		ldrb	r3, [r5, #116]	@ zero_extendqisi2
  239 001e 012B     		cmp	r3, #1
-ARM GAS  /tmp/ccv23xBe.s 			page 5
+ARM GAS  /tmp/ccQrb7vt.s 			page 5
 
 
  240 0020 46D0     		beq	.L59
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  294              	.L40:
  295 00a0 2023     		movs	r3, #32
  296 00a2 EB67     		str	r3, [r5, #124]
-ARM GAS  /tmp/ccv23xBe.s 			page 6
+ARM GAS  /tmp/ccQrb7vt.s 			page 6
 
 
  297 00a4 0020     		movs	r0, #0
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  351              		.syntax unified
  352              	@ 1155 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  353 0106 53E8003F 		ldrex r3, [r3]
-ARM GAS  /tmp/ccv23xBe.s 			page 7
+ARM GAS  /tmp/ccQrb7vt.s 			page 7
 
 
  354              	@ 0 "" 2
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  408 0154 2023     		movs	r3, #32
  409 0156 85F87420 		strb	r2, [r5, #116]
  410 015a AB67     		str	r3, [r5, #120]
-ARM GAS  /tmp/ccv23xBe.s 			page 8
+ARM GAS  /tmp/ccQrb7vt.s 			page 8
 
 
  411 015c 0320     		movs	r0, #3
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  467 0024 A0F85220 		strh	r2, [r0, #82]	@ movhi
  468 0028 A0F85020 		strh	r2, [r0, #80]	@ movhi
  469 002c C0F88040 		str	r4, [r0, #128]
-ARM GAS  /tmp/ccv23xBe.s 			page 9
+ARM GAS  /tmp/ccQrb7vt.s 			page 9
 
 
  470 0030 8167     		str	r1, [r0, #120]
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  526              		@ args = 0, pretend = 0, frame = 0
  527              		@ frame_needed = 0, uses_anonymous_args = 0
  528              		@ link register save eliminated.
-ARM GAS  /tmp/ccv23xBe.s 			page 10
+ARM GAS  /tmp/ccQrb7vt.s 			page 10
 
 
  529 0000 C36F     		ldr	r3, [r0, #124]
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  583              	.L113:
  584 0066 0021     		movs	r1, #0
  585 0068 2222     		movs	r2, #34
-ARM GAS  /tmp/ccv23xBe.s 			page 11
+ARM GAS  /tmp/ccQrb7vt.s 			page 11
 
 
  586 006a C0F88010 		str	r1, [r0, #128]
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  640 00bc 7047     		bx	lr
  641              	.L154:
  642 00be 23BB     		cbnz	r3, .L155
-ARM GAS  /tmp/ccv23xBe.s 			page 12
+ARM GAS  /tmp/ccQrb7vt.s 			page 12
 
 
  643 00c0 164A     		ldr	r2, .L156+8
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  697 010e 80F87420 		strb	r2, [r0, #116]
  698 0112 C5E7     		b	.L120
  699              	.L157:
-ARM GAS  /tmp/ccv23xBe.s 			page 13
+ARM GAS  /tmp/ccQrb7vt.s 			page 13
 
 
  700              		.align	2
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  756 0064 BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}
  757              	.L165:
  758 0068 0120     		movs	r0, #1
-ARM GAS  /tmp/ccv23xBe.s 			page 14
+ARM GAS  /tmp/ccQrb7vt.s 			page 14
 
 
  759 006a BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  815 000c 42D0     		beq	.L192
  816 000e 0122     		movs	r2, #1
  817 0010 0368     		ldr	r3, [r0]
-ARM GAS  /tmp/ccv23xBe.s 			page 15
+ARM GAS  /tmp/ccQrb7vt.s 			page 15
 
 
  818 0012 80F87420 		strb	r2, [r0, #116]
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  872 0060 03F10802 		add	r2, r3, #8
  873              		.syntax unified
  874              	@ 1155 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
-ARM GAS  /tmp/ccv23xBe.s 			page 16
+ARM GAS  /tmp/ccQrb7vt.s 			page 16
 
 
  875 0064 52E8002F 		ldrex r2, [r2]
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  931 000a 0122     		movs	r2, #1
  932 000c 212B     		cmp	r3, #33
  933 000e 80F87420 		strb	r2, [r0, #116]
-ARM GAS  /tmp/ccv23xBe.s 			page 17
+ARM GAS  /tmp/ccQrb7vt.s 			page 17
 
 
  934 0012 07D0     		beq	.L233
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  988              	.L213:
  989 005e 03F10802 		add	r2, r3, #8
  990              		.syntax unified
-ARM GAS  /tmp/ccv23xBe.s 			page 18
+ARM GAS  /tmp/ccQrb7vt.s 			page 18
 
 
  991              	@ 1155 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1047 000c 0446     		mov	r4, r0
  1048 000e 01D5     		bpl	.L236
  1049 0010 2129     		cmp	r1, #33
-ARM GAS  /tmp/ccv23xBe.s 			page 19
+ARM GAS  /tmp/ccQrb7vt.s 			page 19
 
 
  1050 0012 07D0     		beq	.L281
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1104 005e 9868     		ldr	r0, [r3, #8]
  1105 0060 10F04000 		ands	r0, r0, #64
  1106 0064 DDD0     		beq	.L242
-ARM GAS  /tmp/ccv23xBe.s 			page 20
+ARM GAS  /tmp/ccQrb7vt.s 			page 20
 
 
  1107 0066 D9E7     		b	.L286
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1161              	@ 0 "" 2
  1162              		.thumb
  1163              		.syntax unified
-ARM GAS  /tmp/ccv23xBe.s 			page 21
+ARM GAS  /tmp/ccQrb7vt.s 			page 21
 
 
  1164 00b0 0029     		cmp	r1, #0
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1218              	.L276:
  1219 00fc E06E     		ldr	r0, [r4, #108]
  1220 00fe FFF7FEFF 		bl	HAL_DMA_GetError
-ARM GAS  /tmp/ccv23xBe.s 			page 22
+ARM GAS  /tmp/ccQrb7vt.s 			page 22
 
 
  1221 0102 2028     		cmp	r0, #32
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1277              	.L293:
  1278 0034 9A68     		ldr	r2, [r3, #8]
  1279 0036 1006     		lsls	r0, r2, #24
-ARM GAS  /tmp/ccv23xBe.s 			page 23
+ARM GAS  /tmp/ccQrb7vt.s 			page 23
 
 
  1280 0038 1946     		mov	r1, r3
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1334              	@ 1155 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  1335 009a 52E8002F 		ldrex r2, [r2]
  1336              	@ 0 "" 2
-ARM GAS  /tmp/ccv23xBe.s 			page 24
+ARM GAS  /tmp/ccQrb7vt.s 			page 24
 
 
  1337              		.thumb
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1391 00e2 A7E7     		b	.L293
  1392              	.L328:
  1393 00e4 1946     		mov	r1, r3
-ARM GAS  /tmp/ccv23xBe.s 			page 25
+ARM GAS  /tmp/ccQrb7vt.s 			page 25
 
 
  1394 00e6 C2E7     		b	.L300
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1450 0024 A367     		str	r3, [r4, #120]
  1451 0026 10BD     		pop	{r4, pc}
  1452              	.L350:
-ARM GAS  /tmp/ccv23xBe.s 			page 26
+ARM GAS  /tmp/ccQrb7vt.s 			page 26
 
 
  1453 0028 02F10803 		add	r3, r2, #8
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1509 000a 22F49072 		bic	r2, r2, #288
  1510              		.syntax unified
  1511              	@ 1206 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
-ARM GAS  /tmp/ccv23xBe.s 			page 27
+ARM GAS  /tmp/ccQrb7vt.s 			page 27
 
 
  1512 000e 43E80021 		strex r1, r2, [r3]
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1566 0062 22F04002 		bic	r2, r2, #64
  1567 0066 03F10800 		add	r0, r3, #8
  1568              		.syntax unified
-ARM GAS  /tmp/ccv23xBe.s 			page 28
+ARM GAS  /tmp/ccQrb7vt.s 			page 28
 
 
  1569              	@ 1206 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1623 00b0 2028     		cmp	r0, #32
  1624 00b2 E5D1     		bne	.L374
  1625 00b4 1023     		movs	r3, #16
-ARM GAS  /tmp/ccv23xBe.s 			page 29
+ARM GAS  /tmp/ccQrb7vt.s 			page 29
 
 
  1626 00b6 C4F88030 		str	r3, [r4, #128]
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1684              	@ 1155 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  1685 002c 52E8003F 		ldrex r3, [r2]
  1686              	@ 0 "" 2
-ARM GAS  /tmp/ccv23xBe.s 			page 30
+ARM GAS  /tmp/ccQrb7vt.s 			page 30
 
 
  1687              		.thumb
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1747 0000 7047     		bx	lr
  1749 0002 00BF     		.section	.text.HAL_UART_RxHalfCpltCallback,"ax",%progbits
  1750              		.align	1
-ARM GAS  /tmp/ccv23xBe.s 			page 31
+ARM GAS  /tmp/ccQrb7vt.s 			page 31
 
 
  1751              		.p2align 2,,3
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1810 002a FFF7FEFF 		bl	HAL_UART_ErrorCallback
  1811 002e 10BD     		pop	{r4, pc}
  1812              	.L424:
-ARM GAS  /tmp/ccv23xBe.s 			page 32
+ARM GAS  /tmp/ccQrb7vt.s 			page 32
 
 
  1813 0030 0022     		movs	r2, #0
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1867              		.thumb
  1868              		.syntax unified
  1869 0076 0029     		cmp	r1, #0
-ARM GAS  /tmp/ccv23xBe.s 			page 33
+ARM GAS  /tmp/ccQrb7vt.s 			page 33
 
 
  1870 0078 F3D1     		bne	.L399
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1926 0002 806A     		ldr	r0, [r0, #40]
  1927 0004 0023     		movs	r3, #0
  1928 0006 A0F85A30 		strh	r3, [r0, #90]	@ movhi
-ARM GAS  /tmp/ccv23xBe.s 			page 34
+ARM GAS  /tmp/ccQrb7vt.s 			page 34
 
 
  1929 000a A0F85230 		strh	r3, [r0, #82]	@ movhi
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  1987 001e 22F00102 		bic	r2, r2, #1
  1988 0022 03F10801 		add	r1, r3, #8
  1989              		.syntax unified
-ARM GAS  /tmp/ccv23xBe.s 			page 35
+ARM GAS  /tmp/ccQrb7vt.s 			page 35
 
 
  1990              	@ 1206 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2044 007c 0028     		cmp	r0, #0
  2045 007e 50D0     		beq	.L449
  2046 0080 FFF7FEFF 		bl	HAL_DMA_Abort_IT
-ARM GAS  /tmp/ccv23xBe.s 			page 36
+ARM GAS  /tmp/ccQrb7vt.s 			page 36
 
 
  2047 0084 D0B1     		cbz	r0, .L446
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2101 00ec 5006     		lsls	r0, r2, #25
  2102 00ee 1946     		mov	r1, r3
  2103 00f0 CDD5     		bpl	.L441
-ARM GAS  /tmp/ccv23xBe.s 			page 37
+ARM GAS  /tmp/ccQrb7vt.s 			page 37
 
 
  2104 00f2 286F     		ldr	r0, [r5, #112]
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2158 0134 00000000 		.word	UART_DMATxAbortCallback
  2159 0138 00000000 		.word	UART_DMARxAbortCallback
  2161              		.section	.text.UART_DMARxAbortCallback,"ax",%progbits
-ARM GAS  /tmp/ccv23xBe.s 			page 38
+ARM GAS  /tmp/ccQrb7vt.s 			page 38
 
 
  2162              		.align	1
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2219              	.L492:
  2220 0012 10B5     		push	{r4, lr}
  2221 0014 0168     		ldr	r1, [r0]
-ARM GAS  /tmp/ccv23xBe.s 			page 39
+ARM GAS  /tmp/ccQrb7vt.s 			page 39
 
 
  2222 0016 0023     		movs	r3, #0
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2280 0014 F7D1     		bne	.L502
  2281 0016 9368     		ldr	r3, [r2, #8]
  2282 0018 13F08003 		ands	r3, r3, #128
-ARM GAS  /tmp/ccv23xBe.s 			page 40
+ARM GAS  /tmp/ccQrb7vt.s 			page 40
 
 
  2283 001c 21D0     		beq	.L503
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2338              		.align	1
  2339              		.p2align 2,,3
  2340              		.syntax unified
-ARM GAS  /tmp/ccv23xBe.s 			page 41
+ARM GAS  /tmp/ccQrb7vt.s 			page 41
 
 
  2341              		.thumb
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2400              		.syntax unified
  2401 0012 0029     		cmp	r1, #0
  2402 0014 F7D1     		bne	.L524
-ARM GAS  /tmp/ccv23xBe.s 			page 42
+ARM GAS  /tmp/ccQrb7vt.s 			page 42
 
 
  2403              	.L525:
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2457 006a 0020     		movs	r0, #0
  2458 006c 38BD     		pop	{r3, r4, r5, pc}
  2459              	.L526:
-ARM GAS  /tmp/ccv23xBe.s 			page 43
+ARM GAS  /tmp/ccQrb7vt.s 			page 43
 
 
  2460              		.syntax unified
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2514 00c2 E167     		str	r1, [r4, #124]
  2515 00c4 2266     		str	r2, [r4, #96]
  2516 00c6 FFF7FEFF 		bl	HAL_UART_AbortReceiveCpltCallback
-ARM GAS  /tmp/ccv23xBe.s 			page 44
+ARM GAS  /tmp/ccQrb7vt.s 			page 44
 
 
  2517 00ca 0020     		movs	r0, #0
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2577              		@ args = 0, pretend = 0, frame = 0
  2578              		@ frame_needed = 0, uses_anonymous_args = 0
  2579 0000 0368     		ldr	r3, [r0]
-ARM GAS  /tmp/ccv23xBe.s 			page 45
+ARM GAS  /tmp/ccQrb7vt.s 			page 45
 
 
  2580 0002 DA69     		ldr	r2, [r3, #28]
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2634              	.L718:
  2635 005e 0D06     		lsls	r5, r1, #24
  2636 0060 E8D5     		bpl	.L591
-ARM GAS  /tmp/ccv23xBe.s 			page 46
+ARM GAS  /tmp/ccQrb7vt.s 			page 46
 
 
  2637 0062 A36E     		ldr	r3, [r4, #104]
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2691 00da 7FD5     		bpl	.L561
  2692 00dc 8EB1     		cbz	r6, .L563
  2693 00de 0220     		movs	r0, #2
-ARM GAS  /tmp/ccv23xBe.s 			page 47
+ARM GAS  /tmp/ccQrb7vt.s 			page 47
 
 
  2694 00e0 1862     		str	r0, [r3, #32]
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2748              		.syntax unified
  2749              	@ 1155 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  2750 016a 53E8002F 		ldrex r2, [r3]
-ARM GAS  /tmp/ccv23xBe.s 			page 48
+ARM GAS  /tmp/ccQrb7vt.s 			page 48
 
 
  2751              	@ 0 "" 2
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2805 01b8 40E80021 		strex r1, r2, [r0]
  2806              	@ 0 "" 2
  2807              		.thumb
-ARM GAS  /tmp/ccv23xBe.s 			page 49
+ARM GAS  /tmp/ccQrb7vt.s 			page 49
 
 
  2808              		.syntax unified
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2862              		.syntax unified
  2863              	@ 1206 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  2864 0218 43E80021 		strex r1, r2, [r3]
-ARM GAS  /tmp/ccv23xBe.s 			page 50
+ARM GAS  /tmp/ccQrb7vt.s 			page 50
 
 
  2865              	@ 0 "" 2
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2919 026e 0028     		cmp	r0, #0
  2920 0270 F3D1     		bne	.L588
  2921 0272 2022     		movs	r2, #32
-ARM GAS  /tmp/ccv23xBe.s 			page 51
+ARM GAS  /tmp/ccQrb7vt.s 			page 51
 
 
  2922 0274 E267     		str	r2, [r4, #124]
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  2976 02b6 0029     		cmp	r1, #0
  2977 02b8 F3D1     		bne	.L583
  2978              	.L584:
-ARM GAS  /tmp/ccv23xBe.s 			page 52
+ARM GAS  /tmp/ccQrb7vt.s 			page 52
 
 
  2979 02ba 03F10802 		add	r2, r3, #8
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3034              		.thumb_func
  3035              		.fpu fpv4-sp-d16
  3037              	UART_RxISR_8BIT.part.0:
-ARM GAS  /tmp/ccv23xBe.s 			page 53
+ARM GAS  /tmp/ccQrb7vt.s 			page 53
 
 
  3038              		@ args = 0, pretend = 0, frame = 0
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3092              	@ 1206 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  3093 0042 43E80021 		strex r1, r2, [r3]
  3094              	@ 0 "" 2
-ARM GAS  /tmp/ccv23xBe.s 			page 54
+ARM GAS  /tmp/ccQrb7vt.s 			page 54
 
 
  3095              		.thumb
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3151 0040 5DF8044B 		ldr	r4, [sp], #4
  3152 0044 FFF7FEBF 		b	UART_RxISR_16BIT.part.0
  3154              		.section	.text.UART_RxISR_8BIT,"ax",%progbits
-ARM GAS  /tmp/ccv23xBe.s 			page 55
+ARM GAS  /tmp/ccQrb7vt.s 			page 55
 
 
  3155              		.align	1
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3212 0006 012B     		cmp	r3, #1
  3213 0008 02D0     		beq	.L749
  3214 000a FFF7FEFF 		bl	HAL_UART_RxHalfCpltCallback
-ARM GAS  /tmp/ccv23xBe.s 			page 56
+ARM GAS  /tmp/ccQrb7vt.s 			page 56
 
 
  3215 000e 08BD     		pop	{r3, pc}
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3271              		.thumb
  3272              		.syntax unified
  3273 0038 0029     		cmp	r1, #0
-ARM GAS  /tmp/ccv23xBe.s 			page 57
+ARM GAS  /tmp/ccQrb7vt.s 			page 57
 
 
  3274 003a F3D1     		bne	.L753
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3328              	@ 1206 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  3329 0082 43E80021 		strex r1, r2, [r3]
  3330              	@ 0 "" 2
-ARM GAS  /tmp/ccv23xBe.s 			page 58
+ARM GAS  /tmp/ccQrb7vt.s 			page 58
 
 
  3331              		.thumb
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3389 000e 10D1     		bne	.L773
  3390 0010 90F87400 		ldrb	r0, [r0, #116]	@ zero_extendqisi2
  3391 0014 0128     		cmp	r0, #1
-ARM GAS  /tmp/ccv23xBe.s 			page 59
+ARM GAS  /tmp/ccQrb7vt.s 			page 59
 
 
  3392 0016 0CD0     		beq	.L773
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3448              	.L780:
  3449 0032 0220     		movs	r0, #2
  3450 0034 7047     		bx	lr
-ARM GAS  /tmp/ccv23xBe.s 			page 60
+ARM GAS  /tmp/ccQrb7vt.s 			page 60
 
 
  3451              	.L778:
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3509              	@ 1206 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  3510 001c 42E80031 		strex r1, r3, [r2]
  3511              	@ 0 "" 2
-ARM GAS  /tmp/ccv23xBe.s 			page 61
+ARM GAS  /tmp/ccQrb7vt.s 			page 61
 
 
  3512              		.thumb
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3568              		.syntax unified
  3569 0018 23F00C03 		bic	r3, r3, #12
  3570              		.syntax unified
-ARM GAS  /tmp/ccv23xBe.s 			page 62
+ARM GAS  /tmp/ccQrb7vt.s 			page 62
 
 
  3571              	@ 1206 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3627 001a 2024     		movs	r4, #32
  3628 001c 0B83     		strh	r3, [r1, #24]	@ movhi
  3629 001e 80F87420 		strb	r2, [r0, #116]
-ARM GAS  /tmp/ccv23xBe.s 			page 63
+ARM GAS  /tmp/ccQrb7vt.s 			page 63
 
 
  3630 0022 8467     		str	r4, [r0, #120]
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3690 0008 0069     		ldr	r0, [r0, #16]
  3691 000a 6169     		ldr	r1, [r4, #20]
  3692 000c 1D68     		ldr	r5, [r3]
-ARM GAS  /tmp/ccv23xBe.s 			page 64
+ARM GAS  /tmp/ccQrb7vt.s 			page 64
 
 
  3693 000e 0243     		orrs	r2, r2, r0
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3747              	.L907:
  3748 0090 874B     		ldr	r3, .L912+28
  3749 0092 D3F88830 		ldr	r3, [r3, #136]
-ARM GAS  /tmp/ccv23xBe.s 			page 65
+ARM GAS  /tmp/ccQrb7vt.s 			page 65
 
 
  3750 0096 03F00303 		and	r3, r3, #3
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3804 0120 9A60     		str	r2, [r3, #8]
  3805 0122 D0F88830 		ldr	r3, [r0, #136]
  3806 0126 03F44063 		and	r3, r3, #3072
-ARM GAS  /tmp/ccv23xBe.s 			page 66
+ARM GAS  /tmp/ccQrb7vt.s 			page 66
 
 
  3807 012a B3F5006F 		cmp	r3, #2048
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3861 01aa 62D0     		beq	.L816
  3862 01ac 3ED8     		bhi	.L831
  3863 01ae 002B     		cmp	r3, #0
-ARM GAS  /tmp/ccv23xBe.s 			page 67
+ARM GAS  /tmp/ccQrb7vt.s 			page 67
 
 
  3864 01b0 41D0     		beq	.L838
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3918 022c C02B     		cmp	r3, #192
  3919 022e F7D0     		beq	.L840
  3920 0230 29E7     		b	.L843
-ARM GAS  /tmp/ccv23xBe.s 			page 68
+ARM GAS  /tmp/ccQrb7vt.s 			page 68
 
 
  3921              	.L863:
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  3975 02ac 00500040 		.word	1073762304
  3976 02b0 00100240 		.word	1073876992
  3977 02b4 00000000 		.word	.LANCHOR1
-ARM GAS  /tmp/ccv23xBe.s 			page 69
+ARM GAS  /tmp/ccQrb7vt.s 			page 69
 
 
  3978 02b8 FFFC0F00 		.word	1047807
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4034 004c DC06     		lsls	r4, r3, #27
  4035 004e 06D5     		bpl	.L919
  4036 0050 0168     		ldr	r1, [r0]
-ARM GAS  /tmp/ccv23xBe.s 			page 70
+ARM GAS  /tmp/ccQrb7vt.s 			page 70
 
 
  4037 0052 846B     		ldr	r4, [r0, #56]
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4093              		@ frame_needed = 0, uses_anonymous_args = 0
  4094 0000 38B5     		push	{r3, r4, r5, lr}
  4095 0002 0023     		movs	r3, #0
-ARM GAS  /tmp/ccv23xBe.s 			page 71
+ARM GAS  /tmp/ccQrb7vt.s 			page 71
 
 
  4096 0004 0446     		mov	r4, r0
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4150              		.syntax unified
  4151              	@ 1206 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  4152 0064 43E80021 		strex r1, r2, [r3]
-ARM GAS  /tmp/ccv23xBe.s 			page 72
+ARM GAS  /tmp/ccQrb7vt.s 			page 72
 
 
  4153              	@ 0 "" 2
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4207              		.syntax unified
  4208              	@ 1155 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  4209 00bc 53E8002F 		ldrex r2, [r3]
-ARM GAS  /tmp/ccv23xBe.s 			page 73
+ARM GAS  /tmp/ccQrb7vt.s 			page 73
 
 
  4210              	@ 0 "" 2
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4264 0100 52E8002F 		ldrex r2, [r2]
  4265              	@ 0 "" 2
  4266              		.thumb
-ARM GAS  /tmp/ccv23xBe.s 			page 74
+ARM GAS  /tmp/ccQrb7vt.s 			page 74
 
 
  4267              		.syntax unified
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4321 014e F3D1     		bne	.L967
  4322 0150 E0E7     		b	.L1006
  4324 0152 00BF     		.section	.text.HAL_LIN_Init,"ax",%progbits
-ARM GAS  /tmp/ccv23xBe.s 			page 75
+ARM GAS  /tmp/ccQrb7vt.s 			page 75
 
 
  4325              		.align	1
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4380 0064 BDE83840 		pop	{r3, r4, r5, lr}
  4381 0068 FFF7FEBF 		b	UART_CheckIdleState
  4382              	.L1012:
-ARM GAS  /tmp/ccv23xBe.s 			page 76
+ARM GAS  /tmp/ccQrb7vt.s 			page 76
 
 
  4383 006c 0120     		movs	r0, #1
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4439 003e FFF7FEFF 		bl	HAL_GetTick
  4440 0042 A0EB0900 		sub	r0, r0, r9
  4441 0046 4045     		cmp	r0, r8
-ARM GAS  /tmp/ccv23xBe.s 			page 77
+ARM GAS  /tmp/ccQrb7vt.s 			page 77
 
 
  4442 0048 31D8     		bhi	.L1061
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4496              	@ 1206 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  4497 0094 40E80031 		strex r1, r3, [r0]
  4498              	@ 0 "" 2
-ARM GAS  /tmp/ccv23xBe.s 			page 78
+ARM GAS  /tmp/ccQrb7vt.s 			page 78
 
 
  4499              		.thumb
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4554              		.align	1
  4555              		.p2align 2,,3
  4556              		.global	HAL_UART_Transmit
-ARM GAS  /tmp/ccv23xBe.s 			page 79
+ARM GAS  /tmp/ccQrb7vt.s 			page 79
 
 
  4557              		.syntax unified
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4612              	.L1111:
  4613 0076 2385     		strh	r3, [r4, #40]	@ movhi
  4614 0078 B5F85230 		ldrh	r3, [r5, #82]
-ARM GAS  /tmp/ccv23xBe.s 			page 80
+ARM GAS  /tmp/ccQrb7vt.s 			page 80
 
 
  4615 007c 013B     		subs	r3, r3, #1
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4669              	@ 0 "" 2
  4670              		.thumb
  4671              		.syntax unified
-ARM GAS  /tmp/ccv23xBe.s 			page 81
+ARM GAS  /tmp/ccQrb7vt.s 			page 81
 
 
  4672 00e2 39B1     		cbz	r1, .L1074
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4726 0128 43E80021 		strex r1, r2, [r3]
  4727              	@ 0 "" 2
  4728              		.thumb
-ARM GAS  /tmp/ccv23xBe.s 			page 82
+ARM GAS  /tmp/ccQrb7vt.s 			page 82
 
 
  4729              		.syntax unified
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4784              		.thumb_func
  4785              		.fpu fpv4-sp-d16
  4787              	HAL_MultiProcessor_EnableMuteMode:
-ARM GAS  /tmp/ccv23xBe.s 			page 83
+ARM GAS  /tmp/ccQrb7vt.s 			page 83
 
 
  4788              		@ args = 0, pretend = 0, frame = 0
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4842 005e 0093     		str	r3, [sp]
  4843 0060 2246     		mov	r2, r4
  4844 0062 0346     		mov	r3, r0
-ARM GAS  /tmp/ccv23xBe.s 			page 84
+ARM GAS  /tmp/ccQrb7vt.s 			page 84
 
 
  4845 0064 4FF40011 		mov	r1, #2097152
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4901              		.syntax unified
  4902 001e 23F40053 		bic	r3, r3, #8192
  4903              		.syntax unified
-ARM GAS  /tmp/ccv23xBe.s 			page 85
+ARM GAS  /tmp/ccQrb7vt.s 			page 85
 
 
  4904              	@ 1206 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  4958 0090 0320     		movs	r0, #3
  4959 0092 02B0     		add	sp, sp, #8
  4960              		@ sp needed
-ARM GAS  /tmp/ccv23xBe.s 			page 86
+ARM GAS  /tmp/ccQrb7vt.s 			page 86
 
 
  4961 0094 70BD     		pop	{r4, r5, r6, pc}
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  5017 0058 0646     		mov	r6, r0
  5018 005a 0CD4     		bmi	.L1177
  5019 005c 1B68     		ldr	r3, [r3]
-ARM GAS  /tmp/ccv23xBe.s 			page 87
+ARM GAS  /tmp/ccQrb7vt.s 			page 87
 
 
  5020 005e 5B07     		lsls	r3, r3, #29
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  5074              	.L1174:
  5075 00ca 0120     		movs	r0, #1
  5076 00cc 7047     		bx	lr
-ARM GAS  /tmp/ccv23xBe.s 			page 88
+ARM GAS  /tmp/ccQrb7vt.s 			page 88
 
 
  5078 00ce 00BF     		.section	.text.HAL_HalfDuplex_Init,"ax",%progbits
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  5133 0062 0CD4     		bmi	.L1204
  5134 0064 1B68     		ldr	r3, [r3]
  5135 0066 5B07     		lsls	r3, r3, #29
-ARM GAS  /tmp/ccv23xBe.s 			page 89
+ARM GAS  /tmp/ccQrb7vt.s 			page 89
 
 
  5136 0068 25D4     		bmi	.L1186
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  5190 00d2 0120     		movs	r0, #1
  5191 00d4 7047     		bx	lr
  5193 00d6 00BF     		.section	.text.HAL_MultiProcessor_Init,"ax",%progbits
-ARM GAS  /tmp/ccv23xBe.s 			page 90
+ARM GAS  /tmp/ccQrb7vt.s 			page 90
 
 
  5194              		.align	1
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  5249 0062 FFF7FEFF 		bl	HAL_GetTick
  5250 0066 2368     		ldr	r3, [r4]
  5251 0068 1A68     		ldr	r2, [r3]
-ARM GAS  /tmp/ccv23xBe.s 			page 91
+ARM GAS  /tmp/ccQrb7vt.s 			page 91
 
 
  5252 006a 1207     		lsls	r2, r2, #28
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  5306 00d6 0022     		movs	r2, #0
  5307 00d8 2B46     		mov	r3, r5
  5308 00da 4FF48001 		mov	r1, #4194304
-ARM GAS  /tmp/ccv23xBe.s 			page 92
+ARM GAS  /tmp/ccQrb7vt.s 			page 92
 
 
  5309 00de 2046     		mov	r0, r4
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  5365              		.syntax unified
  5366              	@ 1206 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  5367 0044 44E80031 		strex r1, r3, [r4]
-ARM GAS  /tmp/ccv23xBe.s 			page 93
+ARM GAS  /tmp/ccQrb7vt.s 			page 93
 
 
  5368              	@ 0 "" 2
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  5422 0098 43F02003 		orr	r3, r3, #32
  5423              		.syntax unified
  5424              	@ 1206 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
-ARM GAS  /tmp/ccv23xBe.s 			page 94
+ARM GAS  /tmp/ccQrb7vt.s 			page 94
 
 
  5425 009c 42E80031 		strex r1, r3, [r2]
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  5481 0008 C0F88060 		str	r6, [r0, #128]
  5482 000c 4165     		str	r1, [r0, #84]
  5483 000e A0F85820 		strh	r2, [r0, #88]	@ movhi
-ARM GAS  /tmp/ccv23xBe.s 			page 95
+ARM GAS  /tmp/ccQrb7vt.s 			page 95
 
 
  5484 0012 C367     		str	r3, [r0, #124]
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  5538 0066 002A     		cmp	r2, #0
  5539 0068 F3D1     		bne	.L1270
  5540              	.L1272:
-ARM GAS  /tmp/ccv23xBe.s 			page 96
+ARM GAS  /tmp/ccQrb7vt.s 			page 96
 
 
  5541 006a 04F10803 		add	r3, r4, #8
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  5597 0016 0468     		ldr	r4, [r0]
  5598 0018 0125     		movs	r5, #1
  5599 001a 80F87450 		strb	r5, [r0, #116]
-ARM GAS  /tmp/ccv23xBe.s 			page 97
+ARM GAS  /tmp/ccQrb7vt.s 			page 97
 
 
  5600 001e 9C42     		cmp	r4, r3
@@ -5818,175 +5818,175 @@ ARM GAS  /tmp/ccv23xBe.s 			page 1
  5659 0007 10       		.byte	16
  5660 0008 02       		.byte	2
  5661 0009 10       		.byte	16
-ARM GAS  /tmp/ccv23xBe.s 			page 98
+ARM GAS  /tmp/ccQrb7vt.s 			page 98
 
 
  5662 000a 10       		.byte	16
  5663 000b 10       		.byte	16
  5664 000c 08       		.byte	8
  5665              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/ccv23xBe.s 			page 99
+ARM GAS  /tmp/ccQrb7vt.s 			page 99
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l4xx_hal_uart.c
-     /tmp/ccv23xBe.s:16     .text.UART_TxISR_16BIT:0000000000000000 $t
-     /tmp/ccv23xBe.s:24     .text.UART_TxISR_16BIT:0000000000000000 UART_TxISR_16BIT
-     /tmp/ccv23xBe.s:83     .text.UART_TxISR_8BIT:0000000000000000 $t
-     /tmp/ccv23xBe.s:90     .text.UART_TxISR_8BIT:0000000000000000 UART_TxISR_8BIT
-     /tmp/ccv23xBe.s:148    .text.HAL_UART_MspInit:0000000000000000 $t
-     /tmp/ccv23xBe.s:156    .text.HAL_UART_MspInit:0000000000000000 HAL_UART_MspInit
-     /tmp/ccv23xBe.s:163    .text.HAL_UART_MspDeInit:0000000000000000 $t
-     /tmp/ccv23xBe.s:171    .text.HAL_UART_MspDeInit:0000000000000000 HAL_UART_MspDeInit
-     /tmp/ccv23xBe.s:178    .text.HAL_UART_DeInit:0000000000000000 $t
-     /tmp/ccv23xBe.s:186    .text.HAL_UART_DeInit:0000000000000000 HAL_UART_DeInit
-     /tmp/ccv23xBe.s:215    .text.HAL_UART_Receive:0000000000000000 $t
-     /tmp/ccv23xBe.s:223    .text.HAL_UART_Receive:0000000000000000 HAL_UART_Receive
-     /tmp/ccv23xBe.s:441    .text.HAL_UART_Transmit_IT:0000000000000000 $t
-     /tmp/ccv23xBe.s:449    .text.HAL_UART_Transmit_IT:0000000000000000 HAL_UART_Transmit_IT
-     /tmp/ccv23xBe.s:513    .text.HAL_UART_Transmit_IT:000000000000006c $d
-     /tmp/ccv23xBe.s:517    .text.HAL_UART_Receive_IT:0000000000000000 $t
-     /tmp/ccv23xBe.s:525    .text.HAL_UART_Receive_IT:0000000000000000 HAL_UART_Receive_IT
-     /tmp/ccv23xBe.s:702    .text.HAL_UART_Receive_IT:0000000000000114 $d
-     /tmp/ccv23xBe.s:3162   .text.UART_RxISR_8BIT:0000000000000000 UART_RxISR_8BIT
-     /tmp/ccv23xBe.s:3120   .text.UART_RxISR_16BIT:0000000000000000 UART_RxISR_16BIT
-     /tmp/ccv23xBe.s:707    .text.HAL_UART_Transmit_DMA:0000000000000000 $t
-     /tmp/ccv23xBe.s:715    .text.HAL_UART_Transmit_DMA:0000000000000000 HAL_UART_Transmit_DMA
-     /tmp/ccv23xBe.s:793    .text.HAL_UART_Transmit_DMA:00000000000000a0 $d
-     /tmp/ccv23xBe.s:1653   .text.UART_DMATransmitCplt:0000000000000000 UART_DMATransmitCplt
-     /tmp/ccv23xBe.s:1726   .text.UART_DMATxHalfCplt:0000000000000000 UART_DMATxHalfCplt
-     /tmp/ccv23xBe.s:1787   .text.UART_DMAError:0000000000000000 UART_DMAError
-     /tmp/ccv23xBe.s:798    .text.HAL_UART_DMAPause:0000000000000000 $t
-     /tmp/ccv23xBe.s:806    .text.HAL_UART_DMAPause:0000000000000000 HAL_UART_DMAPause
-     /tmp/ccv23xBe.s:915    .text.HAL_UART_DMAResume:0000000000000000 $t
-     /tmp/ccv23xBe.s:923    .text.HAL_UART_DMAResume:0000000000000000 HAL_UART_DMAResume
-     /tmp/ccv23xBe.s:1030   .text.HAL_UART_DMAStop:0000000000000000 $t
-     /tmp/ccv23xBe.s:1038   .text.HAL_UART_DMAStop:0000000000000000 HAL_UART_DMAStop
-     /tmp/ccv23xBe.s:1226   .text.HAL_UART_Abort:0000000000000000 $t
-     /tmp/ccv23xBe.s:1234   .text.HAL_UART_Abort:0000000000000000 HAL_UART_Abort
-     /tmp/ccv23xBe.s:1413   .text.HAL_UART_AbortTransmit:0000000000000000 $t
-     /tmp/ccv23xBe.s:1421   .text.HAL_UART_AbortTransmit:0000000000000000 HAL_UART_AbortTransmit
-     /tmp/ccv23xBe.s:1488   .text.HAL_UART_AbortReceive:0000000000000000 $t
-     /tmp/ccv23xBe.s:1496   .text.HAL_UART_AbortReceive:0000000000000000 HAL_UART_AbortReceive
-     /tmp/ccv23xBe.s:1631   .text.HAL_UART_TxCpltCallback:0000000000000000 $t
-     /tmp/ccv23xBe.s:1639   .text.HAL_UART_TxCpltCallback:0000000000000000 HAL_UART_TxCpltCallback
-     /tmp/ccv23xBe.s:1646   .text.UART_DMATransmitCplt:0000000000000000 $t
-     /tmp/ccv23xBe.s:1704   .text.HAL_UART_TxHalfCpltCallback:0000000000000000 $t
-     /tmp/ccv23xBe.s:1712   .text.HAL_UART_TxHalfCpltCallback:0000000000000000 HAL_UART_TxHalfCpltCallback
-     /tmp/ccv23xBe.s:1719   .text.UART_DMATxHalfCplt:0000000000000000 $t
-     /tmp/ccv23xBe.s:1735   .text.HAL_UART_RxCpltCallback:0000000000000000 $t
-     /tmp/ccv23xBe.s:1743   .text.HAL_UART_RxCpltCallback:0000000000000000 HAL_UART_RxCpltCallback
-     /tmp/ccv23xBe.s:1750   .text.HAL_UART_RxHalfCpltCallback:0000000000000000 $t
-     /tmp/ccv23xBe.s:1758   .text.HAL_UART_RxHalfCpltCallback:0000000000000000 HAL_UART_RxHalfCpltCallback
-     /tmp/ccv23xBe.s:1765   .text.HAL_UART_ErrorCallback:0000000000000000 $t
-     /tmp/ccv23xBe.s:1773   .text.HAL_UART_ErrorCallback:0000000000000000 HAL_UART_ErrorCallback
-     /tmp/ccv23xBe.s:1780   .text.UART_DMAError:0000000000000000 $t
-     /tmp/ccv23xBe.s:1915   .text.UART_DMAAbortOnError:0000000000000000 $t
-     /tmp/ccv23xBe.s:1922   .text.UART_DMAAbortOnError:0000000000000000 UART_DMAAbortOnError
-     /tmp/ccv23xBe.s:1934   .text.HAL_UART_AbortCpltCallback:0000000000000000 $t
-     /tmp/ccv23xBe.s:1942   .text.HAL_UART_AbortCpltCallback:0000000000000000 HAL_UART_AbortCpltCallback
-ARM GAS  /tmp/ccv23xBe.s 			page 100
+     /tmp/ccQrb7vt.s:16     .text.UART_TxISR_16BIT:0000000000000000 $t
+     /tmp/ccQrb7vt.s:24     .text.UART_TxISR_16BIT:0000000000000000 UART_TxISR_16BIT
+     /tmp/ccQrb7vt.s:83     .text.UART_TxISR_8BIT:0000000000000000 $t
+     /tmp/ccQrb7vt.s:90     .text.UART_TxISR_8BIT:0000000000000000 UART_TxISR_8BIT
+     /tmp/ccQrb7vt.s:148    .text.HAL_UART_MspInit:0000000000000000 $t
+     /tmp/ccQrb7vt.s:156    .text.HAL_UART_MspInit:0000000000000000 HAL_UART_MspInit
+     /tmp/ccQrb7vt.s:163    .text.HAL_UART_MspDeInit:0000000000000000 $t
+     /tmp/ccQrb7vt.s:171    .text.HAL_UART_MspDeInit:0000000000000000 HAL_UART_MspDeInit
+     /tmp/ccQrb7vt.s:178    .text.HAL_UART_DeInit:0000000000000000 $t
+     /tmp/ccQrb7vt.s:186    .text.HAL_UART_DeInit:0000000000000000 HAL_UART_DeInit
+     /tmp/ccQrb7vt.s:215    .text.HAL_UART_Receive:0000000000000000 $t
+     /tmp/ccQrb7vt.s:223    .text.HAL_UART_Receive:0000000000000000 HAL_UART_Receive
+     /tmp/ccQrb7vt.s:441    .text.HAL_UART_Transmit_IT:0000000000000000 $t
+     /tmp/ccQrb7vt.s:449    .text.HAL_UART_Transmit_IT:0000000000000000 HAL_UART_Transmit_IT
+     /tmp/ccQrb7vt.s:513    .text.HAL_UART_Transmit_IT:000000000000006c $d
+     /tmp/ccQrb7vt.s:517    .text.HAL_UART_Receive_IT:0000000000000000 $t
+     /tmp/ccQrb7vt.s:525    .text.HAL_UART_Receive_IT:0000000000000000 HAL_UART_Receive_IT
+     /tmp/ccQrb7vt.s:702    .text.HAL_UART_Receive_IT:0000000000000114 $d
+     /tmp/ccQrb7vt.s:3162   .text.UART_RxISR_8BIT:0000000000000000 UART_RxISR_8BIT
+     /tmp/ccQrb7vt.s:3120   .text.UART_RxISR_16BIT:0000000000000000 UART_RxISR_16BIT
+     /tmp/ccQrb7vt.s:707    .text.HAL_UART_Transmit_DMA:0000000000000000 $t
+     /tmp/ccQrb7vt.s:715    .text.HAL_UART_Transmit_DMA:0000000000000000 HAL_UART_Transmit_DMA
+     /tmp/ccQrb7vt.s:793    .text.HAL_UART_Transmit_DMA:00000000000000a0 $d
+     /tmp/ccQrb7vt.s:1653   .text.UART_DMATransmitCplt:0000000000000000 UART_DMATransmitCplt
+     /tmp/ccQrb7vt.s:1726   .text.UART_DMATxHalfCplt:0000000000000000 UART_DMATxHalfCplt
+     /tmp/ccQrb7vt.s:1787   .text.UART_DMAError:0000000000000000 UART_DMAError
+     /tmp/ccQrb7vt.s:798    .text.HAL_UART_DMAPause:0000000000000000 $t
+     /tmp/ccQrb7vt.s:806    .text.HAL_UART_DMAPause:0000000000000000 HAL_UART_DMAPause
+     /tmp/ccQrb7vt.s:915    .text.HAL_UART_DMAResume:0000000000000000 $t
+     /tmp/ccQrb7vt.s:923    .text.HAL_UART_DMAResume:0000000000000000 HAL_UART_DMAResume
+     /tmp/ccQrb7vt.s:1030   .text.HAL_UART_DMAStop:0000000000000000 $t
+     /tmp/ccQrb7vt.s:1038   .text.HAL_UART_DMAStop:0000000000000000 HAL_UART_DMAStop
+     /tmp/ccQrb7vt.s:1226   .text.HAL_UART_Abort:0000000000000000 $t
+     /tmp/ccQrb7vt.s:1234   .text.HAL_UART_Abort:0000000000000000 HAL_UART_Abort
+     /tmp/ccQrb7vt.s:1413   .text.HAL_UART_AbortTransmit:0000000000000000 $t
+     /tmp/ccQrb7vt.s:1421   .text.HAL_UART_AbortTransmit:0000000000000000 HAL_UART_AbortTransmit
+     /tmp/ccQrb7vt.s:1488   .text.HAL_UART_AbortReceive:0000000000000000 $t
+     /tmp/ccQrb7vt.s:1496   .text.HAL_UART_AbortReceive:0000000000000000 HAL_UART_AbortReceive
+     /tmp/ccQrb7vt.s:1631   .text.HAL_UART_TxCpltCallback:0000000000000000 $t
+     /tmp/ccQrb7vt.s:1639   .text.HAL_UART_TxCpltCallback:0000000000000000 HAL_UART_TxCpltCallback
+     /tmp/ccQrb7vt.s:1646   .text.UART_DMATransmitCplt:0000000000000000 $t
+     /tmp/ccQrb7vt.s:1704   .text.HAL_UART_TxHalfCpltCallback:0000000000000000 $t
+     /tmp/ccQrb7vt.s:1712   .text.HAL_UART_TxHalfCpltCallback:0000000000000000 HAL_UART_TxHalfCpltCallback
+     /tmp/ccQrb7vt.s:1719   .text.UART_DMATxHalfCplt:0000000000000000 $t
+     /tmp/ccQrb7vt.s:1735   .text.HAL_UART_RxCpltCallback:0000000000000000 $t
+     /tmp/ccQrb7vt.s:1743   .text.HAL_UART_RxCpltCallback:0000000000000000 HAL_UART_RxCpltCallback
+     /tmp/ccQrb7vt.s:1750   .text.HAL_UART_RxHalfCpltCallback:0000000000000000 $t
+     /tmp/ccQrb7vt.s:1758   .text.HAL_UART_RxHalfCpltCallback:0000000000000000 HAL_UART_RxHalfCpltCallback
+     /tmp/ccQrb7vt.s:1765   .text.HAL_UART_ErrorCallback:0000000000000000 $t
+     /tmp/ccQrb7vt.s:1773   .text.HAL_UART_ErrorCallback:0000000000000000 HAL_UART_ErrorCallback
+     /tmp/ccQrb7vt.s:1780   .text.UART_DMAError:0000000000000000 $t
+     /tmp/ccQrb7vt.s:1915   .text.UART_DMAAbortOnError:0000000000000000 $t
+     /tmp/ccQrb7vt.s:1922   .text.UART_DMAAbortOnError:0000000000000000 UART_DMAAbortOnError
+     /tmp/ccQrb7vt.s:1934   .text.HAL_UART_AbortCpltCallback:0000000000000000 $t
+     /tmp/ccQrb7vt.s:1942   .text.HAL_UART_AbortCpltCallback:0000000000000000 HAL_UART_AbortCpltCallback
+ARM GAS  /tmp/ccQrb7vt.s 			page 100
 
 
-     /tmp/ccv23xBe.s:1949   .text.HAL_UART_Abort_IT:0000000000000000 $t
-     /tmp/ccv23xBe.s:1957   .text.HAL_UART_Abort_IT:0000000000000000 HAL_UART_Abort_IT
-     /tmp/ccv23xBe.s:2158   .text.HAL_UART_Abort_IT:0000000000000134 $d
-     /tmp/ccv23xBe.s:2208   .text.UART_DMATxAbortCallback:0000000000000000 UART_DMATxAbortCallback
-     /tmp/ccv23xBe.s:2169   .text.UART_DMARxAbortCallback:0000000000000000 UART_DMARxAbortCallback
-     /tmp/ccv23xBe.s:2162   .text.UART_DMARxAbortCallback:0000000000000000 $t
-     /tmp/ccv23xBe.s:2201   .text.UART_DMATxAbortCallback:0000000000000000 $t
-     /tmp/ccv23xBe.s:2236   .text.HAL_UART_AbortTransmitCpltCallback:0000000000000000 $t
-     /tmp/ccv23xBe.s:2244   .text.HAL_UART_AbortTransmitCpltCallback:0000000000000000 HAL_UART_AbortTransmitCpltCallback
-     /tmp/ccv23xBe.s:2251   .text.HAL_UART_AbortTransmit_IT:0000000000000000 $t
-     /tmp/ccv23xBe.s:2259   .text.HAL_UART_AbortTransmit_IT:0000000000000000 HAL_UART_AbortTransmit_IT
-     /tmp/ccv23xBe.s:2335   .text.HAL_UART_AbortTransmit_IT:0000000000000078 $d
-     /tmp/ccv23xBe.s:2345   .text.UART_DMATxOnlyAbortCallback:0000000000000000 UART_DMATxOnlyAbortCallback
-     /tmp/ccv23xBe.s:2338   .text.UART_DMATxOnlyAbortCallback:0000000000000000 $t
-     /tmp/ccv23xBe.s:2358   .text.HAL_UART_AbortReceiveCpltCallback:0000000000000000 $t
-     /tmp/ccv23xBe.s:2366   .text.HAL_UART_AbortReceiveCpltCallback:0000000000000000 HAL_UART_AbortReceiveCpltCallback
-     /tmp/ccv23xBe.s:2373   .text.HAL_UART_AbortReceive_IT:0000000000000000 $t
-     /tmp/ccv23xBe.s:2381   .text.HAL_UART_AbortReceive_IT:0000000000000000 HAL_UART_AbortReceive_IT
-     /tmp/ccv23xBe.s:2522   .text.HAL_UART_AbortReceive_IT:00000000000000d0 $d
-     /tmp/ccv23xBe.s:2532   .text.UART_DMARxOnlyAbortCallback:0000000000000000 UART_DMARxOnlyAbortCallback
-     /tmp/ccv23xBe.s:2525   .text.UART_DMARxOnlyAbortCallback:0000000000000000 $t
-     /tmp/ccv23xBe.s:2553   .text.HAL_UARTEx_RxEventCallback:0000000000000000 $t
-     /tmp/ccv23xBe.s:2561   .text.HAL_UARTEx_RxEventCallback:0000000000000000 HAL_UARTEx_RxEventCallback
-     /tmp/ccv23xBe.s:2568   .text.HAL_UART_IRQHandler:0000000000000000 $t
-     /tmp/ccv23xBe.s:2576   .text.HAL_UART_IRQHandler:0000000000000000 HAL_UART_IRQHandler
-     /tmp/ccv23xBe.s:3026   .text.HAL_UART_IRQHandler:0000000000000300 $d
-     /tmp/ccv23xBe.s:3030   .text.UART_RxISR_8BIT.part.0:0000000000000000 $t
-     /tmp/ccv23xBe.s:3037   .text.UART_RxISR_8BIT.part.0:0000000000000000 UART_RxISR_8BIT.part.0
-     /tmp/ccv23xBe.s:3037   .text.UART_RxISR_8BIT.part.0:0000000000000000 UART_RxISR_16BIT.part.0
-     /tmp/ccv23xBe.s:3113   .text.UART_RxISR_16BIT:0000000000000000 $t
-     /tmp/ccv23xBe.s:3155   .text.UART_RxISR_8BIT:0000000000000000 $t
-     /tmp/ccv23xBe.s:3199   .text.UART_DMARxHalfCplt:0000000000000000 $t
-     /tmp/ccv23xBe.s:3206   .text.UART_DMARxHalfCplt:0000000000000000 UART_DMARxHalfCplt
-     /tmp/ccv23xBe.s:3223   .text.UART_DMAReceiveCplt:0000000000000000 $t
-     /tmp/ccv23xBe.s:3230   .text.UART_DMAReceiveCplt:0000000000000000 UART_DMAReceiveCplt
-     /tmp/ccv23xBe.s:3342   .text.HAL_UART_ReceiverTimeout_Config:0000000000000000 $t
-     /tmp/ccv23xBe.s:3350   .text.HAL_UART_ReceiverTimeout_Config:0000000000000000 HAL_UART_ReceiverTimeout_Config
-     /tmp/ccv23xBe.s:3367   .text.HAL_UART_ReceiverTimeout_Config:0000000000000014 $d
-     /tmp/ccv23xBe.s:3370   .text.HAL_UART_EnableReceiverTimeout:0000000000000000 $t
-     /tmp/ccv23xBe.s:3378   .text.HAL_UART_EnableReceiverTimeout:0000000000000000 HAL_UART_EnableReceiverTimeout
-     /tmp/ccv23xBe.s:3412   .text.HAL_UART_EnableReceiverTimeout:000000000000003c $d
-     /tmp/ccv23xBe.s:3415   .text.HAL_UART_DisableReceiverTimeout:0000000000000000 $t
-     /tmp/ccv23xBe.s:3423   .text.HAL_UART_DisableReceiverTimeout:0000000000000000 HAL_UART_DisableReceiverTimeout
-     /tmp/ccv23xBe.s:3457   .text.HAL_UART_DisableReceiverTimeout:000000000000003c $d
-     /tmp/ccv23xBe.s:3460   .text.HAL_MultiProcessor_EnterMuteMode:0000000000000000 $t
-     /tmp/ccv23xBe.s:3468   .text.HAL_MultiProcessor_EnterMuteMode:0000000000000000 HAL_MultiProcessor_EnterMuteMode
-     /tmp/ccv23xBe.s:3480   .text.HAL_HalfDuplex_EnableTransmitter:0000000000000000 $t
-     /tmp/ccv23xBe.s:3488   .text.HAL_HalfDuplex_EnableTransmitter:0000000000000000 HAL_HalfDuplex_EnableTransmitter
-     /tmp/ccv23xBe.s:3542   .text.HAL_HalfDuplex_EnableReceiver:0000000000000000 $t
-     /tmp/ccv23xBe.s:3550   .text.HAL_HalfDuplex_EnableReceiver:0000000000000000 HAL_HalfDuplex_EnableReceiver
-     /tmp/ccv23xBe.s:3604   .text.HAL_LIN_SendBreak:0000000000000000 $t
-     /tmp/ccv23xBe.s:3612   .text.HAL_LIN_SendBreak:0000000000000000 HAL_LIN_SendBreak
-     /tmp/ccv23xBe.s:3639   .text.HAL_UART_GetState:0000000000000000 $t
-     /tmp/ccv23xBe.s:3647   .text.HAL_UART_GetState:0000000000000000 HAL_UART_GetState
-     /tmp/ccv23xBe.s:3657   .text.HAL_UART_GetError:0000000000000000 $t
-     /tmp/ccv23xBe.s:3665   .text.HAL_UART_GetError:0000000000000000 HAL_UART_GetError
-     /tmp/ccv23xBe.s:3675   .text.UART_SetConfig:0000000000000000 $t
-ARM GAS  /tmp/ccv23xBe.s 			page 101
+     /tmp/ccQrb7vt.s:1949   .text.HAL_UART_Abort_IT:0000000000000000 $t
+     /tmp/ccQrb7vt.s:1957   .text.HAL_UART_Abort_IT:0000000000000000 HAL_UART_Abort_IT
+     /tmp/ccQrb7vt.s:2158   .text.HAL_UART_Abort_IT:0000000000000134 $d
+     /tmp/ccQrb7vt.s:2208   .text.UART_DMATxAbortCallback:0000000000000000 UART_DMATxAbortCallback
+     /tmp/ccQrb7vt.s:2169   .text.UART_DMARxAbortCallback:0000000000000000 UART_DMARxAbortCallback
+     /tmp/ccQrb7vt.s:2162   .text.UART_DMARxAbortCallback:0000000000000000 $t
+     /tmp/ccQrb7vt.s:2201   .text.UART_DMATxAbortCallback:0000000000000000 $t
+     /tmp/ccQrb7vt.s:2236   .text.HAL_UART_AbortTransmitCpltCallback:0000000000000000 $t
+     /tmp/ccQrb7vt.s:2244   .text.HAL_UART_AbortTransmitCpltCallback:0000000000000000 HAL_UART_AbortTransmitCpltCallback
+     /tmp/ccQrb7vt.s:2251   .text.HAL_UART_AbortTransmit_IT:0000000000000000 $t
+     /tmp/ccQrb7vt.s:2259   .text.HAL_UART_AbortTransmit_IT:0000000000000000 HAL_UART_AbortTransmit_IT
+     /tmp/ccQrb7vt.s:2335   .text.HAL_UART_AbortTransmit_IT:0000000000000078 $d
+     /tmp/ccQrb7vt.s:2345   .text.UART_DMATxOnlyAbortCallback:0000000000000000 UART_DMATxOnlyAbortCallback
+     /tmp/ccQrb7vt.s:2338   .text.UART_DMATxOnlyAbortCallback:0000000000000000 $t
+     /tmp/ccQrb7vt.s:2358   .text.HAL_UART_AbortReceiveCpltCallback:0000000000000000 $t
+     /tmp/ccQrb7vt.s:2366   .text.HAL_UART_AbortReceiveCpltCallback:0000000000000000 HAL_UART_AbortReceiveCpltCallback
+     /tmp/ccQrb7vt.s:2373   .text.HAL_UART_AbortReceive_IT:0000000000000000 $t
+     /tmp/ccQrb7vt.s:2381   .text.HAL_UART_AbortReceive_IT:0000000000000000 HAL_UART_AbortReceive_IT
+     /tmp/ccQrb7vt.s:2522   .text.HAL_UART_AbortReceive_IT:00000000000000d0 $d
+     /tmp/ccQrb7vt.s:2532   .text.UART_DMARxOnlyAbortCallback:0000000000000000 UART_DMARxOnlyAbortCallback
+     /tmp/ccQrb7vt.s:2525   .text.UART_DMARxOnlyAbortCallback:0000000000000000 $t
+     /tmp/ccQrb7vt.s:2553   .text.HAL_UARTEx_RxEventCallback:0000000000000000 $t
+     /tmp/ccQrb7vt.s:2561   .text.HAL_UARTEx_RxEventCallback:0000000000000000 HAL_UARTEx_RxEventCallback
+     /tmp/ccQrb7vt.s:2568   .text.HAL_UART_IRQHandler:0000000000000000 $t
+     /tmp/ccQrb7vt.s:2576   .text.HAL_UART_IRQHandler:0000000000000000 HAL_UART_IRQHandler
+     /tmp/ccQrb7vt.s:3026   .text.HAL_UART_IRQHandler:0000000000000300 $d
+     /tmp/ccQrb7vt.s:3030   .text.UART_RxISR_8BIT.part.0:0000000000000000 $t
+     /tmp/ccQrb7vt.s:3037   .text.UART_RxISR_8BIT.part.0:0000000000000000 UART_RxISR_8BIT.part.0
+     /tmp/ccQrb7vt.s:3037   .text.UART_RxISR_8BIT.part.0:0000000000000000 UART_RxISR_16BIT.part.0
+     /tmp/ccQrb7vt.s:3113   .text.UART_RxISR_16BIT:0000000000000000 $t
+     /tmp/ccQrb7vt.s:3155   .text.UART_RxISR_8BIT:0000000000000000 $t
+     /tmp/ccQrb7vt.s:3199   .text.UART_DMARxHalfCplt:0000000000000000 $t
+     /tmp/ccQrb7vt.s:3206   .text.UART_DMARxHalfCplt:0000000000000000 UART_DMARxHalfCplt
+     /tmp/ccQrb7vt.s:3223   .text.UART_DMAReceiveCplt:0000000000000000 $t
+     /tmp/ccQrb7vt.s:3230   .text.UART_DMAReceiveCplt:0000000000000000 UART_DMAReceiveCplt
+     /tmp/ccQrb7vt.s:3342   .text.HAL_UART_ReceiverTimeout_Config:0000000000000000 $t
+     /tmp/ccQrb7vt.s:3350   .text.HAL_UART_ReceiverTimeout_Config:0000000000000000 HAL_UART_ReceiverTimeout_Config
+     /tmp/ccQrb7vt.s:3367   .text.HAL_UART_ReceiverTimeout_Config:0000000000000014 $d
+     /tmp/ccQrb7vt.s:3370   .text.HAL_UART_EnableReceiverTimeout:0000000000000000 $t
+     /tmp/ccQrb7vt.s:3378   .text.HAL_UART_EnableReceiverTimeout:0000000000000000 HAL_UART_EnableReceiverTimeout
+     /tmp/ccQrb7vt.s:3412   .text.HAL_UART_EnableReceiverTimeout:000000000000003c $d
+     /tmp/ccQrb7vt.s:3415   .text.HAL_UART_DisableReceiverTimeout:0000000000000000 $t
+     /tmp/ccQrb7vt.s:3423   .text.HAL_UART_DisableReceiverTimeout:0000000000000000 HAL_UART_DisableReceiverTimeout
+     /tmp/ccQrb7vt.s:3457   .text.HAL_UART_DisableReceiverTimeout:000000000000003c $d
+     /tmp/ccQrb7vt.s:3460   .text.HAL_MultiProcessor_EnterMuteMode:0000000000000000 $t
+     /tmp/ccQrb7vt.s:3468   .text.HAL_MultiProcessor_EnterMuteMode:0000000000000000 HAL_MultiProcessor_EnterMuteMode
+     /tmp/ccQrb7vt.s:3480   .text.HAL_HalfDuplex_EnableTransmitter:0000000000000000 $t
+     /tmp/ccQrb7vt.s:3488   .text.HAL_HalfDuplex_EnableTransmitter:0000000000000000 HAL_HalfDuplex_EnableTransmitter
+     /tmp/ccQrb7vt.s:3542   .text.HAL_HalfDuplex_EnableReceiver:0000000000000000 $t
+     /tmp/ccQrb7vt.s:3550   .text.HAL_HalfDuplex_EnableReceiver:0000000000000000 HAL_HalfDuplex_EnableReceiver
+     /tmp/ccQrb7vt.s:3604   .text.HAL_LIN_SendBreak:0000000000000000 $t
+     /tmp/ccQrb7vt.s:3612   .text.HAL_LIN_SendBreak:0000000000000000 HAL_LIN_SendBreak
+     /tmp/ccQrb7vt.s:3639   .text.HAL_UART_GetState:0000000000000000 $t
+     /tmp/ccQrb7vt.s:3647   .text.HAL_UART_GetState:0000000000000000 HAL_UART_GetState
+     /tmp/ccQrb7vt.s:3657   .text.HAL_UART_GetError:0000000000000000 $t
+     /tmp/ccQrb7vt.s:3665   .text.HAL_UART_GetError:0000000000000000 HAL_UART_GetError
+     /tmp/ccQrb7vt.s:3675   .text.UART_SetConfig:0000000000000000 $t
+ARM GAS  /tmp/ccQrb7vt.s 			page 101
 
 
-     /tmp/ccv23xBe.s:3683   .text.UART_SetConfig:0000000000000000 UART_SetConfig
-     /tmp/ccv23xBe.s:3790   .text.UART_SetConfig:00000000000000f4 $d
-     /tmp/ccv23xBe.s:3799   .text.UART_SetConfig:0000000000000118 $t
-     /tmp/ccv23xBe.s:3880   .text.UART_SetConfig:00000000000001d0 $d
-     /tmp/ccv23xBe.s:3889   .text.UART_SetConfig:00000000000001f4 $t
-     /tmp/ccv23xBe.s:3969   .text.UART_SetConfig:0000000000000294 $d
-     /tmp/ccv23xBe.s:3984   .text.UART_AdvFeatureConfig:0000000000000000 $t
-     /tmp/ccv23xBe.s:3992   .text.UART_AdvFeatureConfig:0000000000000000 UART_AdvFeatureConfig
-     /tmp/ccv23xBe.s:4083   .text.UART_CheckIdleState:0000000000000000 $t
-     /tmp/ccv23xBe.s:4091   .text.UART_CheckIdleState:0000000000000000 UART_CheckIdleState
-     /tmp/ccv23xBe.s:4325   .text.HAL_LIN_Init:0000000000000000 $t
-     /tmp/ccv23xBe.s:4333   .text.HAL_LIN_Init:0000000000000000 HAL_LIN_Init
-     /tmp/ccv23xBe.s:4398   .text.UART_WaitOnFlagUntilTimeout:0000000000000000 $t
-     /tmp/ccv23xBe.s:4406   .text.UART_WaitOnFlagUntilTimeout:0000000000000000 UART_WaitOnFlagUntilTimeout
-     /tmp/ccv23xBe.s:4554   .text.HAL_UART_Transmit:0000000000000000 $t
-     /tmp/ccv23xBe.s:4562   .text.HAL_UART_Transmit:0000000000000000 HAL_UART_Transmit
-     /tmp/ccv23xBe.s:4779   .text.HAL_MultiProcessor_EnableMuteMode:0000000000000000 $t
-     /tmp/ccv23xBe.s:4787   .text.HAL_MultiProcessor_EnableMuteMode:0000000000000000 HAL_MultiProcessor_EnableMuteMode
-     /tmp/ccv23xBe.s:4873   .text.HAL_MultiProcessor_DisableMuteMode:0000000000000000 $t
-     /tmp/ccv23xBe.s:4881   .text.HAL_MultiProcessor_DisableMuteMode:0000000000000000 HAL_MultiProcessor_DisableMuteMode
-     /tmp/ccv23xBe.s:4967   .text.HAL_UART_Init:0000000000000000 $t
-     /tmp/ccv23xBe.s:4975   .text.HAL_UART_Init:0000000000000000 HAL_UART_Init
-     /tmp/ccv23xBe.s:5079   .text.HAL_HalfDuplex_Init:0000000000000000 $t
-     /tmp/ccv23xBe.s:5087   .text.HAL_HalfDuplex_Init:0000000000000000 HAL_HalfDuplex_Init
-     /tmp/ccv23xBe.s:5194   .text.HAL_MultiProcessor_Init:0000000000000000 $t
-     /tmp/ccv23xBe.s:5202   .text.HAL_MultiProcessor_Init:0000000000000000 HAL_MultiProcessor_Init
-     /tmp/ccv23xBe.s:5321   .text.UART_Start_Receive_IT:0000000000000000 $t
-     /tmp/ccv23xBe.s:5329   .text.UART_Start_Receive_IT:0000000000000000 UART_Start_Receive_IT
-     /tmp/ccv23xBe.s:5462   .text.UART_Start_Receive_IT:00000000000000d0 $d
-     /tmp/ccv23xBe.s:5466   .text.UART_Start_Receive_DMA:0000000000000000 $t
-     /tmp/ccv23xBe.s:5474   .text.UART_Start_Receive_DMA:0000000000000000 UART_Start_Receive_DMA
-     /tmp/ccv23xBe.s:5570   .text.UART_Start_Receive_DMA:0000000000000098 $d
-     /tmp/ccv23xBe.s:5575   .text.HAL_UART_Receive_DMA:0000000000000000 $t
-     /tmp/ccv23xBe.s:5583   .text.HAL_UART_Receive_DMA:0000000000000000 HAL_UART_Receive_DMA
-     /tmp/ccv23xBe.s:5635   .text.HAL_UART_Receive_DMA:000000000000004c $d
-     /tmp/ccv23xBe.s:5638   .rodata.CSWTCH.53:0000000000000000 $d
-     /tmp/ccv23xBe.s:5642   .rodata.CSWTCH.53:0000000000000000 CSWTCH.53
-     /tmp/ccv23xBe.s:5647   .rodata.CSWTCH.54:0000000000000000 $d
-     /tmp/ccv23xBe.s:5651   .rodata.CSWTCH.54:0000000000000000 CSWTCH.54
+     /tmp/ccQrb7vt.s:3683   .text.UART_SetConfig:0000000000000000 UART_SetConfig
+     /tmp/ccQrb7vt.s:3790   .text.UART_SetConfig:00000000000000f4 $d
+     /tmp/ccQrb7vt.s:3799   .text.UART_SetConfig:0000000000000118 $t
+     /tmp/ccQrb7vt.s:3880   .text.UART_SetConfig:00000000000001d0 $d
+     /tmp/ccQrb7vt.s:3889   .text.UART_SetConfig:00000000000001f4 $t
+     /tmp/ccQrb7vt.s:3969   .text.UART_SetConfig:0000000000000294 $d
+     /tmp/ccQrb7vt.s:3984   .text.UART_AdvFeatureConfig:0000000000000000 $t
+     /tmp/ccQrb7vt.s:3992   .text.UART_AdvFeatureConfig:0000000000000000 UART_AdvFeatureConfig
+     /tmp/ccQrb7vt.s:4083   .text.UART_CheckIdleState:0000000000000000 $t
+     /tmp/ccQrb7vt.s:4091   .text.UART_CheckIdleState:0000000000000000 UART_CheckIdleState
+     /tmp/ccQrb7vt.s:4325   .text.HAL_LIN_Init:0000000000000000 $t
+     /tmp/ccQrb7vt.s:4333   .text.HAL_LIN_Init:0000000000000000 HAL_LIN_Init
+     /tmp/ccQrb7vt.s:4398   .text.UART_WaitOnFlagUntilTimeout:0000000000000000 $t
+     /tmp/ccQrb7vt.s:4406   .text.UART_WaitOnFlagUntilTimeout:0000000000000000 UART_WaitOnFlagUntilTimeout
+     /tmp/ccQrb7vt.s:4554   .text.HAL_UART_Transmit:0000000000000000 $t
+     /tmp/ccQrb7vt.s:4562   .text.HAL_UART_Transmit:0000000000000000 HAL_UART_Transmit
+     /tmp/ccQrb7vt.s:4779   .text.HAL_MultiProcessor_EnableMuteMode:0000000000000000 $t
+     /tmp/ccQrb7vt.s:4787   .text.HAL_MultiProcessor_EnableMuteMode:0000000000000000 HAL_MultiProcessor_EnableMuteMode
+     /tmp/ccQrb7vt.s:4873   .text.HAL_MultiProcessor_DisableMuteMode:0000000000000000 $t
+     /tmp/ccQrb7vt.s:4881   .text.HAL_MultiProcessor_DisableMuteMode:0000000000000000 HAL_MultiProcessor_DisableMuteMode
+     /tmp/ccQrb7vt.s:4967   .text.HAL_UART_Init:0000000000000000 $t
+     /tmp/ccQrb7vt.s:4975   .text.HAL_UART_Init:0000000000000000 HAL_UART_Init
+     /tmp/ccQrb7vt.s:5079   .text.HAL_HalfDuplex_Init:0000000000000000 $t
+     /tmp/ccQrb7vt.s:5087   .text.HAL_HalfDuplex_Init:0000000000000000 HAL_HalfDuplex_Init
+     /tmp/ccQrb7vt.s:5194   .text.HAL_MultiProcessor_Init:0000000000000000 $t
+     /tmp/ccQrb7vt.s:5202   .text.HAL_MultiProcessor_Init:0000000000000000 HAL_MultiProcessor_Init
+     /tmp/ccQrb7vt.s:5321   .text.UART_Start_Receive_IT:0000000000000000 $t
+     /tmp/ccQrb7vt.s:5329   .text.UART_Start_Receive_IT:0000000000000000 UART_Start_Receive_IT
+     /tmp/ccQrb7vt.s:5462   .text.UART_Start_Receive_IT:00000000000000d0 $d
+     /tmp/ccQrb7vt.s:5466   .text.UART_Start_Receive_DMA:0000000000000000 $t
+     /tmp/ccQrb7vt.s:5474   .text.UART_Start_Receive_DMA:0000000000000000 UART_Start_Receive_DMA
+     /tmp/ccQrb7vt.s:5570   .text.UART_Start_Receive_DMA:0000000000000098 $d
+     /tmp/ccQrb7vt.s:5575   .text.HAL_UART_Receive_DMA:0000000000000000 $t
+     /tmp/ccQrb7vt.s:5583   .text.HAL_UART_Receive_DMA:0000000000000000 HAL_UART_Receive_DMA
+     /tmp/ccQrb7vt.s:5635   .text.HAL_UART_Receive_DMA:000000000000004c $d
+     /tmp/ccQrb7vt.s:5638   .rodata.CSWTCH.53:0000000000000000 $d
+     /tmp/ccQrb7vt.s:5642   .rodata.CSWTCH.53:0000000000000000 CSWTCH.53
+     /tmp/ccQrb7vt.s:5647   .rodata.CSWTCH.54:0000000000000000 $d
+     /tmp/ccQrb7vt.s:5651   .rodata.CSWTCH.54:0000000000000000 CSWTCH.54
 
 UNDEFINED SYMBOLS
 HAL_GetTick

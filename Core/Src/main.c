@@ -55,11 +55,11 @@
 
 /* USER CODE BEGIN PV */
 uint8_t queue[QUESIZ];
-uint8_t qfront, qback;
+uint32_t qfront, qback;
 
 uint8_t recvbuf[RECVSIZ];
 uint8_t recvtmp[RECVSIZ+4];
-uint8_t recvidx;
+uint32_t recvidx;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -77,9 +77,9 @@ void delay_us(uint32_t us)
 void recv2uart() {
   // HAL_UART_Transmit_IT(&huart2, "recv2uart\r\n", sizeof("recv2uart\r\n"));
   // HAL_Delay(1000);
-  char buf[128] = {0};
+  char buf[1024] = {0};
   char *p = buf;
-  for (uint8_t i = 0; i < recvidx; i++) {
+  for (int i = 0; i < recvidx; i++) {
     p += sprintf(p, " %02x", recvbuf[i]);
   }
   p += sprintf(p, "\r\n");
@@ -133,14 +133,14 @@ int main(void)
 
   HAL_Delay(2000);
 
-  for (int i = 0; i < 8; i++) {
+  for (int i = 0; i < 256; i++) {
     // push data to queue
     // frame start
     queue[qback++] = FRMBEGIN1;
     queue[qback++] = FRMBEGIN2;
 
     // data
-    for (int i = 0; i < 2; i++) {
+    for (int j = 0; j < 8; j++) {
       queue[qback++] = 0x01;
       queue[qback++] = 0x23;
       queue[qback++] = 0x45;

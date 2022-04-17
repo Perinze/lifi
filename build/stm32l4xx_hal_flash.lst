@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccYmIHxB.s 			page 1
+ARM GAS  /tmp/ccVMEE1g.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccYmIHxB.s 			page 1
   56 0044 57D1     		bne	.L31
   57 0046 3369     		ldr	r3, [r6, #16]
   58 0048 DA07     		lsls	r2, r3, #31
-ARM GAS  /tmp/ccYmIHxB.s 			page 2
+ARM GAS  /tmp/ccVMEE1g.s 			page 2
 
 
   59 004a 44BF     		itt	mi
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccYmIHxB.s 			page 1
  113 00c4 0324     		movs	r4, #3
  114              	.L4:
  115 00c6 0023     		movs	r3, #0
-ARM GAS  /tmp/ccYmIHxB.s 			page 3
+ARM GAS  /tmp/ccVMEE1g.s 			page 3
 
 
  116 00c8 89F80030 		strb	r3, [r9]
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccYmIHxB.s 			page 1
  170              		.syntax unified
  171              	@ 481 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  172 0126 81F31088 		MSR primask, r1
-ARM GAS  /tmp/ccYmIHxB.s 			page 4
+ARM GAS  /tmp/ccVMEE1g.s 			page 4
 
 
  173              	@ 0 "" 2
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccYmIHxB.s 			page 1
  229 0030 3572     		strb	r5, [r6, #8]
  230 0032 F160     		str	r1, [r6, #12]
  231 0034 6569     		ldr	r5, [r4, #20]
-ARM GAS  /tmp/ccYmIHxB.s 			page 5
+ARM GAS  /tmp/ccVMEE1g.s 			page 5
 
 
  232 0036 45F04075 		orr	r5, r5, #50331648
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccYmIHxB.s 			page 1
  286              		.syntax unified
  287              	@ 481 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  288 0090 84F31088 		MSR primask, r4
-ARM GAS  /tmp/ccYmIHxB.s 			page 6
+ARM GAS  /tmp/ccVMEE1g.s 			page 6
 
 
  289              	@ 0 "" 2
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccYmIHxB.s 			page 1
  349 0004 23F4FF63 		bic	r3, r3, #2040
  350 0008 23F00703 		bic	r3, r3, #7
  351 000c 10B5     		push	{r4, lr}
-ARM GAS  /tmp/ccYmIHxB.s 			page 7
+ARM GAS  /tmp/ccVMEE1g.s 			page 7
 
 
  352 000e 5361     		str	r3, [r2, #20]
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccYmIHxB.s 			page 1
  406 0080 227A     		ldrb	r2, [r4, #8]	@ zero_extendqisi2
  407 0082 022A     		cmp	r2, #2
  408 0084 D3B2     		uxtb	r3, r2
-ARM GAS  /tmp/ccYmIHxB.s 			page 8
+ARM GAS  /tmp/ccVMEE1g.s 			page 8
 
 
  409 0086 2DD0     		beq	.L76
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccYmIHxB.s 			page 1
  463              	.L81:
  464              		.align	2
  465              	.L80:
-ARM GAS  /tmp/ccYmIHxB.s 			page 9
+ARM GAS  /tmp/ccVMEE1g.s 			page 9
 
 
  466 00f4 00200240 		.word	1073881088
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccYmIHxB.s 			page 1
  524              	.L89:
  525 0010 00200240 		.word	1073881088
  527              		.section	.text.HAL_FLASH_OB_Unlock,"ax",%progbits
-ARM GAS  /tmp/ccYmIHxB.s 			page 10
+ARM GAS  /tmp/ccVMEE1g.s 			page 10
 
 
  528              		.align	1
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccYmIHxB.s 			page 1
  586              		.p2align 2,,3
  587              		.global	HAL_FLASH_OB_Launch
  588              		.syntax unified
-ARM GAS  /tmp/ccYmIHxB.s 			page 11
+ARM GAS  /tmp/ccVMEE1g.s 			page 11
 
 
  589              		.thumb
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccYmIHxB.s 			page 1
  645              		.p2align 2,,3
  646              		.global	HAL_FLASH_GetError
  647              		.syntax unified
-ARM GAS  /tmp/ccYmIHxB.s 			page 12
+ARM GAS  /tmp/ccVMEE1g.s 			page 12
 
 
  648              		.thumb
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccYmIHxB.s 			page 1
  705 0036 DB03     		lsls	r3, r3, #15
  706 0038 EED5     		bpl	.L118
  707 003a FFF7FEFF 		bl	HAL_GetTick
-ARM GAS  /tmp/ccYmIHxB.s 			page 13
+ARM GAS  /tmp/ccVMEE1g.s 			page 13
 
 
  708 003e 401B     		subs	r0, r0, r5
@@ -756,47 +756,47 @@ ARM GAS  /tmp/ccYmIHxB.s 			page 1
  743 001c 00       		.byte	0
  744 001d 000000   		.space	3
  745              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/ccYmIHxB.s 			page 14
+ARM GAS  /tmp/ccVMEE1g.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l4xx_hal_flash.c
-     /tmp/ccYmIHxB.s:16     .text.HAL_FLASH_Program:0000000000000000 $t
-     /tmp/ccYmIHxB.s:25     .text.HAL_FLASH_Program:0000000000000000 HAL_FLASH_Program
-     /tmp/ccYmIHxB.s:191    .text.HAL_FLASH_Program:000000000000014c $d
-     /tmp/ccYmIHxB.s:195    .text.HAL_FLASH_Program_IT:0000000000000000 $t
-     /tmp/ccYmIHxB.s:203    .text.HAL_FLASH_Program_IT:0000000000000000 HAL_FLASH_Program_IT
-     /tmp/ccYmIHxB.s:302    .text.HAL_FLASH_Program_IT:00000000000000a0 $d
-     /tmp/ccYmIHxB.s:306    .text.HAL_FLASH_EndOfOperationCallback:0000000000000000 $t
-     /tmp/ccYmIHxB.s:314    .text.HAL_FLASH_EndOfOperationCallback:0000000000000000 HAL_FLASH_EndOfOperationCallback
-     /tmp/ccYmIHxB.s:321    .text.HAL_FLASH_OperationErrorCallback:0000000000000000 $t
-     /tmp/ccYmIHxB.s:329    .text.HAL_FLASH_OperationErrorCallback:0000000000000000 HAL_FLASH_OperationErrorCallback
-     /tmp/ccYmIHxB.s:336    .text.HAL_FLASH_IRQHandler:0000000000000000 $t
-     /tmp/ccYmIHxB.s:344    .text.HAL_FLASH_IRQHandler:0000000000000000 HAL_FLASH_IRQHandler
-     /tmp/ccYmIHxB.s:466    .text.HAL_FLASH_IRQHandler:00000000000000f4 $d
-     /tmp/ccYmIHxB.s:470    .text.HAL_FLASH_Unlock:0000000000000000 $t
-     /tmp/ccYmIHxB.s:478    .text.HAL_FLASH_Unlock:0000000000000000 HAL_FLASH_Unlock
-     /tmp/ccYmIHxB.s:499    .text.HAL_FLASH_Unlock:000000000000001c $d
-     /tmp/ccYmIHxB.s:504    .text.HAL_FLASH_Lock:0000000000000000 $t
-     /tmp/ccYmIHxB.s:512    .text.HAL_FLASH_Lock:0000000000000000 HAL_FLASH_Lock
-     /tmp/ccYmIHxB.s:525    .text.HAL_FLASH_Lock:0000000000000010 $d
-     /tmp/ccYmIHxB.s:528    .text.HAL_FLASH_OB_Unlock:0000000000000000 $t
-     /tmp/ccYmIHxB.s:536    .text.HAL_FLASH_OB_Unlock:0000000000000000 HAL_FLASH_OB_Unlock
-     /tmp/ccYmIHxB.s:556    .text.HAL_FLASH_OB_Unlock:0000000000000018 $d
-     /tmp/ccYmIHxB.s:561    .text.HAL_FLASH_OB_Lock:0000000000000000 $t
-     /tmp/ccYmIHxB.s:569    .text.HAL_FLASH_OB_Lock:0000000000000000 HAL_FLASH_OB_Lock
-     /tmp/ccYmIHxB.s:582    .text.HAL_FLASH_OB_Lock:0000000000000010 $d
-     /tmp/ccYmIHxB.s:585    .text.HAL_FLASH_OB_Launch:0000000000000000 $t
-     /tmp/ccYmIHxB.s:593    .text.HAL_FLASH_OB_Launch:0000000000000000 HAL_FLASH_OB_Launch
-     /tmp/ccYmIHxB.s:640    .text.HAL_FLASH_OB_Launch:0000000000000054 $d
-     /tmp/ccYmIHxB.s:644    .text.HAL_FLASH_GetError:0000000000000000 $t
-     /tmp/ccYmIHxB.s:652    .text.HAL_FLASH_GetError:0000000000000000 HAL_FLASH_GetError
-     /tmp/ccYmIHxB.s:662    .text.HAL_FLASH_GetError:0000000000000008 $d
-     /tmp/ccYmIHxB.s:665    .text.FLASH_WaitForLastOperation:0000000000000000 $t
-     /tmp/ccYmIHxB.s:673    .text.FLASH_WaitForLastOperation:0000000000000000 FLASH_WaitForLastOperation
-     /tmp/ccYmIHxB.s:724    .text.FLASH_WaitForLastOperation:0000000000000058 $d
-     /tmp/ccYmIHxB.s:733    .data.pFlash:0000000000000000 pFlash
-     /tmp/ccYmIHxB.s:729    .data.pFlash:0000000000000000 $d
+     /tmp/ccVMEE1g.s:16     .text.HAL_FLASH_Program:0000000000000000 $t
+     /tmp/ccVMEE1g.s:25     .text.HAL_FLASH_Program:0000000000000000 HAL_FLASH_Program
+     /tmp/ccVMEE1g.s:191    .text.HAL_FLASH_Program:000000000000014c $d
+     /tmp/ccVMEE1g.s:195    .text.HAL_FLASH_Program_IT:0000000000000000 $t
+     /tmp/ccVMEE1g.s:203    .text.HAL_FLASH_Program_IT:0000000000000000 HAL_FLASH_Program_IT
+     /tmp/ccVMEE1g.s:302    .text.HAL_FLASH_Program_IT:00000000000000a0 $d
+     /tmp/ccVMEE1g.s:306    .text.HAL_FLASH_EndOfOperationCallback:0000000000000000 $t
+     /tmp/ccVMEE1g.s:314    .text.HAL_FLASH_EndOfOperationCallback:0000000000000000 HAL_FLASH_EndOfOperationCallback
+     /tmp/ccVMEE1g.s:321    .text.HAL_FLASH_OperationErrorCallback:0000000000000000 $t
+     /tmp/ccVMEE1g.s:329    .text.HAL_FLASH_OperationErrorCallback:0000000000000000 HAL_FLASH_OperationErrorCallback
+     /tmp/ccVMEE1g.s:336    .text.HAL_FLASH_IRQHandler:0000000000000000 $t
+     /tmp/ccVMEE1g.s:344    .text.HAL_FLASH_IRQHandler:0000000000000000 HAL_FLASH_IRQHandler
+     /tmp/ccVMEE1g.s:466    .text.HAL_FLASH_IRQHandler:00000000000000f4 $d
+     /tmp/ccVMEE1g.s:470    .text.HAL_FLASH_Unlock:0000000000000000 $t
+     /tmp/ccVMEE1g.s:478    .text.HAL_FLASH_Unlock:0000000000000000 HAL_FLASH_Unlock
+     /tmp/ccVMEE1g.s:499    .text.HAL_FLASH_Unlock:000000000000001c $d
+     /tmp/ccVMEE1g.s:504    .text.HAL_FLASH_Lock:0000000000000000 $t
+     /tmp/ccVMEE1g.s:512    .text.HAL_FLASH_Lock:0000000000000000 HAL_FLASH_Lock
+     /tmp/ccVMEE1g.s:525    .text.HAL_FLASH_Lock:0000000000000010 $d
+     /tmp/ccVMEE1g.s:528    .text.HAL_FLASH_OB_Unlock:0000000000000000 $t
+     /tmp/ccVMEE1g.s:536    .text.HAL_FLASH_OB_Unlock:0000000000000000 HAL_FLASH_OB_Unlock
+     /tmp/ccVMEE1g.s:556    .text.HAL_FLASH_OB_Unlock:0000000000000018 $d
+     /tmp/ccVMEE1g.s:561    .text.HAL_FLASH_OB_Lock:0000000000000000 $t
+     /tmp/ccVMEE1g.s:569    .text.HAL_FLASH_OB_Lock:0000000000000000 HAL_FLASH_OB_Lock
+     /tmp/ccVMEE1g.s:582    .text.HAL_FLASH_OB_Lock:0000000000000010 $d
+     /tmp/ccVMEE1g.s:585    .text.HAL_FLASH_OB_Launch:0000000000000000 $t
+     /tmp/ccVMEE1g.s:593    .text.HAL_FLASH_OB_Launch:0000000000000000 HAL_FLASH_OB_Launch
+     /tmp/ccVMEE1g.s:640    .text.HAL_FLASH_OB_Launch:0000000000000054 $d
+     /tmp/ccVMEE1g.s:644    .text.HAL_FLASH_GetError:0000000000000000 $t
+     /tmp/ccVMEE1g.s:652    .text.HAL_FLASH_GetError:0000000000000000 HAL_FLASH_GetError
+     /tmp/ccVMEE1g.s:662    .text.HAL_FLASH_GetError:0000000000000008 $d
+     /tmp/ccVMEE1g.s:665    .text.FLASH_WaitForLastOperation:0000000000000000 $t
+     /tmp/ccVMEE1g.s:673    .text.FLASH_WaitForLastOperation:0000000000000000 FLASH_WaitForLastOperation
+     /tmp/ccVMEE1g.s:724    .text.FLASH_WaitForLastOperation:0000000000000058 $d
+     /tmp/ccVMEE1g.s:733    .data.pFlash:0000000000000000 pFlash
+     /tmp/ccVMEE1g.s:729    .data.pFlash:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 HAL_GetTick

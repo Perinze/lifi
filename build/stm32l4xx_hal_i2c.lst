@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccNejxAl.s 			page 1
+ARM GAS  /tmp/ccGzu7ts.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
   56 0046 0C04     		lsls	r4, r1, #16
   57 0048 DBB2     		uxtb	r3, r3
   58 004a 0DD5     		bpl	.L9
-ARM GAS  /tmp/ccNejxAl.s 			page 2
+ARM GAS  /tmp/ccGzu7ts.s 			page 2
 
 
   59 004c 4104     		lsls	r1, r0, #17
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  113 00c6 9369     		ldr	r3, [r2, #24]
  114 00c8 DB07     		lsls	r3, r3, #31
  115 00ca 03D4     		bmi	.L22
-ARM GAS  /tmp/ccNejxAl.s 			page 3
+ARM GAS  /tmp/ccGzu7ts.s 			page 3
 
 
  116 00cc 9369     		ldr	r3, [r2, #24]
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  170 0144 0423     		movs	r3, #4
  171 0146 ADE7     		b	.L3
  172              	.L19:
-ARM GAS  /tmp/ccNejxAl.s 			page 4
+ARM GAS  /tmp/ccGzu7ts.s 			page 4
 
 
  173 0148 C7B9     		cbnz	r7, .L46
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  229 002e FFF7FEFF 		bl	I2C_WaitOnTXISFlagUntilTimeout.constprop.0
  230 0032 E8B9     		cbnz	r0, .L54
  231 0034 B8F1010F 		cmp	r8, #1
-ARM GAS  /tmp/ccNejxAl.s 			page 5
+ARM GAS  /tmp/ccGzu7ts.s 			page 5
 
 
  232 0038 2968     		ldr	r1, [r5]
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  288              	I2C_RequestMemoryRead.constprop.0:
  289              		@ args = 4, pretend = 0, frame = 0
  290              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccNejxAl.s 			page 6
+ARM GAS  /tmp/ccGzu7ts.s 			page 6
 
 
  291 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  345 007a 2022     		movs	r2, #32
  346 007c 1343     		orrs	r3, r3, r2
  347 007e 6B64     		str	r3, [r5, #68]
-ARM GAS  /tmp/ccNejxAl.s 			page 7
+ARM GAS  /tmp/ccGzu7ts.s 			page 7
 
 
  348 0080 0127     		movs	r7, #1
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  404 0052 4FF00509 		mov	r9, #5
  405 0056 0422     		movs	r2, #4
  406 0058 0125     		movs	r5, #1
-ARM GAS  /tmp/ccNejxAl.s 			page 8
+ARM GAS  /tmp/ccGzu7ts.s 			page 8
 
 
  407              	.L79:
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  461 00d0 4FF00109 		mov	r9, #1
  462 00d4 1546     		mov	r5, r2
  463 00d6 C0E7     		b	.L79
-ARM GAS  /tmp/ccNejxAl.s 			page 9
+ARM GAS  /tmp/ccGzu7ts.s 			page 9
 
 
  464              	.L109:
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  518 015e 0125     		movs	r5, #1
  519 0160 8AF84180 		strb	r8, [r10, #65]
  520 0164 8AF84240 		strb	r4, [r10, #66]
-ARM GAS  /tmp/ccNejxAl.s 			page 10
+ARM GAS  /tmp/ccGzu7ts.s 			page 10
 
 
  521 0168 E4E7     		b	.L85
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  577              		@ args = 0, pretend = 0, frame = 0
  578              		@ frame_needed = 0, uses_anonymous_args = 0
  579 0000 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}
-ARM GAS  /tmp/ccNejxAl.s 			page 11
+ARM GAS  /tmp/ccGzu7ts.s 			page 11
 
 
  580 0004 8246     		mov	r10, r0
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  634 007e D207     		lsls	r2, r2, #31
  635 0080 03D4     		bmi	.L161
  636 0082 9A69     		ldr	r2, [r3, #24]
-ARM GAS  /tmp/ccNejxAl.s 			page 12
+ARM GAS  /tmp/ccGzu7ts.s 			page 12
 
 
  637 0084 42F00102 		orr	r2, r2, #1
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  691 0102 002E     		cmp	r6, #0
  692 0104 91D1     		bne	.L140
  693              	.L141:
-ARM GAS  /tmp/ccNejxAl.s 			page 13
+ARM GAS  /tmp/ccGzu7ts.s 			page 13
 
 
  694 0106 5868     		ldr	r0, [r3, #4]
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  748 0194 8AF84110 		strb	r1, [r10, #65]
  749 0198 8AF84220 		strb	r2, [r10, #66]
  750 019c 0120     		movs	r0, #1
-ARM GAS  /tmp/ccNejxAl.s 			page 14
+ARM GAS  /tmp/ccGzu7ts.s 			page 14
 
 
  751 019e BDE8F087 		pop	{r4, r5, r6, r7, r8, r9, r10, pc}
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  807 0036 002D     		cmp	r5, #0
  808 0038 40F0B780 		bne	.L229
  809              	.L207:
-ARM GAS  /tmp/ccNejxAl.s 			page 15
+ARM GAS  /tmp/ccGzu7ts.s 			page 15
 
 
  810 003c 9C69     		ldr	r4, [r3, #24]
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  864 00b8 59D5     		bpl	.L215
  865 00ba 7046     		mov	r0, lr
  866              	.L212:
-ARM GAS  /tmp/ccNejxAl.s 			page 16
+ARM GAS  /tmp/ccGzu7ts.s 			page 16
 
 
  867 00bc 4FF40072 		mov	r2, #512
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  921 0136 14F02004 		ands	r4, r4, #32
  922 013a 7FF476AF 		bne	.L197
  923 013e FFF7FEFF 		bl	HAL_GetTick
-ARM GAS  /tmp/ccNejxAl.s 			page 17
+ARM GAS  /tmp/ccGzu7ts.s 			page 17
 
 
  924 0142 A0EB0900 		sub	r0, r0, r9
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  978 01c8 03D5     		bpl	.L221
  979 01ca BAF82820 		ldrh	r2, [r10, #40]
  980 01ce 002A     		cmp	r2, #0
-ARM GAS  /tmp/ccNejxAl.s 			page 18
+ARM GAS  /tmp/ccGzu7ts.s 			page 18
 
 
  981 01d0 F5D1     		bne	.L226
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1039 0002 4FD0     		beq	.L268
  1040 0004 10B5     		push	{r4, lr}
  1041 0006 90F84130 		ldrb	r3, [r0, #65]	@ zero_extendqisi2
-ARM GAS  /tmp/ccNejxAl.s 			page 19
+ARM GAS  /tmp/ccGzu7ts.s 			page 19
 
 
  1042 000a 0446     		mov	r4, r0
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1096 008e 1046     		mov	r0, r2
  1097 0090 10BD     		pop	{r4, pc}
  1098              	.L274:
-ARM GAS  /tmp/ccNejxAl.s 			page 20
+ARM GAS  /tmp/ccGzu7ts.s 			page 20
 
 
  1099 0092 42F40042 		orr	r2, r2, #32768
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1157 0032 7047     		bx	lr
  1159              		.section	.text.HAL_I2C_Master_Transmit,"ax",%progbits
  1160              		.align	1
-ARM GAS  /tmp/ccNejxAl.s 			page 21
+ARM GAS  /tmp/ccGzu7ts.s 			page 21
 
 
  1161              		.p2align 2,,3
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1216 0072 DBB2     		uxtb	r3, r3
  1217 0074 4BEA0343 		orr	r3, fp, r3, lsl #16
  1218 0078 0A40     		ands	r2, r2, r1
-ARM GAS  /tmp/ccNejxAl.s 			page 22
+ARM GAS  /tmp/ccGzu7ts.s 			page 22
 
 
  1219 007a 1343     		orrs	r3, r3, r2
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1273              	.L308:
  1274 00f6 8369     		ldr	r3, [r0, #24]
  1275 00f8 9E07     		lsls	r6, r3, #30
-ARM GAS  /tmp/ccNejxAl.s 			page 23
+ARM GAS  /tmp/ccGzu7ts.s 			page 23
 
 
  1276 00fa 44BF     		itt	mi
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1330 0178 4FF00801 		mov	r1, #8
  1331 017c 4FF00904 		mov	r4, #9
  1332 0180 4FF00307 		mov	r7, #3
-ARM GAS  /tmp/ccNejxAl.s 			page 24
+ARM GAS  /tmp/ccGzu7ts.s 			page 24
 
 
  1333 0184 4FF0010C 		mov	ip, #1
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1387              	.L297:
  1388 01f6 8469     		ldr	r4, [r0, #24]
  1389 01f8 14F02004 		ands	r4, r4, #32
-ARM GAS  /tmp/ccNejxAl.s 			page 25
+ARM GAS  /tmp/ccGzu7ts.s 			page 25
 
 
  1390 01fc 7FF456AF 		bne	.L292
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1444 0282 2846     		mov	r0, r5
  1445 0284 FFF7FEFF 		bl	I2C_WaitOnSTOPFlagUntilTimeout
  1446 0288 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccNejxAl.s 			page 26
+ARM GAS  /tmp/ccGzu7ts.s 			page 26
 
 
  1447 028a 4CD0     		beq	.L378
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1501              		.align	2
  1502              	.L379:
  1503 02fc 009800FC 		.word	-67069952
-ARM GAS  /tmp/ccNejxAl.s 			page 27
+ARM GAS  /tmp/ccGzu7ts.s 			page 27
 
 
  1504 0300 00E800FE 		.word	-33495040
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1560 0020 80F84030 		strb	r3, [r0, #64]
  1561 0024 0F46     		mov	r7, r1
  1562 0026 9146     		mov	r9, r2
-ARM GAS  /tmp/ccNejxAl.s 			page 28
+ARM GAS  /tmp/ccGzu7ts.s 			page 28
 
 
  1563 0028 FFF7FEFF 		bl	HAL_GetTick
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1617 00aa 3146     		mov	r1, r6
  1618 00ac 2046     		mov	r0, r4
  1619 00ae FFF7FEFF 		bl	I2C_WaitOnRXNEFlagUntilTimeout
-ARM GAS  /tmp/ccNejxAl.s 			page 29
+ARM GAS  /tmp/ccGzu7ts.s 			page 29
 
 
  1620 00b2 0028     		cmp	r0, #0
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1674 011e 244D     		ldr	r5, .L418+4
  1675 0120 2021     		movs	r1, #32
  1676 0122 D961     		str	r1, [r3, #28]
-ARM GAS  /tmp/ccNejxAl.s 			page 30
+ARM GAS  /tmp/ccGzu7ts.s 			page 30
 
 
  1677 0124 5A68     		ldr	r2, [r3, #4]
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1731 01a2 7DE7     		b	.L393
  1732              	.L390:
  1733 01a4 0120     		movs	r0, #1
-ARM GAS  /tmp/ccNejxAl.s 			page 31
+ARM GAS  /tmp/ccGzu7ts.s 			page 31
 
 
  1734 01a6 BDE8F087 		pop	{r4, r5, r6, r7, r8, r9, r10, pc}
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1790              	.L427:
  1791 0056 AE69     		ldr	r6, [r5, #24]
  1792 0058 3307     		lsls	r3, r6, #28
-ARM GAS  /tmp/ccNejxAl.s 			page 32
+ARM GAS  /tmp/ccGzu7ts.s 			page 32
 
 
  1793 005a FCD5     		bpl	.L427
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1847 00be D5D4     		bmi	.L440
  1848 00c0 FFF7FEFF 		bl	HAL_GetTick
  1849 00c4 A0EB0800 		sub	r0, r0, r8
-ARM GAS  /tmp/ccNejxAl.s 			page 33
+ARM GAS  /tmp/ccGzu7ts.s 			page 33
 
 
  1850 00c8 8742     		cmp	r7, r0
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1904 0142 2B46     		mov	r3, r5
  1905 0144 002F     		cmp	r7, #0
  1906 0146 C5D0     		beq	.L455
-ARM GAS  /tmp/ccNejxAl.s 			page 34
+ARM GAS  /tmp/ccGzu7ts.s 			page 34
 
 
  1907              	.L446:
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  1961 01a8 5360     		str	r3, [r2, #4]
  1962 01aa 84F84100 		strb	r0, [r4, #65]
  1963 01ae 84F84010 		strb	r1, [r4, #64]
-ARM GAS  /tmp/ccNejxAl.s 			page 35
+ARM GAS  /tmp/ccGzu7ts.s 			page 35
 
 
  1964 01b2 84F84210 		strb	r1, [r4, #66]
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2020 0012 61D0     		beq	.L509
  2021 0014 9146     		mov	r9, r2
  2022 0016 002A     		cmp	r2, #0
-ARM GAS  /tmp/ccNejxAl.s 			page 36
+ARM GAS  /tmp/ccGzu7ts.s 			page 36
 
 
  2023 0018 5ED0     		beq	.L509
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2077 0086 013B     		subs	r3, r3, #1
  2078 0088 9BB2     		uxth	r3, r3
  2079 008a 6385     		strh	r3, [r4, #42]	@ movhi
-ARM GAS  /tmp/ccNejxAl.s 			page 37
+ARM GAS  /tmp/ccGzu7ts.s 			page 37
 
 
  2080 008c 638D     		ldrh	r3, [r4, #42]
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2134 00fc 8742     		cmp	r7, r0
  2135 00fe 58D3     		bcc	.L557
  2136 0100 2668     		ldr	r6, [r4]
-ARM GAS  /tmp/ccNejxAl.s 			page 38
+ARM GAS  /tmp/ccGzu7ts.s 			page 38
 
 
  2137 0102 3346     		mov	r3, r6
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2191 0176 FCD4     		bmi	.L531
  2192              	.L532:
  2193 0178 5368     		ldr	r3, [r2, #4]
-ARM GAS  /tmp/ccNejxAl.s 			page 39
+ARM GAS  /tmp/ccGzu7ts.s 			page 39
 
 
  2194 017a 0021     		movs	r1, #0
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2250 002c 184A     		ldr	r2, .L567
  2251 002e 80F842C0 		strb	ip, [r0, #66]
  2252 0032 4464     		str	r4, [r0, #68]
-ARM GAS  /tmp/ccNejxAl.s 			page 40
+ARM GAS  /tmp/ccGzu7ts.s 			page 40
 
 
  2253 0034 4385     		strh	r3, [r0, #42]	@ movhi
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2308              		.fpu fpv4-sp-d16
  2310              	HAL_I2C_Master_Receive_IT:
  2311              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccNejxAl.s 			page 41
+ARM GAS  /tmp/ccGzu7ts.s 			page 41
 
 
  2312              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2366 0080 30BC     		pop	{r4, r5}
  2367 0082 7047     		bx	lr
  2368              	.L575:
-ARM GAS  /tmp/ccNejxAl.s 			page 42
+ARM GAS  /tmp/ccGzu7ts.s 			page 42
 
 
  2369 0084 4FF47F02 		mov	r2, #16711680
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2425              	.L581:
  2426 004e 0220     		movs	r0, #2
  2427 0050 7047     		bx	lr
-ARM GAS  /tmp/ccNejxAl.s 			page 43
+ARM GAS  /tmp/ccGzu7ts.s 			page 43
 
 
  2428              	.L582:
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2484 004e 0220     		movs	r0, #2
  2485 0050 7047     		bx	lr
  2486              	.L592:
-ARM GAS  /tmp/ccNejxAl.s 			page 44
+ARM GAS  /tmp/ccGzu7ts.s 			page 44
 
 
  2487 0052 0220     		movs	r0, #2
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2543 0058 64D1     		bne	.L616
  2544 005a 3C4A     		ldr	r2, .L618+4
  2545 005c 6263     		str	r2, [r4, #52]
-ARM GAS  /tmp/ccNejxAl.s 			page 45
+ARM GAS  /tmp/ccGzu7ts.s 			page 45
 
 
  2546 005e 3C49     		ldr	r1, .L618+8
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2600 00e8 4545     		cmp	r5, r8
  2601 00ea 6385     		strh	r3, [r4, #42]	@ movhi
  2602 00ec 2AD0     		beq	.L611
-ARM GAS  /tmp/ccNejxAl.s 			page 46
+ARM GAS  /tmp/ccGzu7ts.s 			page 46
 
 
  2603 00ee 194B     		ldr	r3, .L618+12
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2658              		.thumb_func
  2659              		.fpu fpv4-sp-d16
  2661              	HAL_I2C_Master_Receive_DMA:
-ARM GAS  /tmp/ccNejxAl.s 			page 47
+ARM GAS  /tmp/ccGzu7ts.s 			page 47
 
 
  2662              		@ args = 0, pretend = 0, frame = 0
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2716 0080 0220     		movs	r0, #2
  2717              	.L635:
  2718 0082 BDE8F883 		pop	{r3, r4, r5, r6, r7, r8, r9, pc}
-ARM GAS  /tmp/ccNejxAl.s 			page 48
+ARM GAS  /tmp/ccGzu7ts.s 			page 48
 
 
  2719              	.L622:
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2773 010e 84F84290 		strb	r9, [r4, #66]
  2774 0112 636C     		ldr	r3, [r4, #68]
  2775 0114 84F84090 		strb	r9, [r4, #64]
-ARM GAS  /tmp/ccNejxAl.s 			page 49
+ARM GAS  /tmp/ccGzu7ts.s 			page 49
 
 
  2776 0118 43F01003 		orr	r3, r3, #16
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2832 0020 2123     		movs	r3, #33
  2833 0022 0025     		movs	r5, #0
  2834 0024 84F84130 		strb	r3, [r4, #65]
-ARM GAS  /tmp/ccNejxAl.s 			page 50
+ARM GAS  /tmp/ccGzu7ts.s 			page 50
 
 
  2835 0028 84F842C0 		strb	ip, [r4, #66]
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2889 00a6 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
  2890              	.L645:
  2891 00a8 2823     		movs	r3, #40
-ARM GAS  /tmp/ccNejxAl.s 			page 51
+ARM GAS  /tmp/ccGzu7ts.s 			page 51
 
 
  2892 00aa 84F84130 		strb	r3, [r4, #65]
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  2948 0042 2385     		strh	r3, [r4, #40]	@ movhi
  2949 0044 6263     		str	r2, [r4, #52]
  2950 0046 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccNejxAl.s 			page 52
+ARM GAS  /tmp/ccGzu7ts.s 			page 52
 
 
  2951 0048 2FD0     		beq	.L662
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3005              	.L673:
  3006 00c4 0000FFFF 		.word	-65536
  3007 00c8 00000000 		.word	I2C_Slave_ISR_DMA
-ARM GAS  /tmp/ccNejxAl.s 			page 53
+ARM GAS  /tmp/ccGzu7ts.s 			page 53
 
 
  3008 00cc 00000000 		.word	I2C_DMASlaveReceiveCplt
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3064 0072 5A68     		ldr	r2, [r3, #4]
  3065 0074 7749     		ldr	r1, .L729
  3066 0076 6563     		str	r5, [r4, #52]
-ARM GAS  /tmp/ccNejxAl.s 			page 54
+ARM GAS  /tmp/ccGzu7ts.s 			page 54
 
 
  3067 0078 0A40     		ands	r2, r2, r1
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3121 00fa FFF7FEFF 		bl	I2C_WaitOnTXISFlagUntilTimeout
  3122 00fe 0028     		cmp	r0, #0
  3123 0100 75D1     		bne	.L705
-ARM GAS  /tmp/ccNejxAl.s 			page 55
+ARM GAS  /tmp/ccGzu7ts.s 			page 55
 
 
  3124 0102 636A     		ldr	r3, [r4, #36]
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3178 0172 84F84110 		strb	r1, [r4, #65]
  3179 0176 84F84220 		strb	r2, [r4, #66]
  3180 017a 0120     		movs	r0, #1
-ARM GAS  /tmp/ccNejxAl.s 			page 56
+ARM GAS  /tmp/ccGzu7ts.s 			page 56
 
 
  3181 017c BDE8F88F 		pop	{r3, r4, r5, r6, r7, r8, r9, r10, fp, pc}
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3235 01f2 636C     		ldr	r3, [r4, #68]
  3236 01f4 2021     		movs	r1, #32
  3237 01f6 0B43     		orrs	r3, r3, r1
-ARM GAS  /tmp/ccNejxAl.s 			page 57
+ARM GAS  /tmp/ccGzu7ts.s 			page 57
 
 
  3238 01f8 0022     		movs	r2, #0
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3293              		.fpu fpv4-sp-d16
  3295              	HAL_I2C_Mem_Read:
  3296              		@ args = 12, pretend = 0, frame = 0
-ARM GAS  /tmp/ccNejxAl.s 			page 58
+ARM GAS  /tmp/ccGzu7ts.s 			page 58
 
 
  3297              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3351 008e 2046     		mov	r0, r4
  3352 0090 FFF7FEFF 		bl	I2C_WaitOnTXISFlagUntilTimeout
  3353 0094 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccNejxAl.s 			page 59
+ARM GAS  /tmp/ccGzu7ts.s 			page 59
 
 
  3354 0096 40F0C580 		bne	.L743
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3408 010a 0AB1     		cbz	r2, .L759
  3409 010c 002B     		cmp	r3, #0
  3410 010e 33D0     		beq	.L760
-ARM GAS  /tmp/ccNejxAl.s 			page 60
+ARM GAS  /tmp/ccGzu7ts.s 			page 60
 
 
  3411              	.L759:
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3465 017e 9369     		ldr	r3, [r2, #24]
  3466 0180 1906     		lsls	r1, r3, #24
  3467 0182 FCD5     		bpl	.L763
-ARM GAS  /tmp/ccNejxAl.s 			page 61
+ARM GAS  /tmp/ccGzu7ts.s 			page 61
 
 
  3468              	.L764:
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3522 01fc 4B68     		ldr	r3, [r1, #4]
  3523 01fe 0340     		ands	r3, r3, r0
  3524 0200 3B43     		orrs	r3, r3, r7
-ARM GAS  /tmp/ccNejxAl.s 			page 62
+ARM GAS  /tmp/ccGzu7ts.s 			page 62
 
 
  3525 0202 43EA0243 		orr	r3, r3, r2, lsl #16
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3581              		@ args = 8, pretend = 0, frame = 0
  3582              		@ frame_needed = 0, uses_anonymous_args = 0
  3583 0000 2DE9F043 		push	{r4, r5, r6, r7, r8, r9, lr}
-ARM GAS  /tmp/ccNejxAl.s 			page 63
+ARM GAS  /tmp/ccGzu7ts.s 			page 63
 
 
  3584 0004 0D46     		mov	r5, r1
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3638 0082 84F84030 		strb	r3, [r4, #64]
  3639 0086 03B0     		add	sp, sp, #12
  3640              		@ sp needed
-ARM GAS  /tmp/ccNejxAl.s 			page 64
+ARM GAS  /tmp/ccGzu7ts.s 			page 64
 
 
  3641 0088 BDE8F083 		pop	{r4, r5, r6, r7, r8, r9, pc}
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3696              		.p2align 2,,3
  3697              		.global	HAL_I2C_Mem_Read_IT
  3698              		.syntax unified
-ARM GAS  /tmp/ccNejxAl.s 			page 65
+ARM GAS  /tmp/ccGzu7ts.s 			page 65
 
 
  3699              		.thumb
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3754 0076 3346     		mov	r3, r6
  3755 0078 4146     		mov	r1, r8
  3756 007a 2046     		mov	r0, r4
-ARM GAS  /tmp/ccNejxAl.s 			page 66
+ARM GAS  /tmp/ccGzu7ts.s 			page 66
 
 
  3757 007c FFF7FEFF 		bl	I2C_RequestMemoryRead.constprop.0
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3811              	.L825:
  3812 00f0 0000FFFF 		.word	-65536
  3813 00f4 00000000 		.word	I2C_Master_ISR_IT
-ARM GAS  /tmp/ccNejxAl.s 			page 67
+ARM GAS  /tmp/ccGzu7ts.s 			page 67
 
 
  3814 00f8 009800FC 		.word	-67069952
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3870 006c 4FD8     		bhi	.L840
  3871 006e 638D     		ldrh	r3, [r4, #42]
  3872 0070 4FF0007A 		mov	r10, #33554432
-ARM GAS  /tmp/ccNejxAl.s 			page 68
+ARM GAS  /tmp/ccGzu7ts.s 			page 68
 
 
  3873 0074 9BB2     		uxth	r3, r3
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3927 00ec 1360     		str	r3, [r2]
  3928 00ee 1368     		ldr	r3, [r2]
  3929 00f0 43F48043 		orr	r3, r3, #16384
-ARM GAS  /tmp/ccNejxAl.s 			page 69
+ARM GAS  /tmp/ccGzu7ts.s 			page 69
 
 
  3930 00f4 1360     		str	r3, [r2]
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  3984 016c 00000000 		.word	I2C_Slave_ISR_DMA
  3985 0170 00000000 		.word	I2C_Master_ISR_DMA
  3987              		.section	.text.HAL_I2C_Mem_Read_DMA,"ax",%progbits
-ARM GAS  /tmp/ccNejxAl.s 			page 70
+ARM GAS  /tmp/ccGzu7ts.s 			page 70
 
 
  3988              		.align	1
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4043              	.L856:
  4044 0076 2385     		strh	r3, [r4, #40]	@ movhi
  4045 0078 3246     		mov	r2, r6
-ARM GAS  /tmp/ccNejxAl.s 			page 71
+ARM GAS  /tmp/ccGzu7ts.s 			page 71
 
 
  4046 007a 0090     		str	r0, [sp]
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4100 00f8 1360     		str	r3, [r2]
  4101 00fa 03E0     		b	.L853
  4102              	.L854:
-ARM GAS  /tmp/ccNejxAl.s 			page 72
+ARM GAS  /tmp/ccGzu7ts.s 			page 72
 
 
  4103 00fc 4FF40073 		mov	r3, #512
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4158              		.align	1
  4159              		.p2align 2,,3
  4160              		.global	HAL_I2C_IsDeviceReady
-ARM GAS  /tmp/ccNejxAl.s 			page 73
+ARM GAS  /tmp/ccGzu7ts.s 			page 73
 
 
  4161              		.syntax unified
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4216 0074 A369     		ldr	r3, [r4, #24]
  4217 0076 A269     		ldr	r2, [r4, #24]
  4218 0078 03F02003 		and	r3, r3, #32
-ARM GAS  /tmp/ccNejxAl.s 			page 74
+ARM GAS  /tmp/ccGzu7ts.s 			page 74
 
 
  4219 007c 02F01002 		and	r2, r2, #16
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4273 00e2 0133     		adds	r3, r3, #1
  4274 00e4 0193     		str	r3, [sp, #4]
  4275 00e6 019B     		ldr	r3, [sp, #4]
-ARM GAS  /tmp/ccNejxAl.s 			page 75
+ARM GAS  /tmp/ccGzu7ts.s 			page 75
 
 
  4276 00e8 4B45     		cmp	r3, r9
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4330              	.L891:
  4331 0154 A369     		ldr	r3, [r4, #24]
  4332 0156 9906     		lsls	r1, r3, #26
-ARM GAS  /tmp/ccNejxAl.s 			page 76
+ARM GAS  /tmp/ccGzu7ts.s 			page 76
 
 
  4333 0158 0CD4     		bmi	.L893
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4389 003a 304B     		ldr	r3, .L956
  4390 003c CCF82420 		str	r2, [ip, #36]
  4391 0040 80B2     		uxth	r0, r0
-ARM GAS  /tmp/ccNejxAl.s 			page 77
+ARM GAS  /tmp/ccGzu7ts.s 			page 77
 
 
  4392 0042 FF28     		cmp	r0, #255
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4446 00d4 C7D1     		bne	.L938
  4447              	.L954:
  4448 00d6 039B     		ldr	r3, [sp, #12]
-ARM GAS  /tmp/ccNejxAl.s 			page 78
+ARM GAS  /tmp/ccGzu7ts.s 			page 78
 
 
  4449 00d8 AA2B     		cmp	r3, #170
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4505 0034 089B     		ldr	r3, [sp, #32]
  4506 0036 E362     		str	r3, [r4, #44]
  4507 0038 638D     		ldrh	r3, [r4, #42]
-ARM GAS  /tmp/ccNejxAl.s 			page 79
+ARM GAS  /tmp/ccGzu7ts.s 			page 79
 
 
  4508 003a 5A4E     		ldr	r6, .L986
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4562 00bc 43EA0543 		orr	r3, r3, r5, lsl #16
  4563 00c0 43EA0803 		orr	r3, r3, r8
  4564 00c4 5568     		ldr	r5, [r2, #4]
-ARM GAS  /tmp/ccNejxAl.s 			page 80
+ARM GAS  /tmp/ccGzu7ts.s 			page 80
 
 
  4565 00c6 43EA0903 		orr	r3, r3, r9
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4619 0140 5560     		str	r5, [r2, #4]
  4620 0142 84F84030 		strb	r3, [r4, #64]
  4621 0146 1168     		ldr	r1, [r2]
-ARM GAS  /tmp/ccNejxAl.s 			page 81
+ARM GAS  /tmp/ccGzu7ts.s 			page 81
 
 
  4622 0148 41F0F201 		orr	r1, r1, #242
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4677              		.thumb
  4678              		.thumb_func
  4679              		.fpu fpv4-sp-d16
-ARM GAS  /tmp/ccNejxAl.s 			page 82
+ARM GAS  /tmp/ccGzu7ts.s 			page 82
 
 
  4681              	HAL_I2C_Master_Seq_Receive_IT:
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4735 0090 1C4D     		ldr	r5, .L1009+8
  4736              	.L992:
  4737 0092 C1F30903 		ubfx	r3, r1, #0, #10
-ARM GAS  /tmp/ccNejxAl.s 			page 83
+ARM GAS  /tmp/ccGzu7ts.s 			page 83
 
 
  4738 0096 1343     		orrs	r3, r3, r2
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4793              		.global	HAL_I2C_Master_Seq_Receive_DMA
  4794              		.syntax unified
  4795              		.thumb
-ARM GAS  /tmp/ccNejxAl.s 			page 84
+ARM GAS  /tmp/ccGzu7ts.s 			page 84
 
 
  4796              		.thumb_func
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4851 0078 4B4F     		ldr	r7, .L1039+4
  4852 007a DFF83C91 		ldr	r9, .L1039+20
  4853              	.L1015:
-ARM GAS  /tmp/ccNejxAl.s 			page 85
+ARM GAS  /tmp/ccGzu7ts.s 			page 85
 
 
  4854 007e 002B     		cmp	r3, #0
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4908 0104 1229     		cmp	r1, #18
  4909 0106 4FF08078 		mov	r8, #16777216
  4910 010a 2385     		strh	r3, [r4, #40]	@ movhi
-ARM GAS  /tmp/ccNejxAl.s 			page 86
+ARM GAS  /tmp/ccGzu7ts.s 			page 86
 
 
  4911 010c A3D1     		bne	.L1014
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  4965 018c 636C     		ldr	r3, [r4, #68]
  4966 018e 84F84000 		strb	r0, [r4, #64]
  4967 0192 43F08003 		orr	r3, r3, #128
-ARM GAS  /tmp/ccNejxAl.s 			page 87
+ARM GAS  /tmp/ccGzu7ts.s 			page 87
 
 
  4968 0196 6364     		str	r3, [r4, #68]
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5024 0042 84F84100 		strb	r0, [r4, #65]
  5025 0046 2020     		movs	r0, #32
  5026 0048 84F84200 		strb	r0, [r4, #66]
-ARM GAS  /tmp/ccNejxAl.s 			page 88
+ARM GAS  /tmp/ccGzu7ts.s 			page 88
 
 
  5027 004c 0020     		movs	r0, #0
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5081 00c0 2860     		str	r0, [r5]
  5082 00c2 E06B     		ldr	r0, [r4, #60]
  5083 00c4 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccNejxAl.s 			page 89
+ARM GAS  /tmp/ccGzu7ts.s 			page 89
 
 
  5084 00c6 BBD0     		beq	.L1045
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5140 0024 2568     		ldr	r5, [r4]
  5141 0026 0120     		movs	r0, #1
  5142 0028 84F84000 		strb	r0, [r4, #64]
-ARM GAS  /tmp/ccNejxAl.s 			page 90
+ARM GAS  /tmp/ccGzu7ts.s 			page 90
 
 
  5143 002c 94F84100 		ldrb	r0, [r4, #65]	@ zero_extendqisi2
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5197              	.L1084:
  5198 00aa 0022     		movs	r2, #0
  5199 00ac 84F84020 		strb	r2, [r4, #64]
-ARM GAS  /tmp/ccNejxAl.s 			page 91
+ARM GAS  /tmp/ccGzu7ts.s 			page 91
 
 
  5200 00b0 1A68     		ldr	r2, [r3]
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5254 012a 039B     		ldr	r3, [sp, #12]
  5255 012c 8FE7     		b	.L1075
  5256              	.L1101:
-ARM GAS  /tmp/ccNejxAl.s 			page 92
+ARM GAS  /tmp/ccGzu7ts.s 			page 92
 
 
  5257 012e 2568     		ldr	r5, [r4]
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5311 01ae DDE90112 		ldrd	r1, r2, [sp, #4]
  5312 01b2 039B     		ldr	r3, [sp, #12]
  5313 01b4 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccNejxAl.s 			page 93
+ARM GAS  /tmp/ccGzu7ts.s 			page 93
 
 
  5314 01b6 BAD0     		beq	.L1101
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5370 003a 84F840C0 		strb	ip, [r4, #64]
  5371 003e 2BD0     		beq	.L1128
  5372              	.L1111:
-ARM GAS  /tmp/ccNejxAl.s 			page 94
+ARM GAS  /tmp/ccGzu7ts.s 			page 94
 
 
  5373 0040 2A20     		movs	r0, #42
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5427 00b6 4004     		lsls	r0, r0, #17
  5428 00b8 C2D5     		bpl	.L1111
  5429 00ba 2868     		ldr	r0, [r5]
-ARM GAS  /tmp/ccNejxAl.s 			page 95
+ARM GAS  /tmp/ccGzu7ts.s 			page 95
 
 
  5430 00bc 20F48040 		bic	r0, r0, #16384
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5486 0018 5FD0     		beq	.L1133
  5487 001a 2568     		ldr	r5, [r4]
  5488 001c 94F84100 		ldrb	r0, [r4, #65]	@ zero_extendqisi2
-ARM GAS  /tmp/ccNejxAl.s 			page 96
+ARM GAS  /tmp/ccGzu7ts.s 			page 96
 
 
  5489 0020 2868     		ldr	r0, [r5]
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5543 00a4 9A69     		ldr	r2, [r3, #24]
  5544 00a6 D203     		lsls	r2, r2, #15
  5545 00a8 40F19B80 		bpl	.L1146
-ARM GAS  /tmp/ccNejxAl.s 			page 97
+ARM GAS  /tmp/ccGzu7ts.s 			page 97
 
 
  5546              	.L1147:
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5600 011c FFF7FEFF 		bl	HAL_DMA_Abort_IT
  5601 0120 DDE90112 		ldrd	r1, r2, [sp, #4]
  5602 0124 039B     		ldr	r3, [sp, #12]
-ARM GAS  /tmp/ccNejxAl.s 			page 98
+ARM GAS  /tmp/ccGzu7ts.s 			page 98
 
 
  5603 0126 58B1     		cbz	r0, .L1167
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5657 01a0 3604     		lsls	r6, r6, #16
  5658 01a2 7FF554AF 		bpl	.L1138
  5659 01a6 2E68     		ldr	r6, [r5]
-ARM GAS  /tmp/ccNejxAl.s 			page 99
+ARM GAS  /tmp/ccGzu7ts.s 			page 99
 
 
  5660 01a8 26F40046 		bic	r6, r6, #32768
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5716 0004 202B     		cmp	r3, #32
  5717 0006 01D0     		beq	.L1176
  5718 0008 0220     		movs	r0, #2
-ARM GAS  /tmp/ccNejxAl.s 			page 100
+ARM GAS  /tmp/ccGzu7ts.s 			page 100
 
 
  5719 000a 7047     		bx	lr
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5776              		.p2align 2,,3
  5777              		.global	HAL_I2C_Master_Abort_IT
  5778              		.syntax unified
-ARM GAS  /tmp/ccNejxAl.s 			page 101
+ARM GAS  /tmp/ccGzu7ts.s 			page 101
 
 
  5779              		.thumb
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5834 0072 7047     		bx	lr
  5835              	.L1195:
  5836 0074 0220     		movs	r0, #2
-ARM GAS  /tmp/ccNejxAl.s 			page 102
+ARM GAS  /tmp/ccGzu7ts.s 			page 102
 
 
  5837 0076 7047     		bx	lr
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5894              		.align	1
  5895              		.p2align 2,,3
  5896              		.weak	HAL_I2C_MasterTxCpltCallback
-ARM GAS  /tmp/ccNejxAl.s 			page 103
+ARM GAS  /tmp/ccGzu7ts.s 			page 103
 
 
  5897              		.syntax unified
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  5959              		.fpu fpv4-sp-d16
  5961              	I2C_ITSlaveSeqCplt:
  5962              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccNejxAl.s 			page 104
+ARM GAS  /tmp/ccGzu7ts.s 			page 104
 
 
  5963              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6017 007e 02F02802 		and	r2, r2, #40
  6018 0082 282A     		cmp	r2, #40
  6019 0084 0CBF     		ite	eq
-ARM GAS  /tmp/ccNejxAl.s 			page 105
+ARM GAS  /tmp/ccGzu7ts.s 			page 105
 
 
  6020 0086 6FF04202 		mvneq	r2, #66
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6076 004e 2821     		movs	r1, #40
  6077 0050 2123     		movs	r3, #33
  6078 0052 80F84110 		strb	r1, [r0, #65]
-ARM GAS  /tmp/ccNejxAl.s 			page 106
+ARM GAS  /tmp/ccGzu7ts.s 			page 106
 
 
  6079 0056 0363     		str	r3, [r0, #48]
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6135 0016 0268     		ldr	r2, [r0]
  6136 0018 1168     		ldr	r1, [r2]
  6137 001a 21F40041 		bic	r1, r1, #32768
-ARM GAS  /tmp/ccNejxAl.s 			page 107
+ARM GAS  /tmp/ccGzu7ts.s 			page 107
 
 
  6138 001e 1160     		str	r1, [r2]
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6192 00a6 80F84010 		strb	r1, [r0, #64]
  6193 00aa FFF7FEFF 		bl	HAL_I2C_SlaveTxCpltCallback
  6194 00ae 08BD     		pop	{r3, pc}
-ARM GAS  /tmp/ccNejxAl.s 			page 108
+ARM GAS  /tmp/ccGzu7ts.s 			page 108
 
 
  6196              		.section	.text.HAL_I2C_AddrCallback,"ax",%progbits
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6253 0048 8CF84030 		strb	r3, [ip, #64]
  6254 004c FFF7FEFF 		bl	HAL_I2C_AddrCallback
  6255 0050 70BD     		pop	{r4, r5, r6, pc}
-ARM GAS  /tmp/ccNejxAl.s 			page 109
+ARM GAS  /tmp/ccGzu7ts.s 			page 109
 
 
  6256              	.L1273:
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6318              	HAL_I2C_ErrorCallback:
  6319              		@ args = 0, pretend = 0, frame = 0
  6320              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccNejxAl.s 			page 110
+ARM GAS  /tmp/ccGzu7ts.s 			page 110
 
 
  6321              		@ link register save eliminated.
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6380              		.p2align 2,,3
  6381              		.syntax unified
  6382              		.thumb
-ARM GAS  /tmp/ccNejxAl.s 			page 111
+ARM GAS  /tmp/ccGzu7ts.s 			page 111
 
 
  6383              		.thumb_func
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6438              	.L1305:
  6439 0074 94F84130 		ldrb	r3, [r4, #65]	@ zero_extendqisi2
  6440 0078 602B     		cmp	r3, #96
-ARM GAS  /tmp/ccNejxAl.s 			page 112
+ARM GAS  /tmp/ccGzu7ts.s 			page 112
 
 
  6441 007a 4FF00003 		mov	r3, #0
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6495 00f4 22F0FE02 		bic	r2, r2, #254
  6496 00f8 1A60     		str	r2, [r3]
  6497 00fa 94F84120 		ldrb	r2, [r4, #65]	@ zero_extendqisi2
-ARM GAS  /tmp/ccNejxAl.s 			page 113
+ARM GAS  /tmp/ccGzu7ts.s 			page 113
 
 
  6498 00fe 602A     		cmp	r2, #96
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6554 0028 CD06     		lsls	r5, r1, #27
  6555 002a C462     		str	r4, [r0, #44]
  6556 002c 05D5     		bpl	.L1352
-ARM GAS  /tmp/ccNejxAl.s 			page 114
+ARM GAS  /tmp/ccGzu7ts.s 			page 114
 
 
  6557 002e 1022     		movs	r2, #16
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6611 00a2 0463     		str	r4, [r0, #48]
  6612 00a4 B9E7     		b	.L1350
  6613              	.L1379:
-ARM GAS  /tmp/ccNejxAl.s 			page 115
+ARM GAS  /tmp/ccGzu7ts.s 			page 115
 
 
  6614 00a6 4C07     		lsls	r4, r1, #29
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6669              		.align	1
  6670              		.p2align 2,,3
  6671              		.syntax unified
-ARM GAS  /tmp/ccNejxAl.s 			page 116
+ARM GAS  /tmp/ccGzu7ts.s 			page 116
 
 
  6672              		.thumb
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6727 0062 11F8010B 		ldrb	r0, [r1], #1	@ zero_extendqisi2
  6728 0066 9862     		str	r0, [r3, #40]
  6729 0068 638D     		ldrh	r3, [r4, #42]
-ARM GAS  /tmp/ccNejxAl.s 			page 117
+ARM GAS  /tmp/ccGzu7ts.s 			page 117
 
 
  6730 006a 208D     		ldrh	r0, [r4, #40]
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6784 00d8 9BB2     		uxth	r3, r3
  6785 00da CBB1     		cbz	r3, .L1395
  6786 00dc 238D     		ldrh	r3, [r4, #40]
-ARM GAS  /tmp/ccNejxAl.s 			page 118
+ARM GAS  /tmp/ccGzu7ts.s 			page 118
 
 
  6787 00de BBB9     		cbnz	r3, .L1395
@@ -7078,7 +7078,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6841 0160 0192     		str	r2, [sp, #4]
  6842 0162 FFF7FEFF 		bl	I2C_ITError
  6843 0166 019A     		ldr	r2, [sp, #4]
-ARM GAS  /tmp/ccNejxAl.s 			page 119
+ARM GAS  /tmp/ccGzu7ts.s 			page 119
 
 
  6844 0168 69E7     		b	.L1391
@@ -7138,7 +7138,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6898 01e0 43F00073 		orr	r3, r3, #33554432
  6899 01e4 4B60     		str	r3, [r1, #4]
  6900 01e6 2AE7     		b	.L1391
-ARM GAS  /tmp/ccNejxAl.s 			page 120
+ARM GAS  /tmp/ccGzu7ts.s 			page 120
 
 
  6901              	.L1463:
@@ -7198,7 +7198,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  6957 0058 9A61     		str	r2, [r3, #24]
  6958              	.L1470:
  6959 005a 0020     		movs	r0, #0
-ARM GAS  /tmp/ccNejxAl.s 			page 121
+ARM GAS  /tmp/ccGzu7ts.s 			page 121
 
 
  6960 005c 84F84000 		strb	r0, [r4, #64]
@@ -7258,7 +7258,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7014 00da 5006     		lsls	r0, r2, #25
  7015 00dc 11D5     		bpl	.L1472
  7016 00de 638D     		ldrh	r3, [r4, #42]
-ARM GAS  /tmp/ccNejxAl.s 			page 122
+ARM GAS  /tmp/ccGzu7ts.s 			page 122
 
 
  7017 00e0 9BB2     		uxth	r3, r3
@@ -7318,7 +7318,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7071              	.L1478:
  7072 0162 4021     		movs	r1, #64
  7073 0164 2046     		mov	r0, r4
-ARM GAS  /tmp/ccNejxAl.s 			page 123
+ARM GAS  /tmp/ccGzu7ts.s 			page 123
 
 
  7074 0166 FFF7FEFF 		bl	I2C_ITError
@@ -7378,7 +7378,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7128              	.L1521:
  7129 01f8 1121     		movs	r1, #17
  7130 01fa 84F84100 		strb	r0, [r4, #65]
-ARM GAS  /tmp/ccNejxAl.s 			page 124
+ARM GAS  /tmp/ccGzu7ts.s 			page 124
 
 
  7131 01fe 2163     		str	r1, [r4, #48]
@@ -7438,7 +7438,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7187              	.L1525:
  7188 002e 638D     		ldrh	r3, [r4, #42]
  7189 0030 616A     		ldr	r1, [r4, #36]
-ARM GAS  /tmp/ccNejxAl.s 			page 125
+ARM GAS  /tmp/ccGzu7ts.s 			page 125
 
 
  7190 0032 208D     		ldrh	r0, [r4, #40]
@@ -7498,7 +7498,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7245              		.thumb
  7246              		.thumb_func
  7247              		.fpu fpv4-sp-d16
-ARM GAS  /tmp/ccNejxAl.s 			page 126
+ARM GAS  /tmp/ccGzu7ts.s 			page 126
 
 
  7249              	I2C_DMAMasterReceiveCplt:
@@ -7558,7 +7558,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7303 0066 0A68     		ldr	r2, [r1]
  7304 0068 1343     		orrs	r3, r3, r2
  7305 006a 0B60     		str	r3, [r1]
-ARM GAS  /tmp/ccNejxAl.s 			page 127
+ARM GAS  /tmp/ccGzu7ts.s 			page 127
 
 
  7306 006c 10BD     		pop	{r4, pc}
@@ -7618,7 +7618,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7362 0028 41F00801 		orr	r1, r1, #8
  7363 002c 9205     		lsls	r2, r2, #22
  7364 002e 4164     		str	r1, [r0, #68]
-ARM GAS  /tmp/ccNejxAl.s 			page 128
+ARM GAS  /tmp/ccGzu7ts.s 			page 128
 
 
  7365 0030 DC61     		str	r4, [r3, #28]
@@ -7678,7 +7678,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7421 000c 02F0F702 		and	r2, r2, #247
  7422 0010 2025     		movs	r5, #32
  7423 0012 212A     		cmp	r2, #33
-ARM GAS  /tmp/ccNejxAl.s 			page 129
+ARM GAS  /tmp/ccGzu7ts.s 			page 129
 
 
  7424 0014 DD61     		str	r5, [r3, #28]
@@ -7738,7 +7738,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7478 007e 6364     		str	r3, [r4, #68]
  7479              	.L1583:
  7480 0080 0026     		movs	r6, #0
-ARM GAS  /tmp/ccNejxAl.s 			page 130
+ARM GAS  /tmp/ccGzu7ts.s 			page 130
 
 
  7481 0082 84F84260 		strb	r6, [r4, #66]
@@ -7798,7 +7798,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7535 00fe 6385     		strh	r3, [r4, #42]	@ movhi
  7536 0100 B7E7     		b	.L1582
  7537              	.L1609:
-ARM GAS  /tmp/ccNejxAl.s 			page 131
+ARM GAS  /tmp/ccGzu7ts.s 			page 131
 
 
  7538 0102 94F84150 		ldrb	r5, [r4, #65]	@ zero_extendqisi2
@@ -7858,7 +7858,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7594 000a 7AD0     		beq	.L1643
  7595 000c 1746     		mov	r7, r2
  7596 000e 0123     		movs	r3, #1
-ARM GAS  /tmp/ccNejxAl.s 			page 132
+ARM GAS  /tmp/ccGzu7ts.s 			page 132
 
 
  7597 0010 8A06     		lsls	r2, r1, #26
@@ -7918,7 +7918,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7651 0082 2046     		mov	r0, r4
  7652 0084 FFF7FEFF 		bl	I2C_ITSlaveSeqCplt
  7653              	.L1629:
-ARM GAS  /tmp/ccNejxAl.s 			page 133
+ARM GAS  /tmp/ccGzu7ts.s 			page 133
 
 
  7654 0088 0020     		movs	r0, #0
@@ -7978,7 +7978,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7708 00f9 12       		.byte	(.L1635-.L1636)/2
  7709 00fa 0D       		.byte	(.L1634-.L1636)/2
  7710 00fb 0D       		.byte	(.L1634-.L1636)/2
-ARM GAS  /tmp/ccNejxAl.s 			page 134
+ARM GAS  /tmp/ccGzu7ts.s 			page 134
 
 
  7711 00fc 0D       		.byte	(.L1634-.L1636)/2
@@ -8038,7 +8038,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7765 0162 0021     		movs	r1, #0
  7766 0164 1A60     		str	r2, [r3]
  7767 0166 D861     		str	r0, [r3, #28]
-ARM GAS  /tmp/ccNejxAl.s 			page 135
+ARM GAS  /tmp/ccGzu7ts.s 			page 135
 
 
  7768 0168 2046     		mov	r0, r4
@@ -8098,7 +8098,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7824 0030 56D1     		bne	.L1696
  7825 0032 94F84110 		ldrb	r1, [r4, #65]	@ zero_extendqisi2
  7826 0036 2829     		cmp	r1, #40
-ARM GAS  /tmp/ccNejxAl.s 			page 136
+ARM GAS  /tmp/ccGzu7ts.s 			page 136
 
 
  7827 0038 7AD0     		beq	.L1760
@@ -8158,7 +8158,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7881              	.L1704:
  7882 00a4 2046     		mov	r0, r4
  7883 00a6 FFF7FEFF 		bl	I2C_ITSlaveSeqCplt
-ARM GAS  /tmp/ccNejxAl.s 			page 137
+ARM GAS  /tmp/ccGzu7ts.s 			page 137
 
 
  7884 00aa CDE7     		b	.L1701
@@ -8218,7 +8218,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7938 0118 9369     		ldr	r3, [r2, #24]
  7939 011a D907     		lsls	r1, r3, #31
  7940 011c C2D4     		bmi	.L1704
-ARM GAS  /tmp/ccNejxAl.s 			page 138
+ARM GAS  /tmp/ccGzu7ts.s 			page 138
 
 
  7941 011e 9369     		ldr	r3, [r2, #24]
@@ -8278,7 +8278,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  7995              	.L1766:
  7996 019a 00BF     		.align	2
  7997              	.L1765:
-ARM GAS  /tmp/ccNejxAl.s 			page 139
+ARM GAS  /tmp/ccGzu7ts.s 			page 139
 
 
  7998 019c 0000FFFF 		.word	-65536
@@ -8338,7 +8338,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  8054 006c 212A     		cmp	r2, #33
  8055 006e 12D0     		beq	.L1774
  8056              	.L1773:
-ARM GAS  /tmp/ccNejxAl.s 			page 140
+ARM GAS  /tmp/ccGzu7ts.s 			page 140
 
 
  8057 0070 E06B     		ldr	r0, [r4, #60]
@@ -8398,7 +8398,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  8111 00e8 0028     		cmp	r0, #0
  8112 00ea D3D0     		beq	.L1767
  8113 00ec E06B     		ldr	r0, [r4, #60]
-ARM GAS  /tmp/ccNejxAl.s 			page 141
+ARM GAS  /tmp/ccGzu7ts.s 			page 141
 
 
  8114 00ee BDE81040 		pop	{r4, lr}
@@ -8458,7 +8458,7 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  8171              		.thumb_func
  8172              		.fpu fpv4-sp-d16
  8174              	HAL_I2C_GetMode:
-ARM GAS  /tmp/ccNejxAl.s 			page 142
+ARM GAS  /tmp/ccGzu7ts.s 			page 142
 
 
  8175              		@ args = 0, pretend = 0, frame = 0
@@ -8481,206 +8481,206 @@ ARM GAS  /tmp/ccNejxAl.s 			page 1
  8194 0000 406C     		ldr	r0, [r0, #68]
  8195 0002 7047     		bx	lr
  8197              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/ccNejxAl.s 			page 143
+ARM GAS  /tmp/ccGzu7ts.s 			page 143
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l4xx_hal_i2c.c
-     /tmp/ccNejxAl.s:16     .text.I2C_WaitOnTXISFlagUntilTimeout.constprop.0:0000000000000000 $t
-     /tmp/ccNejxAl.s:24     .text.I2C_WaitOnTXISFlagUntilTimeout.constprop.0:0000000000000000 I2C_WaitOnTXISFlagUntilTimeout.constprop.0
-     /tmp/ccNejxAl.s:199    .text.I2C_WaitOnTXISFlagUntilTimeout.constprop.0:0000000000000180 $d
-     /tmp/ccNejxAl.s:202    .text.I2C_RequestMemoryWrite.constprop.0:0000000000000000 $t
-     /tmp/ccNejxAl.s:209    .text.I2C_RequestMemoryWrite.constprop.0:0000000000000000 I2C_RequestMemoryWrite.constprop.0
-     /tmp/ccNejxAl.s:278    .text.I2C_RequestMemoryWrite.constprop.0:0000000000000094 $d
-     /tmp/ccNejxAl.s:281    .text.I2C_RequestMemoryRead.constprop.0:0000000000000000 $t
-     /tmp/ccNejxAl.s:288    .text.I2C_RequestMemoryRead.constprop.0:0000000000000000 I2C_RequestMemoryRead.constprop.0
-     /tmp/ccNejxAl.s:356    .text.I2C_RequestMemoryRead.constprop.0:0000000000000090 $d
-     /tmp/ccNejxAl.s:359    .text.I2C_WaitOnTXISFlagUntilTimeout:0000000000000000 $t
-     /tmp/ccNejxAl.s:366    .text.I2C_WaitOnTXISFlagUntilTimeout:0000000000000000 I2C_WaitOnTXISFlagUntilTimeout
-     /tmp/ccNejxAl.s:566    .text.I2C_WaitOnTXISFlagUntilTimeout:00000000000001cc $d
-     /tmp/ccNejxAl.s:569    .text.I2C_WaitOnSTOPFlagUntilTimeout:0000000000000000 $t
-     /tmp/ccNejxAl.s:576    .text.I2C_WaitOnSTOPFlagUntilTimeout:0000000000000000 I2C_WaitOnSTOPFlagUntilTimeout
-     /tmp/ccNejxAl.s:772    .text.I2C_WaitOnSTOPFlagUntilTimeout:00000000000001c8 $d
-     /tmp/ccNejxAl.s:775    .text.I2C_WaitOnRXNEFlagUntilTimeout:0000000000000000 $t
-     /tmp/ccNejxAl.s:782    .text.I2C_WaitOnRXNEFlagUntilTimeout:0000000000000000 I2C_WaitOnRXNEFlagUntilTimeout
-     /tmp/ccNejxAl.s:1009   .text.I2C_WaitOnRXNEFlagUntilTimeout:000000000000020c $d
-     /tmp/ccNejxAl.s:1012   .text.HAL_I2C_MspInit:0000000000000000 $t
-     /tmp/ccNejxAl.s:1020   .text.HAL_I2C_MspInit:0000000000000000 HAL_I2C_MspInit
-     /tmp/ccNejxAl.s:1027   .text.HAL_I2C_Init:0000000000000000 $t
-     /tmp/ccNejxAl.s:1035   .text.HAL_I2C_Init:0000000000000000 HAL_I2C_Init
-     /tmp/ccNejxAl.s:1111   .text.HAL_I2C_MspDeInit:0000000000000000 $t
-     /tmp/ccNejxAl.s:1119   .text.HAL_I2C_MspDeInit:0000000000000000 HAL_I2C_MspDeInit
-     /tmp/ccNejxAl.s:1126   .text.HAL_I2C_DeInit:0000000000000000 $t
-     /tmp/ccNejxAl.s:1134   .text.HAL_I2C_DeInit:0000000000000000 HAL_I2C_DeInit
-     /tmp/ccNejxAl.s:1160   .text.HAL_I2C_Master_Transmit:0000000000000000 $t
-     /tmp/ccNejxAl.s:1168   .text.HAL_I2C_Master_Transmit:0000000000000000 HAL_I2C_Master_Transmit
-     /tmp/ccNejxAl.s:1503   .text.HAL_I2C_Master_Transmit:00000000000002fc $d
-     /tmp/ccNejxAl.s:1507   .text.HAL_I2C_Master_Transmit:0000000000000308 $t
-     /tmp/ccNejxAl.s:1534   .text.HAL_I2C_Master_Transmit:0000000000000344 $d
-     /tmp/ccNejxAl.s:1538   .text.HAL_I2C_Master_Receive:0000000000000000 $t
-     /tmp/ccNejxAl.s:1546   .text.HAL_I2C_Master_Receive:0000000000000000 HAL_I2C_Master_Receive
-     /tmp/ccNejxAl.s:1738   .text.HAL_I2C_Master_Receive:00000000000001ac $d
-     /tmp/ccNejxAl.s:1744   .text.HAL_I2C_Slave_Transmit:0000000000000000 $t
-     /tmp/ccNejxAl.s:1752   .text.HAL_I2C_Slave_Transmit:0000000000000000 HAL_I2C_Slave_Transmit
-     /tmp/ccNejxAl.s:2002   .text.HAL_I2C_Slave_Receive:0000000000000000 $t
-     /tmp/ccNejxAl.s:2010   .text.HAL_I2C_Slave_Receive:0000000000000000 HAL_I2C_Slave_Receive
-     /tmp/ccNejxAl.s:2223   .text.HAL_I2C_Master_Transmit_IT:0000000000000000 $t
-     /tmp/ccNejxAl.s:2231   .text.HAL_I2C_Master_Transmit_IT:0000000000000000 HAL_I2C_Master_Transmit_IT
-     /tmp/ccNejxAl.s:2297   .text.HAL_I2C_Master_Transmit_IT:0000000000000090 $d
-     /tmp/ccNejxAl.s:6676   .text.I2C_Master_ISR_IT:0000000000000000 I2C_Master_ISR_IT
-     /tmp/ccNejxAl.s:2302   .text.HAL_I2C_Master_Receive_IT:0000000000000000 $t
-     /tmp/ccNejxAl.s:2310   .text.HAL_I2C_Master_Receive_IT:0000000000000000 HAL_I2C_Master_Receive_IT
-     /tmp/ccNejxAl.s:2376   .text.HAL_I2C_Master_Receive_IT:0000000000000090 $d
-     /tmp/ccNejxAl.s:2381   .text.HAL_I2C_Slave_Transmit_IT:0000000000000000 $t
-     /tmp/ccNejxAl.s:2389   .text.HAL_I2C_Slave_Transmit_IT:0000000000000000 HAL_I2C_Slave_Transmit_IT
-     /tmp/ccNejxAl.s:2435   .text.HAL_I2C_Slave_Transmit_IT:0000000000000058 $d
-     /tmp/ccNejxAl.s:7797   .text.I2C_Slave_ISR_IT:0000000000000000 I2C_Slave_ISR_IT
-     /tmp/ccNejxAl.s:2439   .text.HAL_I2C_Slave_Receive_IT:0000000000000000 $t
-     /tmp/ccNejxAl.s:2447   .text.HAL_I2C_Slave_Receive_IT:0000000000000000 HAL_I2C_Slave_Receive_IT
-     /tmp/ccNejxAl.s:2493   .text.HAL_I2C_Slave_Receive_IT:0000000000000058 $d
-     /tmp/ccNejxAl.s:2497   .text.HAL_I2C_Master_Transmit_DMA:0000000000000000 $t
-     /tmp/ccNejxAl.s:2505   .text.HAL_I2C_Master_Transmit_DMA:0000000000000000 HAL_I2C_Master_Transmit_DMA
-     /tmp/ccNejxAl.s:2644   .text.HAL_I2C_Master_Transmit_DMA:0000000000000148 $d
-ARM GAS  /tmp/ccNejxAl.s 			page 144
+     /tmp/ccGzu7ts.s:16     .text.I2C_WaitOnTXISFlagUntilTimeout.constprop.0:0000000000000000 $t
+     /tmp/ccGzu7ts.s:24     .text.I2C_WaitOnTXISFlagUntilTimeout.constprop.0:0000000000000000 I2C_WaitOnTXISFlagUntilTimeout.constprop.0
+     /tmp/ccGzu7ts.s:199    .text.I2C_WaitOnTXISFlagUntilTimeout.constprop.0:0000000000000180 $d
+     /tmp/ccGzu7ts.s:202    .text.I2C_RequestMemoryWrite.constprop.0:0000000000000000 $t
+     /tmp/ccGzu7ts.s:209    .text.I2C_RequestMemoryWrite.constprop.0:0000000000000000 I2C_RequestMemoryWrite.constprop.0
+     /tmp/ccGzu7ts.s:278    .text.I2C_RequestMemoryWrite.constprop.0:0000000000000094 $d
+     /tmp/ccGzu7ts.s:281    .text.I2C_RequestMemoryRead.constprop.0:0000000000000000 $t
+     /tmp/ccGzu7ts.s:288    .text.I2C_RequestMemoryRead.constprop.0:0000000000000000 I2C_RequestMemoryRead.constprop.0
+     /tmp/ccGzu7ts.s:356    .text.I2C_RequestMemoryRead.constprop.0:0000000000000090 $d
+     /tmp/ccGzu7ts.s:359    .text.I2C_WaitOnTXISFlagUntilTimeout:0000000000000000 $t
+     /tmp/ccGzu7ts.s:366    .text.I2C_WaitOnTXISFlagUntilTimeout:0000000000000000 I2C_WaitOnTXISFlagUntilTimeout
+     /tmp/ccGzu7ts.s:566    .text.I2C_WaitOnTXISFlagUntilTimeout:00000000000001cc $d
+     /tmp/ccGzu7ts.s:569    .text.I2C_WaitOnSTOPFlagUntilTimeout:0000000000000000 $t
+     /tmp/ccGzu7ts.s:576    .text.I2C_WaitOnSTOPFlagUntilTimeout:0000000000000000 I2C_WaitOnSTOPFlagUntilTimeout
+     /tmp/ccGzu7ts.s:772    .text.I2C_WaitOnSTOPFlagUntilTimeout:00000000000001c8 $d
+     /tmp/ccGzu7ts.s:775    .text.I2C_WaitOnRXNEFlagUntilTimeout:0000000000000000 $t
+     /tmp/ccGzu7ts.s:782    .text.I2C_WaitOnRXNEFlagUntilTimeout:0000000000000000 I2C_WaitOnRXNEFlagUntilTimeout
+     /tmp/ccGzu7ts.s:1009   .text.I2C_WaitOnRXNEFlagUntilTimeout:000000000000020c $d
+     /tmp/ccGzu7ts.s:1012   .text.HAL_I2C_MspInit:0000000000000000 $t
+     /tmp/ccGzu7ts.s:1020   .text.HAL_I2C_MspInit:0000000000000000 HAL_I2C_MspInit
+     /tmp/ccGzu7ts.s:1027   .text.HAL_I2C_Init:0000000000000000 $t
+     /tmp/ccGzu7ts.s:1035   .text.HAL_I2C_Init:0000000000000000 HAL_I2C_Init
+     /tmp/ccGzu7ts.s:1111   .text.HAL_I2C_MspDeInit:0000000000000000 $t
+     /tmp/ccGzu7ts.s:1119   .text.HAL_I2C_MspDeInit:0000000000000000 HAL_I2C_MspDeInit
+     /tmp/ccGzu7ts.s:1126   .text.HAL_I2C_DeInit:0000000000000000 $t
+     /tmp/ccGzu7ts.s:1134   .text.HAL_I2C_DeInit:0000000000000000 HAL_I2C_DeInit
+     /tmp/ccGzu7ts.s:1160   .text.HAL_I2C_Master_Transmit:0000000000000000 $t
+     /tmp/ccGzu7ts.s:1168   .text.HAL_I2C_Master_Transmit:0000000000000000 HAL_I2C_Master_Transmit
+     /tmp/ccGzu7ts.s:1503   .text.HAL_I2C_Master_Transmit:00000000000002fc $d
+     /tmp/ccGzu7ts.s:1507   .text.HAL_I2C_Master_Transmit:0000000000000308 $t
+     /tmp/ccGzu7ts.s:1534   .text.HAL_I2C_Master_Transmit:0000000000000344 $d
+     /tmp/ccGzu7ts.s:1538   .text.HAL_I2C_Master_Receive:0000000000000000 $t
+     /tmp/ccGzu7ts.s:1546   .text.HAL_I2C_Master_Receive:0000000000000000 HAL_I2C_Master_Receive
+     /tmp/ccGzu7ts.s:1738   .text.HAL_I2C_Master_Receive:00000000000001ac $d
+     /tmp/ccGzu7ts.s:1744   .text.HAL_I2C_Slave_Transmit:0000000000000000 $t
+     /tmp/ccGzu7ts.s:1752   .text.HAL_I2C_Slave_Transmit:0000000000000000 HAL_I2C_Slave_Transmit
+     /tmp/ccGzu7ts.s:2002   .text.HAL_I2C_Slave_Receive:0000000000000000 $t
+     /tmp/ccGzu7ts.s:2010   .text.HAL_I2C_Slave_Receive:0000000000000000 HAL_I2C_Slave_Receive
+     /tmp/ccGzu7ts.s:2223   .text.HAL_I2C_Master_Transmit_IT:0000000000000000 $t
+     /tmp/ccGzu7ts.s:2231   .text.HAL_I2C_Master_Transmit_IT:0000000000000000 HAL_I2C_Master_Transmit_IT
+     /tmp/ccGzu7ts.s:2297   .text.HAL_I2C_Master_Transmit_IT:0000000000000090 $d
+     /tmp/ccGzu7ts.s:6676   .text.I2C_Master_ISR_IT:0000000000000000 I2C_Master_ISR_IT
+     /tmp/ccGzu7ts.s:2302   .text.HAL_I2C_Master_Receive_IT:0000000000000000 $t
+     /tmp/ccGzu7ts.s:2310   .text.HAL_I2C_Master_Receive_IT:0000000000000000 HAL_I2C_Master_Receive_IT
+     /tmp/ccGzu7ts.s:2376   .text.HAL_I2C_Master_Receive_IT:0000000000000090 $d
+     /tmp/ccGzu7ts.s:2381   .text.HAL_I2C_Slave_Transmit_IT:0000000000000000 $t
+     /tmp/ccGzu7ts.s:2389   .text.HAL_I2C_Slave_Transmit_IT:0000000000000000 HAL_I2C_Slave_Transmit_IT
+     /tmp/ccGzu7ts.s:2435   .text.HAL_I2C_Slave_Transmit_IT:0000000000000058 $d
+     /tmp/ccGzu7ts.s:7797   .text.I2C_Slave_ISR_IT:0000000000000000 I2C_Slave_ISR_IT
+     /tmp/ccGzu7ts.s:2439   .text.HAL_I2C_Slave_Receive_IT:0000000000000000 $t
+     /tmp/ccGzu7ts.s:2447   .text.HAL_I2C_Slave_Receive_IT:0000000000000000 HAL_I2C_Slave_Receive_IT
+     /tmp/ccGzu7ts.s:2493   .text.HAL_I2C_Slave_Receive_IT:0000000000000058 $d
+     /tmp/ccGzu7ts.s:2497   .text.HAL_I2C_Master_Transmit_DMA:0000000000000000 $t
+     /tmp/ccGzu7ts.s:2505   .text.HAL_I2C_Master_Transmit_DMA:0000000000000000 HAL_I2C_Master_Transmit_DMA
+     /tmp/ccGzu7ts.s:2644   .text.HAL_I2C_Master_Transmit_DMA:0000000000000148 $d
+ARM GAS  /tmp/ccGzu7ts.s 			page 144
 
 
-     /tmp/ccNejxAl.s:7587   .text.I2C_Slave_ISR_DMA:0000000000000000 I2C_Slave_ISR_DMA
-     /tmp/ccNejxAl.s:6914   .text.I2C_Master_ISR_DMA:0000000000000000 I2C_Master_ISR_DMA
-     /tmp/ccNejxAl.s:7161   .text.I2C_DMAMasterTransmitCplt:0000000000000000 I2C_DMAMasterTransmitCplt
-     /tmp/ccNejxAl.s:8008   .text.I2C_DMAError:0000000000000000 I2C_DMAError
-     /tmp/ccNejxAl.s:2653   .text.HAL_I2C_Master_Receive_DMA:0000000000000000 $t
-     /tmp/ccNejxAl.s:2661   .text.HAL_I2C_Master_Receive_DMA:0000000000000000 HAL_I2C_Master_Receive_DMA
-     /tmp/ccNejxAl.s:2799   .text.HAL_I2C_Master_Receive_DMA:0000000000000148 $d
-     /tmp/ccNejxAl.s:7249   .text.I2C_DMAMasterReceiveCplt:0000000000000000 I2C_DMAMasterReceiveCplt
-     /tmp/ccNejxAl.s:2808   .text.HAL_I2C_Slave_Transmit_DMA:0000000000000000 $t
-     /tmp/ccNejxAl.s:2816   .text.HAL_I2C_Slave_Transmit_DMA:0000000000000000 HAL_I2C_Slave_Transmit_DMA
-     /tmp/ccNejxAl.s:2903   .text.HAL_I2C_Slave_Transmit_DMA:00000000000000c4 $d
-     /tmp/ccNejxAl.s:6037   .text.I2C_DMASlaveTransmitCplt:0000000000000000 I2C_DMASlaveTransmitCplt
-     /tmp/ccNejxAl.s:2909   .text.HAL_I2C_Slave_Receive_DMA:0000000000000000 $t
-     /tmp/ccNejxAl.s:2917   .text.HAL_I2C_Slave_Receive_DMA:0000000000000000 HAL_I2C_Slave_Receive_DMA
-     /tmp/ccNejxAl.s:3006   .text.HAL_I2C_Slave_Receive_DMA:00000000000000c4 $d
-     /tmp/ccNejxAl.s:6120   .text.I2C_DMASlaveReceiveCplt:0000000000000000 I2C_DMASlaveReceiveCplt
-     /tmp/ccNejxAl.s:3012   .text.HAL_I2C_Mem_Write:0000000000000000 $t
-     /tmp/ccNejxAl.s:3020   .text.HAL_I2C_Mem_Write:0000000000000000 HAL_I2C_Mem_Write
-     /tmp/ccNejxAl.s:3281   .text.HAL_I2C_Mem_Write:0000000000000254 $d
-     /tmp/ccNejxAl.s:3287   .text.HAL_I2C_Mem_Read:0000000000000000 $t
-     /tmp/ccNejxAl.s:3295   .text.HAL_I2C_Mem_Read:0000000000000000 HAL_I2C_Mem_Read
-     /tmp/ccNejxAl.s:3566   .text.HAL_I2C_Mem_Read:000000000000025c $d
-     /tmp/ccNejxAl.s:3572   .text.HAL_I2C_Mem_Write_IT:0000000000000000 $t
-     /tmp/ccNejxAl.s:3580   .text.HAL_I2C_Mem_Write_IT:0000000000000000 HAL_I2C_Mem_Write_IT
-     /tmp/ccNejxAl.s:3688   .text.HAL_I2C_Mem_Write_IT:00000000000000e4 $d
-     /tmp/ccNejxAl.s:3695   .text.HAL_I2C_Mem_Read_IT:0000000000000000 $t
-     /tmp/ccNejxAl.s:3703   .text.HAL_I2C_Mem_Read_IT:0000000000000000 HAL_I2C_Mem_Read_IT
-     /tmp/ccNejxAl.s:3812   .text.HAL_I2C_Mem_Read_IT:00000000000000f0 $d
-     /tmp/ccNejxAl.s:3819   .text.HAL_I2C_Mem_Write_DMA:0000000000000000 $t
-     /tmp/ccNejxAl.s:3827   .text.HAL_I2C_Mem_Write_DMA:0000000000000000 HAL_I2C_Mem_Write_DMA
-     /tmp/ccNejxAl.s:3980   .text.HAL_I2C_Mem_Write_DMA:000000000000015c $d
-     /tmp/ccNejxAl.s:3988   .text.HAL_I2C_Mem_Read_DMA:0000000000000000 $t
-     /tmp/ccNejxAl.s:3996   .text.HAL_I2C_Mem_Read_DMA:0000000000000000 HAL_I2C_Mem_Read_DMA
-     /tmp/ccNejxAl.s:4150   .text.HAL_I2C_Mem_Read_DMA:0000000000000160 $d
-     /tmp/ccNejxAl.s:4158   .text.HAL_I2C_IsDeviceReady:0000000000000000 $t
-     /tmp/ccNejxAl.s:4166   .text.HAL_I2C_IsDeviceReady:0000000000000000 HAL_I2C_IsDeviceReady
-     /tmp/ccNejxAl.s:4358   .text.HAL_I2C_Master_Seq_Transmit_IT:0000000000000000 $t
-     /tmp/ccNejxAl.s:4366   .text.HAL_I2C_Master_Seq_Transmit_IT:0000000000000000 HAL_I2C_Master_Seq_Transmit_IT
-     /tmp/ccNejxAl.s:4470   .text.HAL_I2C_Master_Seq_Transmit_IT:00000000000000fc $d
-     /tmp/ccNejxAl.s:4476   .text.HAL_I2C_Master_Seq_Transmit_DMA:0000000000000000 $t
-     /tmp/ccNejxAl.s:4484   .text.HAL_I2C_Master_Seq_Transmit_DMA:0000000000000000 HAL_I2C_Master_Seq_Transmit_DMA
-     /tmp/ccNejxAl.s:4663   .text.HAL_I2C_Master_Seq_Transmit_DMA:00000000000001a4 $d
-     /tmp/ccNejxAl.s:4673   .text.HAL_I2C_Master_Seq_Receive_IT:0000000000000000 $t
-     /tmp/ccNejxAl.s:4681   .text.HAL_I2C_Master_Seq_Receive_IT:0000000000000000 HAL_I2C_Master_Seq_Receive_IT
-     /tmp/ccNejxAl.s:4785   .text.HAL_I2C_Master_Seq_Receive_IT:00000000000000fc $d
-     /tmp/ccNejxAl.s:4791   .text.HAL_I2C_Master_Seq_Receive_DMA:0000000000000000 $t
-     /tmp/ccNejxAl.s:4799   .text.HAL_I2C_Master_Seq_Receive_DMA:0000000000000000 HAL_I2C_Master_Seq_Receive_DMA
-     /tmp/ccNejxAl.s:4977   .text.HAL_I2C_Master_Seq_Receive_DMA:00000000000001a4 $d
-     /tmp/ccNejxAl.s:4987   .text.HAL_I2C_Slave_Seq_Transmit_IT:0000000000000000 $t
-     /tmp/ccNejxAl.s:4995   .text.HAL_I2C_Slave_Seq_Transmit_IT:0000000000000000 HAL_I2C_Slave_Seq_Transmit_IT
-     /tmp/ccNejxAl.s:5111   .text.HAL_I2C_Slave_Seq_Transmit_IT:00000000000000fc $d
-     /tmp/ccNejxAl.s:6347   .text.I2C_DMAAbort:0000000000000000 I2C_DMAAbort
-     /tmp/ccNejxAl.s:5115   .text.HAL_I2C_Slave_Seq_Transmit_DMA:0000000000000000 $t
-     /tmp/ccNejxAl.s:5123   .text.HAL_I2C_Slave_Seq_Transmit_DMA:0000000000000000 HAL_I2C_Slave_Seq_Transmit_DMA
-     /tmp/ccNejxAl.s:5331   .text.HAL_I2C_Slave_Seq_Transmit_DMA:00000000000001d4 $d
-     /tmp/ccNejxAl.s:5337   .text.HAL_I2C_Slave_Seq_Receive_IT:0000000000000000 $t
-     /tmp/ccNejxAl.s:5345   .text.HAL_I2C_Slave_Seq_Receive_IT:0000000000000000 HAL_I2C_Slave_Seq_Receive_IT
-ARM GAS  /tmp/ccNejxAl.s 			page 145
+     /tmp/ccGzu7ts.s:7587   .text.I2C_Slave_ISR_DMA:0000000000000000 I2C_Slave_ISR_DMA
+     /tmp/ccGzu7ts.s:6914   .text.I2C_Master_ISR_DMA:0000000000000000 I2C_Master_ISR_DMA
+     /tmp/ccGzu7ts.s:7161   .text.I2C_DMAMasterTransmitCplt:0000000000000000 I2C_DMAMasterTransmitCplt
+     /tmp/ccGzu7ts.s:8008   .text.I2C_DMAError:0000000000000000 I2C_DMAError
+     /tmp/ccGzu7ts.s:2653   .text.HAL_I2C_Master_Receive_DMA:0000000000000000 $t
+     /tmp/ccGzu7ts.s:2661   .text.HAL_I2C_Master_Receive_DMA:0000000000000000 HAL_I2C_Master_Receive_DMA
+     /tmp/ccGzu7ts.s:2799   .text.HAL_I2C_Master_Receive_DMA:0000000000000148 $d
+     /tmp/ccGzu7ts.s:7249   .text.I2C_DMAMasterReceiveCplt:0000000000000000 I2C_DMAMasterReceiveCplt
+     /tmp/ccGzu7ts.s:2808   .text.HAL_I2C_Slave_Transmit_DMA:0000000000000000 $t
+     /tmp/ccGzu7ts.s:2816   .text.HAL_I2C_Slave_Transmit_DMA:0000000000000000 HAL_I2C_Slave_Transmit_DMA
+     /tmp/ccGzu7ts.s:2903   .text.HAL_I2C_Slave_Transmit_DMA:00000000000000c4 $d
+     /tmp/ccGzu7ts.s:6037   .text.I2C_DMASlaveTransmitCplt:0000000000000000 I2C_DMASlaveTransmitCplt
+     /tmp/ccGzu7ts.s:2909   .text.HAL_I2C_Slave_Receive_DMA:0000000000000000 $t
+     /tmp/ccGzu7ts.s:2917   .text.HAL_I2C_Slave_Receive_DMA:0000000000000000 HAL_I2C_Slave_Receive_DMA
+     /tmp/ccGzu7ts.s:3006   .text.HAL_I2C_Slave_Receive_DMA:00000000000000c4 $d
+     /tmp/ccGzu7ts.s:6120   .text.I2C_DMASlaveReceiveCplt:0000000000000000 I2C_DMASlaveReceiveCplt
+     /tmp/ccGzu7ts.s:3012   .text.HAL_I2C_Mem_Write:0000000000000000 $t
+     /tmp/ccGzu7ts.s:3020   .text.HAL_I2C_Mem_Write:0000000000000000 HAL_I2C_Mem_Write
+     /tmp/ccGzu7ts.s:3281   .text.HAL_I2C_Mem_Write:0000000000000254 $d
+     /tmp/ccGzu7ts.s:3287   .text.HAL_I2C_Mem_Read:0000000000000000 $t
+     /tmp/ccGzu7ts.s:3295   .text.HAL_I2C_Mem_Read:0000000000000000 HAL_I2C_Mem_Read
+     /tmp/ccGzu7ts.s:3566   .text.HAL_I2C_Mem_Read:000000000000025c $d
+     /tmp/ccGzu7ts.s:3572   .text.HAL_I2C_Mem_Write_IT:0000000000000000 $t
+     /tmp/ccGzu7ts.s:3580   .text.HAL_I2C_Mem_Write_IT:0000000000000000 HAL_I2C_Mem_Write_IT
+     /tmp/ccGzu7ts.s:3688   .text.HAL_I2C_Mem_Write_IT:00000000000000e4 $d
+     /tmp/ccGzu7ts.s:3695   .text.HAL_I2C_Mem_Read_IT:0000000000000000 $t
+     /tmp/ccGzu7ts.s:3703   .text.HAL_I2C_Mem_Read_IT:0000000000000000 HAL_I2C_Mem_Read_IT
+     /tmp/ccGzu7ts.s:3812   .text.HAL_I2C_Mem_Read_IT:00000000000000f0 $d
+     /tmp/ccGzu7ts.s:3819   .text.HAL_I2C_Mem_Write_DMA:0000000000000000 $t
+     /tmp/ccGzu7ts.s:3827   .text.HAL_I2C_Mem_Write_DMA:0000000000000000 HAL_I2C_Mem_Write_DMA
+     /tmp/ccGzu7ts.s:3980   .text.HAL_I2C_Mem_Write_DMA:000000000000015c $d
+     /tmp/ccGzu7ts.s:3988   .text.HAL_I2C_Mem_Read_DMA:0000000000000000 $t
+     /tmp/ccGzu7ts.s:3996   .text.HAL_I2C_Mem_Read_DMA:0000000000000000 HAL_I2C_Mem_Read_DMA
+     /tmp/ccGzu7ts.s:4150   .text.HAL_I2C_Mem_Read_DMA:0000000000000160 $d
+     /tmp/ccGzu7ts.s:4158   .text.HAL_I2C_IsDeviceReady:0000000000000000 $t
+     /tmp/ccGzu7ts.s:4166   .text.HAL_I2C_IsDeviceReady:0000000000000000 HAL_I2C_IsDeviceReady
+     /tmp/ccGzu7ts.s:4358   .text.HAL_I2C_Master_Seq_Transmit_IT:0000000000000000 $t
+     /tmp/ccGzu7ts.s:4366   .text.HAL_I2C_Master_Seq_Transmit_IT:0000000000000000 HAL_I2C_Master_Seq_Transmit_IT
+     /tmp/ccGzu7ts.s:4470   .text.HAL_I2C_Master_Seq_Transmit_IT:00000000000000fc $d
+     /tmp/ccGzu7ts.s:4476   .text.HAL_I2C_Master_Seq_Transmit_DMA:0000000000000000 $t
+     /tmp/ccGzu7ts.s:4484   .text.HAL_I2C_Master_Seq_Transmit_DMA:0000000000000000 HAL_I2C_Master_Seq_Transmit_DMA
+     /tmp/ccGzu7ts.s:4663   .text.HAL_I2C_Master_Seq_Transmit_DMA:00000000000001a4 $d
+     /tmp/ccGzu7ts.s:4673   .text.HAL_I2C_Master_Seq_Receive_IT:0000000000000000 $t
+     /tmp/ccGzu7ts.s:4681   .text.HAL_I2C_Master_Seq_Receive_IT:0000000000000000 HAL_I2C_Master_Seq_Receive_IT
+     /tmp/ccGzu7ts.s:4785   .text.HAL_I2C_Master_Seq_Receive_IT:00000000000000fc $d
+     /tmp/ccGzu7ts.s:4791   .text.HAL_I2C_Master_Seq_Receive_DMA:0000000000000000 $t
+     /tmp/ccGzu7ts.s:4799   .text.HAL_I2C_Master_Seq_Receive_DMA:0000000000000000 HAL_I2C_Master_Seq_Receive_DMA
+     /tmp/ccGzu7ts.s:4977   .text.HAL_I2C_Master_Seq_Receive_DMA:00000000000001a4 $d
+     /tmp/ccGzu7ts.s:4987   .text.HAL_I2C_Slave_Seq_Transmit_IT:0000000000000000 $t
+     /tmp/ccGzu7ts.s:4995   .text.HAL_I2C_Slave_Seq_Transmit_IT:0000000000000000 HAL_I2C_Slave_Seq_Transmit_IT
+     /tmp/ccGzu7ts.s:5111   .text.HAL_I2C_Slave_Seq_Transmit_IT:00000000000000fc $d
+     /tmp/ccGzu7ts.s:6347   .text.I2C_DMAAbort:0000000000000000 I2C_DMAAbort
+     /tmp/ccGzu7ts.s:5115   .text.HAL_I2C_Slave_Seq_Transmit_DMA:0000000000000000 $t
+     /tmp/ccGzu7ts.s:5123   .text.HAL_I2C_Slave_Seq_Transmit_DMA:0000000000000000 HAL_I2C_Slave_Seq_Transmit_DMA
+     /tmp/ccGzu7ts.s:5331   .text.HAL_I2C_Slave_Seq_Transmit_DMA:00000000000001d4 $d
+     /tmp/ccGzu7ts.s:5337   .text.HAL_I2C_Slave_Seq_Receive_IT:0000000000000000 $t
+     /tmp/ccGzu7ts.s:5345   .text.HAL_I2C_Slave_Seq_Receive_IT:0000000000000000 HAL_I2C_Slave_Seq_Receive_IT
+ARM GAS  /tmp/ccGzu7ts.s 			page 145
 
 
-     /tmp/ccNejxAl.s:5461   .text.HAL_I2C_Slave_Seq_Receive_IT:00000000000000fc $d
-     /tmp/ccNejxAl.s:5465   .text.HAL_I2C_Slave_Seq_Receive_DMA:0000000000000000 $t
-     /tmp/ccNejxAl.s:5473   .text.HAL_I2C_Slave_Seq_Receive_DMA:0000000000000000 HAL_I2C_Slave_Seq_Receive_DMA
-     /tmp/ccNejxAl.s:5696   .text.HAL_I2C_Slave_Seq_Receive_DMA:00000000000001f0 $d
-     /tmp/ccNejxAl.s:5703   .text.HAL_I2C_EnableListen_IT:0000000000000000 $t
-     /tmp/ccNejxAl.s:5711   .text.HAL_I2C_EnableListen_IT:0000000000000000 HAL_I2C_EnableListen_IT
-     /tmp/ccNejxAl.s:5734   .text.HAL_I2C_EnableListen_IT:0000000000000024 $d
-     /tmp/ccNejxAl.s:5737   .text.HAL_I2C_DisableListen_IT:0000000000000000 $t
-     /tmp/ccNejxAl.s:5745   .text.HAL_I2C_DisableListen_IT:0000000000000000 HAL_I2C_DisableListen_IT
-     /tmp/ccNejxAl.s:5775   .text.HAL_I2C_Master_Abort_IT:0000000000000000 $t
-     /tmp/ccNejxAl.s:5783   .text.HAL_I2C_Master_Abort_IT:0000000000000000 HAL_I2C_Master_Abort_IT
-     /tmp/ccNejxAl.s:5867   .text.HAL_I2C_Master_Abort_IT:00000000000000b8 $d
-     /tmp/ccNejxAl.s:5872   .text.HAL_I2C_EV_IRQHandler:0000000000000000 $t
-     /tmp/ccNejxAl.s:5880   .text.HAL_I2C_EV_IRQHandler:0000000000000000 HAL_I2C_EV_IRQHandler
-     /tmp/ccNejxAl.s:5894   .text.HAL_I2C_MasterTxCpltCallback:0000000000000000 $t
-     /tmp/ccNejxAl.s:5902   .text.HAL_I2C_MasterTxCpltCallback:0000000000000000 HAL_I2C_MasterTxCpltCallback
-     /tmp/ccNejxAl.s:5909   .text.HAL_I2C_MasterRxCpltCallback:0000000000000000 $t
-     /tmp/ccNejxAl.s:5917   .text.HAL_I2C_MasterRxCpltCallback:0000000000000000 HAL_I2C_MasterRxCpltCallback
-     /tmp/ccNejxAl.s:5924   .text.HAL_I2C_SlaveTxCpltCallback:0000000000000000 $t
-     /tmp/ccNejxAl.s:5932   .text.HAL_I2C_SlaveTxCpltCallback:0000000000000000 HAL_I2C_SlaveTxCpltCallback
-     /tmp/ccNejxAl.s:5939   .text.HAL_I2C_SlaveRxCpltCallback:0000000000000000 $t
-     /tmp/ccNejxAl.s:5947   .text.HAL_I2C_SlaveRxCpltCallback:0000000000000000 HAL_I2C_SlaveRxCpltCallback
-     /tmp/ccNejxAl.s:5954   .text.I2C_ITSlaveSeqCplt:0000000000000000 $t
-     /tmp/ccNejxAl.s:5961   .text.I2C_ITSlaveSeqCplt:0000000000000000 I2C_ITSlaveSeqCplt
-     /tmp/ccNejxAl.s:6030   .text.I2C_DMASlaveTransmitCplt:0000000000000000 $t
-     /tmp/ccNejxAl.s:6113   .text.I2C_DMASlaveReceiveCplt:0000000000000000 $t
-     /tmp/ccNejxAl.s:6197   .text.HAL_I2C_AddrCallback:0000000000000000 $t
-     /tmp/ccNejxAl.s:6205   .text.HAL_I2C_AddrCallback:0000000000000000 HAL_I2C_AddrCallback
-     /tmp/ccNejxAl.s:6212   .text.I2C_ITAddrCplt.part.0:0000000000000000 $t
-     /tmp/ccNejxAl.s:6219   .text.I2C_ITAddrCplt.part.0:0000000000000000 I2C_ITAddrCplt.part.0
-     /tmp/ccNejxAl.s:6265   .text.HAL_I2C_ListenCpltCallback:0000000000000000 $t
-     /tmp/ccNejxAl.s:6273   .text.HAL_I2C_ListenCpltCallback:0000000000000000 HAL_I2C_ListenCpltCallback
-     /tmp/ccNejxAl.s:6280   .text.HAL_I2C_MemTxCpltCallback:0000000000000000 $t
-     /tmp/ccNejxAl.s:6288   .text.HAL_I2C_MemTxCpltCallback:0000000000000000 HAL_I2C_MemTxCpltCallback
-     /tmp/ccNejxAl.s:6295   .text.HAL_I2C_MemRxCpltCallback:0000000000000000 $t
-     /tmp/ccNejxAl.s:6303   .text.HAL_I2C_MemRxCpltCallback:0000000000000000 HAL_I2C_MemRxCpltCallback
-     /tmp/ccNejxAl.s:6310   .text.HAL_I2C_ErrorCallback:0000000000000000 $t
-     /tmp/ccNejxAl.s:6318   .text.HAL_I2C_ErrorCallback:0000000000000000 HAL_I2C_ErrorCallback
-     /tmp/ccNejxAl.s:6325   .text.HAL_I2C_AbortCpltCallback:0000000000000000 $t
-     /tmp/ccNejxAl.s:6333   .text.HAL_I2C_AbortCpltCallback:0000000000000000 HAL_I2C_AbortCpltCallback
-     /tmp/ccNejxAl.s:6340   .text.I2C_DMAAbort:0000000000000000 $t
-     /tmp/ccNejxAl.s:6379   .text.I2C_ITError:0000000000000000 $t
-     /tmp/ccNejxAl.s:6386   .text.I2C_ITError:0000000000000000 I2C_ITError
-     /tmp/ccNejxAl.s:6520   .text.I2C_ITError:000000000000012c $d
-     /tmp/ccNejxAl.s:6525   .text.I2C_ITMasterCplt:0000000000000000 $t
-     /tmp/ccNejxAl.s:6532   .text.I2C_ITMasterCplt:0000000000000000 I2C_ITMasterCplt
-     /tmp/ccNejxAl.s:6665   .text.I2C_ITMasterCplt:000000000000011c $d
-     /tmp/ccNejxAl.s:6669   .text.I2C_Master_ISR_IT:0000000000000000 $t
-     /tmp/ccNejxAl.s:6904   .text.I2C_Master_ISR_IT:00000000000001e8 $d
-     /tmp/ccNejxAl.s:6907   .text.I2C_Master_ISR_DMA:0000000000000000 $t
-     /tmp/ccNejxAl.s:7149   .text.I2C_Master_ISR_DMA:0000000000000228 $d
-     /tmp/ccNejxAl.s:7154   .text.I2C_DMAMasterTransmitCplt:0000000000000000 $t
-     /tmp/ccNejxAl.s:7238   .text.I2C_DMAMasterTransmitCplt:0000000000000088 $d
-     /tmp/ccNejxAl.s:7242   .text.I2C_DMAMasterReceiveCplt:0000000000000000 $t
-     /tmp/ccNejxAl.s:7328   .text.I2C_DMAMasterReceiveCplt:0000000000000090 $d
-     /tmp/ccNejxAl.s:7332   .text.HAL_I2C_ER_IRQHandler:0000000000000000 $t
-     /tmp/ccNejxAl.s:7340   .text.HAL_I2C_ER_IRQHandler:0000000000000000 HAL_I2C_ER_IRQHandler
-ARM GAS  /tmp/ccNejxAl.s 			page 146
+     /tmp/ccGzu7ts.s:5461   .text.HAL_I2C_Slave_Seq_Receive_IT:00000000000000fc $d
+     /tmp/ccGzu7ts.s:5465   .text.HAL_I2C_Slave_Seq_Receive_DMA:0000000000000000 $t
+     /tmp/ccGzu7ts.s:5473   .text.HAL_I2C_Slave_Seq_Receive_DMA:0000000000000000 HAL_I2C_Slave_Seq_Receive_DMA
+     /tmp/ccGzu7ts.s:5696   .text.HAL_I2C_Slave_Seq_Receive_DMA:00000000000001f0 $d
+     /tmp/ccGzu7ts.s:5703   .text.HAL_I2C_EnableListen_IT:0000000000000000 $t
+     /tmp/ccGzu7ts.s:5711   .text.HAL_I2C_EnableListen_IT:0000000000000000 HAL_I2C_EnableListen_IT
+     /tmp/ccGzu7ts.s:5734   .text.HAL_I2C_EnableListen_IT:0000000000000024 $d
+     /tmp/ccGzu7ts.s:5737   .text.HAL_I2C_DisableListen_IT:0000000000000000 $t
+     /tmp/ccGzu7ts.s:5745   .text.HAL_I2C_DisableListen_IT:0000000000000000 HAL_I2C_DisableListen_IT
+     /tmp/ccGzu7ts.s:5775   .text.HAL_I2C_Master_Abort_IT:0000000000000000 $t
+     /tmp/ccGzu7ts.s:5783   .text.HAL_I2C_Master_Abort_IT:0000000000000000 HAL_I2C_Master_Abort_IT
+     /tmp/ccGzu7ts.s:5867   .text.HAL_I2C_Master_Abort_IT:00000000000000b8 $d
+     /tmp/ccGzu7ts.s:5872   .text.HAL_I2C_EV_IRQHandler:0000000000000000 $t
+     /tmp/ccGzu7ts.s:5880   .text.HAL_I2C_EV_IRQHandler:0000000000000000 HAL_I2C_EV_IRQHandler
+     /tmp/ccGzu7ts.s:5894   .text.HAL_I2C_MasterTxCpltCallback:0000000000000000 $t
+     /tmp/ccGzu7ts.s:5902   .text.HAL_I2C_MasterTxCpltCallback:0000000000000000 HAL_I2C_MasterTxCpltCallback
+     /tmp/ccGzu7ts.s:5909   .text.HAL_I2C_MasterRxCpltCallback:0000000000000000 $t
+     /tmp/ccGzu7ts.s:5917   .text.HAL_I2C_MasterRxCpltCallback:0000000000000000 HAL_I2C_MasterRxCpltCallback
+     /tmp/ccGzu7ts.s:5924   .text.HAL_I2C_SlaveTxCpltCallback:0000000000000000 $t
+     /tmp/ccGzu7ts.s:5932   .text.HAL_I2C_SlaveTxCpltCallback:0000000000000000 HAL_I2C_SlaveTxCpltCallback
+     /tmp/ccGzu7ts.s:5939   .text.HAL_I2C_SlaveRxCpltCallback:0000000000000000 $t
+     /tmp/ccGzu7ts.s:5947   .text.HAL_I2C_SlaveRxCpltCallback:0000000000000000 HAL_I2C_SlaveRxCpltCallback
+     /tmp/ccGzu7ts.s:5954   .text.I2C_ITSlaveSeqCplt:0000000000000000 $t
+     /tmp/ccGzu7ts.s:5961   .text.I2C_ITSlaveSeqCplt:0000000000000000 I2C_ITSlaveSeqCplt
+     /tmp/ccGzu7ts.s:6030   .text.I2C_DMASlaveTransmitCplt:0000000000000000 $t
+     /tmp/ccGzu7ts.s:6113   .text.I2C_DMASlaveReceiveCplt:0000000000000000 $t
+     /tmp/ccGzu7ts.s:6197   .text.HAL_I2C_AddrCallback:0000000000000000 $t
+     /tmp/ccGzu7ts.s:6205   .text.HAL_I2C_AddrCallback:0000000000000000 HAL_I2C_AddrCallback
+     /tmp/ccGzu7ts.s:6212   .text.I2C_ITAddrCplt.part.0:0000000000000000 $t
+     /tmp/ccGzu7ts.s:6219   .text.I2C_ITAddrCplt.part.0:0000000000000000 I2C_ITAddrCplt.part.0
+     /tmp/ccGzu7ts.s:6265   .text.HAL_I2C_ListenCpltCallback:0000000000000000 $t
+     /tmp/ccGzu7ts.s:6273   .text.HAL_I2C_ListenCpltCallback:0000000000000000 HAL_I2C_ListenCpltCallback
+     /tmp/ccGzu7ts.s:6280   .text.HAL_I2C_MemTxCpltCallback:0000000000000000 $t
+     /tmp/ccGzu7ts.s:6288   .text.HAL_I2C_MemTxCpltCallback:0000000000000000 HAL_I2C_MemTxCpltCallback
+     /tmp/ccGzu7ts.s:6295   .text.HAL_I2C_MemRxCpltCallback:0000000000000000 $t
+     /tmp/ccGzu7ts.s:6303   .text.HAL_I2C_MemRxCpltCallback:0000000000000000 HAL_I2C_MemRxCpltCallback
+     /tmp/ccGzu7ts.s:6310   .text.HAL_I2C_ErrorCallback:0000000000000000 $t
+     /tmp/ccGzu7ts.s:6318   .text.HAL_I2C_ErrorCallback:0000000000000000 HAL_I2C_ErrorCallback
+     /tmp/ccGzu7ts.s:6325   .text.HAL_I2C_AbortCpltCallback:0000000000000000 $t
+     /tmp/ccGzu7ts.s:6333   .text.HAL_I2C_AbortCpltCallback:0000000000000000 HAL_I2C_AbortCpltCallback
+     /tmp/ccGzu7ts.s:6340   .text.I2C_DMAAbort:0000000000000000 $t
+     /tmp/ccGzu7ts.s:6379   .text.I2C_ITError:0000000000000000 $t
+     /tmp/ccGzu7ts.s:6386   .text.I2C_ITError:0000000000000000 I2C_ITError
+     /tmp/ccGzu7ts.s:6520   .text.I2C_ITError:000000000000012c $d
+     /tmp/ccGzu7ts.s:6525   .text.I2C_ITMasterCplt:0000000000000000 $t
+     /tmp/ccGzu7ts.s:6532   .text.I2C_ITMasterCplt:0000000000000000 I2C_ITMasterCplt
+     /tmp/ccGzu7ts.s:6665   .text.I2C_ITMasterCplt:000000000000011c $d
+     /tmp/ccGzu7ts.s:6669   .text.I2C_Master_ISR_IT:0000000000000000 $t
+     /tmp/ccGzu7ts.s:6904   .text.I2C_Master_ISR_IT:00000000000001e8 $d
+     /tmp/ccGzu7ts.s:6907   .text.I2C_Master_ISR_DMA:0000000000000000 $t
+     /tmp/ccGzu7ts.s:7149   .text.I2C_Master_ISR_DMA:0000000000000228 $d
+     /tmp/ccGzu7ts.s:7154   .text.I2C_DMAMasterTransmitCplt:0000000000000000 $t
+     /tmp/ccGzu7ts.s:7238   .text.I2C_DMAMasterTransmitCplt:0000000000000088 $d
+     /tmp/ccGzu7ts.s:7242   .text.I2C_DMAMasterReceiveCplt:0000000000000000 $t
+     /tmp/ccGzu7ts.s:7328   .text.I2C_DMAMasterReceiveCplt:0000000000000090 $d
+     /tmp/ccGzu7ts.s:7332   .text.HAL_I2C_ER_IRQHandler:0000000000000000 $t
+     /tmp/ccGzu7ts.s:7340   .text.HAL_I2C_ER_IRQHandler:0000000000000000 HAL_I2C_ER_IRQHandler
+ARM GAS  /tmp/ccGzu7ts.s 			page 146
 
 
-     /tmp/ccNejxAl.s:7406   .text.I2C_ITSlaveCplt.constprop.0:0000000000000000 $t
-     /tmp/ccNejxAl.s:7413   .text.I2C_ITSlaveCplt.constprop.0:0000000000000000 I2C_ITSlaveCplt.constprop.0
-     /tmp/ccNejxAl.s:7576   .text.I2C_ITSlaveCplt.constprop.0:000000000000015c $d
-     /tmp/ccNejxAl.s:7580   .text.I2C_Slave_ISR_DMA:0000000000000000 $t
-     /tmp/ccNejxAl.s:7707   .text.I2C_Slave_ISR_DMA:00000000000000f8 $d
-     /tmp/ccNejxAl.s:7717   .text.I2C_Slave_ISR_DMA:0000000000000102 $t
-     /tmp/ccNejxAl.s:7787   .text.I2C_Slave_ISR_DMA:000000000000018c $d
-     /tmp/ccNejxAl.s:7790   .text.I2C_Slave_ISR_IT:0000000000000000 $t
-     /tmp/ccNejxAl.s:7998   .text.I2C_Slave_ISR_IT:000000000000019c $d
-     /tmp/ccNejxAl.s:8001   .text.I2C_DMAError:0000000000000000 $t
-     /tmp/ccNejxAl.s:8145   .text.I2C_DMAError:0000000000000134 $d
-     /tmp/ccNejxAl.s:8150   .text.HAL_I2C_GetState:0000000000000000 $t
-     /tmp/ccNejxAl.s:8158   .text.HAL_I2C_GetState:0000000000000000 HAL_I2C_GetState
-     /tmp/ccNejxAl.s:8166   .text.HAL_I2C_GetMode:0000000000000000 $t
-     /tmp/ccNejxAl.s:8174   .text.HAL_I2C_GetMode:0000000000000000 HAL_I2C_GetMode
-     /tmp/ccNejxAl.s:8182   .text.HAL_I2C_GetError:0000000000000000 $t
-     /tmp/ccNejxAl.s:8190   .text.HAL_I2C_GetError:0000000000000000 HAL_I2C_GetError
+     /tmp/ccGzu7ts.s:7406   .text.I2C_ITSlaveCplt.constprop.0:0000000000000000 $t
+     /tmp/ccGzu7ts.s:7413   .text.I2C_ITSlaveCplt.constprop.0:0000000000000000 I2C_ITSlaveCplt.constprop.0
+     /tmp/ccGzu7ts.s:7576   .text.I2C_ITSlaveCplt.constprop.0:000000000000015c $d
+     /tmp/ccGzu7ts.s:7580   .text.I2C_Slave_ISR_DMA:0000000000000000 $t
+     /tmp/ccGzu7ts.s:7707   .text.I2C_Slave_ISR_DMA:00000000000000f8 $d
+     /tmp/ccGzu7ts.s:7717   .text.I2C_Slave_ISR_DMA:0000000000000102 $t
+     /tmp/ccGzu7ts.s:7787   .text.I2C_Slave_ISR_DMA:000000000000018c $d
+     /tmp/ccGzu7ts.s:7790   .text.I2C_Slave_ISR_IT:0000000000000000 $t
+     /tmp/ccGzu7ts.s:7998   .text.I2C_Slave_ISR_IT:000000000000019c $d
+     /tmp/ccGzu7ts.s:8001   .text.I2C_DMAError:0000000000000000 $t
+     /tmp/ccGzu7ts.s:8145   .text.I2C_DMAError:0000000000000134 $d
+     /tmp/ccGzu7ts.s:8150   .text.HAL_I2C_GetState:0000000000000000 $t
+     /tmp/ccGzu7ts.s:8158   .text.HAL_I2C_GetState:0000000000000000 HAL_I2C_GetState
+     /tmp/ccGzu7ts.s:8166   .text.HAL_I2C_GetMode:0000000000000000 $t
+     /tmp/ccGzu7ts.s:8174   .text.HAL_I2C_GetMode:0000000000000000 HAL_I2C_GetMode
+     /tmp/ccGzu7ts.s:8182   .text.HAL_I2C_GetError:0000000000000000 $t
+     /tmp/ccGzu7ts.s:8190   .text.HAL_I2C_GetError:0000000000000000 HAL_I2C_GetError
 
 UNDEFINED SYMBOLS
 HAL_GetTick

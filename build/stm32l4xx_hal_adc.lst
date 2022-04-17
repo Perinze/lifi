@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccIF8h0i.s 			page 1
+ARM GAS  /tmp/ccWjZ1wd.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
   58 0020 9368     		ldr	r3, [r2, #8]
   59 0022 23F02043 		bic	r3, r3, #-1610612736
   60 0026 23F03F03 		bic	r3, r3, #63
-ARM GAS  /tmp/ccIF8h0i.s 			page 2
+ARM GAS  /tmp/ccWjZ1wd.s 			page 2
 
 
   61 002a 9360     		str	r3, [r2, #8]
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  115 009e 484B     		ldr	r3, .L43+12
  116 00a0 8968     		ldr	r1, [r1, #8]
  117 00a2 9B68     		ldr	r3, [r3, #8]
-ARM GAS  /tmp/ccIF8h0i.s 			page 3
+ARM GAS  /tmp/ccWjZ1wd.s 			page 3
 
 
  118 00a4 0B43     		orrs	r3, r3, r1
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  172              		@ sp needed
  173 0116 30BD     		pop	{r4, r5, pc}
  174              	.L23:
-ARM GAS  /tmp/ccIF8h0i.s 			page 4
+ARM GAS  /tmp/ccWjZ1wd.s 			page 4
 
 
  175 0118 9368     		ldr	r3, [r2, #8]
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  229 018e 1363     		str	r3, [r2, #48]
  230 0190 BAE7     		b	.L20
  231              	.L42:
-ARM GAS  /tmp/ccIF8h0i.s 			page 5
+ARM GAS  /tmp/ccWjZ1wd.s 			page 5
 
 
  232 0192 1169     		ldr	r1, [r2, #16]
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  290 000e 0E46     		mov	r6, r1
  291 0010 07F01F07 		and	r7, r7, #31
  292 0014 09D0     		beq	.L47
-ARM GAS  /tmp/ccIF8h0i.s 			page 6
+ARM GAS  /tmp/ccWjZ1wd.s 			page 6
 
 
  293 0016 40F22123 		movw	r3, #545
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  347 0082 0020     		movne	r0, #0
  348              	.L77:
  349 0084 BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}
-ARM GAS  /tmp/ccIF8h0i.s 			page 7
+ARM GAS  /tmp/ccWjZ1wd.s 			page 7
 
 
  350              	.L52:
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  404 00f4 00010450 		.word	1342439680
  405 00f8 00000450 		.word	1342439424
  407              		.section	.text.HAL_ADC_PollForEvent,"ax",%progbits
-ARM GAS  /tmp/ccIF8h0i.s 			page 8
+ARM GAS  /tmp/ccWjZ1wd.s 			page 8
 
 
  408              		.align	1
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  463 005e 34EA0303 		bics	r3, r4, r3
  464 0062 DBD0     		beq	.L94
  465 0064 FFF7FEFF 		bl	HAL_GetTick
-ARM GAS  /tmp/ccIF8h0i.s 			page 9
+ARM GAS  /tmp/ccWjZ1wd.s 			page 9
 
 
  466 0068 C01B     		subs	r0, r0, r7
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  520 00d8 1023     		movs	r3, #16
  521 00da 0B60     		str	r3, [r1]
  522 00dc 0020     		movs	r0, #0
-ARM GAS  /tmp/ccIF8h0i.s 			page 10
+ARM GAS  /tmp/ccWjZ1wd.s 			page 10
 
 
  523 00de F8BD     		pop	{r3, r4, r5, r6, r7, pc}
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  585 0002 806A     		ldr	r0, [r0, #40]
  586 0004 FFF7FEFF 		bl	HAL_ADC_ConvHalfCpltCallback
  587 0008 08BD     		pop	{r3, pc}
-ARM GAS  /tmp/ccIF8h0i.s 			page 11
+ARM GAS  /tmp/ccWjZ1wd.s 			page 11
 
 
  589 000a 00BF     		.section	.text.HAL_ADC_LevelOutOfWindowCallback,"ax",%progbits
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  648              	.L123:
  649 0024 626D     		ldr	r2, [r4, #84]
  650 0026 D206     		lsls	r2, r2, #27
-ARM GAS  /tmp/ccIF8h0i.s 			page 12
+ARM GAS  /tmp/ccWjZ1wd.s 			page 12
 
 
  651 0028 03D4     		bmi	.L125
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  705 0096 6949     		ldr	r1, .L240+4
  706 0098 DA6C     		ldr	r2, [r3, #76]
  707 009a D868     		ldr	r0, [r3, #12]
-ARM GAS  /tmp/ccIF8h0i.s 			page 13
+ARM GAS  /tmp/ccWjZ1wd.s 			page 13
 
 
  708 009c 8B42     		cmp	r3, r1
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  762 0106 F206     		lsls	r2, r6, #27
  763 0108 0FD4     		bmi	.L237
  764              	.L149:
-ARM GAS  /tmp/ccIF8h0i.s 			page 14
+ARM GAS  /tmp/ccWjZ1wd.s 			page 14
 
 
  765 010a 6D05     		lsls	r5, r5, #21
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  819 0172 1A60     		str	r2, [r3]
  820 0174 52E7     		b	.L120
  821              	.L232:
-ARM GAS  /tmp/ccIF8h0i.s 			page 15
+ARM GAS  /tmp/ccWjZ1wd.s 			page 15
 
 
  822 0176 C121     		movs	r1, #193
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  876 01f8 59E7     		b	.L142
  877              	.L128:
  878 01fa 40F22122 		movw	r2, #545
-ARM GAS  /tmp/ccIF8h0i.s 			page 16
+ARM GAS  /tmp/ccWjZ1wd.s 			page 16
 
 
  879 01fe FA40     		lsrs	r2, r2, r7
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  935 0018 12F0080F 		tst	r2, #8
  936 001c CA68     		ldr	r2, [r1, #12]
  937 001e 1BD0     		beq	.L244
-ARM GAS  /tmp/ccIF8h0i.s 			page 17
+ARM GAS  /tmp/ccWjZ1wd.s 			page 17
 
 
  938 0020 12F4406F 		tst	r2, #3072
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  994 000e 43F00403 		orr	r3, r3, #4
  995 0012 8365     		str	r3, [r0, #88]
  996 0014 FFF7FEFF 		bl	HAL_ADC_ErrorCallback
-ARM GAS  /tmp/ccIF8h0i.s 			page 18
+ARM GAS  /tmp/ccWjZ1wd.s 			page 18
 
 
  997 0018 08BD     		pop	{r3, pc}
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1053 006e 12D4     		bmi	.L291
  1054 0070 CF68     		ldr	r7, [r1, #12]
  1055 0072 B14A     		ldr	r2, .L359
-ARM GAS  /tmp/ccIF8h0i.s 			page 19
+ARM GAS  /tmp/ccWjZ1wd.s 			page 19
 
 
  1056 0074 D4F8B000 		ldr	r0, [r4, #176]
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1110              	.L353:
  1111 00f0 A268     		ldr	r2, [r4, #8]
  1112 00f2 0D68     		ldr	r5, [r1]
-ARM GAS  /tmp/ccIF8h0i.s 			page 20
+ARM GAS  /tmp/ccWjZ1wd.s 			page 20
 
 
  1113 00f4 1207     		lsls	r2, r2, #28
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1167 0170 00F0F880 		beq	.L295
  1168 0174 B2FA82F2 		clz	r2, r2
  1169 0178 0132     		adds	r2, r2, #1
-ARM GAS  /tmp/ccIF8h0i.s 			page 21
+ARM GAS  /tmp/ccWjZ1wd.s 			page 21
 
 
  1170 017a 02F01F02 		and	r2, r2, #31
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1224 01ec 00FA02F7 		lsl	r7, r0, r2
  1225 01f0 4FF0070C 		mov	ip, #7
  1226 01f4 7059     		ldr	r0, [r6, r5]
-ARM GAS  /tmp/ccIF8h0i.s 			page 22
+ARM GAS  /tmp/ccWjZ1wd.s 			page 22
 
 
  1227 01f6 0CFA02F2 		lsl	r2, ip, r2
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1281 0268 05F01F06 		and	r6, r5, #31
  1282 026c 0122     		movs	r2, #1
  1283 026e AD06     		lsls	r5, r5, #26
-ARM GAS  /tmp/ccIF8h0i.s 			page 23
+ARM GAS  /tmp/ccWjZ1wd.s 			page 23
 
 
  1284 0270 05F0F845 		and	r5, r5, #2080374784
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1338 02f4 9642     		cmp	r6, r2
  1339 02f6 00F08880 		beq	.L275
  1340 02fa 666E     		ldr	r6, [r4, #100]
-ARM GAS  /tmp/ccIF8h0i.s 			page 24
+ARM GAS  /tmp/ccWjZ1wd.s 			page 24
 
 
  1341 02fc 666E     		ldr	r6, [r4, #100]
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1395 037a 95FAA5F0 		rbit r0, r5
  1396              	@ 0 "" 2
  1397              		.thumb
-ARM GAS  /tmp/ccIF8h0i.s 			page 25
+ARM GAS  /tmp/ccWjZ1wd.s 			page 25
 
 
  1398              		.syntax unified
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1452 03d8 00F10807 		add	r7, r0, #8
  1453 03dc C6F38466 		ubfx	r6, r6, #26, #5
  1454              	.L281:
-ARM GAS  /tmp/ccIF8h0i.s 			page 26
+ARM GAS  /tmp/ccWjZ1wd.s 			page 26
 
 
  1455              		.syntax unified
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1509 044e 626E     		ldr	r2, [r4, #100]
  1510 0450 22F00042 		bic	r2, r2, #-2147483648
  1511 0454 6266     		str	r2, [r4, #100]
-ARM GAS  /tmp/ccIF8h0i.s 			page 27
+ARM GAS  /tmp/ccWjZ1wd.s 			page 27
 
 
  1512 0456 0D68     		ldr	r5, [r1]
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1568 0010 1A68     		ldr	r2, [r3]
  1569 0012 0124     		movs	r4, #1
  1570 0014 83F85040 		strb	r4, [r3, #80]
-ARM GAS  /tmp/ccIF8h0i.s 			page 28
+ARM GAS  /tmp/ccWjZ1wd.s 			page 28
 
 
  1571 0018 9468     		ldr	r4, [r2, #8]
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1625 00ae 00F01E00 		and	r0, r0, #30
  1626 00b2 C540     		lsrs	r5, r5, r0
  1627              	.L392:
-ARM GAS  /tmp/ccIF8h0i.s 			page 29
+ARM GAS  /tmp/ccWjZ1wd.s 			page 29
 
 
  1628 00b4 D068     		ldr	r0, [r2, #12]
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1682 014e 0F69     		ldr	r7, [r1, #16]
  1683 0150 C0F3C100 		ubfx	r0, r0, #3, #2
  1684 0154 4000     		lsls	r0, r0, #1
-ARM GAS  /tmp/ccIF8h0i.s 			page 30
+ARM GAS  /tmp/ccWjZ1wd.s 			page 30
 
 
  1685 0156 A40C     		lsrs	r4, r4, #18
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1739              	.L380:
  1740 01e2 B0F1C07F 		cmp	r0, #25165824
  1741 01e6 48D0     		beq	.L381
-ARM GAS  /tmp/ccIF8h0i.s 			page 31
+ARM GAS  /tmp/ccWjZ1wd.s 			page 31
 
 
  1742 01e8 B0F1E07F 		cmp	r0, #29360128
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1796 0266 B9D0     		beq	.L425
  1797 0268 21F48071 		bic	r1, r1, #256
  1798 026c 5160     		str	r1, [r2, #4]
-ARM GAS  /tmp/ccIF8h0i.s 			page 32
+ARM GAS  /tmp/ccWjZ1wd.s 			page 32
 
 
  1799 026e DCE6     		b	.L378
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1853 02f2 D060     		str	r0, [r2, #12]
  1854 02f4 28E7     		b	.L376
  1855              	.L384:
-ARM GAS  /tmp/ccIF8h0i.s 			page 33
+ARM GAS  /tmp/ccWjZ1wd.s 			page 33
 
 
  1856              		.syntax unified
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1915              		.syntax unified
  1916              		.thumb
  1917              		.thumb_func
-ARM GAS  /tmp/ccIF8h0i.s 			page 34
+ARM GAS  /tmp/ccWjZ1wd.s 			page 34
 
 
  1918              		.fpu fpv4-sp-d16
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  1973 005a 831B     		subs	r3, r0, r6
  1974 005c 052B     		cmp	r3, #5
  1975 005e 2368     		ldr	r3, [r4]
-ARM GAS  /tmp/ccIF8h0i.s 			page 35
+ARM GAS  /tmp/ccWjZ1wd.s 			page 35
 
 
  1976 0060 F6D9     		bls	.L480
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  2030 00c2 B9E7     		b	.L449
  2031              	.L446:
  2032 00c4 9A68     		ldr	r2, [r3, #8]
-ARM GAS  /tmp/ccIF8h0i.s 			page 36
+ARM GAS  /tmp/ccWjZ1wd.s 			page 36
 
 
  2033 00c6 9207     		lsls	r2, r2, #30
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  2089 001e 7365     		str	r3, [r6, #84]
  2090 0020 B36D     		ldr	r3, [r6, #88]
  2091 0022 0120     		movs	r0, #1
-ARM GAS  /tmp/ccIF8h0i.s 			page 37
+ARM GAS  /tmp/ccWjZ1wd.s 			page 37
 
 
  2092 0024 0343     		orrs	r3, r3, r0
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  2148              		@ frame_needed = 0, uses_anonymous_args = 0
  2149 0000 324A     		ldr	r2, .L532
  2150 0002 0368     		ldr	r3, [r0]
-ARM GAS  /tmp/ccIF8h0i.s 			page 38
+ARM GAS  /tmp/ccWjZ1wd.s 			page 38
 
 
  2151 0004 70B5     		push	{r4, r5, r6, lr}
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  2205 008c 43F48053 		orr	r3, r3, #4096
  2206 0090 6365     		str	r3, [r4, #84]
  2207              	.L524:
-ARM GAS  /tmp/ccIF8h0i.s 			page 39
+ARM GAS  /tmp/ccWjZ1wd.s 			page 39
 
 
  2208 0092 70BD     		pop	{r4, r5, r6, pc}
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  2264 0018 58D0     		beq	.L551
  2265 001a 0123     		movs	r3, #1
  2266 001c 80F85030 		strb	r3, [r0, #80]
-ARM GAS  /tmp/ccIF8h0i.s 			page 40
+ARM GAS  /tmp/ccWjZ1wd.s 			page 40
 
 
  2267 0020 FFF7FEFF 		bl	ADC_Enable
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  2321 00a4 CA68     		ldr	r2, [r1, #12]
  2322 00a6 9201     		lsls	r2, r2, #6
  2323 00a8 0FD5     		bpl	.L553
-ARM GAS  /tmp/ccIF8h0i.s 			page 41
+ARM GAS  /tmp/ccWjZ1wd.s 			page 41
 
 
  2324 00aa 626D     		ldr	r2, [r4, #84]
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  2378 0124 EEE7     		b	.L545
  2379              	.L561:
  2380 0126 22F02002 		bic	r2, r2, #32
-ARM GAS  /tmp/ccIF8h0i.s 			page 42
+ARM GAS  /tmp/ccWjZ1wd.s 			page 42
 
 
  2381 012a 5A60     		str	r2, [r3, #4]
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  2437 0050 3CD1     		bne	.L569
  2438 0052 636D     		ldr	r3, [r4, #84]
  2439 0054 2168     		ldr	r1, [r4]
-ARM GAS  /tmp/ccIF8h0i.s 			page 43
+ARM GAS  /tmp/ccWjZ1wd.s 			page 43
 
 
  2440 0056 23F47063 		bic	r3, r3, #3840
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  2494 00dc C9E7     		b	.L574
  2495              	.L583:
  2496 00de 00BF     		.align	2
-ARM GAS  /tmp/ccIF8h0i.s 			page 44
+ARM GAS  /tmp/ccWjZ1wd.s 			page 44
 
 
  2497              	.L582:
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  2553 004e 9B68     		ldr	r3, [r3, #8]
  2554 0050 D907     		lsls	r1, r3, #31
  2555 0052 0546     		mov	r5, r0
-ARM GAS  /tmp/ccIF8h0i.s 			page 45
+ARM GAS  /tmp/ccWjZ1wd.s 			page 45
 
 
  2556 0054 0BD5     		bpl	.L590
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  2612 003e 9A68     		ldr	r2, [r3, #8]
  2613 0040 42F00052 		orr	r2, r2, #536870912
  2614 0044 9A60     		str	r2, [r3, #8]
-ARM GAS  /tmp/ccIF8h0i.s 			page 46
+ARM GAS  /tmp/ccWjZ1wd.s 			page 46
 
 
  2615 0046 D868     		ldr	r0, [r3, #12]
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  2669 00c4 2349     		ldr	r1, .L611+20
  2670 00c6 0A40     		ands	r2, r2, r1
  2671 00c8 C3F8A020 		str	r2, [r3, #160]
-ARM GAS  /tmp/ccIF8h0i.s 			page 47
+ARM GAS  /tmp/ccWjZ1wd.s 			page 47
 
 
  2672 00cc D3F8A420 		ldr	r2, [r3, #164]
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  2726              	.L611:
  2727 0140 00F8FFFF 		.word	-2048
  2728 0144 04800080 		.word	-2147450876
-ARM GAS  /tmp/ccIF8h0i.s 			page 48
+ARM GAS  /tmp/ccWjZ1wd.s 			page 48
 
 
  2729 0148 300882E0 		.word	-528349136
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  2786              		.syntax unified
  2787              		.thumb
  2788              		.thumb_func
-ARM GAS  /tmp/ccIF8h0i.s 			page 49
+ARM GAS  /tmp/ccWjZ1wd.s 			page 49
 
 
  2789              		.fpu fpv4-sp-d16
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  2846 000c 80F85030 		strb	r3, [r0, #80]
  2847 0010 0321     		movs	r1, #3
  2848 0012 0446     		mov	r4, r0
-ARM GAS  /tmp/ccIF8h0i.s 			page 50
+ARM GAS  /tmp/ccWjZ1wd.s 			page 50
 
 
  2849 0014 FFF7FEFF 		bl	ADC_ConversionStop
@@ -2995,85 +2995,85 @@ ARM GAS  /tmp/ccIF8h0i.s 			page 1
  2900 008c 5360     		str	r3, [r2, #4]
  2901 008e D3E7     		b	.L635
  2903              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/ccIF8h0i.s 			page 51
+ARM GAS  /tmp/ccWjZ1wd.s 			page 51
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32l4xx_hal_adc.c
-     /tmp/ccIF8h0i.s:16     .text.HAL_ADC_MspInit:0000000000000000 $t
-     /tmp/ccIF8h0i.s:25     .text.HAL_ADC_MspInit:0000000000000000 HAL_ADC_MspInit
-     /tmp/ccIF8h0i.s:32     .text.HAL_ADC_Init:0000000000000000 $t
-     /tmp/ccIF8h0i.s:40     .text.HAL_ADC_Init:0000000000000000 HAL_ADC_Init
-     /tmp/ccIF8h0i.s:249    .text.HAL_ADC_Init:00000000000001b4 $d
-     /tmp/ccIF8h0i.s:258    .text.HAL_ADC_MspDeInit:0000000000000000 $t
-     /tmp/ccIF8h0i.s:266    .text.HAL_ADC_MspDeInit:0000000000000000 HAL_ADC_MspDeInit
-     /tmp/ccIF8h0i.s:273    .text.HAL_ADC_PollForConversion:0000000000000000 $t
-     /tmp/ccIF8h0i.s:281    .text.HAL_ADC_PollForConversion:0000000000000000 HAL_ADC_PollForConversion
-     /tmp/ccIF8h0i.s:403    .text.HAL_ADC_PollForConversion:00000000000000f0 $d
-     /tmp/ccIF8h0i.s:408    .text.HAL_ADC_PollForEvent:0000000000000000 $t
-     /tmp/ccIF8h0i.s:416    .text.HAL_ADC_PollForEvent:0000000000000000 HAL_ADC_PollForEvent
-     /tmp/ccIF8h0i.s:526    .text.HAL_ADC_GetValue:0000000000000000 $t
-     /tmp/ccIF8h0i.s:534    .text.HAL_ADC_GetValue:0000000000000000 HAL_ADC_GetValue
-     /tmp/ccIF8h0i.s:543    .text.HAL_ADC_ConvCpltCallback:0000000000000000 $t
-     /tmp/ccIF8h0i.s:551    .text.HAL_ADC_ConvCpltCallback:0000000000000000 HAL_ADC_ConvCpltCallback
-     /tmp/ccIF8h0i.s:558    .text.HAL_ADC_ConvHalfCpltCallback:0000000000000000 $t
-     /tmp/ccIF8h0i.s:566    .text.HAL_ADC_ConvHalfCpltCallback:0000000000000000 HAL_ADC_ConvHalfCpltCallback
-     /tmp/ccIF8h0i.s:573    .text.ADC_DMAHalfConvCplt:0000000000000000 $t
-     /tmp/ccIF8h0i.s:581    .text.ADC_DMAHalfConvCplt:0000000000000000 ADC_DMAHalfConvCplt
-     /tmp/ccIF8h0i.s:590    .text.HAL_ADC_LevelOutOfWindowCallback:0000000000000000 $t
-     /tmp/ccIF8h0i.s:598    .text.HAL_ADC_LevelOutOfWindowCallback:0000000000000000 HAL_ADC_LevelOutOfWindowCallback
-     /tmp/ccIF8h0i.s:605    .text.HAL_ADC_ErrorCallback:0000000000000000 $t
-     /tmp/ccIF8h0i.s:613    .text.HAL_ADC_ErrorCallback:0000000000000000 HAL_ADC_ErrorCallback
-     /tmp/ccIF8h0i.s:620    .text.HAL_ADC_IRQHandler:0000000000000000 $t
-     /tmp/ccIF8h0i.s:628    .text.HAL_ADC_IRQHandler:0000000000000000 HAL_ADC_IRQHandler
-     /tmp/ccIF8h0i.s:909    .text.HAL_ADC_IRQHandler:0000000000000238 $d
-     /tmp/ccIF8h0i.s:914    .text.ADC_DMAConvCplt:0000000000000000 $t
-     /tmp/ccIF8h0i.s:922    .text.ADC_DMAConvCplt:0000000000000000 ADC_DMAConvCplt
-     /tmp/ccIF8h0i.s:977    .text.ADC_DMAError:0000000000000000 $t
-     /tmp/ccIF8h0i.s:985    .text.ADC_DMAError:0000000000000000 ADC_DMAError
-     /tmp/ccIF8h0i.s:1000   .text.HAL_ADC_ConfigChannel:0000000000000000 $t
-     /tmp/ccIF8h0i.s:1008   .text.HAL_ADC_ConfigChannel:0000000000000000 HAL_ADC_ConfigChannel
-     /tmp/ccIF8h0i.s:1152   .text.HAL_ADC_ConfigChannel:0000000000000160 $d
-     /tmp/ccIF8h0i.s:1156   .text.HAL_ADC_ConfigChannel:0000000000000164 $t
-     /tmp/ccIF8h0i.s:1368   .text.HAL_ADC_ConfigChannel:0000000000000338 $d
-     /tmp/ccIF8h0i.s:1382   .text.HAL_ADC_ConfigChannel:0000000000000364 $t
-     /tmp/ccIF8h0i.s:1548   .text.HAL_ADC_ConfigChannel:000000000000049c $d
-     /tmp/ccIF8h0i.s:1551   .text.HAL_ADC_AnalogWDGConfig:0000000000000000 $t
-     /tmp/ccIF8h0i.s:1559   .text.HAL_ADC_AnalogWDGConfig:0000000000000000 HAL_ADC_AnalogWDGConfig
-     /tmp/ccIF8h0i.s:1876   .text.HAL_ADC_AnalogWDGConfig:0000000000000310 $d
-     /tmp/ccIF8h0i.s:1880   .text.HAL_ADC_GetState:0000000000000000 $t
-     /tmp/ccIF8h0i.s:1888   .text.HAL_ADC_GetState:0000000000000000 HAL_ADC_GetState
-     /tmp/ccIF8h0i.s:1896   .text.HAL_ADC_GetError:0000000000000000 $t
-     /tmp/ccIF8h0i.s:1904   .text.HAL_ADC_GetError:0000000000000000 HAL_ADC_GetError
-     /tmp/ccIF8h0i.s:1912   .text.ADC_ConversionStop:0000000000000000 $t
-     /tmp/ccIF8h0i.s:1920   .text.ADC_ConversionStop:0000000000000000 ADC_ConversionStop
-     /tmp/ccIF8h0i.s:2059   .text.ADC_ConversionStop:0000000000000104 $d
-     /tmp/ccIF8h0i.s:2062   .text.ADC_Enable:0000000000000000 $t
-     /tmp/ccIF8h0i.s:2070   .text.ADC_Enable:0000000000000000 ADC_Enable
-     /tmp/ccIF8h0i.s:2134   .text.ADC_Enable:0000000000000070 $d
-     /tmp/ccIF8h0i.s:2138   .text.HAL_ADC_Start:0000000000000000 $t
-     /tmp/ccIF8h0i.s:2146   .text.HAL_ADC_Start:0000000000000000 HAL_ADC_Start
-     /tmp/ccIF8h0i.s:2238   .text.HAL_ADC_Start:00000000000000cc $d
-     /tmp/ccIF8h0i.s:2243   .text.HAL_ADC_Start_IT:0000000000000000 $t
-ARM GAS  /tmp/ccIF8h0i.s 			page 52
+     /tmp/ccWjZ1wd.s:16     .text.HAL_ADC_MspInit:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:25     .text.HAL_ADC_MspInit:0000000000000000 HAL_ADC_MspInit
+     /tmp/ccWjZ1wd.s:32     .text.HAL_ADC_Init:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:40     .text.HAL_ADC_Init:0000000000000000 HAL_ADC_Init
+     /tmp/ccWjZ1wd.s:249    .text.HAL_ADC_Init:00000000000001b4 $d
+     /tmp/ccWjZ1wd.s:258    .text.HAL_ADC_MspDeInit:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:266    .text.HAL_ADC_MspDeInit:0000000000000000 HAL_ADC_MspDeInit
+     /tmp/ccWjZ1wd.s:273    .text.HAL_ADC_PollForConversion:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:281    .text.HAL_ADC_PollForConversion:0000000000000000 HAL_ADC_PollForConversion
+     /tmp/ccWjZ1wd.s:403    .text.HAL_ADC_PollForConversion:00000000000000f0 $d
+     /tmp/ccWjZ1wd.s:408    .text.HAL_ADC_PollForEvent:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:416    .text.HAL_ADC_PollForEvent:0000000000000000 HAL_ADC_PollForEvent
+     /tmp/ccWjZ1wd.s:526    .text.HAL_ADC_GetValue:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:534    .text.HAL_ADC_GetValue:0000000000000000 HAL_ADC_GetValue
+     /tmp/ccWjZ1wd.s:543    .text.HAL_ADC_ConvCpltCallback:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:551    .text.HAL_ADC_ConvCpltCallback:0000000000000000 HAL_ADC_ConvCpltCallback
+     /tmp/ccWjZ1wd.s:558    .text.HAL_ADC_ConvHalfCpltCallback:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:566    .text.HAL_ADC_ConvHalfCpltCallback:0000000000000000 HAL_ADC_ConvHalfCpltCallback
+     /tmp/ccWjZ1wd.s:573    .text.ADC_DMAHalfConvCplt:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:581    .text.ADC_DMAHalfConvCplt:0000000000000000 ADC_DMAHalfConvCplt
+     /tmp/ccWjZ1wd.s:590    .text.HAL_ADC_LevelOutOfWindowCallback:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:598    .text.HAL_ADC_LevelOutOfWindowCallback:0000000000000000 HAL_ADC_LevelOutOfWindowCallback
+     /tmp/ccWjZ1wd.s:605    .text.HAL_ADC_ErrorCallback:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:613    .text.HAL_ADC_ErrorCallback:0000000000000000 HAL_ADC_ErrorCallback
+     /tmp/ccWjZ1wd.s:620    .text.HAL_ADC_IRQHandler:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:628    .text.HAL_ADC_IRQHandler:0000000000000000 HAL_ADC_IRQHandler
+     /tmp/ccWjZ1wd.s:909    .text.HAL_ADC_IRQHandler:0000000000000238 $d
+     /tmp/ccWjZ1wd.s:914    .text.ADC_DMAConvCplt:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:922    .text.ADC_DMAConvCplt:0000000000000000 ADC_DMAConvCplt
+     /tmp/ccWjZ1wd.s:977    .text.ADC_DMAError:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:985    .text.ADC_DMAError:0000000000000000 ADC_DMAError
+     /tmp/ccWjZ1wd.s:1000   .text.HAL_ADC_ConfigChannel:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:1008   .text.HAL_ADC_ConfigChannel:0000000000000000 HAL_ADC_ConfigChannel
+     /tmp/ccWjZ1wd.s:1152   .text.HAL_ADC_ConfigChannel:0000000000000160 $d
+     /tmp/ccWjZ1wd.s:1156   .text.HAL_ADC_ConfigChannel:0000000000000164 $t
+     /tmp/ccWjZ1wd.s:1368   .text.HAL_ADC_ConfigChannel:0000000000000338 $d
+     /tmp/ccWjZ1wd.s:1382   .text.HAL_ADC_ConfigChannel:0000000000000364 $t
+     /tmp/ccWjZ1wd.s:1548   .text.HAL_ADC_ConfigChannel:000000000000049c $d
+     /tmp/ccWjZ1wd.s:1551   .text.HAL_ADC_AnalogWDGConfig:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:1559   .text.HAL_ADC_AnalogWDGConfig:0000000000000000 HAL_ADC_AnalogWDGConfig
+     /tmp/ccWjZ1wd.s:1876   .text.HAL_ADC_AnalogWDGConfig:0000000000000310 $d
+     /tmp/ccWjZ1wd.s:1880   .text.HAL_ADC_GetState:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:1888   .text.HAL_ADC_GetState:0000000000000000 HAL_ADC_GetState
+     /tmp/ccWjZ1wd.s:1896   .text.HAL_ADC_GetError:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:1904   .text.HAL_ADC_GetError:0000000000000000 HAL_ADC_GetError
+     /tmp/ccWjZ1wd.s:1912   .text.ADC_ConversionStop:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:1920   .text.ADC_ConversionStop:0000000000000000 ADC_ConversionStop
+     /tmp/ccWjZ1wd.s:2059   .text.ADC_ConversionStop:0000000000000104 $d
+     /tmp/ccWjZ1wd.s:2062   .text.ADC_Enable:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:2070   .text.ADC_Enable:0000000000000000 ADC_Enable
+     /tmp/ccWjZ1wd.s:2134   .text.ADC_Enable:0000000000000070 $d
+     /tmp/ccWjZ1wd.s:2138   .text.HAL_ADC_Start:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:2146   .text.HAL_ADC_Start:0000000000000000 HAL_ADC_Start
+     /tmp/ccWjZ1wd.s:2238   .text.HAL_ADC_Start:00000000000000cc $d
+     /tmp/ccWjZ1wd.s:2243   .text.HAL_ADC_Start_IT:0000000000000000 $t
+ARM GAS  /tmp/ccWjZ1wd.s 			page 52
 
 
-     /tmp/ccIF8h0i.s:2251   .text.HAL_ADC_Start_IT:0000000000000000 HAL_ADC_Start_IT
-     /tmp/ccIF8h0i.s:2389   .text.HAL_ADC_Start_IT:0000000000000138 $d
-     /tmp/ccIF8h0i.s:2394   .text.HAL_ADC_Start_DMA:0000000000000000 $t
-     /tmp/ccIF8h0i.s:2402   .text.HAL_ADC_Start_DMA:0000000000000000 HAL_ADC_Start_DMA
-     /tmp/ccIF8h0i.s:2498   .text.HAL_ADC_Start_DMA:00000000000000e0 $d
-     /tmp/ccIF8h0i.s:2506   .text.ADC_Disable:0000000000000000 $t
-     /tmp/ccIF8h0i.s:2514   .text.ADC_Disable:0000000000000000 ADC_Disable
-     /tmp/ccIF8h0i.s:2575   .text.HAL_ADC_DeInit:0000000000000000 $t
-     /tmp/ccIF8h0i.s:2583   .text.HAL_ADC_DeInit:0000000000000000 HAL_ADC_DeInit
-     /tmp/ccIF8h0i.s:2727   .text.HAL_ADC_DeInit:0000000000000140 $d
-     /tmp/ccIF8h0i.s:2740   .text.HAL_ADC_Stop:0000000000000000 $t
-     /tmp/ccIF8h0i.s:2748   .text.HAL_ADC_Stop:0000000000000000 HAL_ADC_Stop
-     /tmp/ccIF8h0i.s:2783   .text.HAL_ADC_Stop_IT:0000000000000000 $t
-     /tmp/ccIF8h0i.s:2791   .text.HAL_ADC_Stop_IT:0000000000000000 HAL_ADC_Stop_IT
-     /tmp/ccIF8h0i.s:2830   .text.HAL_ADC_Stop_DMA:0000000000000000 $t
-     /tmp/ccIF8h0i.s:2838   .text.HAL_ADC_Stop_DMA:0000000000000000 HAL_ADC_Stop_DMA
+     /tmp/ccWjZ1wd.s:2251   .text.HAL_ADC_Start_IT:0000000000000000 HAL_ADC_Start_IT
+     /tmp/ccWjZ1wd.s:2389   .text.HAL_ADC_Start_IT:0000000000000138 $d
+     /tmp/ccWjZ1wd.s:2394   .text.HAL_ADC_Start_DMA:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:2402   .text.HAL_ADC_Start_DMA:0000000000000000 HAL_ADC_Start_DMA
+     /tmp/ccWjZ1wd.s:2498   .text.HAL_ADC_Start_DMA:00000000000000e0 $d
+     /tmp/ccWjZ1wd.s:2506   .text.ADC_Disable:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:2514   .text.ADC_Disable:0000000000000000 ADC_Disable
+     /tmp/ccWjZ1wd.s:2575   .text.HAL_ADC_DeInit:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:2583   .text.HAL_ADC_DeInit:0000000000000000 HAL_ADC_DeInit
+     /tmp/ccWjZ1wd.s:2727   .text.HAL_ADC_DeInit:0000000000000140 $d
+     /tmp/ccWjZ1wd.s:2740   .text.HAL_ADC_Stop:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:2748   .text.HAL_ADC_Stop:0000000000000000 HAL_ADC_Stop
+     /tmp/ccWjZ1wd.s:2783   .text.HAL_ADC_Stop_IT:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:2791   .text.HAL_ADC_Stop_IT:0000000000000000 HAL_ADC_Stop_IT
+     /tmp/ccWjZ1wd.s:2830   .text.HAL_ADC_Stop_DMA:0000000000000000 $t
+     /tmp/ccWjZ1wd.s:2838   .text.HAL_ADC_Stop_DMA:0000000000000000 HAL_ADC_Stop_DMA
 
 UNDEFINED SYMBOLS
 SystemCoreClock

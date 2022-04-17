@@ -239,6 +239,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
         recv2uart();
         bitcnt = 0;
         byte_state = 1;
+        LD2_GPIO_Port->ODR &= (~LD2_Pin);
         return;
       }
       last_data = data;
