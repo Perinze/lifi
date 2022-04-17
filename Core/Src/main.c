@@ -101,12 +101,11 @@ int main(void)
   MX_ADC3_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-  // HAL_Delay(3000);
-  //HAL_ADCEx_Calibration_Start(&hadc3);
+  HAL_Delay(2000);
   LD0_GPIO_Port->ODR |= (LD0_Pin);
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
   HAL_TIM_Base_Start_IT(&htim2);
-  HAL_Delay(3000);
+  //HAL_Delay(3000);
   //__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 500);
 
   // TIM2->CCR1 = 0xffffffff;

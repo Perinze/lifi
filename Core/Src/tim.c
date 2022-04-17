@@ -150,14 +150,14 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
 /* USER CODE BEGIN 1 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-  static uint8_t flag = 1;
-  flag ^= 1;
   /*
+  static uint8_t bit = 1;
+  bit ^= 1;
+  */
   static uint8_t tmp;
   tmp = tmp ? tmp : TESTDATA;
   uint8_t bit = tmp & 1;
-  */
-  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, (flag ? LOWPULSE: HIGHPULSE));
-  // tmp >>= 1;
+  tmp >>= 1;
+  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, (bit ? LOWPULSE: HIGHPULSE));
 }
 /* USER CODE END 1 */
