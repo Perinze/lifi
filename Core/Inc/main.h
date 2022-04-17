@@ -51,11 +51,6 @@ extern "C" {
 #define HIGHBIT 0x10000
 
 #define ARR 9999
-/*
-#define LOWPULSE ((ARR+1) >> 2)
-#define HIGHPULSE (LOWPULSE << 1 + LOWPULSE)
-#define PULSEDIV (LOWPULSE << 1)
-*/
 #define LOWPULSE 2500
 #define HIGHPULSE 7500
 #define PULSEDIV 5000

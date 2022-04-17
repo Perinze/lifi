@@ -188,17 +188,15 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
       sprintf(buf, "%d\r\n", bit);
       HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
       
-      //data = ((data << 1) | bit);
+      data = ((data << 1) | bit);
     }
     
-    /*
     if (data & HIGHBIT) {
       char buf[8] = {0};
       sprintf(buf, "%d\r\n", data);
       HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
       data = 0;
     }
-    */
     
     // HAL_ADC_Start_IT(&hadc3);
 }
