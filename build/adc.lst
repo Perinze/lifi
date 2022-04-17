@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccyHDPKh.s 			page 1
+ARM GAS  /tmp/ccyPy13M.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccyHDPKh.s 			page 1
   28:Core/Src/adc.c **** /* USER CODE END 0 */
   29:Core/Src/adc.c **** 
   30:Core/Src/adc.c **** ADC_HandleTypeDef hadc3;
-ARM GAS  /tmp/ccyHDPKh.s 			page 2
+ARM GAS  /tmp/ccyPy13M.s 			page 2
 
 
   31:Core/Src/adc.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccyHDPKh.s 			page 1
   62 001c C360     		str	r3, [r0, #12]
   52:Core/Src/adc.c ****   hadc3.Init.ScanConvMode = ADC_SCAN_DISABLE;
   63              		.loc 1 52 3 is_stmt 1 view .LVU11
-ARM GAS  /tmp/ccyHDPKh.s 			page 3
+ARM GAS  /tmp/ccyPy13M.s 			page 3
 
 
   64              		.loc 1 52 27 is_stmt 0 view .LVU12
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccyHDPKh.s 			page 1
   66:Core/Src/adc.c ****   }
   67:Core/Src/adc.c **** 
   68:Core/Src/adc.c ****   /** Configure Regular Channel
-ARM GAS  /tmp/ccyHDPKh.s 			page 4
+ARM GAS  /tmp/ccyPy13M.s 			page 4
 
 
   69:Core/Src/adc.c ****   */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccyHDPKh.s 			page 1
  143 0066 5DF804FB 		ldr	pc, [sp], #4
  144              	.L5:
  145              	.LCFI3:
-ARM GAS  /tmp/ccyHDPKh.s 			page 5
+ARM GAS  /tmp/ccyPy13M.s 			page 5
 
 
  146              		.cfi_restore_state
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccyHDPKh.s 			page 1
  195 000a 2691     		str	r1, [sp, #152]
  196 000c 2791     		str	r1, [sp, #156]
  197 000e 2891     		str	r1, [sp, #160]
-ARM GAS  /tmp/ccyHDPKh.s 			page 6
+ARM GAS  /tmp/ccyPy13M.s 			page 6
 
 
  198 0010 2991     		str	r1, [sp, #164]
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccyHDPKh.s 			page 1
  126:Core/Src/adc.c ****     HAL_NVIC_SetPriority(ADC3_IRQn, 0, 0);
  127:Core/Src/adc.c ****     HAL_NVIC_EnableIRQ(ADC3_IRQn);
  128:Core/Src/adc.c ****   /* USER CODE BEGIN ADC3_MspInit 1 */
-ARM GAS  /tmp/ccyHDPKh.s 			page 7
+ARM GAS  /tmp/ccyPy13M.s 			page 7
 
 
  129:Core/Src/adc.c **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccyHDPKh.s 			page 1
  252              		.loc 1 105 36 is_stmt 0 view .LVU79
  253 0042 0893     		str	r3, [sp, #32]
  106:Core/Src/adc.c ****     PeriphClkInit.PLLSAI1.PLLSAI1ClockOut = RCC_PLLSAI1_ADC1CLK;
-ARM GAS  /tmp/ccyHDPKh.s 			page 8
+ARM GAS  /tmp/ccyPy13M.s 			page 8
 
 
  254              		.loc 1 106 5 is_stmt 1 view .LVU80
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccyHDPKh.s 			page 1
  292              		.loc 1 116 5 view .LVU96
  293 0070 DB6C     		ldr	r3, [r3, #76]
  294 0072 03F00403 		and	r3, r3, #4
-ARM GAS  /tmp/ccyHDPKh.s 			page 9
+ARM GAS  /tmp/ccyPy13M.s 			page 9
 
 
  295 0076 0293     		str	r3, [sp, #8]
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccyHDPKh.s 			page 1
  336 00a4 D6E7     		b	.L11
  337              	.L16:
  338 00a6 00BF     		.align	2
-ARM GAS  /tmp/ccyHDPKh.s 			page 10
+ARM GAS  /tmp/ccyPy13M.s 			page 10
 
 
  339              	.L15:
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccyHDPKh.s 			page 1
  152:Core/Src/adc.c ****   /* USER CODE BEGIN ADC3_MspDeInit 1 */
  153:Core/Src/adc.c **** 
  154:Core/Src/adc.c ****   /* USER CODE END ADC3_MspDeInit 1 */
-ARM GAS  /tmp/ccyHDPKh.s 			page 11
+ARM GAS  /tmp/ccyPy13M.s 			page 11
 
 
  155:Core/Src/adc.c ****   }
@@ -658,383 +658,316 @@ ARM GAS  /tmp/ccyHDPKh.s 			page 1
  160:Core/Src/adc.c **** {
  422              		.loc 1 160 1 is_stmt 1 view -0
  423              		.cfi_startproc
-ARM GAS  /tmp/ccyHDPKh.s 			page 12
+ARM GAS  /tmp/ccyPy13M.s 			page 12
 
 
  424              		@ args = 0, pretend = 0, frame = 8
  425              		@ frame_needed = 0, uses_anonymous_args = 0
  426              		.loc 1 160 1 is_stmt 0 view .LVU123
- 427 0000 10B5     		push	{r4, lr}
+ 427 0000 00B5     		push	{lr}
  428              	.LCFI9:
- 429              		.cfi_def_cfa_offset 8
- 430              		.cfi_offset 4, -8
- 431              		.cfi_offset 14, -4
- 432 0002 82B0     		sub	sp, sp, #8
- 433              	.LCFI10:
- 434              		.cfi_def_cfa_offset 16
+ 429              		.cfi_def_cfa_offset 4
+ 430              		.cfi_offset 14, -4
+ 431 0002 83B0     		sub	sp, sp, #12
+ 432              	.LCFI10:
+ 433              		.cfi_def_cfa_offset 16
  161:Core/Src/adc.c ****     uint32_t ad_res = HAL_ADC_GetValue(&hadc3);
- 435              		.loc 1 161 5 is_stmt 1 view .LVU124
- 436              		.loc 1 161 23 is_stmt 0 view .LVU125
- 437 0004 3248     		ldr	r0, .L32
- 438              	.LVL23:
- 439              		.loc 1 161 23 view .LVU126
- 440 0006 FFF7FEFF 		bl	HAL_ADC_GetValue
- 441              	.LVL24:
+ 434              		.loc 1 161 5 is_stmt 1 view .LVU124
+ 435              		.loc 1 161 23 is_stmt 0 view .LVU125
+ 436 0004 2548     		ldr	r0, .L30
+ 437              	.LVL23:
+ 438              		.loc 1 161 23 view .LVU126
+ 439 0006 FFF7FEFF 		bl	HAL_ADC_GetValue
+ 440              	.LVL24:
  162:Core/Src/adc.c ****     static int start;
- 442              		.loc 1 162 5 is_stmt 1 view .LVU127
+ 441              		.loc 1 162 5 is_stmt 1 view .LVU127
  163:Core/Src/adc.c ****     static int end;
- 443              		.loc 1 163 5 view .LVU128
+ 442              		.loc 1 163 5 view .LVU128
  164:Core/Src/adc.c ****     /*
  165:Core/Src/adc.c ****       0 idle
  166:Core/Src/adc.c ****       1 wait for posedge
  167:Core/Src/adc.c ****       2 wait for negedge
  168:Core/Src/adc.c ****     */
  169:Core/Src/adc.c ****     static int state = 0;
- 444              		.loc 1 169 5 view .LVU129
- 170:Core/Src/adc.c ****     static int data = 0;
- 445              		.loc 1 170 5 view .LVU130
+ 443              		.loc 1 169 5 view .LVU129
+ 170:Core/Src/adc.c ****     static uint32_t data = 0;
+ 444              		.loc 1 170 5 view .LVU130
  171:Core/Src/adc.c **** 
  172:Core/Src/adc.c ****     if (!state && ad_res > LIGHTTH) {
- 446              		.loc 1 172 5 view .LVU131
- 447              		.loc 1 172 9 is_stmt 0 view .LVU132
- 448 000a 324B     		ldr	r3, .L32+4
- 449 000c 1B68     		ldr	r3, [r3]
- 450              		.loc 1 172 8 view .LVU133
- 451 000e 5BB9     		cbnz	r3, .L24
- 452              		.loc 1 172 16 discriminator 1 view .LVU134
- 453 0010 40F6C413 		movw	r3, #2500
- 454 0014 9842     		cmp	r0, r3
- 455 0016 07D9     		bls	.L24
+ 445              		.loc 1 172 5 view .LVU131
+ 446              		.loc 1 172 9 is_stmt 0 view .LVU132
+ 447 000a 254B     		ldr	r3, .L30+4
+ 448 000c 1B68     		ldr	r3, [r3]
+ 449              		.loc 1 172 8 view .LVU133
+ 450 000e 5BB9     		cbnz	r3, .L24
+ 451              		.loc 1 172 16 discriminator 1 view .LVU134
+ 452 0010 40F6C413 		movw	r3, #2500
+ 453 0014 9842     		cmp	r0, r3
+ 454 0016 07D9     		bls	.L24
  173:Core/Src/adc.c ****       state = 2;
- 456              		.loc 1 173 7 is_stmt 1 view .LVU135
- 457              		.loc 1 173 13 is_stmt 0 view .LVU136
- 458 0018 2E4B     		ldr	r3, .L32+4
- 459 001a 0222     		movs	r2, #2
- 460 001c 1A60     		str	r2, [r3]
+ 455              		.loc 1 173 7 is_stmt 1 view .LVU135
+ 456              		.loc 1 173 13 is_stmt 0 view .LVU136
+ 457 0018 214B     		ldr	r3, .L30+4
+ 458 001a 0222     		movs	r2, #2
+ 459 001c 1A60     		str	r2, [r3]
  174:Core/Src/adc.c ****       start = __HAL_TIM_GetCounter(&htim2);
- 461              		.loc 1 174 7 is_stmt 1 view .LVU137
- 462              		.loc 1 174 15 is_stmt 0 view .LVU138
- 463 001e 2E4B     		ldr	r3, .L32+8
- 464 0020 1B68     		ldr	r3, [r3]
- 465 0022 5A6A     		ldr	r2, [r3, #36]
- 466              		.loc 1 174 13 view .LVU139
-ARM GAS  /tmp/ccyHDPKh.s 			page 13
+ 460              		.loc 1 174 7 is_stmt 1 view .LVU137
+ 461              		.loc 1 174 15 is_stmt 0 view .LVU138
+ 462 001e 214B     		ldr	r3, .L30+8
+ 463 0020 1B68     		ldr	r3, [r3]
+ 464 0022 5A6A     		ldr	r2, [r3, #36]
+ 465              		.loc 1 174 13 view .LVU139
+ 466 0024 204B     		ldr	r3, .L30+12
+ARM GAS  /tmp/ccyPy13M.s 			page 13
 
 
- 467 0024 2D4B     		ldr	r3, .L32+12
- 468 0026 1A60     		str	r2, [r3]
- 469              	.L24:
+ 467 0026 1A60     		str	r2, [r3]
+ 468              	.L24:
  175:Core/Src/adc.c ****     }
  176:Core/Src/adc.c ****     if (state == 1 && ad_res > LIGHTTH) {
- 470              		.loc 1 176 5 is_stmt 1 view .LVU140
- 471              		.loc 1 176 15 is_stmt 0 view .LVU141
- 472 0028 2A4B     		ldr	r3, .L32+4
- 473 002a 1B68     		ldr	r3, [r3]
- 474              		.loc 1 176 8 view .LVU142
- 475 002c 012B     		cmp	r3, #1
- 476 002e 0AD0     		beq	.L29
- 477              	.L25:
+ 469              		.loc 1 176 5 is_stmt 1 view .LVU140
+ 470              		.loc 1 176 15 is_stmt 0 view .LVU141
+ 471 0028 1D4B     		ldr	r3, .L30+4
+ 472 002a 1B68     		ldr	r3, [r3]
+ 473              		.loc 1 176 8 view .LVU142
+ 474 002c 012B     		cmp	r3, #1
+ 475 002e 06D0     		beq	.L28
+ 476              	.L25:
  177:Core/Src/adc.c ****       state = 2;
  178:Core/Src/adc.c ****       start = __HAL_TIM_GetCounter(&htim2);
  179:Core/Src/adc.c ****     }
  180:Core/Src/adc.c ****     if (state == 2 && ad_res < LIGHTTH) {
- 478              		.loc 1 180 5 is_stmt 1 view .LVU143
- 479              		.loc 1 180 15 is_stmt 0 view .LVU144
- 480 0030 284B     		ldr	r3, .L32+4
- 481 0032 1B68     		ldr	r3, [r3]
- 482              		.loc 1 180 8 view .LVU145
- 483 0034 022B     		cmp	r3, #2
- 484 0036 13D0     		beq	.L30
- 485              	.LVL25:
- 486              	.L26:
+ 477              		.loc 1 180 5 is_stmt 1 view .LVU143
+ 478              		.loc 1 180 15 is_stmt 0 view .LVU144
+ 479 0030 1B4B     		ldr	r3, .L30+4
+ 480 0032 1B68     		ldr	r3, [r3]
+ 481              		.loc 1 180 8 view .LVU145
+ 482 0034 022B     		cmp	r3, #2
+ 483 0036 0FD0     		beq	.L29
+ 484              	.LVL25:
+ 485              	.L23:
  181:Core/Src/adc.c ****       state = 1;
  182:Core/Src/adc.c ****       end = __HAL_TIM_GetCounter(&htim2);
  183:Core/Src/adc.c ****       int pulse = end - start;
- 184:Core/Src/adc.c ****       int bit = pulse > PULSEDIV ? 1 : 0;
+ 184:Core/Src/adc.c ****       int bit = pulse > PULSEDIV ? 0 : 1;
  185:Core/Src/adc.c **** 
- 186:Core/Src/adc.c ****       
- 187:Core/Src/adc.c ****       char buf[8] = {0};
- 188:Core/Src/adc.c ****       sprintf(buf, "%d\r\n", bit);
- 189:Core/Src/adc.c ****       HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
- 190:Core/Src/adc.c ****       
- 191:Core/Src/adc.c ****       data = ((data << 1) | bit);
- 192:Core/Src/adc.c ****     }
- 193:Core/Src/adc.c ****     
+ 186:Core/Src/adc.c ****       char buf[8] = {0};
+ 187:Core/Src/adc.c ****       sprintf(buf, "%d\r\n", bit);
+ 188:Core/Src/adc.c ****       HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
+ 189:Core/Src/adc.c ****       
+ 190:Core/Src/adc.c ****       // data = ((data << 1) | bit);
+ 191:Core/Src/adc.c ****     }
+ 192:Core/Src/adc.c ****     
+ 193:Core/Src/adc.c ****     /*
  194:Core/Src/adc.c ****     if (data & HIGHBIT) {
- 487              		.loc 1 194 5 is_stmt 1 view .LVU146
- 488              		.loc 1 194 14 is_stmt 0 view .LVU147
- 489 0038 294B     		ldr	r3, .L32+16
- 490 003a 1A68     		ldr	r2, [r3]
- 491              		.loc 1 194 8 view .LVU148
- 492 003c 12F4803F 		tst	r2, #65536
- 493 0040 36D1     		bne	.L31
- 494              	.L23:
  195:Core/Src/adc.c ****       char buf[8] = {0};
  196:Core/Src/adc.c ****       sprintf(buf, "%d\r\n", data);
- 197:Core/Src/adc.c ****       HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
- 198:Core/Src/adc.c ****       data = 0;
- 199:Core/Src/adc.c ****     }
- 200:Core/Src/adc.c ****     
- 201:Core/Src/adc.c ****     // HAL_ADC_Start_IT(&hadc3);
- 202:Core/Src/adc.c **** }
- 495              		.loc 1 202 1 view .LVU149
-ARM GAS  /tmp/ccyHDPKh.s 			page 14
+ 197:Core/Src/adc.c ****       data &= 0x11111;
+ 198:Core/Src/adc.c ****       HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
+ 199:Core/Src/adc.c ****       // data = 0;
+ 200:Core/Src/adc.c ****     }
+ 201:Core/Src/adc.c ****     */
+ 202:Core/Src/adc.c ****     
+ 203:Core/Src/adc.c ****     // HAL_ADC_Start_IT(&hadc3);
+ 204:Core/Src/adc.c **** }
+ 486              		.loc 1 204 1 view .LVU146
+ 487 0038 03B0     		add	sp, sp, #12
+ 488              	.LCFI11:
+ 489              		.cfi_remember_state
+ 490              		.cfi_def_cfa_offset 4
+ 491              		@ sp needed
+ 492 003a 5DF804FB 		ldr	pc, [sp], #4
+ 493              	.LVL26:
+ARM GAS  /tmp/ccyPy13M.s 			page 14
 
 
- 496 0042 02B0     		add	sp, sp, #8
- 497              	.LCFI11:
- 498              		.cfi_remember_state
- 499              		.cfi_def_cfa_offset 8
- 500              		@ sp needed
- 501 0044 10BD     		pop	{r4, pc}
- 502              	.LVL26:
- 503              	.L29:
- 504              	.LCFI12:
- 505              		.cfi_restore_state
+ 494              	.L28:
+ 495              	.LCFI12:
+ 496              		.cfi_restore_state
  176:Core/Src/adc.c ****       state = 2;
- 506              		.loc 1 176 20 discriminator 1 view .LVU150
- 507 0046 40F6C413 		movw	r3, #2500
- 508 004a 9842     		cmp	r0, r3
- 509 004c F0D9     		bls	.L25
- 177:Core/Src/adc.c ****       start = __HAL_TIM_GetCounter(&htim2);
- 510              		.loc 1 177 7 is_stmt 1 view .LVU151
- 177:Core/Src/adc.c ****       start = __HAL_TIM_GetCounter(&htim2);
- 511              		.loc 1 177 13 is_stmt 0 view .LVU152
- 512 004e 214B     		ldr	r3, .L32+4
- 513 0050 0222     		movs	r2, #2
- 514 0052 1A60     		str	r2, [r3]
+ 497              		.loc 1 176 20 discriminator 1 view .LVU147
+ 498 003e 40F6C413 		movw	r3, #2500
+ 499 0042 9842     		cmp	r0, r3
+ 500 0044 F4D9     		bls	.L25
+ 177:Core/Src/adc.c ****       state = 2;
+ 501              		.loc 1 177 7 is_stmt 1 view .LVU148
+ 177:Core/Src/adc.c ****       state = 2;
+ 502              		.loc 1 177 13 is_stmt 0 view .LVU149
+ 503 0046 164B     		ldr	r3, .L30+4
+ 504 0048 0222     		movs	r2, #2
+ 505 004a 1A60     		str	r2, [r3]
  178:Core/Src/adc.c ****     }
- 515              		.loc 1 178 7 is_stmt 1 view .LVU153
+ 506              		.loc 1 178 7 is_stmt 1 view .LVU150
  178:Core/Src/adc.c ****     }
- 516              		.loc 1 178 15 is_stmt 0 view .LVU154
- 517 0054 204B     		ldr	r3, .L32+8
- 518 0056 1B68     		ldr	r3, [r3]
- 519 0058 5A6A     		ldr	r2, [r3, #36]
+ 507              		.loc 1 178 15 is_stmt 0 view .LVU151
+ 508 004c 154B     		ldr	r3, .L30+8
+ 509 004e 1B68     		ldr	r3, [r3]
+ 510 0050 5A6A     		ldr	r2, [r3, #36]
  178:Core/Src/adc.c ****     }
- 520              		.loc 1 178 13 view .LVU155
- 521 005a 204B     		ldr	r3, .L32+12
- 522 005c 1A60     		str	r2, [r3]
- 523 005e E7E7     		b	.L25
- 524              	.L30:
+ 511              		.loc 1 178 13 view .LVU152
+ 512 0052 154B     		ldr	r3, .L30+12
+ 513 0054 1A60     		str	r2, [r3]
+ 514 0056 EBE7     		b	.L25
+ 515              	.L29:
  180:Core/Src/adc.c ****       state = 1;
- 525              		.loc 1 180 20 discriminator 1 view .LVU156
- 526 0060 40F6C313 		movw	r3, #2499
- 527 0064 9842     		cmp	r0, r3
- 528 0066 E7D8     		bhi	.L26
- 529              	.LBB4:
+ 516              		.loc 1 180 20 discriminator 1 view .LVU153
+ 517 0058 40F6C313 		movw	r3, #2499
+ 518 005c 9842     		cmp	r0, r3
+ 519 005e EBD8     		bhi	.L23
+ 520              	.LBB4:
  181:Core/Src/adc.c ****       end = __HAL_TIM_GetCounter(&htim2);
- 530              		.loc 1 181 7 is_stmt 1 view .LVU157
+ 521              		.loc 1 181 7 is_stmt 1 view .LVU154
  181:Core/Src/adc.c ****       end = __HAL_TIM_GetCounter(&htim2);
- 531              		.loc 1 181 13 is_stmt 0 view .LVU158
- 532 0068 1A4B     		ldr	r3, .L32+4
- 533 006a 0122     		movs	r2, #1
- 534 006c 1A60     		str	r2, [r3]
+ 522              		.loc 1 181 13 is_stmt 0 view .LVU155
+ 523 0060 0F4B     		ldr	r3, .L30+4
+ 524 0062 0122     		movs	r2, #1
+ 525 0064 1A60     		str	r2, [r3]
  182:Core/Src/adc.c ****       int pulse = end - start;
- 535              		.loc 1 182 7 is_stmt 1 view .LVU159
+ 526              		.loc 1 182 7 is_stmt 1 view .LVU156
  182:Core/Src/adc.c ****       int pulse = end - start;
- 536              		.loc 1 182 13 is_stmt 0 view .LVU160
- 537 006e 1A4B     		ldr	r3, .L32+8
- 538 0070 1B68     		ldr	r3, [r3]
- 539 0072 5C6A     		ldr	r4, [r3, #36]
+ 527              		.loc 1 182 13 is_stmt 0 view .LVU157
+ 528 0066 0F4B     		ldr	r3, .L30+8
+ 529 0068 1B68     		ldr	r3, [r3]
+ 530 006a 5A6A     		ldr	r2, [r3, #36]
  182:Core/Src/adc.c ****       int pulse = end - start;
- 540              		.loc 1 182 11 view .LVU161
-ARM GAS  /tmp/ccyHDPKh.s 			page 15
+ 531              		.loc 1 182 11 view .LVU158
+ 532 006c 0F4B     		ldr	r3, .L30+16
+ 533 006e 1A60     		str	r2, [r3]
+ 183:Core/Src/adc.c ****       int bit = pulse > PULSEDIV ? 0 : 1;
+ 534              		.loc 1 183 7 is_stmt 1 view .LVU159
+ 183:Core/Src/adc.c ****       int bit = pulse > PULSEDIV ? 0 : 1;
+ 535              		.loc 1 183 23 is_stmt 0 view .LVU160
+ 536 0070 0D4B     		ldr	r3, .L30+12
+ARM GAS  /tmp/ccyPy13M.s 			page 15
 
 
- 541 0074 1B4B     		ldr	r3, .L32+20
- 542 0076 1C60     		str	r4, [r3]
- 183:Core/Src/adc.c ****       int bit = pulse > PULSEDIV ? 1 : 0;
- 543              		.loc 1 183 7 is_stmt 1 view .LVU162
- 183:Core/Src/adc.c ****       int bit = pulse > PULSEDIV ? 1 : 0;
- 544              		.loc 1 183 23 is_stmt 0 view .LVU163
- 545 0078 184B     		ldr	r3, .L32+12
- 546 007a 1B68     		ldr	r3, [r3]
- 183:Core/Src/adc.c ****       int bit = pulse > PULSEDIV ? 1 : 0;
- 547              		.loc 1 183 11 view .LVU164
- 548 007c E41A     		subs	r4, r4, r3
- 549              	.LVL27:
+ 537 0072 1B68     		ldr	r3, [r3]
+ 183:Core/Src/adc.c ****       int bit = pulse > PULSEDIV ? 0 : 1;
+ 538              		.loc 1 183 11 view .LVU161
+ 539 0074 D21A     		subs	r2, r2, r3
+ 540              	.LVL27:
  184:Core/Src/adc.c **** 
- 550              		.loc 1 184 7 is_stmt 1 view .LVU165
- 184:Core/Src/adc.c **** 
- 551              		.loc 1 184 38 is_stmt 0 view .LVU166
- 552 007e 41F28833 		movw	r3, #5000
- 553 0082 9C42     		cmp	r4, r3
- 554 0084 D4BF     		ite	le
- 555 0086 0024     		movle	r4, #0
- 556              	.LVL28:
- 184:Core/Src/adc.c **** 
- 557              		.loc 1 184 38 view .LVU167
- 558 0088 0124     		movgt	r4, #1
- 559              	.LVL29:
- 187:Core/Src/adc.c ****       sprintf(buf, "%d\r\n", bit);
- 560              		.loc 1 187 7 is_stmt 1 view .LVU168
- 187:Core/Src/adc.c ****       sprintf(buf, "%d\r\n", bit);
- 561              		.loc 1 187 12 is_stmt 0 view .LVU169
- 562 008a 0023     		movs	r3, #0
- 563 008c 0093     		str	r3, [sp]
- 564 008e 0193     		str	r3, [sp, #4]
- 188:Core/Src/adc.c ****       HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
- 565              		.loc 1 188 7 is_stmt 1 view .LVU170
- 566 0090 2246     		mov	r2, r4
- 567 0092 1549     		ldr	r1, .L32+24
- 568 0094 6846     		mov	r0, sp
- 569              	.LVL30:
- 188:Core/Src/adc.c ****       HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
- 570              		.loc 1 188 7 is_stmt 0 view .LVU171
- 571 0096 FFF7FEFF 		bl	sprintf
- 572              	.LVL31:
- 189:Core/Src/adc.c ****       
- 573              		.loc 1 189 7 is_stmt 1 view .LVU172
- 574 009a 0822     		movs	r2, #8
- 575 009c 6946     		mov	r1, sp
- 576 009e 1348     		ldr	r0, .L32+28
- 577 00a0 FFF7FEFF 		bl	HAL_UART_Transmit_IT
- 578              	.LVL32:
- 191:Core/Src/adc.c ****     }
- 579              		.loc 1 191 7 view .LVU173
- 191:Core/Src/adc.c ****     }
- 580              		.loc 1 191 21 is_stmt 0 view .LVU174
- 581 00a4 0E4B     		ldr	r3, .L32+16
- 582 00a6 1A68     		ldr	r2, [r3]
- 191:Core/Src/adc.c ****     }
- 583              		.loc 1 191 27 view .LVU175
-ARM GAS  /tmp/ccyHDPKh.s 			page 16
+ 541              		.loc 1 184 7 is_stmt 1 view .LVU162
+ 186:Core/Src/adc.c ****       sprintf(buf, "%d\r\n", bit);
+ 542              		.loc 1 186 7 view .LVU163
+ 186:Core/Src/adc.c ****       sprintf(buf, "%d\r\n", bit);
+ 543              		.loc 1 186 12 is_stmt 0 view .LVU164
+ 544 0076 0023     		movs	r3, #0
+ 545 0078 0093     		str	r3, [sp]
+ 546 007a 0193     		str	r3, [sp, #4]
+ 187:Core/Src/adc.c ****       HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
+ 547              		.loc 1 187 7 is_stmt 1 view .LVU165
+ 548 007c 41F28833 		movw	r3, #5000
+ 549 0080 9A42     		cmp	r2, r3
+ 550 0082 CCBF     		ite	gt
+ 551 0084 0022     		movgt	r2, #0
+ 552              	.LVL28:
+ 187:Core/Src/adc.c ****       HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
+ 553              		.loc 1 187 7 is_stmt 0 view .LVU166
+ 554 0086 0122     		movle	r2, #1
+ 555 0088 0949     		ldr	r1, .L30+20
+ 556 008a 6846     		mov	r0, sp
+ 557              	.LVL29:
+ 187:Core/Src/adc.c ****       HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
+ 558              		.loc 1 187 7 view .LVU167
+ 559 008c FFF7FEFF 		bl	sprintf
+ 560              	.LVL30:
+ 188:Core/Src/adc.c ****       
+ 561              		.loc 1 188 7 is_stmt 1 view .LVU168
+ 562 0090 0822     		movs	r2, #8
+ 563 0092 6946     		mov	r1, sp
+ 564 0094 0748     		ldr	r0, .L30+24
+ 565 0096 FFF7FEFF 		bl	HAL_UART_Transmit_IT
+ 566              	.LVL31:
+ 567              	.LBE4:
+ 568              		.loc 1 204 1 is_stmt 0 view .LVU169
+ 569 009a CDE7     		b	.L23
+ 570              	.L31:
+ 571              		.align	2
+ 572              	.L30:
+ 573 009c 00000000 		.word	.LANCHOR0
+ 574 00a0 00000000 		.word	.LANCHOR1
+ 575 00a4 00000000 		.word	htim2
+ 576 00a8 00000000 		.word	.LANCHOR2
+ 577 00ac 00000000 		.word	.LANCHOR3
+ 578 00b0 00000000 		.word	.LC0
+ 579 00b4 00000000 		.word	huart2
+ 580              		.cfi_endproc
+ 581              	.LFE323:
+ 583              		.global	hadc3
+ 584              		.section	.bss.end.0,"aw",%nobits
+ 585              		.align	2
+ 586              		.set	.LANCHOR3,. + 0
+ARM GAS  /tmp/ccyPy13M.s 			page 16
 
 
- 584 00a8 44EA4204 		orr	r4, r4, r2, lsl #1
- 585              	.LVL33:
- 191:Core/Src/adc.c ****     }
- 586              		.loc 1 191 12 view .LVU176
- 587 00ac 1C60     		str	r4, [r3]
- 588 00ae C3E7     		b	.L26
- 589              	.L31:
- 191:Core/Src/adc.c ****     }
- 590              		.loc 1 191 12 view .LVU177
- 591              	.LBE4:
- 592              	.LBB5:
- 195:Core/Src/adc.c ****       sprintf(buf, "%d\r\n", data);
- 593              		.loc 1 195 7 is_stmt 1 view .LVU178
- 195:Core/Src/adc.c ****       sprintf(buf, "%d\r\n", data);
- 594              		.loc 1 195 12 is_stmt 0 view .LVU179
- 595 00b0 0024     		movs	r4, #0
- 596 00b2 0094     		str	r4, [sp]
- 597 00b4 0194     		str	r4, [sp, #4]
- 196:Core/Src/adc.c ****       HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
- 598              		.loc 1 196 7 is_stmt 1 view .LVU180
- 599 00b6 0C49     		ldr	r1, .L32+24
- 600 00b8 6846     		mov	r0, sp
- 601 00ba FFF7FEFF 		bl	sprintf
- 602              	.LVL34:
- 197:Core/Src/adc.c ****       data = 0;
- 603              		.loc 1 197 7 view .LVU181
- 604 00be 0822     		movs	r2, #8
- 605 00c0 6946     		mov	r1, sp
- 606 00c2 0A48     		ldr	r0, .L32+28
- 607 00c4 FFF7FEFF 		bl	HAL_UART_Transmit_IT
- 608              	.LVL35:
- 198:Core/Src/adc.c ****     }
- 609              		.loc 1 198 7 view .LVU182
- 198:Core/Src/adc.c ****     }
- 610              		.loc 1 198 12 is_stmt 0 view .LVU183
- 611 00c8 054B     		ldr	r3, .L32+16
- 612 00ca 1C60     		str	r4, [r3]
- 613              	.LBE5:
- 614              		.loc 1 202 1 view .LVU184
- 615 00cc B9E7     		b	.L23
- 616              	.L33:
- 617 00ce 00BF     		.align	2
- 618              	.L32:
- 619 00d0 00000000 		.word	.LANCHOR0
- 620 00d4 00000000 		.word	.LANCHOR1
- 621 00d8 00000000 		.word	htim2
- 622 00dc 00000000 		.word	.LANCHOR2
- 623 00e0 00000000 		.word	.LANCHOR4
- 624 00e4 00000000 		.word	.LANCHOR3
- 625 00e8 00000000 		.word	.LC0
- 626 00ec 00000000 		.word	huart2
- 627              		.cfi_endproc
- 628              	.LFE323:
- 630              		.global	hadc3
- 631              		.section	.bss.data.0,"aw",%nobits
- 632              		.align	2
- 633              		.set	.LANCHOR4,. + 0
-ARM GAS  /tmp/ccyHDPKh.s 			page 17
-
-
- 636              	data.0:
- 637 0000 00000000 		.space	4
- 638              		.section	.bss.end.1,"aw",%nobits
- 639              		.align	2
- 640              		.set	.LANCHOR3,. + 0
- 643              	end.1:
- 644 0000 00000000 		.space	4
- 645              		.section	.bss.hadc3,"aw",%nobits
- 646              		.align	2
- 647              		.set	.LANCHOR0,. + 0
- 650              	hadc3:
- 651 0000 00000000 		.space	100
- 651      00000000 
- 651      00000000 
- 651      00000000 
- 651      00000000 
- 652              		.section	.bss.start.2,"aw",%nobits
- 653              		.align	2
- 654              		.set	.LANCHOR2,. + 0
- 657              	start.2:
- 658 0000 00000000 		.space	4
- 659              		.section	.bss.state.3,"aw",%nobits
- 660              		.align	2
- 661              		.set	.LANCHOR1,. + 0
- 664              	state.3:
- 665 0000 00000000 		.space	4
- 666              		.text
- 667              	.Letext0:
- 668              		.file 2 "Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h"
- 669              		.file 3 "/usr/arm-none-eabi/include/machine/_default_types.h"
- 670              		.file 4 "/usr/arm-none-eabi/include/sys/_stdint.h"
- 671              		.file 5 "Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h"
- 672              		.file 6 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h"
- 673              		.file 7 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h"
- 674              		.file 8 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h"
- 675              		.file 9 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h"
- 676              		.file 10 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h"
- 677              		.file 11 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h"
- 678              		.file 12 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h"
- 679              		.file 13 "Core/Inc/adc.h"
- 680              		.file 14 "Core/Inc/usart.h"
- 681              		.file 15 "Core/Inc/tim.h"
- 682              		.file 16 "/usr/arm-none-eabi/include/stdio.h"
- 683              		.file 17 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h"
- 684              		.file 18 "Core/Inc/main.h"
- 685              		.file 19 "<built-in>"
-ARM GAS  /tmp/ccyHDPKh.s 			page 18
+ 589              	end.0:
+ 590 0000 00000000 		.space	4
+ 591              		.section	.bss.hadc3,"aw",%nobits
+ 592              		.align	2
+ 593              		.set	.LANCHOR0,. + 0
+ 596              	hadc3:
+ 597 0000 00000000 		.space	100
+ 597      00000000 
+ 597      00000000 
+ 597      00000000 
+ 597      00000000 
+ 598              		.section	.bss.start.1,"aw",%nobits
+ 599              		.align	2
+ 600              		.set	.LANCHOR2,. + 0
+ 603              	start.1:
+ 604 0000 00000000 		.space	4
+ 605              		.section	.bss.state.2,"aw",%nobits
+ 606              		.align	2
+ 607              		.set	.LANCHOR1,. + 0
+ 610              	state.2:
+ 611 0000 00000000 		.space	4
+ 612              		.text
+ 613              	.Letext0:
+ 614              		.file 2 "Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h"
+ 615              		.file 3 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 616              		.file 4 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 617              		.file 5 "Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h"
+ 618              		.file 6 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h"
+ 619              		.file 7 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h"
+ 620              		.file 8 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h"
+ 621              		.file 9 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h"
+ 622              		.file 10 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h"
+ 623              		.file 11 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h"
+ 624              		.file 12 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h"
+ 625              		.file 13 "Core/Inc/adc.h"
+ 626              		.file 14 "Core/Inc/usart.h"
+ 627              		.file 15 "Core/Inc/tim.h"
+ 628              		.file 16 "/usr/arm-none-eabi/include/stdio.h"
+ 629              		.file 17 "Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h"
+ 630              		.file 18 "Core/Inc/main.h"
+ 631              		.file 19 "<built-in>"
+ARM GAS  /tmp/ccyPy13M.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 adc.c
-     /tmp/ccyHDPKh.s:18     .text.MX_ADC3_Init:0000000000000000 $t
-     /tmp/ccyHDPKh.s:26     .text.MX_ADC3_Init:0000000000000000 MX_ADC3_Init
-     /tmp/ccyHDPKh.s:160    .text.MX_ADC3_Init:0000000000000078 $d
-     /tmp/ccyHDPKh.s:167    .text.HAL_ADC_MspInit:0000000000000000 $t
-     /tmp/ccyHDPKh.s:174    .text.HAL_ADC_MspInit:0000000000000000 HAL_ADC_MspInit
-     /tmp/ccyHDPKh.s:340    .text.HAL_ADC_MspInit:00000000000000a8 $d
-     /tmp/ccyHDPKh.s:347    .text.HAL_ADC_MspDeInit:0000000000000000 $t
-     /tmp/ccyHDPKh.s:354    .text.HAL_ADC_MspDeInit:0000000000000000 HAL_ADC_MspDeInit
-     /tmp/ccyHDPKh.s:401    .text.HAL_ADC_MspDeInit:0000000000000028 $d
-     /tmp/ccyHDPKh.s:408    .rodata.HAL_ADC_ConvCpltCallback.str1.4:0000000000000000 $d
-     /tmp/ccyHDPKh.s:412    .text.HAL_ADC_ConvCpltCallback:0000000000000000 $t
-     /tmp/ccyHDPKh.s:419    .text.HAL_ADC_ConvCpltCallback:0000000000000000 HAL_ADC_ConvCpltCallback
-     /tmp/ccyHDPKh.s:619    .text.HAL_ADC_ConvCpltCallback:00000000000000d0 $d
-     /tmp/ccyHDPKh.s:650    .bss.hadc3:0000000000000000 hadc3
-     /tmp/ccyHDPKh.s:632    .bss.data.0:0000000000000000 $d
-     /tmp/ccyHDPKh.s:636    .bss.data.0:0000000000000000 data.0
-     /tmp/ccyHDPKh.s:639    .bss.end.1:0000000000000000 $d
-     /tmp/ccyHDPKh.s:643    .bss.end.1:0000000000000000 end.1
-     /tmp/ccyHDPKh.s:646    .bss.hadc3:0000000000000000 $d
-     /tmp/ccyHDPKh.s:653    .bss.start.2:0000000000000000 $d
-     /tmp/ccyHDPKh.s:657    .bss.start.2:0000000000000000 start.2
-     /tmp/ccyHDPKh.s:660    .bss.state.3:0000000000000000 $d
-     /tmp/ccyHDPKh.s:664    .bss.state.3:0000000000000000 state.3
+     /tmp/ccyPy13M.s:18     .text.MX_ADC3_Init:0000000000000000 $t
+     /tmp/ccyPy13M.s:26     .text.MX_ADC3_Init:0000000000000000 MX_ADC3_Init
+     /tmp/ccyPy13M.s:160    .text.MX_ADC3_Init:0000000000000078 $d
+     /tmp/ccyPy13M.s:167    .text.HAL_ADC_MspInit:0000000000000000 $t
+     /tmp/ccyPy13M.s:174    .text.HAL_ADC_MspInit:0000000000000000 HAL_ADC_MspInit
+     /tmp/ccyPy13M.s:340    .text.HAL_ADC_MspInit:00000000000000a8 $d
+     /tmp/ccyPy13M.s:347    .text.HAL_ADC_MspDeInit:0000000000000000 $t
+     /tmp/ccyPy13M.s:354    .text.HAL_ADC_MspDeInit:0000000000000000 HAL_ADC_MspDeInit
+     /tmp/ccyPy13M.s:401    .text.HAL_ADC_MspDeInit:0000000000000028 $d
+     /tmp/ccyPy13M.s:408    .rodata.HAL_ADC_ConvCpltCallback.str1.4:0000000000000000 $d
+     /tmp/ccyPy13M.s:412    .text.HAL_ADC_ConvCpltCallback:0000000000000000 $t
+     /tmp/ccyPy13M.s:419    .text.HAL_ADC_ConvCpltCallback:0000000000000000 HAL_ADC_ConvCpltCallback
+     /tmp/ccyPy13M.s:573    .text.HAL_ADC_ConvCpltCallback:000000000000009c $d
+     /tmp/ccyPy13M.s:596    .bss.hadc3:0000000000000000 hadc3
+     /tmp/ccyPy13M.s:585    .bss.end.0:0000000000000000 $d
+     /tmp/ccyPy13M.s:589    .bss.end.0:0000000000000000 end.0
+     /tmp/ccyPy13M.s:592    .bss.hadc3:0000000000000000 $d
+     /tmp/ccyPy13M.s:599    .bss.start.1:0000000000000000 $d
+     /tmp/ccyPy13M.s:603    .bss.start.1:0000000000000000 start.1
+     /tmp/ccyPy13M.s:606    .bss.state.2:0000000000000000 $d
+     /tmp/ccyPy13M.s:610    .bss.state.2:0000000000000000 state.2
 
 UNDEFINED SYMBOLS
 HAL_ADC_Init
