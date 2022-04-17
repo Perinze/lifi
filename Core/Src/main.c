@@ -53,6 +53,10 @@
 /* USER CODE BEGIN PV */
 uint8_t queue[QUESIZ];
 uint8_t qfront, qback;
+
+uint8_t recvbuf[RECVSIZ];
+uint8_t recvtmp[RECVSIZ+4];
+uint8_t recvidx;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -67,7 +71,13 @@ void delay_us(uint32_t us)
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+void recv2uart() {
+  char buf[128];
+  for (int i = 0; i < (int)recvidx; i++) {
+    sprintf(buf + (1<<i), "%x", (int)recvbuf[recvidx]);
+  }
+  HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
+}
 /* USER CODE END 0 */
 
 /**
@@ -106,8 +116,8 @@ int main(void)
 
   // push data to queue
   // frame start
-  queue[qback++] = 0x3f;
-  queue[qback++] = 0x7f;
+  queue[qback++] = FRMBEGIN1;
+  queue[qback++] = FRMBEGIN2;
 
   // data
   queue[qback++] = 0x52;
@@ -115,8 +125,12 @@ int main(void)
   queue[qback++] = 0x01;
 
   // frame end
-  queue[qback++] = 0xf7;
-  queue[qback++] = 0x3f;
+  queue[qback++] = FRMEND1;
+  queue[qback++] = FRMEND2;
+
+  // redundancy
+  queue[qback++] = 0x00;
+  queue[qback++] = 0x00;
 
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
   HAL_TIM_Base_Start_IT(&htim2);

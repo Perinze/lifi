@@ -55,16 +55,26 @@ extern "C" {
 #define PULSEDIV 5000
 
 #define QUESIZ 64
+#define RECVSIZ 64
+
+#define FRMBEGIN1 0x3f
+#define FRMBEGIN2 0x7d
+#define FRMEND1 0xf7
+#define FRMEND2 0xe9
 
 extern uint8_t queue[QUESIZ];
 extern uint8_t qfront, qback;
+
+extern uint8_t recvbuf[RECVSIZ];
+extern uint8_t recvtmp[RECVSIZ+4];
+extern uint8_t recvidx;
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+void recv2uart();
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
