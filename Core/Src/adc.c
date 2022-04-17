@@ -185,7 +185,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
       int bit = pulse > PULSEDIV ? 0 : 1;
 
       char buf[8] = {0};
-      sprintf(buf, "%d", bit);
+      //sprintf(buf, "bit::%d ", bit);
       HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
       
       data = ((data << 1) | bit);
@@ -200,8 +200,6 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
       3 wait for frame end 1 0xf7, receive data
       4 wait for frame end 2 0xe9, if not 0xe9 then back to state 3
     */
-    if (byte_state == 2)
-      HAL_UART_Transmit_IT(&huart2, "stat2", sizeof("stat2"));
     if (byte_state == 1 && data == FRMBEGIN1) {
       bitcnt = 8;
       byte_state = 2;
@@ -211,9 +209,9 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
       recvidx = 0;
     } else if (!bitcnt && byte_state == 3) {
       if (data == FRMEND1) {
-        bitcnt = 8;
         byte_state = 4;
       }
+      bitcnt = 8;
       recvbuf[recvidx++] = data;
     } else if (!bitcnt && byte_state == 4) {
       if (data == FRMEND2) {
@@ -225,6 +223,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
         byte_state = 3;
         recvbuf[recvidx++] = data;
       }
+    }
+    if (!bitcnt && byte_state != 1) {
+      char buf[8] = {0};
+      sprintf(buf, "data::%d byte_state::%d\r\n", byte_state);
+      HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
     }
    
     /*

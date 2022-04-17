@@ -39,6 +39,7 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
+/*  
 #define CARRIER_FREQ 2000.0
 #define CARRIER_PERIOD (1.0 / CARRIER_FREQ)
 #define CARRIER_HALF_PERIOD (CARRIER_PERIOD / 2.0)
@@ -46,6 +47,7 @@
 #define INPUT_AMP 1.0
 #define CVF (CARRIER_FREQ_AMP / INPUT_AMP)
 #define LIGHT_TH 2850
+*/
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -72,11 +74,34 @@ void delay_us(uint32_t us)
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void recv2uart() {
-  char buf[128];
-  for (int i = 0; i < (int)recvidx; i++) {
-    sprintf(buf + (1<<i), "%x", (int)recvbuf[recvidx]);
+  // HAL_UART_Transmit_IT(&huart2, "recv2uart\r\n", sizeof("recv2uart\r\n"));
+  // HAL_Delay(1000);
+  char buf[128] = {0};
+  char *p = buf;
+  for (uint8_t i = 0; i < recvidx; i++) {
+    p += sprintf(p, " %02X", recvbuf[i]);
   }
+  p += sprintf(p, "\r\n");
   HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
+  recvidx = 0;
+  /*
+  char str[128] = {0};
+  unsigned char *pin = recvbuf;
+  const char *hex = "0123456789ABCDEF";
+  char *pout = str;
+  int i = 0;
+  for(; i < sizeof(recvbuf)-1; ++i){
+    *pout++ = hex[(*pin>>4)&0xF];
+    *pout++ = hex[(*pin++)&0xF];
+    *pout++ = ' ';
+  }
+  *pout++ = hex[(*pin>>4)&0xF];
+  *pout++ = hex[(*pin)&0xF];
+  *pout++ = '\n';
+  *pout = 0;
+
+  HAL_UART_Transmit(&huart2, str, sizeof(str), 1);
+  */
 }
 /* USER CODE END 0 */
 
@@ -111,8 +136,19 @@ int main(void)
   MX_ADC3_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-  HAL_Delay(2000);
   LD0_GPIO_Port->ODR |= (LD0_Pin);
+  LD2_GPIO_Port->ODR |= (LD2_Pin);
+
+  /*
+  recvidx = 0;
+  recvbuf[recvidx++] = 0x12;
+  recvbuf[recvidx++] = 0x34;
+  recvbuf[recvidx++] = 0x56;
+  recvbuf[recvidx++] = 0x78;
+  recv2uart();
+  */
+
+  HAL_Delay(2000);
 
   // push data to queue
   // frame start

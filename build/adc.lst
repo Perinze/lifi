@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccATsacO.s 			page 1
+ARM GAS  /tmp/ccJZYCGE.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccATsacO.s 			page 1
   56 004c 0392     		str	r2, [sp, #12]
   57 004e 0948     		ldr	r0, .L14
   58 0050 0422     		movs	r2, #4
-ARM GAS  /tmp/ccATsacO.s 			page 2
+ARM GAS  /tmp/ccJZYCGE.s 			page 2
 
 
   59 0052 6946     		mov	r1, sp
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccATsacO.s 			page 1
  115 0030 0891     		str	r1, [sp, #32]
  116 0032 2692     		str	r2, [sp, #152]
  117 0034 0121     		movs	r1, #1
-ARM GAS  /tmp/ccATsacO.s 			page 3
+ARM GAS  /tmp/ccJZYCGE.s 			page 3
 
 
  118 0036 0822     		movs	r2, #8
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccATsacO.s 			page 1
  173              		.p2align 2,,3
  174              		.global	HAL_ADC_MspDeInit
  175              		.syntax unified
-ARM GAS  /tmp/ccATsacO.s 			page 4
+ARM GAS  /tmp/ccJZYCGE.s 			page 4
 
 
  176              		.thumb
@@ -213,11 +213,16 @@ ARM GAS  /tmp/ccATsacO.s 			page 1
  207              		.section	.rodata.HAL_ADC_ConvCpltCallback.str1.4,"aMS",%progbits,1
  208              		.align	2
  209              	.LC0:
- 210 0000 256400   		.ascii	"%d\000"
- 211 0003 00       		.align	2
+ 210 0000 6269743A 		.ascii	"bit::%d \000"
+ 210      3A256420 
+ 210      00
+ 211 0009 000000   		.align	2
  212              	.LC1:
- 213 0004 73746174 		.ascii	"stat2\000"
- 213      3200
+ 213 000c 62797465 		.ascii	"byte_state::%d\015\012\000"
+ 213      5F737461 
+ 213      74653A3A 
+ 213      25640D0A 
+ 213      00
  214              		.section	.text.HAL_ADC_ConvCpltCallback,"ax",%progbits
  215              		.align	1
  216              		.p2align 2,,3
@@ -230,255 +235,263 @@ ARM GAS  /tmp/ccATsacO.s 			page 1
  224              		@ args = 0, pretend = 0, frame = 8
  225              		@ frame_needed = 0, uses_anonymous_args = 0
  226 0000 30B5     		push	{r4, r5, lr}
- 227 0002 4D4C     		ldr	r4, .L60
- 228 0004 4D48     		ldr	r0, .L60+4
+ 227 0002 524C     		ldr	r4, .L63
+ 228 0004 5248     		ldr	r0, .L63+4
  229 0006 83B0     		sub	sp, sp, #12
+ARM GAS  /tmp/ccJZYCGE.s 			page 5
+
+
  230 0008 FFF7FEFF 		bl	HAL_ADC_GetValue
  231 000c 2368     		ldr	r3, [r4]
- 232 000e 03B3     		cbz	r3, .L54
+ 232 000e F3B1     		cbz	r3, .L56
  233 0010 012B     		cmp	r3, #1
- 234 0012 1ED0     		beq	.L54
-ARM GAS  /tmp/ccATsacO.s 			page 5
-
-
+ 234 0012 1CD0     		beq	.L56
  235 0014 022B     		cmp	r3, #2
- 236 0016 5AD0     		beq	.L55
+ 236 0016 57D0     		beq	.L58
  237              	.L36:
- 238 0018 494C     		ldr	r4, .L60+8
- 239 001a 2368     		ldr	r3, [r4]
- 240 001c 022B     		cmp	r3, #2
- 241 001e 27D0     		beq	.L56
+ 238 0018 4E4C     		ldr	r4, .L63+8
+ 239 001a 2268     		ldr	r2, [r4]
+ 240 001c 012A     		cmp	r2, #1
+ 241 001e 25D0     		beq	.L59
  242              	.L41:
- 243 0020 012B     		cmp	r3, #1
- 244 0022 2DD0     		beq	.L57
- 245              	.L42:
- 246 0024 474A     		ldr	r2, .L60+12
- 247 0026 1178     		ldrb	r1, [r2]	@ zero_extendqisi2
- 248 0028 89B9     		cbnz	r1, .L33
- 249 002a 022B     		cmp	r3, #2
- 250 002c 33D0     		beq	.L58
- 251 002e 032B     		cmp	r3, #3
- 252 0030 3CD1     		bne	.L45
- 253 0032 454B     		ldr	r3, .L60+16
- 254 0034 1978     		ldrb	r1, [r3]	@ zero_extendqisi2
- 255 0036 F729     		cmp	r1, #247
- 256 0038 03D1     		bne	.L46
- 257 003a 0820     		movs	r0, #8
- 258 003c 0423     		movs	r3, #4
- 259 003e 1070     		strb	r0, [r2]
- 260 0040 2360     		str	r3, [r4]
- 261              	.L46:
- 262 0042 424B     		ldr	r3, .L60+20
- 263 0044 424C     		ldr	r4, .L60+24
- 264 0046 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
- 265 0048 501C     		adds	r0, r2, #1
- 266 004a A154     		strb	r1, [r4, r2]
- 267 004c 1870     		strb	r0, [r3]
- 268              	.L33:
- 269 004e 03B0     		add	sp, sp, #12
- 270              		@ sp needed
- 271 0050 30BD     		pop	{r4, r5, pc}
- 272              	.L54:
- 273 0052 40F6C413 		movw	r3, #2500
- 274 0056 9842     		cmp	r0, r3
- 275 0058 DED9     		bls	.L36
- 276 005a 3E4A     		ldr	r2, .L60+28
- 277 005c 3E4B     		ldr	r3, .L60+32
- 278 005e 1268     		ldr	r2, [r2]
- 279 0060 0221     		movs	r1, #2
- 280 0062 526A     		ldr	r2, [r2, #36]
- 281 0064 2160     		str	r1, [r4]
- 282 0066 364C     		ldr	r4, .L60+8
- 283 0068 1A60     		str	r2, [r3]
- 284 006a 2368     		ldr	r3, [r4]
- 285 006c 022B     		cmp	r3, #2
- 286 006e D7D1     		bne	.L41
- 287              	.L56:
- 288 0070 3A49     		ldr	r1, .L60+36
- 289 0072 3B48     		ldr	r0, .L60+40
- 290 0074 0622     		movs	r2, #6
- 291 0076 FFF7FEFF 		bl	HAL_UART_Transmit_IT
-ARM GAS  /tmp/ccATsacO.s 			page 6
+ 243 0020 4D4D     		ldr	r5, .L63+12
+ 244 0022 2B78     		ldrb	r3, [r5]	@ zero_extendqisi2
+ 245 0024 8BB9     		cbnz	r3, .L33
+ 246 0026 022A     		cmp	r2, #2
+ 247 0028 2BD0     		beq	.L60
+ 248 002a 032A     		cmp	r2, #3
+ 249 002c 3BD1     		bne	.L45
+ 250 002e 4B4B     		ldr	r3, .L63+16
+ 251 0030 4B4A     		ldr	r2, .L63+20
+ 252 0032 1978     		ldrb	r1, [r3]	@ zero_extendqisi2
+ 253 0034 4B48     		ldr	r0, .L63+24
+ 254 0036 F729     		cmp	r1, #247
+ 255 0038 04BF     		itt	eq
+ 256 003a 0423     		moveq	r3, #4
+ 257 003c 2360     		streq	r3, [r4]
+ 258 003e 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 259 0040 C154     		strb	r1, [r0, r3]
+ 260 0042 0821     		movs	r1, #8
+ 261 0044 0133     		adds	r3, r3, #1
+ 262 0046 2970     		strb	r1, [r5]
+ 263 0048 1370     		strb	r3, [r2]
+ 264              	.L33:
+ 265 004a 03B0     		add	sp, sp, #12
+ 266              		@ sp needed
+ 267 004c 30BD     		pop	{r4, r5, pc}
+ 268              	.L56:
+ 269 004e 40F6C413 		movw	r3, #2500
+ 270 0052 9842     		cmp	r0, r3
+ 271 0054 E0D9     		bls	.L36
+ 272 0056 444A     		ldr	r2, .L63+28
+ 273 0058 444B     		ldr	r3, .L63+32
+ 274 005a 1268     		ldr	r2, [r2]
+ 275 005c 0221     		movs	r1, #2
+ 276 005e 526A     		ldr	r2, [r2, #36]
+ 277 0060 2160     		str	r1, [r4]
+ 278 0062 3C4C     		ldr	r4, .L63+8
+ 279 0064 1A60     		str	r2, [r3]
+ 280 0066 2268     		ldr	r2, [r4]
+ 281 0068 012A     		cmp	r2, #1
+ 282 006a D9D1     		bne	.L41
+ 283              	.L59:
+ 284 006c 3B4B     		ldr	r3, .L63+16
+ 285 006e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 286 0070 3F2B     		cmp	r3, #63
+ARM GAS  /tmp/ccJZYCGE.s 			page 6
 
 
- 292 007a 2368     		ldr	r3, [r4]
- 293 007c 012B     		cmp	r3, #1
- 294 007e D1D1     		bne	.L42
- 295              	.L57:
- 296 0080 314B     		ldr	r3, .L60+16
- 297 0082 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 298 0084 3F2B     		cmp	r3, #63
- 299 0086 E2D1     		bne	.L33
- 300 0088 2E4A     		ldr	r2, .L60+12
- 301 008a 0821     		movs	r1, #8
- 302 008c 0223     		movs	r3, #2
- 303 008e 1170     		strb	r1, [r2]
- 304 0090 2360     		str	r3, [r4]
- 305 0092 03B0     		add	sp, sp, #12
- 306              		@ sp needed
- 307 0094 30BD     		pop	{r4, r5, pc}
- 308              	.L58:
- 309 0096 2C4B     		ldr	r3, .L60+16
- 310 0098 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 311 009a 7D2B     		cmp	r3, #125
- 312 009c D7D1     		bne	.L33
- 313 009e 2B4B     		ldr	r3, .L60+20
- 314 00a0 0820     		movs	r0, #8
- 315 00a2 1070     		strb	r0, [r2]
- 316 00a4 0322     		movs	r2, #3
- 317 00a6 2260     		str	r2, [r4]
- 318 00a8 1970     		strb	r1, [r3]
- 319 00aa D0E7     		b	.L33
- 320              	.L45:
- 321 00ac 042B     		cmp	r3, #4
- 322 00ae CED1     		bne	.L33
- 323 00b0 254B     		ldr	r3, .L60+16
- 324 00b2 2649     		ldr	r1, .L60+20
- 325 00b4 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
- 326 00b6 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
- 327 00b8 E928     		cmp	r0, #233
- 328 00ba 34D0     		beq	.L59
- 329 00bc 244D     		ldr	r5, .L60+24
- 330 00be E854     		strb	r0, [r5, r3]
- 331 00c0 0133     		adds	r3, r3, #1
- 332 00c2 0B70     		strb	r3, [r1]
- 333 00c4 0821     		movs	r1, #8
- 334 00c6 0323     		movs	r3, #3
- 335 00c8 1170     		strb	r1, [r2]
- 336 00ca 2360     		str	r3, [r4]
- 337 00cc BFE7     		b	.L33
- 338              	.L55:
- 339 00ce 40F6C313 		movw	r3, #2499
- 340 00d2 9842     		cmp	r0, r3
- 341 00d4 A0D8     		bhi	.L36
- 342 00d6 1F4B     		ldr	r3, .L60+28
- 343 00d8 1F4A     		ldr	r2, .L60+32
- 344 00da 1B68     		ldr	r3, [r3]
- 345 00dc 1268     		ldr	r2, [r2]
- 346 00de 5D6A     		ldr	r5, [r3, #36]
- 347 00e0 2049     		ldr	r1, .L60+44
- 348 00e2 AD1A     		subs	r5, r5, r2
-ARM GAS  /tmp/ccATsacO.s 			page 7
+ 287 0072 EAD1     		bne	.L33
+ 288 0074 384A     		ldr	r2, .L63+12
+ 289 0076 0821     		movs	r1, #8
+ 290 0078 0223     		movs	r3, #2
+ 291 007a 1170     		strb	r1, [r2]
+ 292 007c 2360     		str	r3, [r4]
+ 293 007e 03B0     		add	sp, sp, #12
+ 294              		@ sp needed
+ 295 0080 30BD     		pop	{r4, r5, pc}
+ 296              	.L60:
+ 297 0082 3649     		ldr	r1, .L63+16
+ 298 0084 0978     		ldrb	r1, [r1]	@ zero_extendqisi2
+ 299 0086 7D29     		cmp	r1, #125
+ 300 0088 58D0     		beq	.L61
+ 301              	.L44:
+ 302 008a 0023     		movs	r3, #0
+ 303 008c 3849     		ldr	r1, .L63+36
+ 304 008e 6846     		mov	r0, sp
+ 305 0090 CDE90033 		strd	r3, r3, [sp]
+ 306 0094 FFF7FEFF 		bl	sprintf
+ 307 0098 0822     		movs	r2, #8
+ 308 009a 6946     		mov	r1, sp
+ 309 009c 3548     		ldr	r0, .L63+40
+ 310 009e FFF7FEFF 		bl	HAL_UART_Transmit_IT
+ 311 00a2 03B0     		add	sp, sp, #12
+ 312              		@ sp needed
+ 313 00a4 30BD     		pop	{r4, r5, pc}
+ 314              	.L45:
+ 315 00a6 042A     		cmp	r2, #4
+ 316 00a8 EFD1     		bne	.L44
+ 317 00aa 2C4B     		ldr	r3, .L63+16
+ 318 00ac 2C4A     		ldr	r2, .L63+20
+ 319 00ae 1978     		ldrb	r1, [r3]	@ zero_extendqisi2
+ 320 00b0 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 321 00b2 E929     		cmp	r1, #233
+ 322 00b4 34D0     		beq	.L62
+ 323 00b6 2B48     		ldr	r0, .L63+24
+ 324 00b8 C154     		strb	r1, [r0, r3]
+ 325 00ba 0133     		adds	r3, r3, #1
+ 326 00bc 1370     		strb	r3, [r2]
+ 327 00be 0822     		movs	r2, #8
+ 328 00c0 0323     		movs	r3, #3
+ 329 00c2 2A70     		strb	r2, [r5]
+ 330 00c4 2360     		str	r3, [r4]
+ 331 00c6 C0E7     		b	.L33
+ 332              	.L58:
+ 333 00c8 40F6C313 		movw	r3, #2499
+ 334 00cc 9842     		cmp	r0, r3
+ 335 00ce A3D8     		bhi	.L36
+ 336 00d0 254B     		ldr	r3, .L63+28
+ 337 00d2 264A     		ldr	r2, .L63+32
+ 338 00d4 1B68     		ldr	r3, [r3]
+ 339 00d6 1268     		ldr	r2, [r2]
+ 340 00d8 5D6A     		ldr	r5, [r3, #36]
+ 341 00da 2749     		ldr	r1, .L63+44
+ 342 00dc AD1A     		subs	r5, r5, r2
+ 343 00de 41F28833 		movw	r3, #5000
+ARM GAS  /tmp/ccJZYCGE.s 			page 7
 
 
- 349 00e4 41F28833 		movw	r3, #5000
- 350 00e8 9D42     		cmp	r5, r3
- 351 00ea CCBF     		ite	gt
- 352 00ec 0025     		movgt	r5, #0
- 353 00ee 0125     		movle	r5, #1
- 354 00f0 0122     		movs	r2, #1
- 355 00f2 0023     		movs	r3, #0
- 356 00f4 2260     		str	r2, [r4]
- 357 00f6 6846     		mov	r0, sp
- 358 00f8 2A46     		mov	r2, r5
- 359 00fa CDE90033 		strd	r3, r3, [sp]
- 360 00fe FFF7FEFF 		bl	sprintf
- 361 0102 0822     		movs	r2, #8
- 362 0104 6946     		mov	r1, sp
- 363 0106 1648     		ldr	r0, .L60+40
- 364 0108 FFF7FEFF 		bl	HAL_UART_Transmit_IT
- 365 010c 0E4A     		ldr	r2, .L60+16
- 366 010e 0D49     		ldr	r1, .L60+12
- 367 0110 1078     		ldrb	r0, [r2]	@ zero_extendqisi2
- 368 0112 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
- 369 0114 45EA4005 		orr	r5, r5, r0, lsl #1
- 370 0118 1570     		strb	r5, [r2]
- 371 011a 002B     		cmp	r3, #0
- 372 011c 3FF47CAF 		beq	.L36
- 373 0120 013B     		subs	r3, r3, #1
- 374 0122 0B70     		strb	r3, [r1]
- 375 0124 78E7     		b	.L36
- 376              	.L59:
- 377 0126 013B     		subs	r3, r3, #1
- 378 0128 0122     		movs	r2, #1
- 379 012a 0B70     		strb	r3, [r1]
- 380 012c 2260     		str	r2, [r4]
- 381 012e 03B0     		add	sp, sp, #12
- 382              		@ sp needed
- 383 0130 BDE83040 		pop	{r4, r5, lr}
- 384 0134 FFF7FEBF 		b	recv2uart
+ 344 00e2 9D42     		cmp	r5, r3
+ 345 00e4 CCBF     		ite	gt
+ 346 00e6 0025     		movgt	r5, #0
+ 347 00e8 0125     		movle	r5, #1
+ 348 00ea 0122     		movs	r2, #1
+ 349 00ec 0023     		movs	r3, #0
+ 350 00ee 2260     		str	r2, [r4]
+ 351 00f0 6846     		mov	r0, sp
+ 352 00f2 2A46     		mov	r2, r5
+ 353 00f4 CDE90033 		strd	r3, r3, [sp]
+ 354 00f8 FFF7FEFF 		bl	sprintf
+ 355 00fc 0822     		movs	r2, #8
+ 356 00fe 6946     		mov	r1, sp
+ 357 0100 1C48     		ldr	r0, .L63+40
+ 358 0102 FFF7FEFF 		bl	HAL_UART_Transmit_IT
+ 359 0106 154A     		ldr	r2, .L63+16
+ 360 0108 1349     		ldr	r1, .L63+12
+ 361 010a 1078     		ldrb	r0, [r2]	@ zero_extendqisi2
+ 362 010c 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
+ 363 010e 45EA4005 		orr	r5, r5, r0, lsl #1
+ 364 0112 1570     		strb	r5, [r2]
+ 365 0114 002B     		cmp	r3, #0
+ 366 0116 3FF47FAF 		beq	.L36
+ 367 011a 013B     		subs	r3, r3, #1
+ 368 011c 0B70     		strb	r3, [r1]
+ 369 011e 7BE7     		b	.L36
+ 370              	.L62:
+ 371 0120 013B     		subs	r3, r3, #1
+ 372 0122 0121     		movs	r1, #1
+ 373 0124 1370     		strb	r3, [r2]
+ 374 0126 2160     		str	r1, [r4]
+ 375 0128 FFF7FEFF 		bl	recv2uart
+ 376 012c 2B78     		ldrb	r3, [r5]	@ zero_extendqisi2
+ 377 012e 002B     		cmp	r3, #0
+ 378 0130 8BD1     		bne	.L33
+ 379 0132 2268     		ldr	r2, [r4]
+ 380 0134 012A     		cmp	r2, #1
+ 381 0136 A8D1     		bne	.L44
+ 382 0138 03B0     		add	sp, sp, #12
+ 383              		@ sp needed
+ 384 013a 30BD     		pop	{r4, r5, pc}
  385              	.L61:
- 386              		.align	2
- 387              	.L60:
- 388 0138 00000000 		.word	.LANCHOR1
- 389 013c 00000000 		.word	.LANCHOR0
- 390 0140 00000000 		.word	.LANCHOR5
- 391 0144 00000000 		.word	.LANCHOR4
- 392 0148 00000000 		.word	.LANCHOR3
- 393 014c 00000000 		.word	recvidx
- 394 0150 00000000 		.word	recvbuf
- 395 0154 00000000 		.word	htim2
- 396 0158 00000000 		.word	.LANCHOR2
- 397 015c 04000000 		.word	.LC1
- 398 0160 00000000 		.word	huart2
- 399 0164 00000000 		.word	.LC0
- 401              		.global	hadc3
- 402              		.section	.bss.bitcnt.1,"aw",%nobits
- 403              		.set	.LANCHOR4,. + 0
- 406              	bitcnt.1:
- 407 0000 00       		.space	1
- 408              		.section	.bss.data.2,"aw",%nobits
-ARM GAS  /tmp/ccATsacO.s 			page 8
+ 386 013c 0821     		movs	r1, #8
+ 387 013e 084A     		ldr	r2, .L63+20
+ 388 0140 2970     		strb	r1, [r5]
+ 389 0142 0321     		movs	r1, #3
+ 390 0144 2160     		str	r1, [r4]
+ 391 0146 1370     		strb	r3, [r2]
+ 392 0148 7FE7     		b	.L33
+ 393              	.L64:
+ 394 014a 00BF     		.align	2
+ 395              	.L63:
+ 396 014c 00000000 		.word	.LANCHOR1
+ 397 0150 00000000 		.word	.LANCHOR0
+ 398 0154 00000000 		.word	.LANCHOR5
+ 399 0158 00000000 		.word	.LANCHOR4
+ 400 015c 00000000 		.word	.LANCHOR3
+ARM GAS  /tmp/ccJZYCGE.s 			page 8
 
 
- 409              		.set	.LANCHOR3,. + 0
- 412              	data.2:
- 413 0000 00       		.space	1
- 414              		.section	.bss.hadc3,"aw",%nobits
- 415              		.align	2
- 416              		.set	.LANCHOR0,. + 0
- 419              	hadc3:
- 420 0000 00000000 		.space	100
- 420      00000000 
- 420      00000000 
- 420      00000000 
- 420      00000000 
- 421              		.section	.bss.start.4,"aw",%nobits
- 422              		.align	2
- 423              		.set	.LANCHOR2,. + 0
- 426              	start.4:
- 427 0000 00000000 		.space	4
- 428              		.section	.bss.state.5,"aw",%nobits
- 429              		.align	2
- 430              		.set	.LANCHOR1,. + 0
- 433              	state.5:
- 434 0000 00000000 		.space	4
- 435              		.section	.data.byte_state.0,"aw"
- 436              		.align	2
- 437              		.set	.LANCHOR5,. + 0
- 440              	byte_state.0:
- 441 0000 01000000 		.word	1
- 442              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/ccATsacO.s 			page 9
+ 401 0160 00000000 		.word	recvidx
+ 402 0164 00000000 		.word	recvbuf
+ 403 0168 00000000 		.word	htim2
+ 404 016c 00000000 		.word	.LANCHOR2
+ 405 0170 0C000000 		.word	.LC1
+ 406 0174 00000000 		.word	huart2
+ 407 0178 00000000 		.word	.LC0
+ 409              		.global	hadc3
+ 410              		.section	.bss.bitcnt.1,"aw",%nobits
+ 411              		.set	.LANCHOR4,. + 0
+ 414              	bitcnt.1:
+ 415 0000 00       		.space	1
+ 416              		.section	.bss.data.2,"aw",%nobits
+ 417              		.set	.LANCHOR3,. + 0
+ 420              	data.2:
+ 421 0000 00       		.space	1
+ 422              		.section	.bss.hadc3,"aw",%nobits
+ 423              		.align	2
+ 424              		.set	.LANCHOR0,. + 0
+ 427              	hadc3:
+ 428 0000 00000000 		.space	100
+ 428      00000000 
+ 428      00000000 
+ 428      00000000 
+ 428      00000000 
+ 429              		.section	.bss.start.4,"aw",%nobits
+ 430              		.align	2
+ 431              		.set	.LANCHOR2,. + 0
+ 434              	start.4:
+ 435 0000 00000000 		.space	4
+ 436              		.section	.bss.state.5,"aw",%nobits
+ 437              		.align	2
+ 438              		.set	.LANCHOR1,. + 0
+ 441              	state.5:
+ 442 0000 00000000 		.space	4
+ 443              		.section	.data.byte_state.0,"aw"
+ 444              		.align	2
+ 445              		.set	.LANCHOR5,. + 0
+ 448              	byte_state.0:
+ 449 0000 01000000 		.word	1
+ 450              		.ident	"GCC: (Arch Repository) 11.2.0"
+ARM GAS  /tmp/ccJZYCGE.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 adc.c
-     /tmp/ccATsacO.s:16     .text.MX_ADC3_Init:0000000000000000 $t
-     /tmp/ccATsacO.s:25     .text.MX_ADC3_Init:0000000000000000 MX_ADC3_Init
-     /tmp/ccATsacO.s:78     .text.MX_ADC3_Init:0000000000000074 $d
-     /tmp/ccATsacO.s:83     .text.HAL_ADC_MspInit:0000000000000000 $t
-     /tmp/ccATsacO.s:91     .text.HAL_ADC_MspInit:0000000000000000 HAL_ADC_MspInit
-     /tmp/ccATsacO.s:167    .text.HAL_ADC_MspInit:00000000000000a8 $d
-     /tmp/ccATsacO.s:172    .text.HAL_ADC_MspDeInit:0000000000000000 $t
-     /tmp/ccATsacO.s:180    .text.HAL_ADC_MspDeInit:0000000000000000 HAL_ADC_MspDeInit
-     /tmp/ccATsacO.s:203    .text.HAL_ADC_MspDeInit:0000000000000028 $d
-     /tmp/ccATsacO.s:208    .rodata.HAL_ADC_ConvCpltCallback.str1.4:0000000000000000 $d
-     /tmp/ccATsacO.s:215    .text.HAL_ADC_ConvCpltCallback:0000000000000000 $t
-     /tmp/ccATsacO.s:223    .text.HAL_ADC_ConvCpltCallback:0000000000000000 HAL_ADC_ConvCpltCallback
-     /tmp/ccATsacO.s:388    .text.HAL_ADC_ConvCpltCallback:0000000000000138 $d
-     /tmp/ccATsacO.s:419    .bss.hadc3:0000000000000000 hadc3
-     /tmp/ccATsacO.s:406    .bss.bitcnt.1:0000000000000000 bitcnt.1
-     /tmp/ccATsacO.s:407    .bss.bitcnt.1:0000000000000000 $d
-     /tmp/ccATsacO.s:412    .bss.data.2:0000000000000000 data.2
-     /tmp/ccATsacO.s:413    .bss.data.2:0000000000000000 $d
-     /tmp/ccATsacO.s:415    .bss.hadc3:0000000000000000 $d
-     /tmp/ccATsacO.s:422    .bss.start.4:0000000000000000 $d
-     /tmp/ccATsacO.s:426    .bss.start.4:0000000000000000 start.4
-     /tmp/ccATsacO.s:429    .bss.state.5:0000000000000000 $d
-     /tmp/ccATsacO.s:433    .bss.state.5:0000000000000000 state.5
-     /tmp/ccATsacO.s:436    .data.byte_state.0:0000000000000000 $d
-     /tmp/ccATsacO.s:440    .data.byte_state.0:0000000000000000 byte_state.0
+     /tmp/ccJZYCGE.s:16     .text.MX_ADC3_Init:0000000000000000 $t
+     /tmp/ccJZYCGE.s:25     .text.MX_ADC3_Init:0000000000000000 MX_ADC3_Init
+     /tmp/ccJZYCGE.s:78     .text.MX_ADC3_Init:0000000000000074 $d
+     /tmp/ccJZYCGE.s:83     .text.HAL_ADC_MspInit:0000000000000000 $t
+     /tmp/ccJZYCGE.s:91     .text.HAL_ADC_MspInit:0000000000000000 HAL_ADC_MspInit
+     /tmp/ccJZYCGE.s:167    .text.HAL_ADC_MspInit:00000000000000a8 $d
+     /tmp/ccJZYCGE.s:172    .text.HAL_ADC_MspDeInit:0000000000000000 $t
+     /tmp/ccJZYCGE.s:180    .text.HAL_ADC_MspDeInit:0000000000000000 HAL_ADC_MspDeInit
+     /tmp/ccJZYCGE.s:203    .text.HAL_ADC_MspDeInit:0000000000000028 $d
+     /tmp/ccJZYCGE.s:208    .rodata.HAL_ADC_ConvCpltCallback.str1.4:0000000000000000 $d
+     /tmp/ccJZYCGE.s:215    .text.HAL_ADC_ConvCpltCallback:0000000000000000 $t
+     /tmp/ccJZYCGE.s:223    .text.HAL_ADC_ConvCpltCallback:0000000000000000 HAL_ADC_ConvCpltCallback
+     /tmp/ccJZYCGE.s:396    .text.HAL_ADC_ConvCpltCallback:000000000000014c $d
+     /tmp/ccJZYCGE.s:427    .bss.hadc3:0000000000000000 hadc3
+     /tmp/ccJZYCGE.s:414    .bss.bitcnt.1:0000000000000000 bitcnt.1
+     /tmp/ccJZYCGE.s:415    .bss.bitcnt.1:0000000000000000 $d
+     /tmp/ccJZYCGE.s:420    .bss.data.2:0000000000000000 data.2
+     /tmp/ccJZYCGE.s:421    .bss.data.2:0000000000000000 $d
+     /tmp/ccJZYCGE.s:423    .bss.hadc3:0000000000000000 $d
+     /tmp/ccJZYCGE.s:430    .bss.start.4:0000000000000000 $d
+     /tmp/ccJZYCGE.s:434    .bss.start.4:0000000000000000 start.4
+     /tmp/ccJZYCGE.s:437    .bss.state.5:0000000000000000 $d
+     /tmp/ccJZYCGE.s:441    .bss.state.5:0000000000000000 state.5
+     /tmp/ccJZYCGE.s:444    .data.byte_state.0:0000000000000000 $d
+     /tmp/ccJZYCGE.s:448    .data.byte_state.0:0000000000000000 byte_state.0
 
 UNDEFINED SYMBOLS
 HAL_ADC_Init
@@ -492,8 +505,8 @@ HAL_NVIC_EnableIRQ
 HAL_GPIO_DeInit
 HAL_NVIC_DisableIRQ
 HAL_ADC_GetValue
-HAL_UART_Transmit_IT
 sprintf
+HAL_UART_Transmit_IT
 recv2uart
 recvidx
 recvbuf

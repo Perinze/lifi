@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccfWYtlC.s 			page 1
+ARM GAS  /tmp/ccGxcxkc.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -44,337 +44,364 @@ ARM GAS  /tmp/ccfWYtlC.s 			page 1
   43              		.section	.rodata.recv2uart.str1.4,"aMS",%progbits,1
   44              		.align	2
   45              	.LC0:
-  46 0000 257800   		.ascii	"%x\000"
-  47              		.section	.text.recv2uart,"ax",%progbits
-  48              		.align	1
-  49              		.p2align 2,,3
-  50              		.global	recv2uart
-  51              		.syntax unified
-  52              		.thumb
-  53              		.thumb_func
-  54              		.fpu fpv4-sp-d16
-  56              	recv2uart:
-  57              		@ args = 0, pretend = 0, frame = 128
-  58              		@ frame_needed = 0, uses_anonymous_args = 0
-  59 0000 2DE9F043 		push	{r4, r5, r6, r7, r8, r9, lr}
-  60 0004 0F4D     		ldr	r5, .L15
-ARM GAS  /tmp/ccfWYtlC.s 			page 2
+  46 0000 20253032 		.ascii	" %02X\000"
+  46      5800
+  47 0006 0000     		.align	2
+  48              	.LC1:
+  49 0008 0D0A00   		.ascii	"\015\012\000"
+  50              		.section	.text.recv2uart,"ax",%progbits
+  51              		.align	1
+  52              		.p2align 2,,3
+  53              		.global	recv2uart
+  54              		.syntax unified
+  55              		.thumb
+  56              		.thumb_func
+  57              		.fpu fpv4-sp-d16
+  59              	recv2uart:
+ARM GAS  /tmp/ccGxcxkc.s 			page 2
 
 
-  61 0006 2B78     		ldrb	r3, [r5]	@ zero_extendqisi2
-  62 0008 A1B0     		sub	sp, sp, #132
-  63 000a 6E46     		mov	r6, sp
-  64 000c 93B1     		cbz	r3, .L8
-  65 000e DFF83C90 		ldr	r9, .L15+8
-  66 0012 DFF83C80 		ldr	r8, .L15+12
-  67 0016 0024     		movs	r4, #0
-  68 0018 6E46     		mov	r6, sp
-  69 001a 0127     		movs	r7, #1
-  70              	.L9:
-  71 001c 07FA04F0 		lsl	r0, r7, r4
-  72 0020 19F80320 		ldrb	r2, [r9, r3]	@ zero_extendqisi2
-  73 0024 4146     		mov	r1, r8
-  74 0026 3044     		add	r0, r0, r6
-  75 0028 FFF7FEFF 		bl	sprintf
-  76 002c 2B78     		ldrb	r3, [r5]	@ zero_extendqisi2
-  77 002e 0134     		adds	r4, r4, #1
-  78 0030 A342     		cmp	r3, r4
-  79 0032 F3DC     		bgt	.L9
-  80              	.L8:
-  81 0034 8022     		movs	r2, #128
-  82 0036 3146     		mov	r1, r6
-  83 0038 0348     		ldr	r0, .L15+4
-  84 003a FFF7FEFF 		bl	HAL_UART_Transmit_IT
-  85 003e 21B0     		add	sp, sp, #132
-  86              		@ sp needed
-  87 0040 BDE8F083 		pop	{r4, r5, r6, r7, r8, r9, pc}
-  88              	.L16:
-  89              		.align	2
-  90              	.L15:
-  91 0044 00000000 		.word	.LANCHOR0
-  92 0048 00000000 		.word	huart2
-  93 004c 00000000 		.word	.LANCHOR1
-  94 0050 00000000 		.word	.LC0
-  96              		.section	.text.SystemClock_Config,"ax",%progbits
-  97              		.align	1
-  98              		.p2align 2,,3
-  99              		.global	SystemClock_Config
- 100              		.syntax unified
- 101              		.thumb
- 102              		.thumb_func
- 103              		.fpu fpv4-sp-d16
- 105              	SystemClock_Config:
- 106              		@ args = 0, pretend = 0, frame = 96
- 107              		@ frame_needed = 0, uses_anonymous_args = 0
- 108 0000 10B5     		push	{r4, lr}
- 109 0002 98B0     		sub	sp, sp, #96
- 110 0004 4422     		movs	r2, #68
- 111 0006 0021     		movs	r1, #0
- 112 0008 06A8     		add	r0, sp, #24
- 113 000a FFF7FEFF 		bl	memset
- 114 000e 0023     		movs	r3, #0
- 115 0010 4FF40070 		mov	r0, #512
- 116 0014 CDE90133 		strd	r3, r3, [sp, #4]
- 117 0018 CDE90333 		strd	r3, r3, [sp, #12]
- 118 001c 0593     		str	r3, [sp, #20]
- 119 001e FFF7FEFF 		bl	HAL_PWREx_ControlVoltageScaling
-ARM GAS  /tmp/ccfWYtlC.s 			page 3
+  60              		@ args = 0, pretend = 0, frame = 128
+  61              		@ frame_needed = 0, uses_anonymous_args = 0
+  62 0000 2DE9F043 		push	{r4, r5, r6, r7, r8, r9, lr}
+  63 0004 0024     		movs	r4, #0
+  64 0006 A1B0     		sub	sp, sp, #132
+  65 0008 164E     		ldr	r6, .L13
+  66 000a 0094     		str	r4, [sp]
+  67 000c 7C22     		movs	r2, #124
+  68 000e 2146     		mov	r1, r4
+  69 0010 01A8     		add	r0, sp, #4
+  70 0012 FFF7FEFF 		bl	memset
+  71 0016 3378     		ldrb	r3, [r6]	@ zero_extendqisi2
+  72 0018 E946     		mov	r9, sp
+  73 001a 03B3     		cbz	r3, .L10
+  74 001c DFF85480 		ldr	r8, .L13+16
+  75 0020 114F     		ldr	r7, .L13+4
+  76 0022 4D46     		mov	r5, r9
+  77 0024 2346     		mov	r3, r4
+  78              	.L9:
+  79 0026 18F80320 		ldrb	r2, [r8, r3]	@ zero_extendqisi2
+  80 002a 2846     		mov	r0, r5
+  81 002c 3946     		mov	r1, r7
+  82 002e FFF7FEFF 		bl	sprintf
+  83 0032 0134     		adds	r4, r4, #1
+  84 0034 3278     		ldrb	r2, [r6]	@ zero_extendqisi2
+  85 0036 E3B2     		uxtb	r3, r4
+  86 0038 9A42     		cmp	r2, r3
+  87 003a 05F10305 		add	r5, r5, #3
+  88 003e F2D8     		bhi	.L9
+  89              	.L8:
+  90 0040 0A4B     		ldr	r3, .L13+8
+  91 0042 0B48     		ldr	r0, .L13+12
+  92 0044 1A88     		ldrh	r2, [r3]	@ unaligned
+  93 0046 9B78     		ldrb	r3, [r3, #2]	@ zero_extendqisi2
+  94 0048 2A80     		strh	r2, [r5]	@ unaligned
+  95 004a AB70     		strb	r3, [r5, #2]
+  96 004c 4946     		mov	r1, r9
+  97 004e 8022     		movs	r2, #128
+  98 0050 FFF7FEFF 		bl	HAL_UART_Transmit_IT
+  99 0054 0023     		movs	r3, #0
+ 100 0056 3370     		strb	r3, [r6]
+ 101 0058 21B0     		add	sp, sp, #132
+ 102              		@ sp needed
+ 103 005a BDE8F083 		pop	{r4, r5, r6, r7, r8, r9, pc}
+ 104              	.L10:
+ 105 005e 4D46     		mov	r5, r9
+ 106 0060 EEE7     		b	.L8
+ 107              	.L14:
+ 108 0062 00BF     		.align	2
+ 109              	.L13:
+ 110 0064 00000000 		.word	.LANCHOR0
+ 111 0068 00000000 		.word	.LC0
+ 112 006c 08000000 		.word	.LC1
+ 113 0070 00000000 		.word	huart2
+ 114 0074 00000000 		.word	.LANCHOR1
+ 116              		.section	.text.SystemClock_Config,"ax",%progbits
+ 117              		.align	1
+ARM GAS  /tmp/ccGxcxkc.s 			page 3
 
 
- 120 0022 08B1     		cbz	r0, .L18
- 121              		.syntax unified
- 122              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 123 0024 72B6     		cpsid i
- 124              	@ 0 "" 2
- 125              		.thumb
- 126              		.syntax unified
- 127              	.L19:
- 128 0026 FEE7     		b	.L19
- 129              	.L18:
- 130 0028 9FED157B 		vldr.64	d7, .L25	@ int
- 131 002c 4FF48071 		mov	r1, #256
- 132 0030 1022     		movs	r2, #16
- 133 0032 0223     		movs	r3, #2
- 134 0034 CDE90912 		strd	r1, r2, [sp, #36]
- 135 0038 06A8     		add	r0, sp, #24
- 136 003a 0121     		movs	r1, #1
- 137 003c 0A22     		movs	r2, #10
- 138 003e CDE91033 		strd	r3, r3, [sp, #64]
- 139 0042 0693     		str	r3, [sp, #24]
- 140 0044 1693     		str	r3, [sp, #88]
- 141 0046 8DED147B 		vstr.64	d7, [sp, #80]	@ int
- 142 004a 1291     		str	r1, [sp, #72]
- 143 004c 1392     		str	r2, [sp, #76]
- 144 004e FFF7FEFF 		bl	HAL_RCC_OscConfig
- 145 0052 0346     		mov	r3, r0
- 146 0054 08B1     		cbz	r0, .L20
- 147              		.syntax unified
- 148              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 149 0056 72B6     		cpsid i
- 150              	@ 0 "" 2
- 151              		.thumb
- 152              		.syntax unified
- 153              	.L21:
- 154 0058 FEE7     		b	.L21
- 155              	.L20:
- 156 005a 0421     		movs	r1, #4
- 157 005c 0F24     		movs	r4, #15
- 158 005e 0322     		movs	r2, #3
- 159 0060 0DEB0100 		add	r0, sp, r1
- 160 0064 CDE90142 		strd	r4, r2, [sp, #4]
- 161 0068 CDE90333 		strd	r3, r3, [sp, #12]
- 162 006c 0593     		str	r3, [sp, #20]
- 163 006e FFF7FEFF 		bl	HAL_RCC_ClockConfig
- 164 0072 08B1     		cbz	r0, .L17
- 165              		.syntax unified
- 166              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 167 0074 72B6     		cpsid i
- 168              	@ 0 "" 2
- 169              		.thumb
- 170              		.syntax unified
- 171              	.L23:
- 172 0076 FEE7     		b	.L23
- 173              	.L17:
- 174 0078 18B0     		add	sp, sp, #96
- 175              		@ sp needed
- 176 007a 10BD     		pop	{r4, pc}
-ARM GAS  /tmp/ccfWYtlC.s 			page 4
+ 118              		.p2align 2,,3
+ 119              		.global	SystemClock_Config
+ 120              		.syntax unified
+ 121              		.thumb
+ 122              		.thumb_func
+ 123              		.fpu fpv4-sp-d16
+ 125              	SystemClock_Config:
+ 126              		@ args = 0, pretend = 0, frame = 96
+ 127              		@ frame_needed = 0, uses_anonymous_args = 0
+ 128 0000 10B5     		push	{r4, lr}
+ 129 0002 98B0     		sub	sp, sp, #96
+ 130 0004 4422     		movs	r2, #68
+ 131 0006 0021     		movs	r1, #0
+ 132 0008 06A8     		add	r0, sp, #24
+ 133 000a FFF7FEFF 		bl	memset
+ 134 000e 0023     		movs	r3, #0
+ 135 0010 4FF40070 		mov	r0, #512
+ 136 0014 CDE90133 		strd	r3, r3, [sp, #4]
+ 137 0018 CDE90333 		strd	r3, r3, [sp, #12]
+ 138 001c 0593     		str	r3, [sp, #20]
+ 139 001e FFF7FEFF 		bl	HAL_PWREx_ControlVoltageScaling
+ 140 0022 08B1     		cbz	r0, .L16
+ 141              		.syntax unified
+ 142              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 143 0024 72B6     		cpsid i
+ 144              	@ 0 "" 2
+ 145              		.thumb
+ 146              		.syntax unified
+ 147              	.L17:
+ 148 0026 FEE7     		b	.L17
+ 149              	.L16:
+ 150 0028 9FED157B 		vldr.64	d7, .L23	@ int
+ 151 002c 4FF48071 		mov	r1, #256
+ 152 0030 1022     		movs	r2, #16
+ 153 0032 0223     		movs	r3, #2
+ 154 0034 CDE90912 		strd	r1, r2, [sp, #36]
+ 155 0038 06A8     		add	r0, sp, #24
+ 156 003a 0121     		movs	r1, #1
+ 157 003c 0A22     		movs	r2, #10
+ 158 003e CDE91033 		strd	r3, r3, [sp, #64]
+ 159 0042 0693     		str	r3, [sp, #24]
+ 160 0044 1693     		str	r3, [sp, #88]
+ 161 0046 8DED147B 		vstr.64	d7, [sp, #80]	@ int
+ 162 004a 1291     		str	r1, [sp, #72]
+ 163 004c 1392     		str	r2, [sp, #76]
+ 164 004e FFF7FEFF 		bl	HAL_RCC_OscConfig
+ 165 0052 0346     		mov	r3, r0
+ 166 0054 08B1     		cbz	r0, .L18
+ 167              		.syntax unified
+ 168              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 169 0056 72B6     		cpsid i
+ 170              	@ 0 "" 2
+ 171              		.thumb
+ 172              		.syntax unified
+ 173              	.L19:
+ 174 0058 FEE7     		b	.L19
+ 175              	.L18:
+ARM GAS  /tmp/ccGxcxkc.s 			page 4
 
 
- 177              	.L26:
- 178 007c AFF30080 		.align	3
- 179              	.L25:
- 180 0080 07000000 		.word	7
- 181 0084 02000000 		.word	2
- 183              		.section	.text.startup.main,"ax",%progbits
- 184              		.align	1
- 185              		.p2align 2,,3
- 186              		.global	main
- 187              		.syntax unified
- 188              		.thumb
- 189              		.thumb_func
- 190              		.fpu fpv4-sp-d16
- 192              	main:
- 193              		@ Volatile: function does not return.
- 194              		@ args = 0, pretend = 0, frame = 0
- 195              		@ frame_needed = 0, uses_anonymous_args = 0
- 196 0000 80B5     		push	{r7, lr}
- 197 0002 FFF7FEFF 		bl	HAL_Init
- 198 0006 FFF7FEFF 		bl	SystemClock_Config
- 199 000a FFF7FEFF 		bl	MX_GPIO_Init
- 200 000e FFF7FEFF 		bl	MX_USART2_UART_Init
- 201 0012 FFF7FEFF 		bl	MX_ADC3_Init
- 202 0016 FFF7FEFF 		bl	MX_TIM2_Init
- 203 001a 4FF4FA60 		mov	r0, #2000
- 204 001e FFF7FEFF 		bl	HAL_Delay
- 205 0022 4FF09040 		mov	r0, #1207959552
- 206 0026 2149     		ldr	r1, .L30
- 207 0028 4369     		ldr	r3, [r0, #20]
- 208 002a 214A     		ldr	r2, .L30+4
- 209 002c 43F48063 		orr	r3, r3, #1024
- 210 0030 4361     		str	r3, [r0, #20]
- 211 0032 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
- 212 0034 3F20     		movs	r0, #63
- 213 0036 03F10109 		add	r9, r3, #1
- 214 003a D054     		strb	r0, [r2, r3]
- 215 003c 03F10208 		add	r8, r3, #2
- 216 0040 DF1C     		adds	r7, r3, #3
- 217 0042 1E1D     		adds	r6, r3, #4
- 218 0044 5D1D     		adds	r5, r3, #5
- 219 0046 03F1060E 		add	lr, r3, #6
- 220 004a 03F1070C 		add	ip, r3, #7
- 221 004e 03F10804 		add	r4, r3, #8
- 222 0052 5FFA89F9 		uxtb	r9, r9
- 223 0056 0933     		adds	r3, r3, #9
- 224 0058 0B70     		strb	r3, [r1]
- 225 005a 5FFA88F8 		uxtb	r8, r8
- 226 005e 7D23     		movs	r3, #125
- 227 0060 02F80930 		strb	r3, [r2, r9]
- 228 0064 FFB2     		uxtb	r7, r7
- 229 0066 5223     		movs	r3, #82
- 230 0068 02F80830 		strb	r3, [r2, r8]
- 231 006c F6B2     		uxtb	r6, r6
- 232 006e BF23     		movs	r3, #191
- 233 0070 D355     		strb	r3, [r2, r7]
- 234 0072 EDB2     		uxtb	r5, r5
- 235 0074 0123     		movs	r3, #1
-ARM GAS  /tmp/ccfWYtlC.s 			page 5
+ 176 005a 0421     		movs	r1, #4
+ 177 005c 0F24     		movs	r4, #15
+ 178 005e 0322     		movs	r2, #3
+ 179 0060 0DEB0100 		add	r0, sp, r1
+ 180 0064 CDE90142 		strd	r4, r2, [sp, #4]
+ 181 0068 CDE90333 		strd	r3, r3, [sp, #12]
+ 182 006c 0593     		str	r3, [sp, #20]
+ 183 006e FFF7FEFF 		bl	HAL_RCC_ClockConfig
+ 184 0072 08B1     		cbz	r0, .L15
+ 185              		.syntax unified
+ 186              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 187 0074 72B6     		cpsid i
+ 188              	@ 0 "" 2
+ 189              		.thumb
+ 190              		.syntax unified
+ 191              	.L21:
+ 192 0076 FEE7     		b	.L21
+ 193              	.L15:
+ 194 0078 18B0     		add	sp, sp, #96
+ 195              		@ sp needed
+ 196 007a 10BD     		pop	{r4, pc}
+ 197              	.L24:
+ 198 007c AFF30080 		.align	3
+ 199              	.L23:
+ 200 0080 07000000 		.word	7
+ 201 0084 02000000 		.word	2
+ 203              		.section	.text.startup.main,"ax",%progbits
+ 204              		.align	1
+ 205              		.p2align 2,,3
+ 206              		.global	main
+ 207              		.syntax unified
+ 208              		.thumb
+ 209              		.thumb_func
+ 210              		.fpu fpv4-sp-d16
+ 212              	main:
+ 213              		@ Volatile: function does not return.
+ 214              		@ args = 0, pretend = 0, frame = 0
+ 215              		@ frame_needed = 0, uses_anonymous_args = 0
+ 216 0000 80B5     		push	{r7, lr}
+ 217 0002 FFF7FEFF 		bl	HAL_Init
+ 218 0006 FFF7FEFF 		bl	SystemClock_Config
+ 219 000a FFF7FEFF 		bl	MX_GPIO_Init
+ 220 000e FFF7FEFF 		bl	MX_USART2_UART_Init
+ 221 0012 FFF7FEFF 		bl	MX_ADC3_Init
+ 222 0016 FFF7FEFF 		bl	MX_TIM2_Init
+ 223 001a 4FF09043 		mov	r3, #1207959552
+ 224 001e 4FF4FA60 		mov	r0, #2000
+ 225 0022 5A69     		ldr	r2, [r3, #20]
+ 226 0024 42F48062 		orr	r2, r2, #1024
+ 227 0028 5A61     		str	r2, [r3, #20]
+ 228 002a 5A69     		ldr	r2, [r3, #20]
+ 229 002c 42F02002 		orr	r2, r2, #32
+ 230 0030 5A61     		str	r2, [r3, #20]
+ 231 0032 FFF7FEFF 		bl	HAL_Delay
+ 232 0036 1F49     		ldr	r1, .L28
+ 233 0038 1F4A     		ldr	r2, .L28+4
+ 234 003a 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
+ARM GAS  /tmp/ccGxcxkc.s 			page 5
 
 
- 236 0076 9355     		strb	r3, [r2, r6]
- 237 0078 5FFA8EFE 		uxtb	lr, lr
- 238 007c 5FFA8CFC 		uxtb	ip, ip
- 239 0080 E4B2     		uxtb	r4, r4
- 240 0082 F723     		movs	r3, #247
- 241 0084 5355     		strb	r3, [r2, r5]
- 242 0086 0021     		movs	r1, #0
- 243 0088 E923     		movs	r3, #233
- 244 008a 02F80E30 		strb	r3, [r2, lr]
- 245 008e 0948     		ldr	r0, .L30+8
- 246 0090 02F80C10 		strb	r1, [r2, ip]
- 247 0094 1155     		strb	r1, [r2, r4]
- 248 0096 FFF7FEFF 		bl	HAL_TIM_PWM_Start
- 249 009a 0648     		ldr	r0, .L30+8
- 250 009c 064C     		ldr	r4, .L30+12
- 251 009e FFF7FEFF 		bl	HAL_TIM_Base_Start_IT
- 252              	.L28:
- 253 00a2 2046     		mov	r0, r4
- 254 00a4 FFF7FEFF 		bl	HAL_ADC_Start_IT
- 255 00a8 FBE7     		b	.L28
- 256              	.L31:
- 257 00aa 00BF     		.align	2
- 258              	.L30:
- 259 00ac 00000000 		.word	.LANCHOR2
- 260 00b0 00000000 		.word	.LANCHOR3
- 261 00b4 00000000 		.word	htim2
- 262 00b8 00000000 		.word	hadc3
- 264              		.section	.text.Error_Handler,"ax",%progbits
- 265              		.align	1
- 266              		.p2align 2,,3
- 267              		.global	Error_Handler
- 268              		.syntax unified
- 269              		.thumb
- 270              		.thumb_func
- 271              		.fpu fpv4-sp-d16
- 273              	Error_Handler:
- 274              		@ Volatile: function does not return.
- 275              		@ args = 0, pretend = 0, frame = 0
- 276              		@ frame_needed = 0, uses_anonymous_args = 0
- 277              		@ link register save eliminated.
- 278              		.syntax unified
- 279              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 280 0000 72B6     		cpsid i
- 281              	@ 0 "" 2
- 282              		.thumb
- 283              		.syntax unified
- 284              	.L33:
- 285 0002 FEE7     		b	.L33
- 287              		.global	recvidx
- 288              		.global	recvtmp
- 289              		.global	recvbuf
- 290              		.global	qback
- 291              		.global	qfront
- 292              		.global	queue
- 293              		.section	.bss.qback,"aw",%nobits
- 294              		.set	.LANCHOR2,. + 0
- 297              	qback:
-ARM GAS  /tmp/ccfWYtlC.s 			page 6
+ 235 003c 3F20     		movs	r0, #63
+ 236 003e 03F10109 		add	r9, r3, #1
+ 237 0042 D054     		strb	r0, [r2, r3]
+ 238 0044 03F10208 		add	r8, r3, #2
+ 239 0048 DF1C     		adds	r7, r3, #3
+ 240 004a 1E1D     		adds	r6, r3, #4
+ 241 004c 5D1D     		adds	r5, r3, #5
+ 242 004e 03F1060E 		add	lr, r3, #6
+ 243 0052 03F1070C 		add	ip, r3, #7
+ 244 0056 03F10804 		add	r4, r3, #8
+ 245 005a 5FFA89F9 		uxtb	r9, r9
+ 246 005e 0933     		adds	r3, r3, #9
+ 247 0060 0B70     		strb	r3, [r1]
+ 248 0062 5FFA88F8 		uxtb	r8, r8
+ 249 0066 7D23     		movs	r3, #125
+ 250 0068 02F80930 		strb	r3, [r2, r9]
+ 251 006c FFB2     		uxtb	r7, r7
+ 252 006e 5223     		movs	r3, #82
+ 253 0070 02F80830 		strb	r3, [r2, r8]
+ 254 0074 F6B2     		uxtb	r6, r6
+ 255 0076 BF23     		movs	r3, #191
+ 256 0078 D355     		strb	r3, [r2, r7]
+ 257 007a EDB2     		uxtb	r5, r5
+ 258 007c 0123     		movs	r3, #1
+ 259 007e 9355     		strb	r3, [r2, r6]
+ 260 0080 5FFA8EFE 		uxtb	lr, lr
+ 261 0084 5FFA8CFC 		uxtb	ip, ip
+ 262 0088 E4B2     		uxtb	r4, r4
+ 263 008a F723     		movs	r3, #247
+ 264 008c 5355     		strb	r3, [r2, r5]
+ 265 008e 0021     		movs	r1, #0
+ 266 0090 E923     		movs	r3, #233
+ 267 0092 02F80E30 		strb	r3, [r2, lr]
+ 268 0096 0948     		ldr	r0, .L28+8
+ 269 0098 02F80C10 		strb	r1, [r2, ip]
+ 270 009c 1155     		strb	r1, [r2, r4]
+ 271 009e FFF7FEFF 		bl	HAL_TIM_PWM_Start
+ 272 00a2 0648     		ldr	r0, .L28+8
+ 273 00a4 064C     		ldr	r4, .L28+12
+ 274 00a6 FFF7FEFF 		bl	HAL_TIM_Base_Start_IT
+ 275              	.L26:
+ 276 00aa 2046     		mov	r0, r4
+ 277 00ac FFF7FEFF 		bl	HAL_ADC_Start_IT
+ 278 00b0 FBE7     		b	.L26
+ 279              	.L29:
+ 280 00b2 00BF     		.align	2
+ 281              	.L28:
+ 282 00b4 00000000 		.word	.LANCHOR2
+ 283 00b8 00000000 		.word	.LANCHOR3
+ 284 00bc 00000000 		.word	htim2
+ 285 00c0 00000000 		.word	hadc3
+ 287              		.section	.text.Error_Handler,"ax",%progbits
+ 288              		.align	1
+ 289              		.p2align 2,,3
+ 290              		.global	Error_Handler
+ 291              		.syntax unified
+ 292              		.thumb
+ARM GAS  /tmp/ccGxcxkc.s 			page 6
 
 
- 298 0000 00       		.space	1
- 299              		.section	.bss.qfront,"aw",%nobits
- 302              	qfront:
- 303 0000 00       		.space	1
- 304              		.section	.bss.queue,"aw",%nobits
- 305              		.align	2
- 306              		.set	.LANCHOR3,. + 0
- 309              	queue:
- 310 0000 00000000 		.space	64
- 310      00000000 
- 310      00000000 
- 310      00000000 
- 310      00000000 
- 311              		.section	.bss.recvbuf,"aw",%nobits
- 312              		.align	2
- 313              		.set	.LANCHOR1,. + 0
- 316              	recvbuf:
- 317 0000 00000000 		.space	64
- 317      00000000 
- 317      00000000 
- 317      00000000 
- 317      00000000 
- 318              		.section	.bss.recvidx,"aw",%nobits
- 319              		.set	.LANCHOR0,. + 0
- 322              	recvidx:
- 323 0000 00       		.space	1
- 324              		.section	.bss.recvtmp,"aw",%nobits
- 325              		.align	2
- 328              	recvtmp:
- 329 0000 00000000 		.space	68
- 329      00000000 
- 329      00000000 
- 329      00000000 
- 329      00000000 
- 330              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/ccfWYtlC.s 			page 7
+ 293              		.thumb_func
+ 294              		.fpu fpv4-sp-d16
+ 296              	Error_Handler:
+ 297              		@ Volatile: function does not return.
+ 298              		@ args = 0, pretend = 0, frame = 0
+ 299              		@ frame_needed = 0, uses_anonymous_args = 0
+ 300              		@ link register save eliminated.
+ 301              		.syntax unified
+ 302              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 303 0000 72B6     		cpsid i
+ 304              	@ 0 "" 2
+ 305              		.thumb
+ 306              		.syntax unified
+ 307              	.L31:
+ 308 0002 FEE7     		b	.L31
+ 310              		.global	recvidx
+ 311              		.global	recvtmp
+ 312              		.global	recvbuf
+ 313              		.global	qback
+ 314              		.global	qfront
+ 315              		.global	queue
+ 316              		.section	.bss.qback,"aw",%nobits
+ 317              		.set	.LANCHOR2,. + 0
+ 320              	qback:
+ 321 0000 00       		.space	1
+ 322              		.section	.bss.qfront,"aw",%nobits
+ 325              	qfront:
+ 326 0000 00       		.space	1
+ 327              		.section	.bss.queue,"aw",%nobits
+ 328              		.align	2
+ 329              		.set	.LANCHOR3,. + 0
+ 332              	queue:
+ 333 0000 00000000 		.space	64
+ 333      00000000 
+ 333      00000000 
+ 333      00000000 
+ 333      00000000 
+ 334              		.section	.bss.recvbuf,"aw",%nobits
+ 335              		.align	2
+ 336              		.set	.LANCHOR1,. + 0
+ 339              	recvbuf:
+ 340 0000 00000000 		.space	64
+ 340      00000000 
+ 340      00000000 
+ 340      00000000 
+ 340      00000000 
+ 341              		.section	.bss.recvidx,"aw",%nobits
+ 342              		.set	.LANCHOR0,. + 0
+ 345              	recvidx:
+ 346 0000 00       		.space	1
+ 347              		.section	.bss.recvtmp,"aw",%nobits
+ 348              		.align	2
+ 351              	recvtmp:
+ 352 0000 00000000 		.space	68
+ 352      00000000 
+ 352      00000000 
+ 352      00000000 
+ARM GAS  /tmp/ccGxcxkc.s 			page 7
+
+
+ 352      00000000 
+ 353              		.ident	"GCC: (Arch Repository) 11.2.0"
+ARM GAS  /tmp/ccGxcxkc.s 			page 8
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 main.c
-     /tmp/ccfWYtlC.s:16     .text.delay_us:0000000000000000 $t
-     /tmp/ccfWYtlC.s:25     .text.delay_us:0000000000000000 delay_us
-     /tmp/ccfWYtlC.s:41     .text.delay_us:0000000000000010 $d
-     /tmp/ccfWYtlC.s:44     .rodata.recv2uart.str1.4:0000000000000000 $d
-     /tmp/ccfWYtlC.s:48     .text.recv2uart:0000000000000000 $t
-     /tmp/ccfWYtlC.s:56     .text.recv2uart:0000000000000000 recv2uart
-     /tmp/ccfWYtlC.s:91     .text.recv2uart:0000000000000044 $d
-     /tmp/ccfWYtlC.s:97     .text.SystemClock_Config:0000000000000000 $t
-     /tmp/ccfWYtlC.s:105    .text.SystemClock_Config:0000000000000000 SystemClock_Config
-     /tmp/ccfWYtlC.s:180    .text.SystemClock_Config:0000000000000080 $d
-     /tmp/ccfWYtlC.s:184    .text.startup.main:0000000000000000 $t
-     /tmp/ccfWYtlC.s:192    .text.startup.main:0000000000000000 main
-     /tmp/ccfWYtlC.s:259    .text.startup.main:00000000000000ac $d
-     /tmp/ccfWYtlC.s:265    .text.Error_Handler:0000000000000000 $t
-     /tmp/ccfWYtlC.s:273    .text.Error_Handler:0000000000000000 Error_Handler
-     /tmp/ccfWYtlC.s:322    .bss.recvidx:0000000000000000 recvidx
-     /tmp/ccfWYtlC.s:328    .bss.recvtmp:0000000000000000 recvtmp
-     /tmp/ccfWYtlC.s:316    .bss.recvbuf:0000000000000000 recvbuf
-     /tmp/ccfWYtlC.s:297    .bss.qback:0000000000000000 qback
-     /tmp/ccfWYtlC.s:302    .bss.qfront:0000000000000000 qfront
-     /tmp/ccfWYtlC.s:309    .bss.queue:0000000000000000 queue
-     /tmp/ccfWYtlC.s:298    .bss.qback:0000000000000000 $d
-     /tmp/ccfWYtlC.s:303    .bss.qfront:0000000000000000 $d
-     /tmp/ccfWYtlC.s:305    .bss.queue:0000000000000000 $d
-     /tmp/ccfWYtlC.s:312    .bss.recvbuf:0000000000000000 $d
-     /tmp/ccfWYtlC.s:323    .bss.recvidx:0000000000000000 $d
-     /tmp/ccfWYtlC.s:325    .bss.recvtmp:0000000000000000 $d
+     /tmp/ccGxcxkc.s:16     .text.delay_us:0000000000000000 $t
+     /tmp/ccGxcxkc.s:25     .text.delay_us:0000000000000000 delay_us
+     /tmp/ccGxcxkc.s:41     .text.delay_us:0000000000000010 $d
+     /tmp/ccGxcxkc.s:44     .rodata.recv2uart.str1.4:0000000000000000 $d
+     /tmp/ccGxcxkc.s:51     .text.recv2uart:0000000000000000 $t
+     /tmp/ccGxcxkc.s:59     .text.recv2uart:0000000000000000 recv2uart
+     /tmp/ccGxcxkc.s:110    .text.recv2uart:0000000000000064 $d
+     /tmp/ccGxcxkc.s:117    .text.SystemClock_Config:0000000000000000 $t
+     /tmp/ccGxcxkc.s:125    .text.SystemClock_Config:0000000000000000 SystemClock_Config
+     /tmp/ccGxcxkc.s:200    .text.SystemClock_Config:0000000000000080 $d
+     /tmp/ccGxcxkc.s:204    .text.startup.main:0000000000000000 $t
+     /tmp/ccGxcxkc.s:212    .text.startup.main:0000000000000000 main
+     /tmp/ccGxcxkc.s:282    .text.startup.main:00000000000000b4 $d
+     /tmp/ccGxcxkc.s:288    .text.Error_Handler:0000000000000000 $t
+     /tmp/ccGxcxkc.s:296    .text.Error_Handler:0000000000000000 Error_Handler
+     /tmp/ccGxcxkc.s:345    .bss.recvidx:0000000000000000 recvidx
+     /tmp/ccGxcxkc.s:351    .bss.recvtmp:0000000000000000 recvtmp
+     /tmp/ccGxcxkc.s:339    .bss.recvbuf:0000000000000000 recvbuf
+     /tmp/ccGxcxkc.s:320    .bss.qback:0000000000000000 qback
+     /tmp/ccGxcxkc.s:325    .bss.qfront:0000000000000000 qfront
+     /tmp/ccGxcxkc.s:332    .bss.queue:0000000000000000 queue
+     /tmp/ccGxcxkc.s:321    .bss.qback:0000000000000000 $d
+     /tmp/ccGxcxkc.s:326    .bss.qfront:0000000000000000 $d
+     /tmp/ccGxcxkc.s:328    .bss.queue:0000000000000000 $d
+     /tmp/ccGxcxkc.s:335    .bss.recvbuf:0000000000000000 $d
+     /tmp/ccGxcxkc.s:346    .bss.recvidx:0000000000000000 $d
+     /tmp/ccGxcxkc.s:348    .bss.recvtmp:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 htim2
+memset
 sprintf
 HAL_UART_Transmit_IT
 huart2
-memset
 HAL_PWREx_ControlVoltageScaling
 HAL_RCC_OscConfig
 HAL_RCC_ClockConfig
