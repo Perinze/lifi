@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cckmpKzu.s 			page 1
+ARM GAS  /tmp/ccMCX6zk.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cckmpKzu.s 			page 1
   56 004c 0392     		str	r2, [sp, #12]
   57 004e 0948     		ldr	r0, .L14
   58 0050 0422     		movs	r2, #4
-ARM GAS  /tmp/cckmpKzu.s 			page 2
+ARM GAS  /tmp/ccMCX6zk.s 			page 2
 
 
   59 0052 6946     		mov	r1, sp
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cckmpKzu.s 			page 1
  115 0030 0891     		str	r1, [sp, #32]
  116 0032 2692     		str	r2, [sp, #152]
  117 0034 0121     		movs	r1, #1
-ARM GAS  /tmp/cckmpKzu.s 			page 3
+ARM GAS  /tmp/ccMCX6zk.s 			page 3
 
 
  118 0036 0822     		movs	r2, #8
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cckmpKzu.s 			page 1
  173              		.p2align 2,,3
  174              		.global	HAL_ADC_MspDeInit
  175              		.syntax unified
-ARM GAS  /tmp/cckmpKzu.s 			page 4
+ARM GAS  /tmp/ccMCX6zk.s 			page 4
 
 
  176              		.thumb
@@ -222,226 +222,236 @@ ARM GAS  /tmp/cckmpKzu.s 			page 1
  217              		@ args = 0, pretend = 0, frame = 0
  218              		@ frame_needed = 0, uses_anonymous_args = 0
  219 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
- 220 0002 4048     		ldr	r0, .L63
- 221 0004 404C     		ldr	r4, .L63+4
+ 220 0002 4348     		ldr	r0, .L63
+ 221 0004 434C     		ldr	r4, .L63+4
  222 0006 FFF7FEFF 		bl	HAL_ADC_GetValue
- 223 000a 404A     		ldr	r2, .L63+8
- 224 000c 2178     		ldrb	r1, [r4]	@ zero_extendqisi2
- 225 000e 1368     		ldr	r3, [r2]
- 226 0010 03B3     		cbz	r3, .L60
- 227 0012 012B     		cmp	r3, #1
- 228 0014 1ED0     		beq	.L60
- 229 0016 022B     		cmp	r3, #2
- 230 0018 3D4D     		ldr	r5, .L63+12
- 231 001a 1FD1     		bne	.L35
- 232 001c B0F5967F 		cmp	r0, #300
- 233 0020 2B68     		ldr	r3, [r5]
- 234 0022 1BD2     		bcs	.L35
- 235 0024 3B48     		ldr	r0, .L63+16
-ARM GAS  /tmp/cckmpKzu.s 			page 5
+ 223 000a 434A     		ldr	r2, .L63+8
+ 224 000c 1368     		ldr	r3, [r2]
+ 225 000e 5BBB     		cbnz	r3, .L34
+ 226 0010 40F2DC53 		movw	r3, #1500
+ 227 0014 9842     		cmp	r0, r3
+ 228 0016 2178     		ldrb	r1, [r4]	@ zero_extendqisi2
+ 229 0018 1DD8     		bhi	.L55
+ 230              	.L59:
+ 231 001a 404D     		ldr	r5, .L63+12
+ 232              	.L35:
+ 233 001c 2B68     		ldr	r3, [r5]
+ 234 001e 012B     		cmp	r3, #1
+ 235 0020 46D0     		beq	.L60
+ARM GAS  /tmp/ccMCX6zk.s 			page 5
 
 
- 236 0026 3C4F     		ldr	r7, .L63+20
- 237 0028 0068     		ldr	r0, [r0]
- 238 002a 3C4E     		ldr	r6, .L63+24
- 239 002c 406A     		ldr	r0, [r0, #36]
- 240 002e 3F68     		ldr	r7, [r7]
- 241 0030 A0EB070C 		sub	ip, r0, r7
- 242 0034 3078     		ldrb	r0, [r6]	@ zero_extendqisi2
- 243 0036 4000     		lsls	r0, r0, #1
- 244 0038 BCF17D0F 		cmp	ip, #125
- 245 003c D8BF     		it	le
- 246 003e 40F00100 		orrle	r0, r0, #1
- 247 0042 C0B2     		uxtb	r0, r0
- 248 0044 3070     		strb	r0, [r6]
- 249 0046 0126     		movs	r6, #1
- 250 0048 1660     		str	r6, [r2]
- 251 004a A9B1     		cbz	r1, .L38
- 252 004c 0139     		subs	r1, r1, #1
- 253 004e C9B2     		uxtb	r1, r1
- 254 0050 2170     		strb	r1, [r4]
- 255 0052 03E0     		b	.L35
- 256              	.L60:
- 257 0054 B0F5967F 		cmp	r0, #300
- 258 0058 05D8     		bhi	.L55
- 259              	.L59:
- 260 005a 2D4D     		ldr	r5, .L63+12
- 261              	.L35:
- 262 005c 2B68     		ldr	r3, [r5]
- 263 005e 012B     		cmp	r3, #1
- 264 0060 20D0     		beq	.L61
- 265 0062 59B1     		cbz	r1, .L46
- 266              	.L33:
- 267 0064 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 268              	.L55:
- 269 0066 2B49     		ldr	r1, .L63+16
- 270 0068 2B4B     		ldr	r3, .L63+20
- 271 006a 0968     		ldr	r1, [r1]
- 272 006c 0220     		movs	r0, #2
- 273 006e 496A     		ldr	r1, [r1, #36]
- 274 0070 1960     		str	r1, [r3]
- 275 0072 1060     		str	r0, [r2]
- 276 0074 2178     		ldrb	r1, [r4]	@ zero_extendqisi2
- 277 0076 F0E7     		b	.L59
- 278              	.L38:
- 279 0078 012B     		cmp	r3, #1
- 280 007a 15D0     		beq	.L45
- 281              	.L46:
- 282 007c 022B     		cmp	r3, #2
- 283 007e 1CD0     		beq	.L62
- 284 0080 032B     		cmp	r3, #3
- 285 0082 EFD1     		bne	.L33
- 286 0084 0823     		movs	r3, #8
- 287 0086 2649     		ldr	r1, .L63+28
- 288 0088 2370     		strb	r3, [r4]
- 289 008a 244B     		ldr	r3, .L63+24
- 290 008c 0A68     		ldr	r2, [r1]
- 291 008e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 292 0090 2448     		ldr	r0, .L63+32
-ARM GAS  /tmp/cckmpKzu.s 			page 6
+ 236 0022 11B1     		cbz	r1, .L46
+ 237              	.L33:
+ 238 0024 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 239              	.L38:
+ 240 0026 012B     		cmp	r3, #1
+ 241 0028 44D0     		beq	.L45
+ 242              	.L46:
+ 243 002a 022B     		cmp	r3, #2
+ 244 002c 4BD0     		beq	.L61
+ 245 002e 032B     		cmp	r3, #3
+ 246 0030 F8D1     		bne	.L33
+ 247 0032 3B4E     		ldr	r6, .L63+16
+ 248 0034 3B48     		ldr	r0, .L63+20
+ 249 0036 0823     		movs	r3, #8
+ 250 0038 0122     		movs	r2, #1
+ 251 003a 3146     		mov	r1, r6
+ 252 003c 2370     		strb	r3, [r4]
+ 253 003e FFF7FEFF 		bl	HAL_UART_Transmit_IT
+ 254 0042 3378     		ldrb	r3, [r6]	@ zero_extendqisi2
+ 255 0044 384A     		ldr	r2, .L63+24
+ 256 0046 E92B     		cmp	r3, #233
+ 257 0048 4BD0     		beq	.L57
+ 258              	.L44:
+ 259 004a 1370     		strb	r3, [r2]
+ 260 004c F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 261              	.L62:
+ 262 004e 40F2DC53 		movw	r3, #1500
+ 263 0052 9842     		cmp	r0, r3
+ 264 0054 E1D9     		bls	.L59
+ 265              	.L55:
+ 266 0056 3549     		ldr	r1, .L63+28
+ 267 0058 354B     		ldr	r3, .L63+32
+ 268 005a 0968     		ldr	r1, [r1]
+ 269 005c 0220     		movs	r0, #2
+ 270 005e 496A     		ldr	r1, [r1, #36]
+ 271 0060 1960     		str	r1, [r3]
+ 272 0062 1060     		str	r0, [r2]
+ 273 0064 2178     		ldrb	r1, [r4]	@ zero_extendqisi2
+ 274 0066 D8E7     		b	.L59
+ 275              	.L34:
+ 276 0068 012B     		cmp	r3, #1
+ 277 006a 2178     		ldrb	r1, [r4]	@ zero_extendqisi2
+ 278 006c EFD0     		beq	.L62
+ 279 006e 022B     		cmp	r3, #2
+ 280 0070 2A4D     		ldr	r5, .L63+12
+ 281 0072 D3D1     		bne	.L35
+ 282 0074 40F2DB56 		movw	r6, #1499
+ 283 0078 B042     		cmp	r0, r6
+ 284 007a 2B68     		ldr	r3, [r5]
+ 285 007c CED8     		bhi	.L35
+ 286 007e 2B48     		ldr	r0, .L63+28
+ 287 0080 2B4F     		ldr	r7, .L63+32
+ 288 0082 0068     		ldr	r0, [r0]
+ 289 0084 264E     		ldr	r6, .L63+16
+ 290 0086 406A     		ldr	r0, [r0, #36]
+ 291 0088 3F68     		ldr	r7, [r7]
+ 292 008a A0EB070C 		sub	ip, r0, r7
+ARM GAS  /tmp/ccMCX6zk.s 			page 6
 
 
- 293 0092 E92B     		cmp	r3, #233
- 294 0094 8354     		strb	r3, [r0, r2]
- 295 0096 02F10100 		add	r0, r2, #1
- 296 009a 0860     		str	r0, [r1]
- 297 009c 2248     		ldr	r0, .L63+36
- 298 009e 1AD0     		beq	.L57
- 299              	.L44:
- 300 00a0 0370     		strb	r3, [r0]
- 301 00a2 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 302              	.L61:
- 303 00a4 1D4B     		ldr	r3, .L63+24
- 304 00a6 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
- 305              	.L45:
- 306 00a8 3F28     		cmp	r0, #63
- 307 00aa DBD1     		bne	.L33
- 308 00ac 1E4B     		ldr	r3, .L63+36
- 309 00ae 0822     		movs	r2, #8
- 310 00b0 2270     		strb	r2, [r4]
- 311 00b2 1870     		strb	r0, [r3]
- 312 00b4 0222     		movs	r2, #2
- 313 00b6 2A60     		str	r2, [r5]
- 314 00b8 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 315              	.L62:
- 316 00ba 184B     		ldr	r3, .L63+24
- 317 00bc 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 318 00be 7D2B     		cmp	r3, #125
- 319 00c0 D0D1     		bne	.L33
- 320 00c2 0820     		movs	r0, #8
- 321 00c4 184A     		ldr	r2, .L63+36
- 322 00c6 1649     		ldr	r1, .L63+28
- 323 00c8 2070     		strb	r0, [r4]
- 324 00ca 0320     		movs	r0, #3
- 325 00cc 2860     		str	r0, [r5]
- 326 00ce 1370     		strb	r3, [r2]
- 327 00d0 0020     		movs	r0, #0
- 328 00d2 0860     		str	r0, [r1]
- 329 00d4 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 330              	.L57:
- 331 00d6 0678     		ldrb	r6, [r0]	@ zero_extendqisi2
- 332 00d8 F72E     		cmp	r6, #247
- 333 00da E1D1     		bne	.L44
- 334 00dc 4FF09046 		mov	r6, #1207959552
- 335 00e0 013A     		subs	r2, r2, #1
- 336 00e2 7369     		ldr	r3, [r6, #20]
- 337 00e4 43F02003 		orr	r3, r3, #32
- 338 00e8 7361     		str	r3, [r6, #20]
- 339 00ea 0A60     		str	r2, [r1]
- 340 00ec FFF7FEFF 		bl	recv2uart
- 341 00f0 0023     		movs	r3, #0
- 342 00f2 2370     		strb	r3, [r4]
- 343 00f4 7369     		ldr	r3, [r6, #20]
- 344 00f6 0122     		movs	r2, #1
- 345 00f8 23F02003 		bic	r3, r3, #32
- 346 00fc 2A60     		str	r2, [r5]
- 347 00fe 7361     		str	r3, [r6, #20]
- 348 0100 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 349              	.L64:
-ARM GAS  /tmp/cckmpKzu.s 			page 7
+ 293 008e 3078     		ldrb	r0, [r6]	@ zero_extendqisi2
+ 294 0090 4000     		lsls	r0, r0, #1
+ 295 0092 BCF17D0F 		cmp	ip, #125
+ 296 0096 D8BF     		it	le
+ 297 0098 40F00100 		orrle	r0, r0, #1
+ 298 009c C0B2     		uxtb	r0, r0
+ 299 009e 3070     		strb	r0, [r6]
+ 300 00a0 0126     		movs	r6, #1
+ 301 00a2 1660     		str	r6, [r2]
+ 302 00a4 0029     		cmp	r1, #0
+ 303 00a6 BED0     		beq	.L38
+ 304 00a8 0139     		subs	r1, r1, #1
+ 305 00aa C9B2     		uxtb	r1, r1
+ 306 00ac 2170     		strb	r1, [r4]
+ 307 00ae B5E7     		b	.L35
+ 308              	.L60:
+ 309 00b0 1B4B     		ldr	r3, .L63+16
+ 310 00b2 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 311              	.L45:
+ 312 00b4 3F28     		cmp	r0, #63
+ 313 00b6 B5D1     		bne	.L33
+ 314 00b8 1B4B     		ldr	r3, .L63+24
+ 315 00ba 0822     		movs	r2, #8
+ 316 00bc 2270     		strb	r2, [r4]
+ 317 00be 1870     		strb	r0, [r3]
+ 318 00c0 0222     		movs	r2, #2
+ 319 00c2 2A60     		str	r2, [r5]
+ 320 00c4 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 321              	.L61:
+ 322 00c6 164B     		ldr	r3, .L63+16
+ 323 00c8 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 324 00ca 7D2B     		cmp	r3, #125
+ 325 00cc AAD1     		bne	.L33
+ 326 00ce 0820     		movs	r0, #8
+ 327 00d0 154A     		ldr	r2, .L63+24
+ 328 00d2 1849     		ldr	r1, .L63+36
+ 329 00d4 2070     		strb	r0, [r4]
+ 330 00d6 0320     		movs	r0, #3
+ 331 00d8 2860     		str	r0, [r5]
+ 332 00da 1370     		strb	r3, [r2]
+ 333 00dc 0020     		movs	r0, #0
+ 334 00de 0860     		str	r0, [r1]
+ 335 00e0 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 336              	.L57:
+ 337 00e2 1178     		ldrb	r1, [r2]	@ zero_extendqisi2
+ 338 00e4 F729     		cmp	r1, #247
+ 339 00e6 B0D1     		bne	.L44
+ 340 00e8 4FF09043 		mov	r3, #1207959552
+ 341 00ec 1149     		ldr	r1, .L63+36
+ 342 00ee 5A69     		ldr	r2, [r3, #20]
+ 343 00f0 42F02002 		orr	r2, r2, #32
+ 344 00f4 5A61     		str	r2, [r3, #20]
+ 345 00f6 0A68     		ldr	r2, [r1]
+ 346 00f8 023A     		subs	r2, r2, #2
+ 347 00fa 0A60     		str	r2, [r1]
+ 348 00fc 0022     		movs	r2, #0
+ 349 00fe 2270     		strb	r2, [r4]
+ARM GAS  /tmp/ccMCX6zk.s 			page 7
 
 
- 350 0102 00BF     		.align	2
- 351              	.L63:
- 352 0104 00000000 		.word	.LANCHOR0
- 353 0108 00000000 		.word	.LANCHOR2
- 354 010c 00000000 		.word	.LANCHOR1
- 355 0110 00000000 		.word	.LANCHOR4
- 356 0114 00000000 		.word	htim2
- 357 0118 00000000 		.word	.LANCHOR3
- 358 011c 00000000 		.word	.LANCHOR5
- 359 0120 00000000 		.word	recvidx
- 360 0124 00000000 		.word	recvbuf
- 361 0128 00000000 		.word	.LANCHOR6
- 363              		.global	hadc3
- 364              		.section	.bss.bitcnt.2,"aw",%nobits
- 365              		.set	.LANCHOR2,. + 0
- 368              	bitcnt.2:
- 369 0000 00       		.space	1
- 370              		.section	.bss.data.3,"aw",%nobits
- 371              		.set	.LANCHOR5,. + 0
- 374              	data.3:
- 375 0000 00       		.space	1
- 376              		.section	.bss.hadc3,"aw",%nobits
- 377              		.align	2
- 378              		.set	.LANCHOR0,. + 0
- 381              	hadc3:
- 382 0000 00000000 		.space	100
- 382      00000000 
- 382      00000000 
- 382      00000000 
- 382      00000000 
- 383              		.section	.bss.last_data.0,"aw",%nobits
- 384              		.set	.LANCHOR6,. + 0
- 387              	last_data.0:
- 388 0000 00       		.space	1
- 389              		.section	.bss.start.5,"aw",%nobits
- 390              		.align	2
- 391              		.set	.LANCHOR3,. + 0
- 394              	start.5:
- 395 0000 00000000 		.space	4
- 396              		.section	.bss.state.6,"aw",%nobits
+ 350 0100 5A69     		ldr	r2, [r3, #20]
+ 351 0102 0121     		movs	r1, #1
+ 352 0104 22F02002 		bic	r2, r2, #32
+ 353 0108 2960     		str	r1, [r5]
+ 354 010a 5A61     		str	r2, [r3, #20]
+ 355 010c F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 356              	.L64:
+ 357 010e 00BF     		.align	2
+ 358              	.L63:
+ 359 0110 00000000 		.word	.LANCHOR0
+ 360 0114 00000000 		.word	.LANCHOR2
+ 361 0118 00000000 		.word	.LANCHOR1
+ 362 011c 00000000 		.word	.LANCHOR4
+ 363 0120 00000000 		.word	.LANCHOR5
+ 364 0124 00000000 		.word	huart2
+ 365 0128 00000000 		.word	.LANCHOR6
+ 366 012c 00000000 		.word	htim2
+ 367 0130 00000000 		.word	.LANCHOR3
+ 368 0134 00000000 		.word	recvidx
+ 370              		.global	hadc3
+ 371              		.section	.bss.bitcnt.2,"aw",%nobits
+ 372              		.set	.LANCHOR2,. + 0
+ 375              	bitcnt.2:
+ 376 0000 00       		.space	1
+ 377              		.section	.bss.data.3,"aw",%nobits
+ 378              		.set	.LANCHOR5,. + 0
+ 381              	data.3:
+ 382 0000 00       		.space	1
+ 383              		.section	.bss.hadc3,"aw",%nobits
+ 384              		.align	2
+ 385              		.set	.LANCHOR0,. + 0
+ 388              	hadc3:
+ 389 0000 00000000 		.space	100
+ 389      00000000 
+ 389      00000000 
+ 389      00000000 
+ 389      00000000 
+ 390              		.section	.bss.last_data.0,"aw",%nobits
+ 391              		.set	.LANCHOR6,. + 0
+ 394              	last_data.0:
+ 395 0000 00       		.space	1
+ 396              		.section	.bss.start.5,"aw",%nobits
  397              		.align	2
- 398              		.set	.LANCHOR1,. + 0
- 401              	state.6:
+ 398              		.set	.LANCHOR3,. + 0
+ 401              	start.5:
  402 0000 00000000 		.space	4
- 403              		.section	.data.byte_state.1,"aw"
+ 403              		.section	.bss.state.6,"aw",%nobits
  404              		.align	2
- 405              		.set	.LANCHOR4,. + 0
- 408              	byte_state.1:
- 409 0000 01000000 		.word	1
- 410              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/cckmpKzu.s 			page 8
+ 405              		.set	.LANCHOR1,. + 0
+ 408              	state.6:
+ 409 0000 00000000 		.space	4
+ 410              		.section	.data.byte_state.1,"aw"
+ 411              		.align	2
+ 412              		.set	.LANCHOR4,. + 0
+ 415              	byte_state.1:
+ 416 0000 01000000 		.word	1
+ 417              		.ident	"GCC: (Arch Repository) 11.2.0"
+ARM GAS  /tmp/ccMCX6zk.s 			page 8
+
+
+ARM GAS  /tmp/ccMCX6zk.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 adc.c
-     /tmp/cckmpKzu.s:16     .text.MX_ADC3_Init:0000000000000000 $t
-     /tmp/cckmpKzu.s:25     .text.MX_ADC3_Init:0000000000000000 MX_ADC3_Init
-     /tmp/cckmpKzu.s:78     .text.MX_ADC3_Init:0000000000000074 $d
-     /tmp/cckmpKzu.s:83     .text.HAL_ADC_MspInit:0000000000000000 $t
-     /tmp/cckmpKzu.s:91     .text.HAL_ADC_MspInit:0000000000000000 HAL_ADC_MspInit
-     /tmp/cckmpKzu.s:167    .text.HAL_ADC_MspInit:00000000000000a8 $d
-     /tmp/cckmpKzu.s:172    .text.HAL_ADC_MspDeInit:0000000000000000 $t
-     /tmp/cckmpKzu.s:180    .text.HAL_ADC_MspDeInit:0000000000000000 HAL_ADC_MspDeInit
-     /tmp/cckmpKzu.s:203    .text.HAL_ADC_MspDeInit:0000000000000028 $d
-     /tmp/cckmpKzu.s:208    .text.HAL_ADC_ConvCpltCallback:0000000000000000 $t
-     /tmp/cckmpKzu.s:216    .text.HAL_ADC_ConvCpltCallback:0000000000000000 HAL_ADC_ConvCpltCallback
-     /tmp/cckmpKzu.s:352    .text.HAL_ADC_ConvCpltCallback:0000000000000104 $d
-     /tmp/cckmpKzu.s:381    .bss.hadc3:0000000000000000 hadc3
-     /tmp/cckmpKzu.s:368    .bss.bitcnt.2:0000000000000000 bitcnt.2
-     /tmp/cckmpKzu.s:369    .bss.bitcnt.2:0000000000000000 $d
-     /tmp/cckmpKzu.s:374    .bss.data.3:0000000000000000 data.3
-     /tmp/cckmpKzu.s:375    .bss.data.3:0000000000000000 $d
-     /tmp/cckmpKzu.s:377    .bss.hadc3:0000000000000000 $d
-     /tmp/cckmpKzu.s:387    .bss.last_data.0:0000000000000000 last_data.0
-     /tmp/cckmpKzu.s:388    .bss.last_data.0:0000000000000000 $d
-     /tmp/cckmpKzu.s:390    .bss.start.5:0000000000000000 $d
-     /tmp/cckmpKzu.s:394    .bss.start.5:0000000000000000 start.5
-     /tmp/cckmpKzu.s:397    .bss.state.6:0000000000000000 $d
-     /tmp/cckmpKzu.s:401    .bss.state.6:0000000000000000 state.6
-     /tmp/cckmpKzu.s:404    .data.byte_state.1:0000000000000000 $d
-     /tmp/cckmpKzu.s:408    .data.byte_state.1:0000000000000000 byte_state.1
+     /tmp/ccMCX6zk.s:16     .text.MX_ADC3_Init:0000000000000000 $t
+     /tmp/ccMCX6zk.s:25     .text.MX_ADC3_Init:0000000000000000 MX_ADC3_Init
+     /tmp/ccMCX6zk.s:78     .text.MX_ADC3_Init:0000000000000074 $d
+     /tmp/ccMCX6zk.s:83     .text.HAL_ADC_MspInit:0000000000000000 $t
+     /tmp/ccMCX6zk.s:91     .text.HAL_ADC_MspInit:0000000000000000 HAL_ADC_MspInit
+     /tmp/ccMCX6zk.s:167    .text.HAL_ADC_MspInit:00000000000000a8 $d
+     /tmp/ccMCX6zk.s:172    .text.HAL_ADC_MspDeInit:0000000000000000 $t
+     /tmp/ccMCX6zk.s:180    .text.HAL_ADC_MspDeInit:0000000000000000 HAL_ADC_MspDeInit
+     /tmp/ccMCX6zk.s:203    .text.HAL_ADC_MspDeInit:0000000000000028 $d
+     /tmp/ccMCX6zk.s:208    .text.HAL_ADC_ConvCpltCallback:0000000000000000 $t
+     /tmp/ccMCX6zk.s:216    .text.HAL_ADC_ConvCpltCallback:0000000000000000 HAL_ADC_ConvCpltCallback
+     /tmp/ccMCX6zk.s:359    .text.HAL_ADC_ConvCpltCallback:0000000000000110 $d
+     /tmp/ccMCX6zk.s:388    .bss.hadc3:0000000000000000 hadc3
+     /tmp/ccMCX6zk.s:375    .bss.bitcnt.2:0000000000000000 bitcnt.2
+     /tmp/ccMCX6zk.s:376    .bss.bitcnt.2:0000000000000000 $d
+     /tmp/ccMCX6zk.s:381    .bss.data.3:0000000000000000 data.3
+     /tmp/ccMCX6zk.s:382    .bss.data.3:0000000000000000 $d
+     /tmp/ccMCX6zk.s:384    .bss.hadc3:0000000000000000 $d
+     /tmp/ccMCX6zk.s:394    .bss.last_data.0:0000000000000000 last_data.0
+     /tmp/ccMCX6zk.s:395    .bss.last_data.0:0000000000000000 $d
+     /tmp/ccMCX6zk.s:397    .bss.start.5:0000000000000000 $d
+     /tmp/ccMCX6zk.s:401    .bss.start.5:0000000000000000 start.5
+     /tmp/ccMCX6zk.s:404    .bss.state.6:0000000000000000 $d
+     /tmp/ccMCX6zk.s:408    .bss.state.6:0000000000000000 state.6
+     /tmp/ccMCX6zk.s:411    .data.byte_state.1:0000000000000000 $d
+     /tmp/ccMCX6zk.s:415    .data.byte_state.1:0000000000000000 byte_state.1
 
 UNDEFINED SYMBOLS
 HAL_ADC_Init
@@ -455,7 +465,7 @@ HAL_NVIC_EnableIRQ
 HAL_GPIO_DeInit
 HAL_NVIC_DisableIRQ
 HAL_ADC_GetValue
-recv2uart
+HAL_UART_Transmit_IT
+huart2
 htim2
 recvidx
-recvbuf

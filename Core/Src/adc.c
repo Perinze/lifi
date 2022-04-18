@@ -231,12 +231,18 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
     } else if (!bitcnt && byte_state == 3) {
       // HAL_UART_Transmit(&huart2, "state 3\r\n", sizeof("\r\nstate 3\r\n"), 0xff);
       bitcnt = 8;
-      recvbuf[recvidx++] = data;
+      /*
+      char str[16];
+      sprintf(str, "%1x", (int)(data & 0xf));
+      sprintf(str, "%1x", (int)((data >> 4) & 0xf));
+      */
+      HAL_UART_Transmit_IT(&huart2, (uint8_t*)&data, sizeof(data));
+      /* recvbuf[recvidx++] = data; */
       if (data == FRMEND2 && last_data == FRMEND1) {
         // HAL_UART_Transmit(&huart2, "state 4\r\n", sizeof("\r\nstate 4\r\n"), 0xff);
         LD2_GPIO_Port->ODR |= (LD2_Pin);
         recvidx -= 2;
-        recv2uart();
+        /* recv2uart(); */
         bitcnt = 0;
         byte_state = 1;
         LD2_GPIO_Port->ODR &= (~LD2_Pin);

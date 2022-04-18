@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccr8SpB9.s 			page 1
+ARM GAS  /tmp/ccjqOH1C.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccr8SpB9.s 			page 1
   57              		.thumb_func
   58              		.fpu fpv4-sp-d16
   60              	HAL_UART_MspInit:
-ARM GAS  /tmp/ccr8SpB9.s 			page 2
+ARM GAS  /tmp/ccjqOH1C.s 			page 2
 
 
   61              		@ args = 0, pretend = 0, frame = 168
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccr8SpB9.s 			page 1
  115 007a 1549     		ldr	r1, .L22+12
  116 007c 0222     		movs	r2, #2
  117 007e C5E90012 		strd	r1, r2, [r5]
-ARM GAS  /tmp/ccr8SpB9.s 			page 3
+ARM GAS  /tmp/ccjqOH1C.s 			page 3
 
 
  118 0082 8022     		movs	r2, #128
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccr8SpB9.s 			page 1
  174 000c 10B5     		push	{r4, lr}
  175 000e 936D     		ldr	r3, [r2, #88]
  176 0010 0446     		mov	r4, r0
-ARM GAS  /tmp/ccr8SpB9.s 			page 4
+ARM GAS  /tmp/ccjqOH1C.s 			page 4
 
 
  177 0012 23F40033 		bic	r3, r3, #131072
@@ -196,45 +196,90 @@ ARM GAS  /tmp/ccr8SpB9.s 			page 1
  189              	.L30:
  190 0034 00440040 		.word	1073759232
  191 0038 00100240 		.word	1073876992
- 193              		.global	hdma_usart2_tx
- 194              		.global	huart2
- 195              		.section	.bss.hdma_usart2_tx,"aw",%nobits
- 196              		.align	2
- 197              		.set	.LANCHOR1,. + 0
- 200              	hdma_usart2_tx:
- 201 0000 00000000 		.space	72
- 201      00000000 
- 201      00000000 
- 201      00000000 
- 201      00000000 
- 202              		.section	.bss.huart2,"aw",%nobits
- 203              		.align	2
- 204              		.set	.LANCHOR0,. + 0
- 207              	huart2:
- 208 0000 00000000 		.space	132
- 208      00000000 
- 208      00000000 
- 208      00000000 
- 208      00000000 
- 209              		.ident	"GCC: (Arch Repository) 11.2.0"
-ARM GAS  /tmp/ccr8SpB9.s 			page 5
+ 193              		.section	.text.HAL_UART_RxCpltCallback,"ax",%progbits
+ 194              		.align	1
+ 195              		.p2align 2,,3
+ 196              		.global	HAL_UART_RxCpltCallback
+ 197              		.syntax unified
+ 198              		.thumb
+ 199              		.thumb_func
+ 200              		.fpu fpv4-sp-d16
+ 202              	HAL_UART_RxCpltCallback:
+ 203              		@ args = 0, pretend = 0, frame = 0
+ 204              		@ frame_needed = 0, uses_anonymous_args = 0
+ 205              		@ link register save eliminated.
+ 206 0000 30B4     		push	{r4, r5}
+ 207 0002 0A4C     		ldr	r4, .L34
+ 208 0004 0A4A     		ldr	r2, .L34+4
+ 209 0006 2368     		ldr	r3, [r4]
+ 210 0008 0A4D     		ldr	r5, .L34+8
+ 211 000a D2F800C0 		ldr	ip, [r2]	@ unaligned
+ 212 000e 45F803C0 		str	ip, [r5, r3]	@ unaligned
+ 213 0012 0948     		ldr	r0, .L34+12
+ 214 0014 5919     		adds	r1, r3, r5
+ 215 0016 0C33     		adds	r3, r3, #12
+ 216 0018 2360     		str	r3, [r4]
+ 217 001a 0368     		ldr	r3, [r0]
+ 218 001c 0C33     		adds	r3, r3, #12
+ 219 001e 0360     		str	r3, [r0]
+ 220 0020 5068     		ldr	r0, [r2, #4]	@ unaligned
+ 221 0022 9368     		ldr	r3, [r2, #8]	@ unaligned
+ 222 0024 8B60     		str	r3, [r1, #8]	@ unaligned
+ 223 0026 4860     		str	r0, [r1, #4]	@ unaligned
+ 224 0028 30BC     		pop	{r4, r5}
+ 225 002a 7047     		bx	lr
+ 226              	.L35:
+ 227              		.align	2
+ 228              	.L34:
+ 229 002c 00000000 		.word	qback
+ 230 0030 00000000 		.word	uartbuf
+ 231 0034 00000000 		.word	queue
+ 232 0038 00000000 		.word	uart_byte_cnt
+ 234              		.global	hdma_usart2_tx
+ 235              		.global	huart2
+ 236              		.section	.bss.hdma_usart2_tx,"aw",%nobits
+ARM GAS  /tmp/ccjqOH1C.s 			page 5
+
+
+ 237              		.align	2
+ 238              		.set	.LANCHOR1,. + 0
+ 241              	hdma_usart2_tx:
+ 242 0000 00000000 		.space	72
+ 242      00000000 
+ 242      00000000 
+ 242      00000000 
+ 242      00000000 
+ 243              		.section	.bss.huart2,"aw",%nobits
+ 244              		.align	2
+ 245              		.set	.LANCHOR0,. + 0
+ 248              	huart2:
+ 249 0000 00000000 		.space	132
+ 249      00000000 
+ 249      00000000 
+ 249      00000000 
+ 249      00000000 
+ 250              		.ident	"GCC: (Arch Repository) 11.2.0"
+ARM GAS  /tmp/ccjqOH1C.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 usart.c
-     /tmp/ccr8SpB9.s:16     .text.MX_USART2_UART_Init:0000000000000000 $t
-     /tmp/ccr8SpB9.s:25     .text.MX_USART2_UART_Init:0000000000000000 MX_USART2_UART_Init
-     /tmp/ccr8SpB9.s:48     .text.MX_USART2_UART_Init:0000000000000034 $d
-     /tmp/ccr8SpB9.s:52     .text.HAL_UART_MspInit:0000000000000000 $t
-     /tmp/ccr8SpB9.s:60     .text.HAL_UART_MspInit:0000000000000000 HAL_UART_MspInit
-     /tmp/ccr8SpB9.s:150    .text.HAL_UART_MspInit:00000000000000c4 $d
-     /tmp/ccr8SpB9.s:156    .text.HAL_UART_MspDeInit:0000000000000000 $t
-     /tmp/ccr8SpB9.s:164    .text.HAL_UART_MspDeInit:0000000000000000 HAL_UART_MspDeInit
-     /tmp/ccr8SpB9.s:190    .text.HAL_UART_MspDeInit:0000000000000034 $d
-     /tmp/ccr8SpB9.s:200    .bss.hdma_usart2_tx:0000000000000000 hdma_usart2_tx
-     /tmp/ccr8SpB9.s:207    .bss.huart2:0000000000000000 huart2
-     /tmp/ccr8SpB9.s:196    .bss.hdma_usart2_tx:0000000000000000 $d
-     /tmp/ccr8SpB9.s:203    .bss.huart2:0000000000000000 $d
+     /tmp/ccjqOH1C.s:16     .text.MX_USART2_UART_Init:0000000000000000 $t
+     /tmp/ccjqOH1C.s:25     .text.MX_USART2_UART_Init:0000000000000000 MX_USART2_UART_Init
+     /tmp/ccjqOH1C.s:48     .text.MX_USART2_UART_Init:0000000000000034 $d
+     /tmp/ccjqOH1C.s:52     .text.HAL_UART_MspInit:0000000000000000 $t
+     /tmp/ccjqOH1C.s:60     .text.HAL_UART_MspInit:0000000000000000 HAL_UART_MspInit
+     /tmp/ccjqOH1C.s:150    .text.HAL_UART_MspInit:00000000000000c4 $d
+     /tmp/ccjqOH1C.s:156    .text.HAL_UART_MspDeInit:0000000000000000 $t
+     /tmp/ccjqOH1C.s:164    .text.HAL_UART_MspDeInit:0000000000000000 HAL_UART_MspDeInit
+     /tmp/ccjqOH1C.s:190    .text.HAL_UART_MspDeInit:0000000000000034 $d
+     /tmp/ccjqOH1C.s:194    .text.HAL_UART_RxCpltCallback:0000000000000000 $t
+     /tmp/ccjqOH1C.s:202    .text.HAL_UART_RxCpltCallback:0000000000000000 HAL_UART_RxCpltCallback
+     /tmp/ccjqOH1C.s:229    .text.HAL_UART_RxCpltCallback:000000000000002c $d
+     /tmp/ccjqOH1C.s:241    .bss.hdma_usart2_tx:0000000000000000 hdma_usart2_tx
+     /tmp/ccjqOH1C.s:248    .bss.huart2:0000000000000000 huart2
+     /tmp/ccjqOH1C.s:237    .bss.hdma_usart2_tx:0000000000000000 $d
+     /tmp/ccjqOH1C.s:244    .bss.huart2:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 HAL_UART_Init
@@ -248,3 +293,7 @@ HAL_NVIC_EnableIRQ
 HAL_GPIO_DeInit
 HAL_DMA_DeInit
 HAL_NVIC_DisableIRQ
+qback
+uartbuf
+queue
+uart_byte_cnt

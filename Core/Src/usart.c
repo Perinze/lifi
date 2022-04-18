@@ -150,5 +150,10 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 }
 
 /* USER CODE BEGIN 1 */
-
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef* huart)
+{
+  for (int i = 0; i < 12; i++)
+    queue[qback++] = uartbuf[i];
+  uart_byte_cnt += 12;
+}
 /* USER CODE END 1 */

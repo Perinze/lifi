@@ -60,6 +60,9 @@ uint32_t qfront, qback;
 uint8_t recvbuf[RECVSIZ];
 uint8_t recvtmp[RECVSIZ+4];
 uint32_t recvidx;
+
+uint8_t uartbuf[12];
+uint32_t uart_byte_cnt = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -85,6 +88,40 @@ void recv2uart() {
   p += sprintf(p, "\r\n");
   HAL_UART_Transmit_IT(&huart2, (uint8_t*)buf, sizeof(buf));
   recvidx = 0;
+}
+
+void data_init() {
+  for (int i = 0; i < 256; i++) {
+    // push data to queue
+    // frame start
+    queue[qback++] = FRMBEGIN1;
+    queue[qback++] = FRMBEGIN2;
+
+    // data
+    for (int j = 0; j < 8; j++) {
+      queue[qback++] = 0x01;
+      queue[qback++] = 0x23;
+      queue[qback++] = 0x45;
+      queue[qback++] = 0x67;
+      queue[qback++] = 0x89;
+      queue[qback++] = 0xAB;
+      queue[qback++] = 0xCD;
+      queue[qback++] = 0xEF;
+    }
+
+    // frame end
+    queue[qback++] = FRMEND1;
+    queue[qback++] = FRMEND2;
+
+    queue[qback++] = 0x00;
+    queue[qback++] = 0x00;
+    queue[qback++] = 0x00;
+    queue[qback++] = 0x00;
+  }
+
+  // redundancy
+  queue[qback++] = 0x00;
+  queue[qback++] = 0x00;
 }
 /* USER CODE END 0 */
 
@@ -122,46 +159,27 @@ int main(void)
   /* USER CODE BEGIN 2 */
   LD0_GPIO_Port->ODR |= (LD0_Pin);
   // LD2_GPIO_Port->ODR |= (LD2_Pin);
-  HAL_UART_Transmit_IT(&huart2, "hello\r\n", sizeof("hello\r\n"));
+  // HAL_UART_Transmit_IT(&huart2, "hello\r\n", sizeof("hello\r\n"));
 
   recvidx = 0;
+  /*
   recvbuf[recvidx++] = 0x12;
   recvbuf[recvidx++] = 0x34;
   recvbuf[recvidx++] = 0x56;
   recvbuf[recvidx++] = 0x78;
+  */
   recv2uart();
+
+  // data_init();
 
   HAL_Delay(2000);
 
-  for (int i = 0; i < 256; i++) {
-    // push data to queue
-    // frame start
-    queue[qback++] = FRMBEGIN1;
-    queue[qback++] = FRMBEGIN2;
-
-    // data
-    for (int j = 0; j < 8; j++) {
-      queue[qback++] = 0x01;
-      queue[qback++] = 0x23;
-      queue[qback++] = 0x45;
-      queue[qback++] = 0x67;
-      queue[qback++] = 0x89;
-      queue[qback++] = 0xAB;
-      queue[qback++] = 0xCD;
-      queue[qback++] = 0xEF;
-    }
-
-    // frame end
-    queue[qback++] = FRMEND1;
-    queue[qback++] = FRMEND2;
-
-    queue[qback++] = 0x00;
-    queue[qback++] = 0x00;
-    queue[qback++] = 0x00;
-    queue[qback++] = 0x00;
-  }
-
-  // redundancy
+  queue[qback++] = FRMBEGIN1;
+  queue[qback++] = FRMBEGIN2;
+  while (uart_byte_cnt < 14400)
+    HAL_UART_Receive_IT(&huart2, uartbuf, sizeof(uartbuf));
+  queue[qback++] = FRMEND1;
+  queue[qback++] = FRMEND2;
   queue[qback++] = 0x00;
   queue[qback++] = 0x00;
 
@@ -172,8 +190,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
+  for (;;) {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

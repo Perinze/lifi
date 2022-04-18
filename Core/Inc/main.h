@@ -47,7 +47,7 @@ extern "C" {
 /* USER CODE BEGIN EM */
 #define LIGHT_DEBUG
 
-#define LIGHTTH 300
+#define LIGHTTH 1500
 #define TESTDATA 114
 #define HIGHBIT 0x10000
 
@@ -75,6 +75,9 @@ extern uint32_t qfront, qback;
 
 extern uint8_t recvbuf[RECVSIZ];
 extern uint32_t recvidx;
+
+extern uint8_t uartbuf[12];
+extern uint32_t uart_byte_cnt;
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
